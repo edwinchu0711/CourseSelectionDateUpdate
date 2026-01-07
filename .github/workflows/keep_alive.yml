@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Send POST request to Render
         run: |
-          curl -X POST https://nsysugrades.onrender.com/crawl \
+          curl -X POST https://nsysugrades.onrender.com/api/scrape \
           -H "Content-Type: application/json" \
           -d '{"task": "test"}' \
           --verbose
