@@ -2,17 +2,49 @@ name: Trigger Render Crawl API
 
 on:
   schedule:
-    # 建議每 13 分鐘執行一次，確保不被休眠
-    - cron: '*/13 * * * *'
+    # 每天 UTC 18:00 (台灣時間 02:00) 執行一次
+    - cron: '0 18 * * *'
   workflow_dispatch: # 允許手動觸發
 
 jobs:
-  ping_api:
+  check_and_run:
     runs-on: ubuntu-latest
     steps:
-      - name: Send POST request to Render
+      - name: Check Date Range and Trigger
+        shell: python
         run: |
-          curl -X POST https://nsysugrades2-0.onrender.com/api/scrape \
-          -H "Content-Type: application/json" \
-          -d '{"task": "test"}' \
-          --verbose
+          import datetime
+          import os
+          import requests
+
+          # 取得目前台灣時間 (UTC+8)
+          now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8)))
+          month_day = (now.month, now.day)
+          
+          # 定義規則
+          # 1. 12/15 ~ 2/28
+          in_range_winter = (now.month == 12 and now.day >= 15) or (now.month == 1) or (now.month == 2)
+          # 2. 5/20 ~ 9/10
+          in_range_summer = (now.month == 5 and now.day >= 20) or (now.month in [6, 7, 8]) or (now.month == 9 and now.day <= 10)
+          
+          # 判斷是否執行
+          should_run = False
+          
+          if in_range_winter or in_range_summer:
+              print("📅 處於頻繁更新月份，準備執行...")
+              should_run = True
+          else:
+              # 其他天：每 3 天更新一次 (利用當天是該月第幾天來計算)
+              if now.day % 3 == 1: 
+                  print("📅 處於非頻繁月份，今日符合每3天一次的排程...")
+                  should_run = True
+              else:
+                  print("📅 今日不需更新，跳過。")
+
+          if should_run:
+              url = "https://courseselectiondate.onrender.com/run"
+              try:
+                  res = requests.get(url, timeout=30)
+                  print(f"🚀 請求成功: {res.status_code}")
+              except Exception as e:
+                  print(f"❌ 請求失敗: {e}")
