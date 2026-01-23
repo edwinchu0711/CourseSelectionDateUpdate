@@ -29,23 +29,33 @@ jobs:
           import time
           import json
 
-          # 1. 判斷邏輯 (略...)
-          
-          # 2. 觸發 Render 開始爬蟲
+          # API 網址設定
+          test_url = "https://courseselectiondate.onrender.com/test"
           run_url = "https://courseselectiondate.onrender.com/run"
           get_url = "https://courseselectiondate.onrender.com/get_data"
           
+          # 1. 喚醒 Render (/test)
+          print("💤 正在喚醒 Render (呼叫 /test)...")
           try:
-              print("🚀 觸發 Render 執行爬蟲...")
+              requests.get(test_url, timeout=80)
+              print("⏰ 等待 1 分鐘確保系統完全就緒...")
+              time.sleep(60)
+          except Exception as e:
+              print(f"⚠️ 喚醒階段提醒: {e}")
+
+          # 2. 觸發 Render 開始爬蟲 (/run)
+          print("🚀 觸發 Render 執行爬蟲 (/run)...")
+          try:
+              # 這裡 timeout 設短一點，因為我們預期它是異步執行的
               requests.get(run_url, timeout=30)
           except Exception as e:
               print(f"⚠️ 觸發可能超時，但任務可能已開始: {e}")
 
-          # 3. 等待 3 分鐘 (360秒)
-          print("⏳ 等待 3 分鐘讓 Render 完成運算與 AI 處理...")
-          time.sleep(360)
+          # 3. 等待 2 分鐘
+          print("⏳ 等待 2 分鐘讓 Render 完成運算與 AI 處理...")
+          time.sleep(140)
 
-          # 4. 索取資料
+          # 4. 索取資料 (/get_data)
           print("📥 正在從 Render 索取資料...")
           try:
               res = requests.get(get_url, timeout=30)
