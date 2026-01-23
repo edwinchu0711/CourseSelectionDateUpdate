@@ -8,6 +8,38 @@ const JSON_URL = "https://edwinchu0711.github.io/CourseSelectionDateUpdate/data.
 // 2. 從環境變數讀取 Firebase Service Account
 const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
 
+// ... 前面的 code ...
+
+// 2. 從環境變數讀取
+const envKey = process.env.FIREBASE_KEY;
+
+if (!envKey) {
+    console.error("❌ 嚴重錯誤: 找不到環境變數 FIREBASE_KEY");
+    console.error("請檢查 GitHub Actions YAML 檔是否漏了 'env: FIREBASE_KEY: ${{ secrets.FIREBASE_KEY }}'");
+    process.exit(1);
+}
+
+let serviceAccount;
+try {
+    serviceAccount = JSON.parse(envKey);
+} catch (e) {
+    console.error("❌ JSON 解析失敗，你的 Secret 可能格式錯誤 (不是有效的 JSON)");
+    process.exit(1);
+}
+
+// 檢查關鍵欄位是否存在
+if (!serviceAccount.project_id) console.error("⚠️ 警告: 缺少 project_id");
+if (!serviceAccount.client_email) console.error("⚠️ 警告: 缺少 client_email");
+if (!serviceAccount.private_key) {
+    console.error("❌ 嚴重錯誤: JSON 內缺少 'private_key' 欄位！");
+    process.exit(1);
+} else {
+    console.log("✅ 成功讀取 Service Account，Project ID:", serviceAccount.project_id);
+    console.log("✅ Private Key 格式檢查:", serviceAccount.private_key.startsWith("-----BEGIN PRIVATE KEY") ? "正確" : "怪怪的");
+}
+
+// ... 後面的 code ...
+
 // 3. 取得 FCM 授權 Token
 function getAccessToken() {
   return new Promise(function(resolve, reject) {
