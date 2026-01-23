@@ -172,7 +172,8 @@ async function main() {
           android: {
             priority: "high",
             notification: {
-                channel_id: "course_alert_channel" 
+                channel_id: "course_alert_channel" ,
+                priority: "high" // 這裡也要加
             }
           }
         }
