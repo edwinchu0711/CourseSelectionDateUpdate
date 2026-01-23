@@ -10,7 +10,7 @@ const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
 
 // ... 前面的 code ...
 
-const rawKey = JSON.parse(process.env.FIREBASE_KEY);
+const rawKey = process.env.FIREBASE_KEY;
 
 if (!rawKey) {
     console.error("❌ 錯誤: 找不到環境變數 FIREBASE_KEY");
