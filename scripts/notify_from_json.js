@@ -18,8 +18,6 @@ if (!envKey) {
     console.error("請檢查 GitHub Actions YAML 檔是否漏了 'env: FIREBASE_KEY: ${{ secrets.FIREBASE_KEY }}'");
     process.exit(1);
 }
-
-let serviceAccount;
 try {
     serviceAccount = JSON.parse(envKey);
 } catch (e) {
