@@ -41,9 +41,9 @@ jobs:
           except Exception as e:
               print(f"⚠️ 觸發可能超時，但任務可能已開始: {e}")
 
-          # 3. 等待 3 分鐘 (180秒)
+          # 3. 等待 3 分鐘 (360秒)
           print("⏳ 等待 3 分鐘讓 Render 完成運算與 AI 處理...")
-          time.sleep(180)
+          time.sleep(360)
 
           # 4. 索取資料
           print("📥 正在從 Render 索取資料...")
