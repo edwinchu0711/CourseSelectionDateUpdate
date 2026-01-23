@@ -65,6 +65,12 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
+          # 1. 強制把檔案加入暫存區
           git add data.json
-          # 只有在檔案有變動時才 commit
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🔄 自動更新課程日期資料: $(date +'%Y-%m-%d %H:%M')" && git push)
+          
+          # 2. 使用 --allow-empty 強制提交，即使內容沒變也會產生一筆紀錄
+          git commit --allow-empty -m "🔄 定期更新檢查: $(date +'%Y-%m-%d %H:%M')"
+          
+          # 3. 推送到 GitHub
+          git push
