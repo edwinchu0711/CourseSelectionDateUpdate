@@ -48,17 +48,18 @@ try {
 
 
 // 3. 取得 FCM 授權 Token
+// 3. 取得 FCM 授權 Token
 function getAccessToken() {
   return new Promise(function(resolve, reject) {
-    const jwtClient = new google.auth.JWT(
-      serviceAccount.client_email,
-      null,
-      serviceAccount.private_key,
-      ['https://www.googleapis.com/auth/firebase.messaging'],
-      null
-    );
+    const jwtClient = new google.auth.JWT({
+      email: serviceAccount.client_email,
+      key: serviceAccount.private_key, // 這裡會用到我們之前 replace 過的正確金鑰
+      scopes: ['https://www.googleapis.com/auth/firebase.messaging']
+    });
+
     jwtClient.authorize(function(err, tokens) {
       if (err) {
+        console.error("🔑 授權失敗，請檢查 private_key 是否正確");
         reject(err);
         return;
       }
@@ -66,7 +67,6 @@ function getAccessToken() {
     });
   });
 }
-
 // ★★★ 新增：強力日期解析函式 (處理民國年、空格、缺年) ★★★
 function parseTwDate(dateStr) {
     if (!dateStr) return null;
