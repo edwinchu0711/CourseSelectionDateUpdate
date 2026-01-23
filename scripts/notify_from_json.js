@@ -5,12 +5,10 @@ const { google } = require('googleapis');
 // 1. 設定：你的 JSON 網址
 const JSON_URL = "https://edwinchu0711.github.io/CourseSelectionDateUpdate/data.json";
 
-// 2. 從環境變數讀取 Firebase Service Account (這是唯一需要的 Firebase 憑證)
-// 請去 Firebase Console -> Project Settings -> Service Accounts -> Generate Private Key
-// 把下載下來的 JSON 內容，貼到 GitHub Repository Secrets，命名為 FIREBASE_KEY
+// 2. 從環境變數讀取 Firebase Service Account
 const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
 
-// 3. 取得 FCM 授權 Token (Google HTTP v1 API)
+// 3. 取得 FCM 授權 Token
 function getAccessToken() {
   return new Promise(function(resolve, reject) {
     const jwtClient = new google.auth.JWT(
@@ -30,44 +28,113 @@ function getAccessToken() {
   });
 }
 
+// ★★★ 新增：強力日期解析函式 (處理民國年、空格、缺年) ★★★
+function parseTwDate(dateStr) {
+    if (!dateStr) return null;
+    
+    // 移除所有空格 (解決 "2 / 9" 格式)
+    const cleanStr = dateStr.replace(/\s+/g, '');
+    
+    // Regex: 支援 "114年1/30" 或 "1/30"
+    // Group 1: 年份 (可能 undefined)
+    // Group 2,3: 月,日
+    // Group 4,5: 時,分
+    const regex = /(?:(\d+)年)?(\d+)\/(\d+)[^(]*\(.*?\)(\d+):(\d+)/;
+    const match = cleanStr.match(regex);
+    
+    if (match) {
+        let rocYear;
+        // 如果有抓到年份
+        if (match[1]) {
+            rocYear = parseInt(match[1]);
+        } else {
+            // 如果沒寫年份，預設抓「現在的民國年」
+            // 為了避免跨年問題(例如現在12月，活動在1月)，這裡可以寫更複雜的判斷
+            // 但目前先預設為「當下年份」，你在 JSON 裡最好手動補上年份比較保險
+            const currentRocYear = new Date().getFullYear() - 1911;
+            rocYear = currentRocYear; 
+        }
+
+        const month = parseInt(match[2]) - 1; // JS 月份是 0-11
+        const day = parseInt(match[3]);
+        const hour = parseInt(match[4]);
+        const minute = parseInt(match[5]);
+        
+        // 轉成西元
+        const year = rocYear + 1911;
+        return new Date(year, month, day, hour, minute);
+    }
+    return null;
+}
+
+// ★★★ 輔助：判斷兩個日期是否是同一天 ★★★
+function isSameDay(date1, date2) {
+    return date1.getFullYear() === date2.getFullYear() &&
+           date1.getMonth() === date2.getMonth() &&
+           date1.getDate() === date2.getDate();
+}
+
 async function main() {
   try {
     // A. 下載 JSON
-    console.log("正在下載資料...");
+    console.log("📥 正在下載資料...");
     const response = await axios.get(JSON_URL);
-    const data = response.data.data; // 根據你的 JSON 結構調整
+    const data = response.data.data;
 
-    // B. 解析日期並檢查
-    const now = new Date();
-    // 轉成台灣時間 (UTC+8) 的 "明天"
-    const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000 + 8 * 60 * 60 * 1000); 
-    const tomorrowStr = tomorrow.toISOString().split('T')[0]; // 格式: YYYY-MM-DD
+    // B. 計算「台灣時間的明天」
+    // 1. 取得現在時間的字串 (以台北時區為準)
+    const nowTaipeiStr = new Date().toLocaleString("en-US", {timeZone: "Asia/Taipei"});
+    const nowTaipei = new Date(nowTaipeiStr);
     
-    // 簡單的日期比對邏輯 (需根據你的資料格式微調)
-    // 假設你的資料 key 或 value 裡有日期字串
-    let messageBody = "";
+    // 2. 加一天
+    const tomorrow = new Date(nowTaipei);
+    tomorrow.setDate(tomorrow.getDate() + 1);
 
-    // --- 這裡要寫你的邏輯 ---
-    // 範例：遍歷 data，看哪一個項目的 '開始時間' 符合 tomorrowStr
+    console.log(`🕒 台灣現在: ${nowTaipei.toLocaleString()}`);
+    console.log(`🎯 尋找目標: ${tomorrow.toLocaleDateString()} (明天) 的活動`);
+
+    // C. 遍歷資料尋找符合的活動
+    let events = []; // 收集所有明天的活動
+
     for (const [key, value] of Object.entries(data)) {
-        if (value['開始時間'] && value['開始時間'].includes(tomorrowStr)) { // 粗略比對，請依實際格式調整
-            messageBody = `明天是 ${key}，記得看時間喔！`;
-            break;
+        const startStr = value['開始時間'];
+        if (!startStr) continue;
+
+        // 解析日期
+        const eventDate = parseTwDate(startStr);
+        
+        if (eventDate) {
+            // 比對日期 (只比對 年/月/日)
+            if (isSameDay(eventDate, tomorrow)) {
+                console.log(`✅ 找到活動: ${key} (${startStr})`);
+                events.push(key);
+            }
         }
     }
-    // -----------------------
 
-    // C. 如果有訊息要發，就呼叫 FCM
-    if (messageBody) {
-      console.log(`準備發送: ${messageBody}`);
+    // D. 發送通知
+    if (events.length > 0) {
+      const title = "選課提醒";
+      // 如果有多個活動，用頓號連接： "明天是 初選一、加退選一..."
+      const body = `明天是 ${events.join('、')}，記得注意時間喔！`;
+      
+      console.log(`🚀 準備發送: [${title}] ${body}`);
+      
       const accessToken = await getAccessToken();
       
       const payload = {
         message: {
-          topic: "all_users", // 發給所有訂閱的人
+          topic: "all_users",
           notification: {
-            title: "選課提醒",
-            body: messageBody,
+            title: title,
+            body: body,
+          },
+          // Android 額外設定 (選用)
+          android: {
+            priority: "high",
+            notification: {
+                channel_id: "course_alert_channel" 
+            }
           }
         }
       };
@@ -84,7 +151,7 @@ async function main() {
       );
       console.log("✅ 推播發送成功！");
     } else {
-      console.log("📅 明天沒有活動，不需要發送通知。");
+      console.log("📅 明天沒有發現任何活動，略過發送。");
     }
 
   } catch (error) {
