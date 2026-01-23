@@ -29,37 +29,36 @@ jobs:
           import time
           import json
 
-          # 1. 判斷日期邏輯 (保持你原本的邏輯)
-          now = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8)))
-          in_range_winter = (now.month == 12 and now.day >= 15) or (now.month in [1, 2])
-          in_range_summer = (now.month == 5 and now.day >= 20) or (now.month in [6, 7, 8]) or (now.month == 9 and now.day <= 10)
+          # 1. 判斷邏輯 (略...)
           
-          should_run = in_range_winter or in_range_summer or (now.day % 3 == 1)
-
-          if not should_run:
-              print("📅 今日不需更新，跳過。")
-              exit(0)
-
-          # 2. 呼叫 API 並處理冷啟動
-          url = "https://courseselectiondate.onrender.com/run"
-          print(f"🚀 正在請求 Render API (含冷啟動等待): {url}")
+          # 2. 觸發 Render 開始爬蟲
+          run_url = "https://courseselectiondate.onrender.com/run"
+          get_url = "https://courseselectiondate.onrender.com/get_data"
           
-          # Render 冷啟動可能需要幾分鐘，這裡設定超長 timeout (600秒 = 10分鐘)
-          # 因為我們把 Flask 改成同步執行，所以 API 會等爬蟲跑完才回傳
           try:
-              # 第一次請求（如果是睡眠狀態，Render 會開始喚醒）
-              res = requests.get(url, timeout=600) 
+              print("🚀 觸發 Render 執行爬蟲...")
+              requests.get(run_url, timeout=30)
+          except Exception as e:
+              print(f"⚠️ 觸發可能超時，但任務可能已開始: {e}")
+
+          # 3. 等待 3 分鐘 (180秒)
+          print("⏳ 等待 3 分鐘讓 Render 完成運算與 AI 處理...")
+          time.sleep(180)
+
+          # 4. 索取資料
+          print("📥 正在從 Render 索取資料...")
+          try:
+              res = requests.get(get_url, timeout=30)
               if res.status_code == 200:
                   data = res.json()
-                  # 3. 寫入 data.json
                   with open('data.json', 'w', encoding='utf-8') as f:
                       json.dump(data, f, ensure_ascii=False, indent=2)
                   print("✅ 資料抓取成功並已寫入 data.json")
               else:
-                  print(f"❌ API 報錯: {res.status_code}")
+                  print(f"❌ 資料尚未準備好或出錯: {res.status_code}")
                   exit(1)
           except Exception as e:
-              print(f"❌ 請求過程中發生錯誤: {e}")
+              print(f"❌ 索取資料失敗: {e}")
               exit(1)
 
       - name: Commit and Push changes
