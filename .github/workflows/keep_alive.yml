@@ -37,9 +37,9 @@ jobs:
           # 1. 喚醒 Render (/test)
           print("💤 正在喚醒 Render (呼叫 /test)...")
           try:
-              requests.get(test_url, timeout=80)
-              print("⏰ 等待 1 分鐘確保系統完全就緒...")
-              time.sleep(60)
+              requests.get(test_url, timeout=120)
+              print("⏰ 等待 2 分鐘確保系統完全就緒...")
+              time.sleep(120)
           except Exception as e:
               print(f"⚠️ 喚醒階段提醒: {e}")
 
