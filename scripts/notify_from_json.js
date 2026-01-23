@@ -6,8 +6,8 @@ const { google } = require('googleapis');
 const JSON_URL = "https://edwinchu0711.github.io/CourseSelectionDateUpdate/data.json";
 
 // 2. 從環境變數讀取 Firebase Service Account
-const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
-
+// let serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
+let serviceAccount;
 // ... 前面的 code ...
 
 const rawKey = process.env.FIREBASE_KEY;
