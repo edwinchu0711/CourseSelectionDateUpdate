@@ -10,33 +10,42 @@ const serviceAccount = JSON.parse(process.env.FIREBASE_KEY);
 
 // ... 前面的 code ...
 
-// 2. 從環境變數讀取
-const envKey = process.env.FIREBASE_KEY;
+const rawKey = JSON.parse(process.env.FIREBASE_KEY);
 
-if (!envKey) {
-    console.error("❌ 嚴重錯誤: 找不到環境變數 FIREBASE_KEY");
-    console.error("請檢查 GitHub Actions YAML 檔是否漏了 'env: FIREBASE_KEY: ${{ secrets.FIREBASE_KEY }}'");
+if (!rawKey) {
+    console.error("❌ 錯誤: 找不到環境變數 FIREBASE_KEY");
     process.exit(1);
 }
+
+// 簡單的除錯資訊 (不會洩漏金鑰，只看頭尾)
+console.log(`🔑 讀取到的 Key 長度: ${rawKey.length}`);
+console.log(`👀 開頭字元: '${rawKey.substring(0, 1)}'`); // 應該要是 {
+console.log(`👀 結尾字元: '${rawKey.substring(rawKey.length - 1)}'`); // 應該要是 }
+
 try {
-    serviceAccount = JSON.parse(envKey);
+    // 嘗試清洗字串 (去除前後空白、去除可能被意外加入的引號)
+    let cleanKey = rawKey.trim();
+    
+    // 有時候 GitHub Secret 會不小心多包一層引號，這裡做防呆
+    if (cleanKey.startsWith("'") && cleanKey.endsWith("'")) {
+        cleanKey = cleanKey.slice(1, -1);
+    }
+    if (cleanKey.startsWith('"') && cleanKey.endsWith('"')) {
+        cleanKey = cleanKey.slice(1, -1);
+    }
+
+    serviceAccount = JSON.parse(cleanKey);
+    console.log("✅ JSON 格式解析成功！");
+
 } catch (e) {
-    console.error("❌ JSON 解析失敗，你的 Secret 可能格式錯誤 (不是有效的 JSON)");
+    console.error("❌ JSON 解析失敗！內容格式錯誤。");
+    console.error("錯誤細節:", e.message);
+    // 這裡可以印出前 10 個字元幫助判斷，但不要印全部
+    console.error("前 10 個字元:", rawKey.substring(0, 10));
     process.exit(1);
 }
 
-// 檢查關鍵欄位是否存在
-if (!serviceAccount.project_id) console.error("⚠️ 警告: 缺少 project_id");
-if (!serviceAccount.client_email) console.error("⚠️ 警告: 缺少 client_email");
-if (!serviceAccount.private_key) {
-    console.error("❌ 嚴重錯誤: JSON 內缺少 'private_key' 欄位！");
-    process.exit(1);
-} else {
-    console.log("✅ 成功讀取 Service Account，Project ID:", serviceAccount.project_id);
-    console.log("✅ Private Key 格式檢查:", serviceAccount.private_key.startsWith("-----BEGIN PRIVATE KEY") ? "正確" : "怪怪的");
-}
 
-// ... 後面的 code ...
 
 // 3. 取得 FCM 授權 Token
 function getAccessToken() {
