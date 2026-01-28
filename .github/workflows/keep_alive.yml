@@ -1,86 +1,35 @@
-name: Trigger Render Crawl and Save Data
+name: Daily Course Scraper
 
 on:
   schedule:
     - cron: '0 18 * * *' # 台灣時間 02:00
-  workflow_dispatch:
+  workflow_dispatch: # 允許手動執行
 
 jobs:
-  scrape_and_commit:
+  scrape:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install requests
-
-      - name: Run Scraper and Update File
-        shell: python
         run: |
-          import datetime
-          import os
-          import requests
-          import time
-          import json
+          pip install -r requirements.txt
 
-          # API 網址設定
-          test_url = "https://courseselectiondate.onrender.com/test"
-          run_url = "https://courseselectiondate.onrender.com/run"
-          get_url = "https://courseselectiondate.onrender.com/get_data"
-          
-          # 1. 喚醒 Render (/test)
-          print("💤 正在喚醒 Render (呼叫 /test)...")
-          try:
-              requests.get(test_url, timeout=120)
-              print("⏰ 等待 2 分鐘確保系統完全就緒...")
-              time.sleep(120)
-          except Exception as e:
-              print(f"⚠️ 喚醒階段提醒: {e}")
+      - name: Run Scraper
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scraper.py
 
-          # 2. 觸發 Render 開始爬蟲 (/run)
-          print("🚀 觸發 Render 執行爬蟲 (/run)...")
-          try:
-              # 這裡 timeout 設短一點，因為我們預期它是異步執行的
-              requests.get(run_url, timeout=30)
-          except Exception as e:
-              print(f"⚠️ 觸發可能超時，但任務可能已開始: {e}")
-
-          # 3. 等待 2 分鐘
-          print("⏳ 等待 2 分鐘讓 Render 完成運算與 AI 處理...")
-          time.sleep(140)
-
-          # 4. 索取資料 (/get_data)
-          print("📥 正在從 Render 索取資料...")
-          try:
-              res = requests.get(get_url, timeout=30)
-              if res.status_code == 200:
-                  data = res.json()
-                  with open('data.json', 'w', encoding='utf-8') as f:
-                      json.dump(data, f, ensure_ascii=False, indent=2)
-                  print("✅ 資料抓取成功並已寫入 data.json")
-              else:
-                  print(f"❌ 資料尚未準備好或出錯: {res.status_code}")
-                  exit(1)
-          except Exception as e:
-              print(f"❌ 索取資料失敗: {e}")
-              exit(1)
-
-      - name: Commit and Push changes
+      - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # 1. 強制把檔案加入暫存區
           git add data.json
-          
-          # 2. 使用 --allow-empty 強制提交，即使內容沒變也會產生一筆紀錄
-          git commit --allow-empty -m "🔄 定期更新檢查: $(date +'%Y-%m-%d %H:%M')"
-          
-          # 3. 推送到 GitHub
+          git commit --allow-empty -m "🔄 自動更新選課日期: $(date +'%Y-%m-%d %H:%M')"
           git push
