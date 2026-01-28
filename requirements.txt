@@ -1,0 +1,4 @@
+selenium
+requests
+google-genai
+urllib3
