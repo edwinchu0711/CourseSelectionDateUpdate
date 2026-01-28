@@ -1,8 +1,10 @@
 name: Daily Course Scraper
 
 on:
-  schedule:
-    - cron: '0 18 * * *' # 台灣時間 02:00
+  # schedule:
+  #   - cron: '0 18 * * *' # 台灣時間 02:00
+  repository_dispatch:
+    types: [precise_trigger]
   workflow_dispatch: # 允許手動執行
 
 jobs:
