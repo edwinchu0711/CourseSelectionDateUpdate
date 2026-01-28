@@ -113,6 +113,8 @@ function isSameDay(date1, date2) {
            date1.getDate() === date2.getDate();
 }
 
+// ... (前面的 getAccessToken, parseTwDate, isSameDay 等函式保持不變) ...
+
 async function main() {
   try {
     // A. 下載 JSON
@@ -120,78 +122,99 @@ async function main() {
     const response = await axios.get(JSON_URL);
     const data = response.data.data;
 
-    // B. 計算「台灣時間的明天」
-    // 1. 取得現在時間的字串 (以台北時區為準)
+    // B. 設定基準時間 (台灣時間)
     const nowTaipeiStr = new Date().toLocaleString("en-US", {timeZone: "Asia/Taipei"});
-    const nowTaipei = new Date(nowTaipeiStr);
+    const today = new Date(nowTaipeiStr);
     
-    // 2. 加一天
-    const tomorrow = new Date(nowTaipei);
-    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
 
-    console.log(`🕒 台灣現在: ${nowTaipei.toLocaleString()}`);
-    console.log(`🎯 尋找目標: ${tomorrow.toLocaleDateString()} (明天) 的活動`);
+    console.log(`🕒 台灣現在: ${today.toLocaleString()}`);
 
-    // C. 遍歷資料尋找符合的活動
-    let events = []; // 收集所有明天的活動
+    // C. 遍歷資料與過濾
+    let todayEvents = [];
+    let tomorrowEvents = [];
+
+    // 定義允許的名稱 (白名單)
+    const allowedNames = ["初選一", "初選二", "加退選一", "加退選二", "異常處理", "選課確認", "棄選時間"];
 
     for (const [key, value] of Object.entries(data)) {
         const startStr = value['開始時間'];
         if (!startStr) continue;
 
-        // 解析日期
-        const eventDate = parseTwDate(startStr);
+        let shouldNotify = false;
         
+        // 1. 檢查是否為「課程查詢」且符合格式 (e.g., 114-1 或 114-2)
+        if (key.includes("課程查詢")) {
+            if (/-\d/.test(key)) { // 檢查是否有 "-數字"
+                shouldNotify = true;
+            }
+        } 
+        // 2. 檢查是否在白名單內
+        else if (allowedNames.includes(key)) {
+            shouldNotify = true;
+        }
+
+        if (!shouldNotify) continue;
+
+        // 3. 解析日期並比對
+        const eventDate = parseTwDate(startStr);
         if (eventDate) {
-            // 比對日期 (只比對 年/月/日)
-            if (isSameDay(eventDate, tomorrow)) {
-                console.log(`✅ 找到活動: ${key} (${startStr})`);
-                events.push(key);
+            if (isSameDay(eventDate, today)) {
+                todayEvents.push(key);
+            } else if (isSameDay(eventDate, tomorrow)) {
+                tomorrowEvents.push(key);
             }
         }
     }
 
-    // D. 發送通知
-    if (events.length > 0) {
-      const title = "選課提醒";
-      // 如果有多個活動，用頓號連接： "明天是 初選一、加退選一..."
-      const body = `明天是 ${events.join('、')}，記得注意時間喔！`;
-      
-      console.log(`🚀 準備發送: [${title}] ${body}`);
-      
-      const accessToken = await getAccessToken();
-      
-      const payload = {
-        message: {
-          topic: "all_users",
-          notification: {
-            title: title,
-            body: body,
-          },
-          // Android 額外設定 (選用)
-          android: {
-            priority: "high",
-            notification: {
-                channel_id: "course_alert_channel"  
-            }
-          }
-        }
-      };
+    // D. 發送通知邏輯
+    const sendNotification = async (events, dayLabel) => {
+        if (events.length === 0) return;
 
-      await axios.post(
-        `https://fcm.googleapis.com/v1/projects/${serviceAccount.project_id}/messages:send`,
-        payload,
-        {
-          headers: {
-            'Authorization': `Bearer ${accessToken}`,
-            'Content-Type': 'application/json'
-          }
-        }
-      );
-      console.log("✅ 推播發送成功！");
+        const title = `選課提醒 (${dayLabel})`;
+        const body = `${dayLabel}是 ${events.join('、')}，記得注意時間喔！`;
+        
+        console.log(`🚀 準備發送: [${title}] ${body}`);
+        
+        const accessToken = await getAccessToken();
+        const payload = {
+            message: {
+                topic: "all_users",
+                notification: { title: title, body: body },
+                android: { 
+                    priority: "high", 
+                    notification: { channel_id: "course_alert_channel" } 
+                }
+            }
+        };
+
+        await axios.post(
+            `https://fcm.googleapis.com/v1/projects/${serviceAccount.project_id}/messages:send`,
+            payload,
+            {
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`,
+                    'Content-Type': 'application/json'
+                }
+            }
+        );
+    };
+
+    // 分別執行今天與明天的通知
+    if (todayEvents.length > 0) {
+        await sendNotification(todayEvents, "今天");
     } else {
-      console.log("📅 明天沒有發現任何活動，略過發送。");
+        console.log("📅 今天無符合項目。");
     }
+
+    if (tomorrowEvents.length > 0) {
+        await sendNotification(tomorrowEvents, "明天");
+    } else {
+        console.log("📅 明天無符合項目。");
+    }
+
+    console.log("✅ 流程結束。");
 
   } catch (error) {
     console.error("❌ 發生錯誤:", error);
@@ -199,4 +222,5 @@ async function main() {
   }
 }
 
+main();
 main();
