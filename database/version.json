@@ -1,0 +1,20 @@
+[
+  {
+    "db_filename": "database_2026-04-16_1744.db",
+    "created_date": "2026-04-16",
+    "last_updated": "2026-04-16 17:45:23 UTC+08:00",
+    "embedding_model": "models/gemini-embedding-2-preview",
+    "source": "rules.txt",
+    "chunk_count": 37,
+    "vector_dimensions": 512
+  },
+  {
+    "db_filename": "database_2026-04-16_1750.db",
+    "created_date": "2026-04-16",
+    "last_updated": "2026-04-16 17:51:10 UTC+08:00",
+    "embedding_model": "models/gemini-embedding-2-preview",
+    "source": "rules.txt",
+    "chunk_count": 37,
+    "vector_dimensions": 512
+  }
+]
