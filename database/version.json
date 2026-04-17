@@ -7,5 +7,14 @@
     "source": "rules.txt",
     "chunk_count": 37,
     "vector_dimensions": 512
+  },
+  {
+    "db_filename": "database_2026-04-17_1010.db",
+    "created_date": "2026-04-17",
+    "last_updated": "2026-04-17 10:10:48",
+    "embedding_model": "gemini-embedding-001",
+    "source": "rules.txt",
+    "chunk_count": 37,
+    "vector_dimensions": 512
   }
 ]
