@@ -1,4 +1,6 @@
 selenium
 requests
 google-genai
+google-generativeai
 urllib3
+beautifulsoup4
