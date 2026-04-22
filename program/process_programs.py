@@ -43,7 +43,7 @@ def analyze_pdf_with_gemini(client, pdf_path, program_name):
     
     # Upload file to Gemini
     try:
-        sample_file = client.files.upload(path=pdf_path)
+        sample_file = client.files.upload(file=pdf_path)
         
         # In the new SDK, we can wait for processing if needed, 
         # but for simple PDFs it's usually immediate or handled by the backend.
