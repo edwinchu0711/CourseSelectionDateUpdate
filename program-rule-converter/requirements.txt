@@ -4,3 +4,5 @@ jsonschema
 pytest
 openai
 python-dotenv
+requests
+beautifulsoup4
