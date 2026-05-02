@@ -1,0 +1,133 @@
+name: Convert Program Rules
+
+on:
+  push:
+    paths:
+      - "program-rule-converter/data/pdfs/**/*.pdf"
+      - "program-rule-converter/scripts/**"
+      - "program-rule-converter/schemas/**"
+      - "program-rule-converter/src/**"
+      - ".github/workflows/convert-program-rules.yml"
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: program-rule-converter
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Download PDFs (incremental)
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+        run: |
+          python 學程.py --download
+
+      - name: Extract PDFs
+        run: |
+          mkdir -p data/extracted/raw
+          for pdf in data/pdfs/*.pdf; do
+            base=$(basename "$pdf" .pdf)
+            python scripts/extract_pdf.py "$pdf" "data/extracted/raw/${base}.raw.json"
+          done
+
+      - name: Convert with LLM
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+        run: |
+          mkdir -p data/extracted/structured
+          for raw in data/extracted/raw/*.raw.json; do
+            base=$(basename "$raw" .raw.json)
+            python scripts/convert_with_llm.py "$raw" "data/extracted/structured/${base}.extracted.json"
+          done
+
+      - name: Normalize rules
+        run: |
+          mkdir -p data/rules/generated
+          for extracted in data/extracted/structured/*.extracted.json; do
+            base=$(basename "$extracted" .extracted.json)
+            python scripts/normalize_rules.py "$extracted" "data/rules/generated/${base}.generated.json"
+          done
+
+      - name: Apply overrides
+        run: |
+          mkdir -p data/rules/final
+          for generated in data/rules/generated/*.generated.json; do
+            base=$(basename "$generated" .generated.json)
+            override="data/overrides/${base}.json"
+            output="data/rules/final/${base}.json"
+            if [ -f "$override" ]; then
+              python scripts/apply_overrides.py "$generated" "$override" "$output"
+            else
+              cp "$generated" "$output"
+            fi
+          done
+
+      - name: Validate schema
+        run: |
+          for rule in data/rules/final/*.json; do
+            python scripts/validate_schema.py schemas/program-rule.schema.json "$rule"
+          done
+
+      - name: Validate business rules
+        run: |
+          for rule in data/rules/final/*.json; do
+            python scripts/validate_rules.py "$rule"
+          done
+
+      - name: Run tests
+        run: |
+          pytest
+
+      - name: Generate diff reports
+        run: |
+          mkdir -p reports
+          for final in data/rules/final/*.json; do
+            base=$(basename "$final" .json)
+            approved="data/rules/approved/${base}.json"
+            report="reports/${base}.diff.md"
+            if [ -f "$approved" ]; then
+              python scripts/diff_rules.py "$approved" "$final" "$report"
+            fi
+          done
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "chore: update generated program rules"
+          title: "Update generated program rules"
+          body: |
+            This PR was generated automatically from PDF files.
+
+            Validation steps:
+            - PDF extraction
+            - LLM structured conversion
+            - Rule normalization
+            - Manual override application
+            - JSON Schema validation
+            - Business validation
+            - Tests
+            - Diff report generation
+
+            Please review changed JSON files and reports.
+          branch: bot/update-program-rules

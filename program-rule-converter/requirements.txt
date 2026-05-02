@@ -1,0 +1,6 @@
+pymupdf
+pdfplumber
+jsonschema
+pytest
+openai
+python-dotenv

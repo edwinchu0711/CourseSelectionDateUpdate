@@ -1,0 +1,93 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "StructuredExtracted",
+  "description": "Schema for structured extraction output from convert_with_llm.py",
+  "type": "object",
+  "required": ["sourceFile", "programName", "version", "rows"],
+  "properties": {
+    "sourceFile": {
+      "type": "string"
+    },
+    "programName": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "approvedDates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coreCreditText": {
+      "type": "string"
+    },
+    "totalCreditText": {
+      "type": "string"
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["section", "courseName", "credits", "page", "sourceText"],
+        "properties": {
+          "section": {
+            "type": "string",
+            "enum": ["core", "elective"]
+          },
+          "openingUnits": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "courseName": {
+            "type": "string"
+          },
+          "equivalentNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "credits": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "note": {
+            "type": "string"
+          },
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sourceText": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "text"],
+        "properties": {
+          "page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

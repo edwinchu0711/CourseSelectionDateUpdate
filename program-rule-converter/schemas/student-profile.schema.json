@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "StudentProfile",
+  "description": "Schema for student profile data",
+  "type": "object",
+  "required": ["studentId", "department"],
+  "properties": {
+    "studentId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "department": {
+      "type": "string",
+      "minLength": 1
+    },
+    "doubleMajors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "minors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approvedProgramTerm": {
+      "type": "string"
+    },
+    "certificates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "passedPrerequisites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["courseName", "credits", "passed"],
+        "properties": {
+          "courseName": {
+            "type": "string"
+          },
+          "credits": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "grade": {
+            "type": "number"
+          },
+          "passed": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

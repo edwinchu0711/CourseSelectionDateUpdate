@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RawExtracted",
+  "description": "Schema for raw PDF extraction output from extract_pdf.py",
+  "type": "object",
+  "required": ["sourceFile", "pages"],
+  "properties": {
+    "sourceFile": {
+      "type": "string",
+      "description": "Source PDF filename"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "text"],
+        "properties": {
+          "page": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Page number (1-based)"
+          },
+          "text": {
+            "type": "string",
+            "description": "Extracted text content from this page"
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

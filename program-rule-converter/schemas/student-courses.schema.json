@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "StudentCourses",
+  "description": "Schema for student course records",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["courseId", "courseName", "offeringUnit", "credits", "term", "passed"],
+    "properties": {
+      "courseId": {
+        "type": "string",
+        "minLength": 1
+      },
+      "courseName": {
+        "type": "string",
+        "minLength": 1
+      },
+      "offeringUnit": {
+        "type": "string",
+        "minLength": 1
+      },
+      "credits": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 10
+      },
+      "term": {
+        "type": "string",
+        "minLength": 1
+      },
+      "grade": {
+        "type": "number"
+      },
+      "passed": {
+        "type": "boolean"
+      }
+    },
+    "additionalProperties": true
+  },
+  "minItems": 0
+}

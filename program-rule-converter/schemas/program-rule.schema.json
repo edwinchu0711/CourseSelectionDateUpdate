@@ -1,0 +1,285 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ProgramRule",
+  "description": "Schema for final program-rule JSON used by evaluator",
+  "type": "object",
+  "required": ["programId", "programName", "version", "effectiveFrom", "requirements", "courseRules", "groupRules", "prerequisites", "exemptionRules", "options", "source"],
+  "properties": {
+    "programId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "programName": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "effectiveFrom": {
+      "type": "string",
+      "minLength": 1
+    },
+    "requirements": {
+      "type": "object",
+      "required": ["totalCredits"],
+      "properties": {
+        "totalCredits": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "categoryCredits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["category", "credits"],
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": ["core", "elective"]
+              },
+              "credits": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "tagCredits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["tag", "credits"],
+            "properties": {
+              "tag": {
+                "type": "string"
+              },
+              "credits": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "outsideCredits": {
+          "type": "object",
+          "properties": {
+            "credits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "defaultCredits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "withDoubleMajorOrMinorCredits": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "excludeStudentUnits": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "courseRules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["ruleId", "category", "displayName", "match", "credits", "tags", "source"],
+        "properties": {
+          "ruleId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "enum": ["core", "elective"]
+          },
+          "displayName": {
+            "type": "string",
+            "minLength": 1
+          },
+          "match": {
+            "type": "object",
+            "required": ["names", "offeringUnitMode", "offeringUnits"],
+            "properties": {
+              "names": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "minItems": 1
+              },
+              "offeringUnitMode": {
+                "type": "string",
+                "enum": ["any", "allow", "deny"]
+              },
+              "offeringUnits": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "credits": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10
+          },
+          "groupId": {
+            "type": ["string", "null"]
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "priority": {
+            "type": "integer"
+          },
+          "source": {
+            "type": "object",
+            "required": ["file", "page", "sourceText"],
+            "properties": {
+              "file": {
+                "type": "string"
+              },
+              "page": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "sourceText": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "groupRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["groupId", "maxAcceptedCourses"],
+        "properties": {
+          "groupId": {
+            "type": "string"
+          },
+          "maxAcceptedCourses": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "overflowCategory": {
+            "type": "string",
+            "enum": ["elective", "core"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "prerequisites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "names": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "minCredits": {
+            "type": "integer"
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "exemptionRules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "certificateType": {
+            "type": "string"
+          },
+          "levels": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "grant": {
+            "type": "object",
+            "required": ["category", "credits"],
+            "properties": {
+              "category": {
+                "type": "string",
+                "enum": ["core", "elective"]
+              },
+              "credits": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "additionalProperties": false
+          },
+          "note": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "options": {
+      "type": "object",
+      "properties": {
+        "allowExtraCoreAsElective": {
+          "type": "boolean"
+        },
+        "sameStudentCourseCanCountOnce": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["file", "generatedAt"],
+      "properties": {
+        "file": {
+          "type": "string"
+        },
+        "generatedAt": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
