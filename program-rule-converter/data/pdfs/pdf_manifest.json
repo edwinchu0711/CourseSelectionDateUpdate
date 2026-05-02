@@ -1,0 +1,1151 @@
+{
+  "lastFullScan": "2026-05-02T06:18:21.856855+00:00",
+  "programs": {
+    "financial_engineering": {
+      "name": "金融工程學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223150052722.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 425077,
+      "filename": "financial_engineering_115-1.pdf",
+      "status": "current"
+    },
+    "生物技術學程": {
+      "name": "生物技術學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102001725.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 239907,
+      "filename": "生物技術學程_115-1.pdf",
+      "status": "current"
+    },
+    "software_engineering": {
+      "name": "軟體工程學程",
+      "link": "http://140.117.153.69/ctdr/files/2025122315041488.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 161762,
+      "filename": "software_engineering_115-1.pdf",
+      "status": "current"
+    },
+    "環境科技與管理學程": {
+      "name": "環境科技與管理學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531145601945.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 368262,
+      "filename": "環境科技與管理學程_115-1.pdf",
+      "status": "current"
+    },
+    "japanese_studies": {
+      "name": "日本研究學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145604987.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 360369,
+      "filename": "japanese_studies_115-1.pdf",
+      "status": "current"
+    },
+    "法國語言_文化與社會學程": {
+      "name": "法國語言、文化與社會學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102211679.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 408082,
+      "filename": "法國語言_文化與社會學程_115-1.pdf",
+      "status": "current"
+    },
+    "生物多樣性學程": {
+      "name": "生物多樣性學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612093634154.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 272010,
+      "filename": "生物多樣性學程_115-1.pdf",
+      "status": "current"
+    },
+    "表達性藝術治療學程": {
+      "name": "表達性藝術治療學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151419803.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 106599,
+      "filename": "表達性藝術治療學程_115-1.pdf",
+      "status": "current"
+    },
+    "音樂藝術管理與行銷學程": {
+      "name": "音樂藝術管理與行銷學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151440819.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 129464,
+      "filename": "音樂藝術管理與行銷學程_115-1.pdf",
+      "status": "current"
+    },
+    "資通安全學程": {
+      "name": "資通安全學程",
+      "link": "http://140.117.153.69/ctdr/files/2024053115222725.pdf",
+      "lastDownloadedAt": "2026-05-02T06:18:21.856855+00:00",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 153509,
+      "filename": "資通安全學程_115-1.pdf",
+      "status": "current"
+    },
+    "行銷管理學程": {
+      "name": "行銷管理學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612093547605.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "行銷管理學程_115-1.pdf",
+      "status": "pending"
+    },
+    "會計學程": {
+      "name": "會計學程",
+      "link": "http://140.117.153.69/ctdr/files/202412241514574.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "會計學程_115-1.pdf",
+      "status": "pending"
+    },
+    "科技創新與服務業管理學程": {
+      "name": "科技創新與服務業管理學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531151551925.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "科技創新與服務業管理學程_115-1.pdf",
+      "status": "pending"
+    },
+    "性別研究學程": {
+      "name": "性別研究學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101535855.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "性別研究學程_115-1.pdf",
+      "status": "pending"
+    },
+    "環境教育學程": {
+      "name": "環境教育學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527100930693.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "環境教育學程_115-1.pdf",
+      "status": "pending"
+    },
+    "人力資源管理學程": {
+      "name": "人力資源管理學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145700849.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "人力資源管理學程_115-1.pdf",
+      "status": "pending"
+    },
+    "機器學習與多媒體技術學程": {
+      "name": "機器學習與多媒體技術學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612093429373.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "機器學習與多媒體技術學程_115-1.pdf",
+      "status": "pending"
+    },
+    "巨量資料分析學程": {
+      "name": "巨量資料分析學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612093417272.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "巨量資料分析學程_115-1.pdf",
+      "status": "pending"
+    },
+    "地方敘事與創生學程": {
+      "name": "地方敘事與創生學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612093404948.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "地方敘事與創生學程_115-1.pdf",
+      "status": "pending"
+    },
+    "氣候變遷與調適學程": {
+      "name": "氣候變遷與調適學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151543415.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "氣候變遷與調適學程_115-1.pdf",
+      "status": "pending"
+    },
+    "金融科技學程": {
+      "name": "金融科技學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527100955165.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "金融科技學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海事工程學程": {
+      "name": "海事工程學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151601846.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海事工程學程_115-1.pdf",
+      "status": "pending"
+    },
+    "臺灣研究學程": {
+      "name": "臺灣研究學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220103351572.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "臺灣研究學程_115-1.pdf",
+      "status": "pending"
+    },
+    "南星產業樞紐學程_自113年2月1日起停止受理申請修讀學程": {
+      "name": "南星產業樞紐學程  (★自113年2月1日起停止受理申請修讀學程)",
+      "link": "http://140.117.153.69/ctdr/files/20240109115030253.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "南星產業樞紐學程_自113年2月1日起停止受理申請修讀學程_115-1.pdf",
+      "status": "pending"
+    },
+    "跨領域智慧製造學程": {
+      "name": "跨領域智慧製造學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151628602.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "跨領域智慧製造學程_115-1.pdf",
+      "status": "pending"
+    },
+    "音樂與高齡照護學程": {
+      "name": "音樂與高齡照護學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151646182.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "音樂與高齡照護學程_115-1.pdf",
+      "status": "pending"
+    },
+    "企業社會責任學程": {
+      "name": "企業社會責任學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102342918.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "企業社會責任學程_115-1.pdf",
+      "status": "pending"
+    },
+    "沉浸式體驗技術與應用學程_自113年2月1日起停止受理申請修讀學程": {
+      "name": "沉浸式體驗技術與應用學程  (★自113年2月1日起停止受理申請修讀學程)",
+      "link": "http://140.117.153.69/ctdr/files/20241224152303413.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "沉浸式體驗技術與應用學程_自113年2月1日起停止受理申請修讀學程_115-1.pdf",
+      "status": "pending"
+    },
+    "擁海學程": {
+      "name": "擁海學程",
+      "link": "http://140.117.153.69/ctdr/files/2024053114300358.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "擁海學程_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧城市與智慧運輸學程": {
+      "name": "智慧城市與智慧運輸學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224152323397.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧城市與智慧運輸學程_115-1.pdf",
+      "status": "pending"
+    },
+    "人工智慧與數學學程": {
+      "name": "人工智慧與數學學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220101956899.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "人工智慧與數學學程_115-1.pdf",
+      "status": "pending"
+    },
+    "校園預防醫學暨食品安全學程_原_校園預防醫學學程": {
+      "name": "校園預防醫學暨食品安全學程(原：校園預防醫學學程)",
+      "link": "http://140.117.153.69/ctdr/files/20251223145932586.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "校園預防醫學暨食品安全學程_原_校園預防醫學學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋生產模式學程": {
+      "name": "海洋生產模式學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224152646293.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋生產模式學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋循環經濟學程": {
+      "name": "海洋循環經濟學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612092232667.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋循環經濟學程_115-1.pdf",
+      "status": "pending"
+    },
+    "永續海洋休閒運動產業學程": {
+      "name": "永續海洋休閒運動產業學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531142557685.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "永續海洋休閒運動產業學程_115-1.pdf",
+      "status": "pending"
+    },
+    "自然科學之程式應用學程": {
+      "name": "自然科學之程式應用學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223144854119.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "自然科學之程式應用學程_115-1.pdf",
+      "status": "pending"
+    },
+    "天然藥物合成學程": {
+      "name": "天然藥物合成學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145225107.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "天然藥物合成學程_115-1.pdf",
+      "status": "pending"
+    },
+    "有機和材料合成學程": {
+      "name": "有機和材料合成學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224152710302.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "有機和材料合成學程_115-1.pdf",
+      "status": "pending"
+    },
+    "地方創生與永續發展學程": {
+      "name": "地方創生與永續發展學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102432939.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "地方創生與永續發展學程_115-1.pdf",
+      "status": "pending"
+    },
+    "半導體製程模組學程": {
+      "name": "半導體製程模組學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101943532.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "半導體製程模組學程_115-1.pdf",
+      "status": "pending"
+    },
+    "半導體設備工程學程": {
+      "name": "半導體設備工程學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101921432.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "半導體設備工程學程_115-1.pdf",
+      "status": "pending"
+    },
+    "半導體元件學程": {
+      "name": "半導體元件學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101855264.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "半導體元件學程_115-1.pdf",
+      "status": "pending"
+    },
+    "實用英語跨域學程_Practical_English_Cross_Disciplinary_Program_全英語學程_Program_Taught_in_English": {
+      "name": "實用英語跨域學程 Practical English Cross-Disciplinary Program 【全英語學程】(Program Taught in English)",
+      "link": "http://140.117.153.69/ctdr/files/20260323102816808.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "實用英語跨域學程_Practical_English_Cross_Disciplinary_Program_全英語學程_Program_Taught_in_English_115-1.pdf",
+      "status": "pending"
+    },
+    "中文創意跨域應用整合學程": {
+      "name": "中文創意跨域應用整合學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145401458.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "中文創意跨域應用整合學程_115-1.pdf",
+      "status": "pending"
+    },
+    "數位IC設計學程": {
+      "name": "數位IC設計學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531151401585.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "數位IC設計學程_115-1.pdf",
+      "status": "pending"
+    },
+    "類比射頻IC設計學程": {
+      "name": "類比射頻IC設計學程",
+      "link": "http://140.117.153.69/ctdr/files/2024122415390131.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "類比射頻IC設計學程_115-1.pdf",
+      "status": "pending"
+    },
+    "半導體化學學程": {
+      "name": "半導體化學學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153917933.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "半導體化學學程_115-1.pdf",
+      "status": "pending"
+    },
+    "永續能源學程": {
+      "name": "永續能源學程",
+      "link": "http://140.117.153.69/ctdr/files/20230607155141310.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "永續能源學程_115-1.pdf",
+      "status": "pending"
+    },
+    "原民文化探索及永續發展學程": {
+      "name": "原民文化探索及永續發展學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153936561.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "原民文化探索及永續發展學程_115-1.pdf",
+      "status": "pending"
+    },
+    "音樂劇學程": {
+      "name": "音樂劇學程",
+      "link": "http://140.117.153.69/ctdr/files/2023122010384271.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "音樂劇學程_115-1.pdf",
+      "status": "pending"
+    },
+    "人權研究整合學程Human_Rights_Studies_Program_全英語學程_Program_Taught_in_English": {
+      "name": "人權研究整合學程Human Rights Studies Program【全英語學程】(Program Taught in English)",
+      "link": "http://140.117.153.69/ctdr/files/2024053114553762.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "人權研究整合學程Human_Rights_Studies_Program_全英語學程_Program_Taught_in_English_115-1.pdf",
+      "status": "pending"
+    },
+    "全球研究學分學程": {
+      "name": "全球研究學分學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101025447.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "全球研究學分學程_115-1.pdf",
+      "status": "pending"
+    },
+    "文化產業創新學程": {
+      "name": "文化產業創新學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224143923802.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "文化產業創新學程_115-1.pdf",
+      "status": "pending"
+    },
+    "當代策展與藝術行政學程": {
+      "name": "當代策展與藝術行政學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224144010469.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "當代策展與藝術行政學程_115-1.pdf",
+      "status": "pending"
+    },
+    "矽光子暨半導體學程_原_矽光子學程": {
+      "name": "矽光子暨半導體學程(原：矽光子學程)",
+      "link": "http://140.117.153.69/ctdr/files/20251223150121863.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "矽光子暨半導體學程_原_矽光子學程_115-1.pdf",
+      "status": "pending"
+    },
+    "淨零轉型與永續發展整合學程": {
+      "name": "淨零轉型與永續發展整合學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102513576.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "淨零轉型與永續發展整合學程_115-1.pdf",
+      "status": "pending"
+    },
+    "AI聯盟學分學程_人工智慧探索應用學分學程": {
+      "name": "【AI聯盟學分學程】人工智慧探索應用學分學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224144448723.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "AI聯盟學分學程_人工智慧探索應用學分學程_115-1.pdf",
+      "status": "pending"
+    },
+    "AI聯盟學分學程_人工智慧工業應用學分學程": {
+      "name": "【AI聯盟學分學程】人工智慧工業應用學分學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224144535778.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "AI聯盟學分學程_人工智慧工業應用學分學程_115-1.pdf",
+      "status": "pending"
+    },
+    "AI聯盟學分學程_人工智慧自然語言技術學分學程": {
+      "name": "【AI聯盟學分學程】人工智慧自然語言技術學分學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224144631912.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "AI聯盟學分學程_人工智慧自然語言技術學分學程_115-1.pdf",
+      "status": "pending"
+    },
+    "AI聯盟學分學程_人工智慧視覺技術學分學程": {
+      "name": "【AI聯盟學分學程】人工智慧視覺技術學分學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224144715281.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "AI聯盟學分學程_人工智慧視覺技術學分學程_115-1.pdf",
+      "status": "pending"
+    },
+    "無人載具學程": {
+      "name": "無人載具學程",
+      "link": "http://140.117.153.69/ctdr/files/2025052709480931.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "無人載具學程_115-1.pdf",
+      "status": "pending"
+    },
+    "半導體科技管理學程": {
+      "name": "半導體科技管理學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145956978.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "半導體科技管理學程_115-1.pdf",
+      "status": "pending"
+    },
+    "AI聯盟學分學程_人工智慧資訊安全技術學分學程": {
+      "name": "【AI聯盟學分學程】人工智慧資訊安全技術學分學程",
+      "link": "http://140.117.153.69/ctdr/files/20260421101546706.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "AI聯盟學分學程_人工智慧資訊安全技術學分學程_115-1.pdf",
+      "status": "pending"
+    },
+    "西洋經典文學與文化學程": {
+      "name": "西洋經典文學與文化學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151717718.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "西洋經典文學與文化學程_115-1.pdf",
+      "status": "pending"
+    },
+    "財務管理專業學程": {
+      "name": "財務管理專業學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220104517551.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "財務管理專業學程_115-1.pdf",
+      "status": "pending"
+    },
+    "應用數學學程": {
+      "name": "應用數學學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612093157391.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "應用數學學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋生物資源開發學程": {
+      "name": "海洋生物資源開發學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224151744500.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋生物資源開發學程_115-1.pdf",
+      "status": "pending"
+    },
+    "全英語通識教育菁英學程_EMI_General_Education_Honors_Program_全英語學程_Program_Taught_in_English": {
+      "name": "全英語通識教育菁英學程 EMI General Education Honors Program  【全英語學程】(Program Taught in English)",
+      "link": "http://140.117.153.69/ctdr/files/20260323102747165.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "全英語通識教育菁英學程_EMI_General_Education_Honors_Program_全英語學程_Program_Taught_in_English_115-1.pdf",
+      "status": "pending"
+    },
+    "永續發展與社會創新微學程": {
+      "name": "永續發展與社會創新微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224152059593.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "永續發展與社會創新微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "社區文創微學程": {
+      "name": "社區文創微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102549742.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "社區文創微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "臺灣閩南語文書寫應用與創作微學程_原_台灣閩南語文書寫應用與創作微學程": {
+      "name": "臺灣閩南語文書寫應用與創作微學程(原：台灣閩南語文書寫應用與創作微學程)",
+      "link": "http://140.117.153.69/ctdr/files/20251223145336462.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "臺灣閩南語文書寫應用與創作微學程_原_台灣閩南語文書寫應用與創作微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "與社會交往的表演藝術微學程_原_創作性戲劇與社群教育微學程": {
+      "name": "與社會交往的表演藝術微學程  (原：創作性戲劇與社群教育微學程)",
+      "link": "http://140.117.153.69/ctdr/files/20251223145522216.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "與社會交往的表演藝術微學程_原_創作性戲劇與社群教育微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "非營利事業及社會創新微學程": {
+      "name": "非營利事業及社會創新微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220103628526.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "非營利事業及社會創新微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "人工智能投資微學程": {
+      "name": "人工智能投資微學程",
+      "link": "http://140.117.153.69/ctdr/files/2024053115163641.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "人工智能投資微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "金融科技與創新微學程": {
+      "name": "金融科技與創新微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531151754593.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "金融科技與創新微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "城市行銷微學程": {
+      "name": "城市行銷微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224152346793.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "城市行銷微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "都市永續規劃與管理微學程": {
+      "name": "都市永續規劃與管理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531151943802.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "都市永續規劃與管理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "運輸管理微學程": {
+      "name": "運輸管理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220104047466.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "運輸管理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "音場技術與情境感受微學程_自113年2月1日起停止受理申請修讀學程": {
+      "name": "音場技術與情境感受微學程  (★自113年2月1日起停止受理申請修讀學程)",
+      "link": "http://140.117.153.69/ctdr/files/20241224152412430.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "音場技術與情境感受微學程_自113年2月1日起停止受理申請修讀學程_115-1.pdf",
+      "status": "pending"
+    },
+    "沉浸式體驗內容應用微學程_自113年2月1日起停止受理申請修讀學程": {
+      "name": "沉浸式體驗內容應用微學程  (★自113年2月1日起停止受理申請修讀學程)",
+      "link": "http://140.117.153.69/ctdr/files/20241224152445594.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "沉浸式體驗內容應用微學程_自113年2月1日起停止受理申請修讀學程_115-1.pdf",
+      "status": "pending"
+    },
+    "半導體物理與先進元件分析微學程": {
+      "name": "半導體物理與先進元件分析微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531150417693.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "半導體物理與先進元件分析微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "地方創生與區域治理微學程": {
+      "name": "地方創生與區域治理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224152518502.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "地方創生與區域治理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "永續管理微學程": {
+      "name": "永續管理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145544855.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "永續管理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧商業數據分析與創新微學程_原_商業數據分析與創新微學程": {
+      "name": "智慧商業數據分析與創新微學程(原：商業數據分析與創新微學程)",
+      "link": "http://140.117.153.69/ctdr/files/20251223144953380.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧商業數據分析與創新微學程_原_商業數據分析與創新微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧金融數據分析與創新微學程_原_金融數據分析與創新微學程": {
+      "name": "智慧金融數據分析與創新微學程(原：金融數據分析與創新微學程)",
+      "link": "http://140.117.153.69/ctdr/files/20251223144928987.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧金融數據分析與創新微學程_原_金融數據分析與創新微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "實踐環境教育微學程_自115年8月1日起停開": {
+      "name": "實踐環境教育微學程 (★自115年8月1日起停開)",
+      "link": "http://140.117.153.69/ctdr/files/20250527103229309.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "實踐環境教育微學程_自115年8月1日起停開_115-1.pdf",
+      "status": "pending"
+    },
+    "熱帶海洋微學程": {
+      "name": "熱帶海洋微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220101734340.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "熱帶海洋微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "公共事務與企業社會責任微學程": {
+      "name": "公共事務與企業社會責任微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102308907.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "公共事務與企業社會責任微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "公民參與微學程": {
+      "name": "公民參與微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531151032175.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "公民參與微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "飲食文化微學程": {
+      "name": "飲食文化微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223150318315.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "飲食文化微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "生物技術微學程": {
+      "name": "生物技術微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102033883.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "生物技術微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋天然物微學程": {
+      "name": "海洋天然物微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102800928.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋天然物微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋生物資源與實務應用微學程": {
+      "name": "海洋生物資源與實務應用微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153101404.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋生物資源與實務應用微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋微生物及應用推廣微學程": {
+      "name": "海洋微生物及應用推廣微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153124290.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋微生物及應用推廣微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "看見臺灣海岸微學程": {
+      "name": "看見臺灣海岸微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223150354392.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "看見臺灣海岸微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "綠色港市微學程": {
+      "name": "綠色港市微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220104258927.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "綠色港市微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧港埠微學程": {
+      "name": "智慧港埠微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220104231460.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧港埠微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "台日跨文化微學程": {
+      "name": "台日跨文化微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223150250208.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "台日跨文化微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "地方敘事與文化設計微學程": {
+      "name": "地方敘事與文化設計微學程",
+      "link": "http://140.117.153.69/ctdr/files/20230612091549541.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "地方敘事與文化設計微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "創新創業微學程": {
+      "name": "創新創業微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101343574.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "創新創業微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧製造聯網微學程": {
+      "name": "智慧製造聯網微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153220870.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧製造聯網微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "製造與大數據分析微學程": {
+      "name": "製造與大數據分析微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220101351456.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "製造與大數據分析微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "音樂應用與高齡友善多元性微學程": {
+      "name": "音樂應用與高齡友善多元性微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153240194.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "音樂應用與高齡友善多元性微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "性別與管理微學程": {
+      "name": "性別與管理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20230607161239853.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "性別與管理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "性別與社會微學程": {
+      "name": "性別與社會微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531145442671.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "性別與社會微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "機器學習與應用微學程": {
+      "name": "機器學習與應用微學程",
+      "link": "http://140.117.153.69/ctdr/files/20230823105631190.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "機器學習與應用微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "基礎醫學數位微學程": {
+      "name": "基礎醫學數位微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145308215.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "基礎醫學數位微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "台灣文化英語微學程_Micro_Program_of_Taiwanese_Culture_in_English_全英語學程_Program_Taught_in_English": {
+      "name": "台灣文化英語微學程 Micro-Program of Taiwanese Culture in English【全英語學程】(Program Taught in English)",
+      "link": "http://140.117.153.69/ctdr/files/20250527100810607.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "台灣文化英語微學程_Micro_Program_of_Taiwanese_Culture_in_English_全英語學程_Program_Taught_in_English_115-1.pdf",
+      "status": "pending"
+    },
+    "醫師科學家微學程_自115年8月1日起停開": {
+      "name": "醫師科學家微學程 (★自115年8月1日起停開)",
+      "link": "http://140.117.153.69/ctdr/files/20231220104622316.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "醫師科學家微學程_自115年8月1日起停開_115-1.pdf",
+      "status": "pending"
+    },
+    "政經大數據分析微學程": {
+      "name": "政經大數據分析微學程",
+      "link": "http://140.117.153.69/ctdr/files/2025122314590281.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "政經大數據分析微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "醫師工程師微學程_自115年8月1日起停開": {
+      "name": "醫師工程師微學程 (★自115年8月1日起停開)",
+      "link": "http://140.117.153.69/ctdr/files/20240531150910926.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "醫師工程師微學程_自115年8月1日起停開_115-1.pdf",
+      "status": "pending"
+    },
+    "跨文化人文思潮與美學微學程": {
+      "name": "跨文化人文思潮與美學微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145454691.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "跨文化人文思潮與美學微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "生態想想微學程": {
+      "name": "生態想想微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531150714127.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "生態想想微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "自然生物資產微學程": {
+      "name": "自然生物資產微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145055508.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "自然生物資產微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "STREAM_永續發展培力微學程": {
+      "name": "STREAM 永續發展培力微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531151425929.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "STREAM_永續發展培力微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "國際漢學微學程": {
+      "name": "國際漢學微學程",
+      "link": "http://140.117.153.69/ctdr/files/20230607160709847.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "國際漢學微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "數據科學微學程": {
+      "name": "數據科學微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531152054658.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "數據科學微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "印象海味微學程": {
+      "name": "印象海味微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153738157.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "印象海味微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "科技與環境英語微學程_English_Micro_module_Science_Technology_and_the_Environment_全英語學程_Program_Taught_in_English": {
+      "name": "科技與環境英語微學程 English Micro-module: Science, Technology and the Environment 【全英語學程】(Program Taught in English)",
+      "link": "http://140.117.153.69/ctdr/files/20250527101113707.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "科技與環境英語微學程_English_Micro_module_Science_Technology_and_the_Environment_全英語學程_Program_Taught_in_English_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧長照微學程": {
+      "name": "智慧長照微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153814770.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧長照微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "都市文化與地景微學程": {
+      "name": "都市文化與地景微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145140867.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "都市文化與地景微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "環境_社會及公司治理微學程": {
+      "name": "環境、社會及公司治理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153835479.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "環境_社會及公司治理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "工業污染防治及減排微學程": {
+      "name": "工業污染防治及減排微學程",
+      "link": "http://140.117.153.69/ctdr/files/20230607160229874.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "工業污染防治及減排微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "公共交通行動服務微學程": {
+      "name": "公共交通行動服務微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220103906201.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "公共交通行動服務微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "碳流資訊盤查與低碳設計微學程": {
+      "name": "碳流資訊盤查與低碳設計微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224153956832.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "碳流資訊盤查與低碳設計微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "地方發展與永續農業微學程": {
+      "name": "地方發展與永續農業微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527101755185.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "地方發展與永續農業微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "全民國防微學程": {
+      "name": "全民國防微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145806212.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "全民國防微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "太空科技微學程": {
+      "name": "太空科技微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224154041475.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "太空科技微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "矽光子微學程": {
+      "name": "矽光子微學程",
+      "link": "http://140.117.153.69/ctdr/files/20231220105629170.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "矽光子微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "生物資訊與演化生態微學程": {
+      "name": "生物資訊與演化生態微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531140148443.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "生物資訊與演化生態微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "探索海洋國家公園微學程": {
+      "name": "探索海洋國家公園微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223145634920.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "探索海洋國家公園微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "國際素養微學程": {
+      "name": "國際素養微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223150035387.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "國際素養微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "淨零轉型微學程": {
+      "name": "淨零轉型微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527102457902.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "淨零轉型微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "計算物理及人工智慧微學程": {
+      "name": "計算物理及人工智慧微學程",
+      "link": "http://140.117.153.69/ctdr/files/20241224154119174.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "計算物理及人工智慧微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "量子材料微學程": {
+      "name": "量子材料微學程",
+      "link": "http://140.117.153.69/ctdr/files/20240531141847506.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "量子材料微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "材料結構性質微學程": {
+      "name": "材料結構性質微學程",
+      "link": "http://140.117.153.69/ctdr/files/202412241442541.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "材料結構性質微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "生成式AI_人工智慧_素養微學程": {
+      "name": "生成式AI(人工智慧)素養微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223150018269.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "生成式AI_人工智慧_素養微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "海洋永續發展產業科技微學程": {
+      "name": "海洋永續發展產業科技微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527095013803.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "海洋永續發展產業科技微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "全球半導體經營管理微學程": {
+      "name": "全球半導體經營管理微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527095313349.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "全球半導體經營管理微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "社會情緒學習與內在永續發展微學程": {
+      "name": "社會情緒學習與內在永續發展微學程",
+      "link": "http://140.117.153.69/ctdr/files/20250527095504594.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "社會情緒學習與內在永續發展微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "智慧高齡生活微學程": {
+      "name": "智慧高齡生活微學程",
+      "link": "http://140.117.153.69/ctdr/files/20251223144646497.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "智慧高齡生活微學程_115-1.pdf",
+      "status": "pending"
+    },
+    "全球南方研究微學程": {
+      "name": "全球南方研究微學程",
+      "link": "http://140.117.153.69/ctdr/files/20260421102012373.pdf",
+      "lastCheckedAt": "2026-05-02T06:18:21.856855+00:00",
+      "fileSize": 0,
+      "filename": "全球南方研究微學程_115-1.pdf",
+      "status": "pending"
+    }
+  }
+}
