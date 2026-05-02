@@ -79,8 +79,8 @@ def convert_with_llm(
         print("Error: LLM_API_KEY or OPENAI_API_KEY environment variable not set", file=sys.stderr)
         sys.exit(1)
 
-    model = model or os.environ.get("LLM_MODEL", "z-ai/glm-5.1")
-    base_url = base_url or os.environ.get("LLM_BASE_URL", "https://integrate.api.nvidia.com/v1")
+    model = model or os.environ.get("LLM_MODEL") or "z-ai/glm-5.1"
+    base_url = base_url or os.environ.get("LLM_BASE_URL") or "https://integrate.api.nvidia.com/v1"
 
     from openai import OpenAI
 
