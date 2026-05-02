@@ -9,6 +9,27 @@ on:
       - "program-rule-converter/src/**"
       - ".github/workflows/convert-program-rules.yml"
   workflow_dispatch:
+    inputs:
+      max_update:
+        description: 'Maximum PDFs to download/update (預設 5)'
+        required: false
+        default: '5'
+        type: string
+      llm_base_url:
+        description: 'LLM API Base URL (留空則使用預設或 Secret)'
+        required: false
+        default: ''
+        type: string
+      llm_model:
+        description: 'LLM Model (留空則使用預設或 Secret)'
+        required: false
+        default: ''
+        type: string
+      llm_api_key:
+        description: 'LLM API Key (留空則使用 Secret)'
+        required: false
+        default: ''
+        type: string
 
 defaults:
   run:
@@ -37,51 +58,80 @@ jobs:
 
       - name: Download PDFs (incremental)
         env:
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          INPUT_KEY: ${{ inputs.llm_api_key }}
+          SECRET_KEY: ${{ secrets.LLM_API_KEY }}
         run: |
-          python 學程.py --download
+          MAX_UPDATE="${{ inputs.max_update }}"
+          if [ -z "$MAX_UPDATE" ]; then
+            MAX_UPDATE="5"
+          fi
+          export LLM_API_KEY="${INPUT_KEY:-$SECRET_KEY}"
+          python 學程.py --download --max-update "$MAX_UPDATE"
 
       - name: Extract PDFs
         run: |
           mkdir -p data/extracted/raw
-          for pdf in data/pdfs/*.pdf; do
-            base=$(basename "$pdf" .pdf)
-            python scripts/extract_pdf.py "$pdf" "data/extracted/raw/${base}.raw.json"
-          done
+          if [ -f data/updated_basenames.txt ]; then
+            while IFS= read -r base || [ -n "$base" ]; do
+              if [ -n "$base" ]; then
+                echo "Extracting: $base"
+                python scripts/extract_pdf.py "data/pdfs/${base}.pdf" "data/extracted/raw/${base}.raw.json"
+              fi
+            done < data/updated_basenames.txt
+          fi
 
       - name: Convert with LLM
         env:
-          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
-          LLM_MODEL: ${{ secrets.LLM_MODEL }}
-          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          INPUT_KEY: ${{ inputs.llm_api_key }}
+          INPUT_MODEL: ${{ inputs.llm_model }}
+          INPUT_BASE_URL: ${{ inputs.llm_base_url }}
+          SECRET_KEY: ${{ secrets.LLM_API_KEY }}
+          SECRET_MODEL: ${{ secrets.LLM_MODEL }}
+          SECRET_BASE_URL: ${{ secrets.LLM_BASE_URL }}
         run: |
+          export LLM_API_KEY="${INPUT_KEY:-$SECRET_KEY}"
+          export LLM_MODEL="${INPUT_MODEL:-$SECRET_MODEL}"
+          export LLM_BASE_URL="${INPUT_BASE_URL:-$SECRET_BASE_URL}"
+
           mkdir -p data/extracted/structured
-          for raw in data/extracted/raw/*.raw.json; do
-            base=$(basename "$raw" .raw.json)
-            python scripts/convert_with_llm.py "$raw" "data/extracted/structured/${base}.extracted.json"
-          done
+          if [ -f data/updated_basenames.txt ]; then
+            while IFS= read -r base || [ -n "$base" ]; do
+              if [ -n "$base" ]; then
+                echo "Converting: $base"
+                python scripts/convert_with_llm.py "data/extracted/raw/${base}.raw.json" "data/extracted/structured/${base}.extracted.json"
+              fi
+            done < data/updated_basenames.txt
+          fi
 
       - name: Normalize rules
         run: |
           mkdir -p data/rules/generated
-          for extracted in data/extracted/structured/*.extracted.json; do
-            base=$(basename "$extracted" .extracted.json)
-            python scripts/normalize_rules.py "$extracted" "data/rules/generated/${base}.generated.json"
-          done
+          if [ -f data/updated_basenames.txt ]; then
+            while IFS= read -r base || [ -n "$base" ]; do
+              if [ -n "$base" ]; then
+                echo "Normalizing: $base"
+                python scripts/normalize_rules.py "data/extracted/structured/${base}.extracted.json" "data/rules/generated/${base}.generated.json"
+              fi
+            done < data/updated_basenames.txt
+          fi
 
       - name: Apply overrides
         run: |
           mkdir -p data/rules/final
-          for generated in data/rules/generated/*.generated.json; do
-            base=$(basename "$generated" .generated.json)
-            override="data/overrides/${base}.json"
-            output="data/rules/final/${base}.json"
-            if [ -f "$override" ]; then
-              python scripts/apply_overrides.py "$generated" "$override" "$output"
-            else
-              cp "$generated" "$output"
-            fi
-          done
+          if [ -f data/updated_basenames.txt ]; then
+            while IFS= read -r base || [ -n "$base" ]; do
+              if [ -n "$base" ]; then
+                echo "Applying overrides: $base"
+                override="data/overrides/${base}.json"
+                output="data/rules/final/${base}.json"
+                if [ -f "$override" ]; then
+                  python scripts/apply_overrides.py "data/rules/generated/${base}.generated.json" "$override" "$output"
+                else
+                  cp "data/rules/generated/${base}.generated.json" "$output"
+                fi
+              fi
+            done < data/updated_basenames.txt
+          fi
 
       - name: Validate schema
         run: |
