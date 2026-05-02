@@ -9,6 +9,7 @@ import argparse
 import json
 import os
 import sys
+import jsonschema
 
 
 LLM_SYSTEM_PROMPT = """你是一個學分學程 PDF 課程表資料抽取器。
@@ -129,8 +130,6 @@ def convert_with_llm(
 
             # Validate against schema if available
             if os.path.exists(schema_path):
-                import jsonschema
-
                 with open(schema_path, "r", encoding="utf-8") as sf:
                     schema = json.load(sf)
                 jsonschema.validate(result, schema)
