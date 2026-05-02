@@ -136,13 +136,17 @@ jobs:
       - name: Validate schema
         run: |
           for rule in data/rules/final/*.json; do
-            python scripts/validate_schema.py schemas/program-rule.schema.json "$rule"
+            if [ -f "$rule" ]; then
+              python scripts/validate_schema.py schemas/program-rule.schema.json "$rule"
+            fi
           done
 
       - name: Validate business rules
         run: |
           for rule in data/rules/final/*.json; do
-            python scripts/validate_rules.py "$rule"
+            if [ -f "$rule" ]; then
+              python scripts/validate_rules.py "$rule"
+            fi
           done
 
       - name: Run tests
@@ -153,11 +157,13 @@ jobs:
         run: |
           mkdir -p reports
           for final in data/rules/final/*.json; do
-            base=$(basename "$final" .json)
-            approved="data/rules/approved/${base}.json"
-            report="reports/${base}.diff.md"
-            if [ -f "$approved" ]; then
-              python scripts/diff_rules.py "$approved" "$final" "$report"
+            if [ -f "$final" ]; then
+              base=$(basename "$final" .json)
+              approved="data/rules/approved/${base}.json"
+              report="reports/${base}.diff.md"
+              if [ -f "$approved" ]; then
+                python scripts/diff_rules.py "$approved" "$final" "$report"
+              fi
             fi
           done
 
