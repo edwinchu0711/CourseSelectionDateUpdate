@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -r program-rule-converter/requirements.txt
 
       - name: Download PDFs (incremental)
         env:
