@@ -40,6 +40,33 @@ RULES_FILE = Path(__file__).parent / "rules" / "rules.json"
 # ── 全域鎖（保護 programs 列表與檔案寫入）────────────────────────────────────
 _programs_lock = threading.Lock()
 
+# ── 速率限制器（確保不超過 API 呼叫頻率限制）────────────────────────────────
+class RateLimiter:
+    def __init__(self, max_requests: int, period: float):
+        self.max_requests = max_requests
+        self.period = period
+        self.timestamps = []
+        self.cond = threading.Condition()
+
+    def wait(self):
+        with self.cond:
+            while True:
+                now = time.time()
+                # 移除已經超過時間窗口的紀錄
+                self.timestamps = [t for t in self.timestamps if now - t < self.period]
+                
+                if len(self.timestamps) < self.max_requests:
+                    self.timestamps.append(time.time())
+                    break
+                else:
+                    # 等待直到最早的一個請求移出時間窗口
+                    sleep_time = self.period - (now - self.timestamps[0])
+                    if sleep_time > 0:
+                        self.cond.wait(timeout=sleep_time)
+
+# 限制每分鐘 40 次有效請求
+_api_rate_limiter = RateLimiter(max_requests=40, period=60.0)
+
 # ── 印出鎖（避免多執行緒輸出交錯）───────────────────────────────────────────
 _print_lock = threading.Lock()
 
@@ -266,6 +293,7 @@ def convert_file(
 
     while consecutive_errors < max_retries:
         try:
+            _api_rate_limiter.wait()  # 等待直到符合速率限制
             response = client.chat.completions.create(
                 model=model,
                 messages=[
@@ -364,6 +392,32 @@ def process_file(
     """
     tprint(f"\n[{index}/{total}] 🗂  {file_path.name}")
 
+    # ── 在呼叫 API 前，利用檔名先判斷是否已存在於 rules.json 中 ──
+    filename = file_path.stem
+    match = re.match(r"^(\d{3})-(\d)-", filename)
+    if match:
+        year = int(match.group(1))
+        sem = int(match.group(2))
+        hint = extract_program_hint(filename)
+        
+        is_duplicate = False
+        with _programs_lock:
+            for p in programs:
+                p_name = p.get("program_name", "")
+                if hint == p_name:
+                    for v in p.get("versions", []):
+                        if v.get("academic_year") == year and v.get("semester") == sem:
+                            is_duplicate = True
+                            break
+                if is_duplicate:
+                    break
+
+        if is_duplicate:
+            with _programs_lock:
+                counters["skipped"] += 1
+            tprint(f"  ⏭️  [{index}/{total}] 已存在 {year}-{sem} {hint}，跳過 API 呼叫")
+            return
+
     data = convert_file(
         str(file_path), client, model,
         max_retries=5, retry_delay=retry_delay,
@@ -405,8 +459,8 @@ def main():
     parser.add_argument("--files",       nargs="*", help="指定要轉換的 TXT 檔案")
     parser.add_argument("--all",         action="store_true", help="轉換 data/ 下所有 TXT")
     parser.add_argument(
-        "--workers", type=int, default=4,
-        help="最大並行執行緒數（預設：4）"
+        "--workers", type=int, default=6,
+        help="最大並行執行緒數（預設：6）"
     )
     parser.add_argument(
         "--retry-delay", type=float, default=10.0,
