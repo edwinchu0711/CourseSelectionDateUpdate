@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>學程證書資格查詢</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f0f2f5; color: #1a1a2e; line-height: 1.6; }
+.container { max-width: 960px; margin: 0 auto; padding: 20px; }
+h1 { text-align: center; color: #16213e; margin-bottom: 24px; font-size: 1.8em; }
+.card { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+.card h2 { font-size: 1.1em; color: #0f3460; margin-bottom: 16px; border-bottom: 2px solid #e94560; padding-bottom: 8px; }
+.form-row { display: flex; gap: 16px; margin-bottom: 12px; flex-wrap: wrap; align-items: center; }
+.form-row label { font-weight: 600; min-width: 100px; color: #333; }
+.form-row select, .form-row input[type="text"] { flex: 1; padding: 8px 12px; border: 2px solid #ddd; border-radius: 8px; font-size: 15px; min-width: 180px; }
+.form-row select:focus, .form-row input:focus { outline: none; border-color: #e94560; }
+.btn { padding: 10px 24px; border: none; border-radius: 8px; font-size: 15px; cursor: pointer; font-weight: 600; transition: all 0.2s; }
+.btn-primary { background: #e94560; color: #fff; }
+.btn-primary:hover { background: #c81e45; transform: translateY(-1px); }
+.btn-add { background: #28a745; color: #fff; font-size: 14px; padding: 6px 16px; }
+.btn-add:hover { background: #218838; }
+.btn-remove { background: none; color: #e94560; font-weight: bold; font-size: 18px; cursor: pointer; border: none; padding: 4px 8px; line-height: 1; }
+.btn-remove:hover { color: #c81e45; }
+.course-entry { display: flex; gap: 8px; margin-bottom: 8px; align-items: center; }
+.course-entry input { flex: 1; }
+.course-entry input.dept-input { max-width: 120px; }
+.course-entry .dept-label { font-size: 13px; color: #666; min-width: 30px; }
+#courses-list { min-height: 20px; }
+.result { margin-top: 20px; }
+.result-header { padding: 16px 20px; border-radius: 12px 12px 0 0; font-size: 1.2em; font-weight: 700; }
+.result-header.pass { background: #d4edda; color: #155724; }
+.result-header.fail { background: #f8d7da; color: #721c24; }
+.result-body { background: #fff; border: 1px solid #ddd; border-top: none; border-radius: 0 0 12px 12px; padding: 20px; }
+.group { margin-bottom: 20px; }
+.group-title { font-weight: 700; font-size: 1em; color: #0f3460; margin-bottom: 8px; display: flex; justify-content: space-between; align-items: center; }
+.group-title .credits { font-size: 0.85em; color: #666; font-weight: 400; }
+.subject { padding: 8px 12px; margin: 4px 0; border-radius: 6px; font-size: 14px; }
+.subject.pass { background: #e8f8e8; border-left: 4px solid #28a745; }
+.subject.fail { background: #fff5f5; border-left: 4px solid #dc3545; }
+.subject.waiver-pass { background: #fff3cd; border-left: 4px solid #ffc107; }
+.subject .name { font-weight: 600; }
+.subject .detail { color: #666; font-size: 0.85em; margin-top: 2px; }
+.subject .alternatives { color: #888; font-size: 0.85em; margin-top: 2px; }
+.tag-badge { display: inline-block; background: #fff3cd; color: #856404; font-size: 0.75em; padding: 2px 6px; border-radius: 4px; margin-left: 6px; font-weight: 600; }
+.waiver-toggle { display: flex; align-items: center; gap: 8px; margin: 6px 0; padding: 8px 12px; background: #fff8e1; border: 1px solid #ffca28; border-radius: 8px; }
+.waiver-toggle label { cursor: pointer; font-size: 14px; color: #856404; }
+.waiver-toggle input[type="checkbox"] { accent-color: #ffc107; width: 18px; height: 18px; }
+.waiver-note { font-size: 0.8em; color: #856404; margin-top: 2px; }
+.summary-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
+.summary-row:last-child { border-bottom: none; }
+.summary-label { color: #666; }
+.summary-value { font-weight: 600; }
+.tag-check { margin-top: 8px; padding: 8px 12px; border-radius: 8px; }
+.tag-check.met { background: #d4edda; color: #155724; }
+.tag-check.unmet { background: #f8d7da; color: #721c24; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🎓 學程證書資格查詢</h1>
+
+<div class="card">
+<h2>📋 基本資料</h2>
+<div class="form-row">
+  <label>學程</label>
+  <select id="program-select"><option value="">-- 載入中 --</option></select>
+</div>
+<div class="form-row">
+  <label>學年度</label>
+  <select id="year-select"><option value="">-- 先選學程 --</option></select>
+</div>
+<div class="form-row">
+  <label>你的科系</label>
+  <input type="text" id="dept-input" placeholder="例：電機系">
+</div>
+<div class="form-row">
+  <label>雙主修科系</label>
+  <input type="text" id="double-major-input" placeholder="選填，例：資工系（多個用逗號分隔）">
+</div>
+<div class="form-row">
+  <label>輔系科系</label>
+  <input type="text" id="minor-input" placeholder="選填，例：企管系（多個用逗號分隔）">
+</div>
+</div>
+
+<div class="card">
+<h2>📚 已修課程</h2>
+<p style="font-size:13px; color:#666; margin-bottom:12px;">請輸入課程名稱和開課系所，開課系所會影響外系學分計算。</p>
+<div id="courses-list"></div>
+<div class="course-entry" style="margin-top:8px;">
+  <span class="dept-label">課程</span>
+  <input type="text" id="course-name-input" placeholder="課程名稱" onkeydown="if(event.key==='Enter')addCourse()">
+  <span class="dept-label">開課系所</span>
+  <input type="text" id="course-dept-input" class="dept-input" placeholder="開課系所" onkeydown="if(event.key==='Enter')addCourse()">
+  <button class="btn btn-add" onclick="addCourse()">新增</button>
+</div>
+</div>
+
+<div style="text-align:center; margin: 20px 0;">
+<button class="btn btn-primary" onclick="handleCheckEligibility()" style="font-size:1.1em; padding: 12px 40px;">🔍 查詢資格</button>
+</div>
+
+<div id="result-container" class="result" style="display:none;"></div>
+</div>
+
+<script src="checker.js"></script>
+<script>
+// Save reference to checker.js function before it gets shadowed
+const checkEligibilityJS = window.checkEligibility;
+
+let rulesData = [];      // all programs from rules.json
+let currentResult = null;
+let courseList = []; // [{name, department}]
+
+async function loadPrograms() {
+  try {
+    const res = await fetch('rules/rules.json');
+    rulesData = await res.json();
+    const sel = document.getElementById('program-select');
+    sel.innerHTML = '<option value="">-- 請選擇學程 --</option>';
+    rulesData.forEach(p => {
+      const opt = document.createElement('option');
+      opt.value = p.program_id;
+      opt.textContent = p.program_name;
+      sel.appendChild(opt);
+    });
+    sel.addEventListener('change', updateYears);
+  } catch(e) {
+    console.error('Failed to load programs:', e);
+    document.getElementById('program-select').innerHTML = '<option value="">-- 載入失敗 --</option>';
+  }
+}
+
+function loadProgramData(programId) {
+  return rulesData.find(p => p.program_id === programId) || null;
+}
+
+function updateYears() {
+  const programId = document.getElementById('program-select').value;
+  const sel = document.getElementById('year-select');
+  sel.innerHTML = '';
+  if (!programId) { sel.innerHTML = '<option value="">-- 先選學程 --</option>'; return; }
+  const prog = rulesData.find(p => p.program_id === programId);
+  if (!prog) return;
+  const years = [...new Set(prog.versions.map(v => v.academic_year))].sort((a, b) => a - b);
+  sel.innerHTML = '<option value="">-- 請選擇 --</option>';
+  years.forEach(y => {
+    const opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = `${y} 學年度`;
+    sel.appendChild(opt);
+  });
+  if (years.length > 0) sel.value = years[years.length - 1];
+}
+
+function addCourse() {
+  const nameInput = document.getElementById('course-name-input');
+  const deptInput = document.getElementById('course-dept-input');
+  const name = nameInput.value.trim();
+  const dept = deptInput.value.trim();
+  if (!name) return;
+  courseList.push({name, department: dept});
+  renderCourses();
+  nameInput.value = '';
+  deptInput.value = '';
+  nameInput.focus();
+}
+
+function removeCourse(index) {
+  courseList.splice(index, 1);
+  renderCourses();
+}
+
+function renderCourses() {
+  const container = document.getElementById('courses-list');
+  container.innerHTML = '';
+  courseList.forEach((c, i) => {
+    const div = document.createElement('div');
+    div.style.cssText = 'display:flex; align-items:center; gap:8px; padding:4px 0;';
+    div.innerHTML = `
+      <span style="background:#e8f4f8; border:1px solid #b3d9e8; border-radius:20px; padding:4px 14px; font-size:14px;">
+        ${c.name}${c.department ? ` <span style="color:#666; font-size:12px;">(${c.department})</span>` : ''}
+        <button class="btn-remove" onclick="removeCourse(${i})">✕</button>
+      </span>`;
+    container.appendChild(div);
+  });
+}
+
+async function handleCheckEligibility() {
+  const programId = document.getElementById('program-select').value;
+  const year = document.getElementById('year-select').value;
+  const dept = document.getElementById('dept-input').value.trim();
+  const doubleMajor = document.getElementById('double-major-input').value.trim();
+  const minor = document.getElementById('minor-input').value.trim();
+
+  if (!programId || !year || !dept) {
+    alert('請選擇學程、學年度並輸入你的科系');
+    return;
+  }
+
+  const container = document.getElementById('result-container');
+  container.style.display = 'block';
+  container.innerHTML = '<div style="text-align:center; padding:40px; color:#888;">⏳ 查詢中...</div>';
+
+  // Load program data
+  const program = loadProgramData(programId);
+  if (!program) {
+    container.innerHTML = '<div class="card"><p style="color:red;">無法載入學程資料</p></div>';
+    return;
+  }
+
+  // Collect waiver toggles
+  const waivers = {};
+  document.querySelectorAll('.waiver-check:checked').forEach(cb => {
+    const subject = cb.dataset.subject;
+    const waiverId = cb.dataset.waiverId;
+    if (!waivers[subject]) waivers[subject] = [];
+    waivers[subject].push(waiverId);
+  });
+
+  const doubleMajorDepts = doubleMajor ? doubleMajor.split(',').map(d => d.trim()).filter(d => d) : [];
+  const minorDepts = minor ? minor.split(',').map(d => d.trim()).filter(d => d) : [];
+
+  // Use JS checker directly (no server call)
+  currentResult = checkEligibilityJS(
+    program,
+    parseInt(year),
+    null,   // semester
+    dept,
+    courseList,
+    waivers,
+    doubleMajorDepts,
+    minorDepts
+  );
+
+  renderResult(currentResult);
+}
+
+function renderResult(r) {
+  const container = document.getElementById('result-container');
+  if (r.error) {
+    container.innerHTML = `<div class="card"><p style="color:red;">${r.error}</p></div>`;
+    return;
+  }
+
+  const isPass = r.eligible;
+  let html = `
+    <div class="result-header ${isPass ? 'pass' : 'fail'}">
+      ${isPass ? '✅' : '❌'} ${r.summary}
+    </div>
+    <div class="result-body">
+  `;
+
+  // Own departments info
+  if (r.own_departments && r.own_departments.length > 1) {
+    html += `<div style="background:#e8f4f8; padding:8px 12px; border-radius:8px; margin-bottom:12px; font-size:13px;">
+      📋 外系學分計算排除的科系：${r.own_departments.join('、')}
+      <br><span style="color:#666;">（本系 + 雙主修 + 輔系 = 不計入外系學分）</span>
+    </div>`;
+  }
+
+  // Summary stats
+  html += `
+    <div style="margin-bottom:20px;">
+      <div class="summary-row">
+        <span class="summary-label">總學分</span>
+        <span class="summary-value">${r.total_credits_earned} / ${r.total_credits_required}</span>
+      </div>
+      <div class="summary-row">
+        <span class="summary-label">外系學分</span>
+        <span class="summary-value">${r.external_credits_earned} / ${r.external_credits_required}</span>
+      </div>
+    </div>
+  `;
+
+  // Tag requirements (e.g., starred electives)
+  if (r.tag_details && r.tag_details.length > 0) {
+    r.tag_details.forEach(td => {
+      const tagLabel = td.tag === 'starred' ? '＊號選修' : td.tag;
+      html += `<div class="tag-check ${td.met ? 'met' : 'unmet'}">
+        ${td.met ? '✅' : '❌'} ${tagLabel}：${td.earned} / ${td.required} 學分
+      </div>`;
+    });
+  }
+
+  // Groups
+  r.groups.forEach(group => {
+    const statusIcon = group.is_met ? '✅' : '❌';
+    const ruleText = group.selection_rule.type === 'all' ? '全部必修'
+      : group.selection_rule.type === 'pick_n' ? `選 ${group.selection_rule.pick} 科`
+      : `至少 ${group.credits_required} 學分`;
+
+    html += `
+      <div class="group">
+        <div class="group-title">
+          <span>${statusIcon} ${group.label}</span>
+          <span class="credits">${ruleText} — ${group.credits_earned}/${group.credits_required} 學分</span>
+        </div>
+    `;
+
+    // Taken subjects
+    (group.subjects_taken || []).forEach(s => {
+      const cls = s.satisfied_type === 'waiver' ? 'waiver-pass' : 'pass';
+      const typeLabel = s.satisfied_type === 'waiver' ? '📌 抵免' : '✅';
+      const deptInfo = s.department && s.department.length > 0 ? ` — 開課：${s.department.join('、')}` : ' — 開課：任何系所';
+      const ownDeptLabel = s.is_own_dept ? '' : ' <span style="color:#e94560; font-size:0.8em;">(外系)</span>';
+      const tags = s.tags ? s.tags.map(t => t === 'starred' ? '<span class="tag-badge">＊</span>' : '').join('') : '';
+
+      html += `
+        <div class="subject ${cls}">
+          <div class="name">${typeLabel} ${s.subject}${tags}</div>
+          <div class="detail">以「${s.satisfied_by}」滿足 — ${s.credits} 學分${deptInfo}${ownDeptLabel}</div>
+          ${s.waiver_note ? `<div class="waiver-note">${s.waiver_note}</div>` : ''}
+        </div>
+      `;
+    });
+
+    // Missing subjects with waiver options
+    (group.subjects_missing || []).forEach(s => {
+      const tags = s.tags ? s.tags.map(t => t === 'starred' ? '<span class="tag-badge">＊</span>' : '').join('') : '';
+
+      html += `<div class="subject fail">
+        <div class="name">❌ ${s.subject}${tags}</div>`;
+
+      if (s.alternatives && s.alternatives.length > 0) {
+        const altStr = s.alternatives.length > 6
+          ? s.alternatives.slice(0, 6).join('、') + ` 等${s.alternatives.length}門`
+          : s.alternatives.join('、');
+        html += `<div class="alternatives">可修：${altStr}</div>`;
+
+        // Show departments for alternatives if available
+        if (s.alternative_departments) {
+          const deptInfo = [];
+          for (const [altName, depts] of Object.entries(s.alternative_departments)) {
+            if (depts.length > 0) {
+              deptInfo.push(`${altName}(${depts.join('、')})`);
+            } else {
+              deptInfo.push(`${altName}(任何系所)`);
+            }
+          }
+          if (deptInfo.length > 0 && deptInfo.length <= 6) {
+            html += `<div class="alternatives" style="font-size:0.8em; color:#aaa;">開課系所：${deptInfo.join('；')}</div>`;
+          }
+        }
+      }
+
+      // Show department mismatch warnings
+      if (s.department_mismatches && s.department_mismatches.length > 0) {
+        s.department_mismatches.forEach(dm => {
+          const validDepts = dm.valid_depts.length > 0 ? dm.valid_depts.join('、') : '任何系所';
+          html += `<div class="alternatives" style="color:#e94560; font-weight:600;">
+            ⚠️ 你修了「${dm.name}」但開課系所是「${dm.taken_dept}」，僅限${validDepts}開課才計入
+          </div>`;
+        });
+      }
+
+      // Waiver toggle options
+      if (s.waiver_options && s.waiver_options.length > 0) {
+        s.waiver_options.forEach(wo => {
+          const checked = currentResult && currentResult.waivers && currentResult.waivers[s.subject] && currentResult.waivers[s.subject].includes(wo.id) ? 'checked' : '';
+          html += `
+            <div class="waiver-toggle">
+              <input type="checkbox" class="waiver-check" id="${wo.id}"
+                data-subject="${s.subject}" data-waiver-id="${wo.id}" ${checked}>
+              <label for="${wo.id}">
+                📌 抵免：${wo.condition}
+                ${wo.credits_granted ? `（${wo.credits_granted} 學分）` : ''}
+              </label>
+            </div>
+            ${wo.note ? `<div class="waiver-note">${wo.note}</div>` : ''}
+          `;
+        });
+      }
+      html += `</div>`;
+    });
+
+    html += `</div>`;
+  });
+
+  html += `</div>`;
+  container.innerHTML = html;
+}
+
+loadPrograms();
+</script>
+</body>
+</html>

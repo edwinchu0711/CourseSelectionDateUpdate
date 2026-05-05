@@ -1,0 +1,97 @@
+{
+  "programs": [
+    {
+      "id": "accounting",
+      "name": "會計學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        108,
+        113
+      ],
+      "is_discontinued": false,
+      "filename": "accounting.json"
+    },
+    {
+      "id": "ai_mathematics",
+      "name": "人工智慧與數學學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        109,
+        110,
+        112
+      ],
+      "is_discontinued": false,
+      "filename": "ai_mathematics.json"
+    },
+    {
+      "id": "applied_mathematics",
+      "name": "應用數學學程",
+      "name_en": null,
+      "type": "學系(所)專業學程",
+      "years": [
+        105
+      ],
+      "is_discontinued": false,
+      "filename": "applied_mathematics.json"
+    },
+    {
+      "id": "big_data_analytics",
+      "name": "巨量資料分析學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        103
+      ],
+      "is_discontinued": false,
+      "filename": "big_data_analytics.json"
+    },
+    {
+      "id": "japanese_studies",
+      "name": "日本研究學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        114
+      ],
+      "is_discontinued": false,
+      "filename": "japanese_studies.json"
+    },
+    {
+      "id": "semiconductor_device",
+      "name": "半導體元件學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        110,
+        113
+      ],
+      "is_discontinued": false,
+      "filename": "semiconductor_device.json"
+    },
+    {
+      "id": "semiconductor_equipment_engineering",
+      "name": "半導體設備工程學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        113
+      ],
+      "is_discontinued": false,
+      "filename": "semiconductor_equipment_engineering.json"
+    },
+    {
+      "id": "software_engineering",
+      "name": "軟體工程學程",
+      "name_en": null,
+      "type": "學分學程",
+      "years": [
+        113,
+        114
+      ],
+      "is_discontinued": false,
+      "filename": "software_engineering.json"
+    }
+  ]
+}

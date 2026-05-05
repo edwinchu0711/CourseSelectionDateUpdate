@@ -67,7 +67,6 @@ def scrape_nsysu_programs():
                         })
             
             else:
-                # Handle the 4th table (Discontinued Programs)
                 if len(cols) >= 3:
                     raw_names = cols[1].get_text(strip=True)
                     

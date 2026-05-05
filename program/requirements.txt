@@ -1,3 +1,5 @@
 requests
 beautifulsoup4
 google-genai
+llama-cloud>=1.0.0
+python-dotenv

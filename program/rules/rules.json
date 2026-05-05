@@ -1,0 +1,3147 @@
+[
+  {
+    "program_id": "102-2-應用醫學工程學分學程",
+    "program_name": "應用醫學工程學分學程",
+    "versions": [
+      {
+        "academic_year": 102,
+        "semester": 2,
+        "approval_info": "103.5.19 102 學年度第 2 學期學分學程會議通過\n103.6.10 第 140 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "工程數學（一）或（二）",
+                "alternatives": [
+                  {
+                    "name": "工程數學（一）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 0,
+                    "note": "大學部課程"
+                  },
+                  {
+                    "name": "工程數學（二）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 0,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務工程",
+                "alternatives": [
+                  {
+                    "name": "財務工程",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數理統計",
+                "alternatives": [
+                  {
+                    "name": "數理統計",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 14
+            },
+            "subjects": [
+              {
+                "program_subject": "選擇權市場理論與策略",
+                "alternatives": [
+                  {
+                    "name": "選擇權市場理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "投資理論與策略",
+                "alternatives": [
+                  {
+                    "name": "投資理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "證券市場微結構實務",
+                "alternatives": [
+                  {
+                    "name": "證券市場微結構實務",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "金融機構風險管理",
+                "alternatives": [
+                  {
+                    "name": "金融機構風險管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "國際投資組合管理",
+                "alternatives": [
+                  {
+                    "name": "國際投資組合管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "現代投資組合理論與策略",
+                "alternatives": [
+                  {
+                    "name": "現代投資組合理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務經濟學（一）",
+                "alternatives": [
+                  {
+                    "name": "財務經濟學（一）",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計量經濟學（一）",
+                "alternatives": [
+                  {
+                    "name": "計量經濟學（一）",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務經濟理論與實證",
+                "alternatives": [
+                  {
+                    "name": "財務經濟理論與實證",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務時間序列分析",
+                "alternatives": [
+                  {
+                    "name": "財務時間序列分析",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計量經濟學",
+                "alternatives": [
+                  {
+                    "name": "計量經濟學",
+                    "departments": [
+                      "經研所"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 20,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【整合學程】課程規劃至少 20 學分",
+            "【整合學程】學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      },
+      {
+        "academic_year": 105,
+        "semester": 1,
+        "approval_info": "105.11.14 105 學年度第 1 學期學分學程會議通過\n105.12.12 第 150 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 12
+            },
+            "subjects": [
+              {
+                "program_subject": "社會企業商業模式發展與實作",
+                "alternatives": [
+                  {
+                    "name": "社會企業商業模式發展與實作",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程(必選課程)"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創意與創新管理",
+                "alternatives": [
+                  {
+                    "name": "創意與創新管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務管理",
+                "alternatives": [
+                  {
+                    "name": "財務管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程(同名課程可抵)"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創新與實踐",
+                "alternatives": [
+                  {
+                    "name": "創新與實踐",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "行銷研究",
+                "alternatives": [
+                  {
+                    "name": "行銷研究",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創業管理",
+                "alternatives": [
+                  {
+                    "name": "創業管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "行銷管理",
+                "alternatives": [
+                  {
+                    "name": "行銷管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "策略管理",
+                "alternatives": [
+                  {
+                    "name": "策略管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "組織理論與管理",
+                "alternatives": [
+                  {
+                    "name": "組織理論與管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會學",
+                "alternatives": [
+                  {
+                    "name": "社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程(同名課程可抵)"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會政策",
+                "alternatives": [
+                  {
+                    "name": "社會政策",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "發展社會學",
+                "alternatives": [
+                  {
+                    "name": "發展社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創新與創業管理",
+                "alternatives": [
+                  {
+                    "name": "創新與創業管理",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 2,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "社區營造與地區重建",
+                "alternatives": [
+                  {
+                    "name": "社區營造與地區重建",
+                    "departments": [
+                      "公事所"
+                    ],
+                    "credits": 2,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "地區經營管理",
+                "alternatives": [
+                  {
+                    "name": "地區經營管理",
+                    "departments": [
+                      "公事所"
+                    ],
+                    "credits": 2,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "快樂管理",
+                "alternatives": [
+                  {
+                    "name": "快樂管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "倫理、領導與決策",
+                "alternatives": [
+                  {
+                    "name": "倫理、領導與決策",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會調查與研究方法（一）",
+                "alternatives": [
+                  {
+                    "name": "社會調查與研究方法（一）",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會調查與研究方法（二）",
+                "alternatives": [
+                  {
+                    "name": "社會調查與研究方法（二）",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "海洋社區發展與 GIS 應用",
+                "alternatives": [
+                  {
+                    "name": "海洋社區發展與 GIS 應用",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "漁業政策與地方政治",
+                "alternatives": [
+                  {
+                    "name": "漁業政策與地方政治",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "都市社會學",
+                "alternatives": [
+                  {
+                    "name": "都市社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "企業資源規劃系統",
+                "alternatives": [
+                  {
+                    "name": "企業資源規劃系統",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創業達人講座",
+                "alternatives": [
+                  {
+                    "name": "創業達人講座",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 2,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "性別與社會",
+                "alternatives": [
+                  {
+                    "name": "性別與社會",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 2,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "服務學習（三）：財務規劃",
+                "alternatives": [
+                  {
+                    "name": "服務學習（三）：財務規劃",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 1,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "服務學習（三）：服務學習與社會關懷",
+                "alternatives": [
+                  {
+                    "name": "服務學習（三）：服務學習與社會關懷",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 1,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 20,
+          "external_credits": {
+            "min": 6,
+            "description": "學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【整合學程】課程規劃至少 20 學分。",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主。",
+            "「社會企業商業模式發展與實作」為必選課程。自 106 學年度起適用。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "102-2-社會企業創新與創業學程",
+    "program_name": "社會企業創新與創業學程",
+    "versions": [
+      {
+        "academic_year": 102,
+        "semester": 2,
+        "approval_info": "103.5.19 102 學年度第 2 學期學分學程會議通過\n103.6.10 第 140 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "工程數學（一）或（二）",
+                "alternatives": [
+                  {
+                    "name": "工程數學（一）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 0,
+                    "note": "大學部課程"
+                  },
+                  {
+                    "name": "工程數學（二）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 0,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務工程",
+                "alternatives": [
+                  {
+                    "name": "財務工程",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數理統計",
+                "alternatives": [
+                  {
+                    "name": "數理統計",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 14
+            },
+            "subjects": [
+              {
+                "program_subject": "選擇權市場理論與策略",
+                "alternatives": [
+                  {
+                    "name": "選擇權市場理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "投資理論與策略",
+                "alternatives": [
+                  {
+                    "name": "投資理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "證券市場微結構實務",
+                "alternatives": [
+                  {
+                    "name": "證券市場微結構實務",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "金融機構風險管理",
+                "alternatives": [
+                  {
+                    "name": "金融機構風險管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "國際投資組合管理",
+                "alternatives": [
+                  {
+                    "name": "國際投資組合管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "現代投資組合理論與策略",
+                "alternatives": [
+                  {
+                    "name": "現代投資組合理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務經濟學（一）",
+                "alternatives": [
+                  {
+                    "name": "財務經濟學（一）",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計量經濟學（一）",
+                "alternatives": [
+                  {
+                    "name": "計量經濟學（一）",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務經濟理論與實證",
+                "alternatives": [
+                  {
+                    "name": "財務經濟理論與實證",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務時間序列分析",
+                "alternatives": [
+                  {
+                    "name": "財務時間序列分析",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計量經濟學",
+                "alternatives": [
+                  {
+                    "name": "計量經濟學",
+                    "departments": [
+                      "經研所"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 20,
+          "external_credits": {
+            "min": 6,
+            "description": "學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【整合學程】課程規劃至少 20 學分",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "102-2-碩士班財務工程學程",
+    "program_name": "碩士班財務工程學程",
+    "versions": [
+      {
+        "academic_year": 102,
+        "semester": 2,
+        "approval_info": "103.5.19 102 學年度第 2 學期學分學程會議通過；103.6.10 第 140 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "工程數學（一）或（二）",
+                "alternatives": [
+                  {
+                    "name": "工程數學（一）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 0,
+                    "note": "大學部課程"
+                  },
+                  {
+                    "name": "工程數學（二）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 0,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務工程",
+                "alternatives": [
+                  {
+                    "name": "財務工程",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數理統計",
+                "alternatives": [
+                  {
+                    "name": "數理統計",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 14
+            },
+            "subjects": [
+              {
+                "program_subject": "選擇權市場理論與策略",
+                "alternatives": [
+                  {
+                    "name": "選擇權市場理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "投資理論與策略",
+                "alternatives": [
+                  {
+                    "name": "投資理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "證券市場微結構實務",
+                "alternatives": [
+                  {
+                    "name": "證券市場微結構實務",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "金融機構風險管理",
+                "alternatives": [
+                  {
+                    "name": "金融機構風險管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "國際投資組合管理",
+                "alternatives": [
+                  {
+                    "name": "國際投資組合管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "現代投資組合理論與策略",
+                "alternatives": [
+                  {
+                    "name": "現代投資組合理論與策略",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務經濟學（一）",
+                "alternatives": [
+                  {
+                    "name": "財務經濟學（一）",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計量經濟學（一）",
+                "alternatives": [
+                  {
+                    "name": "計量經濟學（一）",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "博士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務經濟理論與實證",
+                "alternatives": [
+                  {
+                    "name": "財務經濟理論與實證",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務時間序列分析",
+                "alternatives": [
+                  {
+                    "name": "財務時間序列分析",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計量經濟學",
+                "alternatives": [
+                  {
+                    "name": "計量經濟學",
+                    "departments": [
+                      "經研所"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 20,
+          "external_credits": {
+            "min": 6,
+            "description": "學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "整合學程課程規劃至少 20 學分",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      },
+      {
+        "academic_year": 105,
+        "semester": 1,
+        "approval_info": "105.11.14 105 學年度第 1 學期學分學程會議通過\n105.12.12 第 150 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 12
+            },
+            "subjects": [
+              {
+                "program_subject": "社會企業商業模式發展與實作",
+                "alternatives": [
+                  {
+                    "name": "社會企業商業模式發展與實作",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程(必選課程)"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創意與創新管理",
+                "alternatives": [
+                  {
+                    "name": "創意與創新管理",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "財務管理",
+                "alternatives": [
+                  {
+                    "name": "財務管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程(同名課程可抵)"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創新與實踐",
+                "alternatives": [
+                  {
+                    "name": "創新與實踐",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "行銷研究",
+                "alternatives": [
+                  {
+                    "name": "行銷研究",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創業管理",
+                "alternatives": [
+                  {
+                    "name": "創業管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "行銷管理",
+                "alternatives": [
+                  {
+                    "name": "行銷管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "策略管理",
+                "alternatives": [
+                  {
+                    "name": "策略管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "組織理論與管理",
+                "alternatives": [
+                  {
+                    "name": "組織理論與管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會學",
+                "alternatives": [
+                  {
+                    "name": "社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程(同名課程可抵)"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會政策",
+                "alternatives": [
+                  {
+                    "name": "社會政策",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "發展社會學",
+                "alternatives": [
+                  {
+                    "name": "發展社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創新與創業管理",
+                "alternatives": [
+                  {
+                    "name": "創新與創業管理",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 2,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "社區營造與地區重建",
+                "alternatives": [
+                  {
+                    "name": "社區營造與地區重建",
+                    "departments": [
+                      "公事所"
+                    ],
+                    "credits": 2,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "地區經營管理",
+                "alternatives": [
+                  {
+                    "name": "地區經營管理",
+                    "departments": [
+                      "公事所"
+                    ],
+                    "credits": 2,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "快樂管理",
+                "alternatives": [
+                  {
+                    "name": "快樂管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "倫理、領導與決策",
+                "alternatives": [
+                  {
+                    "name": "倫理、領導與決策",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會調查與研究方法（一）",
+                "alternatives": [
+                  {
+                    "name": "社會調查與研究方法（一）",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "社會調查與研究方法（二）",
+                "alternatives": [
+                  {
+                    "name": "社會調查與研究方法（二）",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "海洋社區發展與 GIS 應用",
+                "alternatives": [
+                  {
+                    "name": "海洋社區發展與 GIS 應用",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "漁業政策與地方政治",
+                "alternatives": [
+                  {
+                    "name": "漁業政策與地方政治",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "都市社會學",
+                "alternatives": [
+                  {
+                    "name": "都市社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "碩士班課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "企業資源規劃系統",
+                "alternatives": [
+                  {
+                    "name": "企業資源規劃系統",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "創業達人講座",
+                "alternatives": [
+                  {
+                    "name": "創業達人講座",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 2,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "性別與社會",
+                "alternatives": [
+                  {
+                    "name": "性別與社會",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 2,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "服務學習（三）：財務規劃",
+                "alternatives": [
+                  {
+                    "name": "服務學習（三）：財務規劃",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 1,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "服務學習（三）：服務學習與社會關懷",
+                "alternatives": [
+                  {
+                    "name": "服務學習（三）：服務學習與社會關懷",
+                    "departments": [
+                      "通識中心"
+                    ],
+                    "credits": 1,
+                    "note": "大學部課程"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 20,
+          "external_credits": {
+            "min": 6,
+            "description": "學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【整合學程】課程規劃至少 20 學分。",
+            "【整合學程】學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程。",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主。",
+            "「社會企業商業模式發展與實作」為必選課程。自 106 學年度起適用。"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "103-2-巨量資料分析學程",
+    "program_name": "巨量資料分析學程",
+    "versions": [
+      {
+        "academic_year": 103,
+        "semester": 2,
+        "approval_info": "104.5.18 103 學年度第 2 學期學分學程會議通過，104.6.16 第 144 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 12
+            },
+            "subjects": [
+              {
+                "program_subject": "巨量資料導論",
+                "alternatives": [
+                  {
+                    "name": "巨量資料導論",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "統計學(一)",
+                "alternatives": [
+                  {
+                    "name": "統計學(一)",
+                    "departments": [
+                      "資管系",
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資料庫管理/網際網路資料庫/資料庫系統",
+                "alternatives": [
+                  {
+                    "name": "資料庫管理",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部、研究所"
+                  },
+                  {
+                    "name": "網際網路資料庫",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部、研究所"
+                  },
+                  {
+                    "name": "資料庫系統",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部、研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資料結構",
+                "alternatives": [
+                  {
+                    "name": "資料結構",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 15
+            },
+            "subjects": [
+              {
+                "program_subject": "時間序列分析/財務時間序列分析",
+                "alternatives": [
+                  {
+                    "name": "時間序列分析",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  },
+                  {
+                    "name": "財務時間序列分析",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "統計模擬",
+                "alternatives": [
+                  {
+                    "name": "統計模擬",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "迴歸分析",
+                "alternatives": [
+                  {
+                    "name": "迴歸分析",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數值分析(一)/數值分析(二)",
+                "alternatives": [
+                  {
+                    "name": "數值分析(一)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  },
+                  {
+                    "name": "數值分析(二)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "程式設計",
+                "alternatives": [
+                  {
+                    "name": "程式設計",
+                    "departments": [
+                      "資管系",
+                      "應數系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "矩陣計算",
+                "alternatives": [
+                  {
+                    "name": "矩陣計算",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "稀疏矩陣",
+                "alternatives": [
+                  {
+                    "name": "稀疏矩陣",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "平行計算",
+                "alternatives": [
+                  {
+                    "name": "平行計算",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "分散式計算系統",
+                "alternatives": [
+                  {
+                    "name": "分散式計算系統",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "機率學/機率論(一)/機率論(二)",
+                "alternatives": [
+                  {
+                    "name": "機率學",
+                    "departments": [
+                      "資工系",
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  },
+                  {
+                    "name": "機率論(一)",
+                    "departments": [
+                      "資工系",
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  },
+                  {
+                    "name": "機率論(二)",
+                    "departments": [
+                      "資工系",
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "演算法/演算法設計與分析",
+                "alternatives": [
+                  {
+                    "name": "演算法",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部研究所"
+                  },
+                  {
+                    "name": "演算法設計與分析",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "多變量分析",
+                "alternatives": [
+                  {
+                    "name": "多變量分析",
+                    "departments": [
+                      "資管系",
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "雲端運算導(概)論",
+                "alternatives": [
+                  {
+                    "name": "雲端運算導論",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  },
+                  {
+                    "name": "雲端運算概論",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資料挖掘專題",
+                "alternatives": [
+                  {
+                    "name": "資料挖掘專題",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資料探勘與知識發現",
+                "alternatives": [
+                  {
+                    "name": "資料探勘與知識發現",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "高等作業研究",
+                "alternatives": [
+                  {
+                    "name": "高等作業研究",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "商業智慧",
+                "alternatives": [
+                  {
+                    "name": "商業智慧",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "系統模擬分析",
+                "alternatives": [
+                  {
+                    "name": "系統模擬分析",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資訊科技研究",
+                "alternatives": [
+                  {
+                    "name": "資訊科技研究",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "巨量資料實務",
+                "alternatives": [
+                  {
+                    "name": "巨量資料實務",
+                    "departments": [],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 27,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": true,
+            "max_credits": 6,
+            "note": "經認可與本學程相關之線上課程(如 Coursera 或 edX)，最多可折抵 6 學分。以 Coursera 為例，課程時間為折抵學分數之依據，原則為 4 星期課程可抵 1 學分、5-8 星期可抵 2 學分、9 星期以上可抵 3 學分。"
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "104-1-軟體工程學程",
+    "program_name": "軟體工程學程",
+    "versions": [
+      {
+        "academic_year": 104,
+        "semester": 1,
+        "approval_info": "104.11.16 104學年度第1學期學分學程會議通過\n104.12.17 第146次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "計算機概論（一）",
+                "alternatives": [
+                  {
+                    "name": "計算機概論",
+                    "departments": [],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "C程式設計（一）",
+                    "departments": [],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計算機概論（二）",
+                "alternatives": [
+                  {
+                    "name": "計算機程式",
+                    "departments": [
+                      "應數系",
+                      "電機系",
+                      "資管系",
+                      "海科系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "程式設計",
+                    "departments": [
+                      "應數系",
+                      "電機系",
+                      "資管系",
+                      "海科系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "C程式設計（二）",
+                    "departments": [
+                      "應數系",
+                      "電機系",
+                      "資管系",
+                      "海科系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資料結構",
+                "alternatives": [
+                  {
+                    "name": "資料結構",
+                    "departments": [
+                      "應數系",
+                      "資工系",
+                      "電機系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "軟體工程",
+                "alternatives": [
+                  {
+                    "name": "軟體工程",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "物件導向程式設計",
+                "alternatives": [
+                  {
+                    "name": "物件導向程式設計",
+                    "departments": [
+                      "資工系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  },
+                  {
+                    "name": "JAVA物件導向程式設計",
+                    "departments": [
+                      "資工系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "作業系統",
+                "alternatives": [
+                  {
+                    "name": "作業系統",
+                    "departments": [
+                      "資工系",
+                      "電機系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "系統分析與設計",
+                "alternatives": [
+                  {
+                    "name": "系統分析與設計",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "軟體架構",
+                "alternatives": [
+                  {
+                    "name": "軟體架構",
+                    "departments": [
+                      "資管碩"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "Web程式設計",
+                "alternatives": [
+                  {
+                    "name": "Web程式設計",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "詳見備註1"
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "離散數學（一）",
+                "alternatives": [
+                  {
+                    "name": "離散數學（一）",
+                    "departments": [
+                      "應數系",
+                      "資工系",
+                      "電機系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "離散數學",
+                    "departments": [
+                      "應數系",
+                      "資工系",
+                      "電機系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "離散數學（二）",
+                "alternatives": [
+                  {
+                    "name": "離散數學（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數值分析（一）",
+                "alternatives": [
+                  {
+                    "name": "數值分析（一）",
+                    "departments": [
+                      "應數系",
+                      "物理系",
+                      "機電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "數值分析",
+                    "departments": [
+                      "應數系",
+                      "物理系",
+                      "機電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數值分析（二）",
+                "alternatives": [
+                  {
+                    "name": "數值分析（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數學統計軟體應用",
+                "alternatives": [
+                  {
+                    "name": "數學統計軟體應用",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "多媒體系統",
+                "alternatives": [
+                  {
+                    "name": "多媒體系統",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "電腦網路",
+                "alternatives": [
+                  {
+                    "name": "電腦網路",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "演算法",
+                "alternatives": [
+                  {
+                    "name": "演算法",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "高等程式設計與實作",
+                "alternatives": [
+                  {
+                    "name": "高等程式設計與實作",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "計算機組織",
+                "alternatives": [
+                  {
+                    "name": "計算機組織",
+                    "departments": [
+                      "資工系",
+                      "電機系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "計算機組織學",
+                    "departments": [
+                      "資工系",
+                      "電機系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "編譯器製作",
+                "alternatives": [
+                  {
+                    "name": "編譯器製作",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "資料庫管理或網際網路資料庫",
+                "alternatives": [
+                  {
+                    "name": "資料庫管理",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "網際網路資料庫",
+                    "departments": [
+                      "資管系",
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數位影像處理",
+                "alternatives": [
+                  {
+                    "name": "數位影像處理",
+                    "departments": [
+                      "資工系",
+                      "電機碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "密碼學",
+                "alternatives": [
+                  {
+                    "name": "密碼學",
+                    "departments": [
+                      "資工碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "人工智慧",
+                "alternatives": [
+                  {
+                    "name": "人工智慧",
+                    "departments": [
+                      "資管碩",
+                      "電機碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "人工智慧（一）",
+                    "departments": [
+                      "資管碩",
+                      "電機碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "人工智慧（二）",
+                    "departments": [
+                      "資管碩",
+                      "電機碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 27,
+          "external_credits": {
+            "min": 6,
+            "description": "選讀學程學生所修習之學程課程中，至少應有6學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": true,
+            "max_credits": null,
+            "note": "修讀本學程學生，其以前修習課程及學分數之抵免，由本學程相關課程授課教師認定"
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "本學程規定之結業學分總數至少27學分，其中含必修課程9學分，及打＊號的選修課程至少6學分",
+            "以上課程相關規定之修改自104學年度第一學期起核准修習學生適用，原已核准修習學生，亦得追溯適用之",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "106-1-PM2.5氣膠環境與生活學程",
+    "program_name": "PM2.5氣膠環境與生活學程",
+    "versions": [
+      {
+        "academic_year": 106,
+        "semester": 1,
+        "approval_info": "106.11.13 106學年度第1學期學分學程會議通過\n106.12.11 第154次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 12
+            },
+            "subjects": [
+              {
+                "program_subject": "氣膠基礎科學導論",
+                "alternatives": [
+                  {
+                    "name": "氣膠基礎科學導論",
+                    "departments": [
+                      "化學系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "大氣污染化學",
+                "alternatives": [
+                  {
+                    "name": "大氣污染化學",
+                    "departments": [
+                      "環工所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "PM2.5生醫科學",
+                "alternatives": [
+                  {
+                    "name": "PM2.5生醫科學",
+                    "departments": [
+                      "化學系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "空氣污染工程學",
+                "alternatives": [
+                  {
+                    "name": "空氣污染工程學",
+                    "departments": [
+                      "環工所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "海洋化學概論",
+                "alternatives": [
+                  {
+                    "name": "海洋化學概論",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": "1.5",
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "環境教育",
+                "alternatives": [
+                  {
+                    "name": "環境教育",
+                    "departments": [
+                      "教育所"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "環境決策與管理",
+                "alternatives": [
+                  {
+                    "name": "環境決策與管理",
+                    "departments": [
+                      "環工所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "環境科學",
+                "alternatives": [
+                  {
+                    "name": "環境科學",
+                    "departments": [
+                      "環工所"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程"
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "核心課程學分數：12學分（必修9學分）",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "105-2-應用數學學程",
+    "program_name": "應用數學學程",
+    "versions": [
+      {
+        "academic_year": 105,
+        "semester": 2,
+        "approval_info": "106.5.8 105 學年度第 2 學期學分學程會議通過\n106.5.31 第 152 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "數學導論（二）",
+                "alternatives": [
+                  {
+                    "name": "數學導論（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "線性代數（二）",
+                "alternatives": [
+                  {
+                    "name": "線性代數（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "微積分（一）",
+                "alternatives": [
+                  {
+                    "name": "微積分（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 4,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "微積分（二）",
+                "alternatives": [
+                  {
+                    "name": "微積分（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 4,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "高等微積分（一）",
+                "alternatives": [
+                  {
+                    "name": "高等微積分（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 4,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "高等微積分（二）",
+                "alternatives": [
+                  {
+                    "name": "高等微積分（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 4,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "離散數學（一）",
+                "alternatives": [
+                  {
+                    "name": "離散數學（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "離散數學（二）",
+                "alternatives": [
+                  {
+                    "name": "離散數學（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "機率論（一）",
+                "alternatives": [
+                  {
+                    "name": "機率論（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "機率論（二）",
+                "alternatives": [
+                  {
+                    "name": "機率論（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "統計學（一）",
+                "alternatives": [
+                  {
+                    "name": "統計學（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "統計學（二）",
+                "alternatives": [
+                  {
+                    "name": "統計學（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "微分方程（一）",
+                "alternatives": [
+                  {
+                    "name": "微分方程（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "微分方程（二）",
+                "alternatives": [
+                  {
+                    "name": "微分方程（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數值分析（一）",
+                "alternatives": [
+                  {
+                    "name": "數值分析（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "數值分析（二）",
+                "alternatives": [
+                  {
+                    "name": "數值分析（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "代數學（一）",
+                "alternatives": [
+                  {
+                    "name": "代數學（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "代數學（二）",
+                "alternatives": [
+                  {
+                    "name": "代數學（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "複變函數論（一）",
+                "alternatives": [
+                  {
+                    "name": "複變函數論（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "複變函數論（二）",
+                "alternatives": [
+                  {
+                    "name": "複變函數論（二）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "數學導論（一）",
+                "alternatives": [
+                  {
+                    "name": "數學導論（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "線性代數（一）",
+                "alternatives": [
+                  {
+                    "name": "線性代數（一）",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              },
+              {
+                "program_subject": "科學史",
+                "alternatives": [
+                  {
+                    "name": "科學史",
+                    "departments": [
+                      "理學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 0,
+            "description": null
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [
+            "【學系(所)專業學程】僅提供本系以外同學修習第 2 專長"
+          ],
+          "special_notes": [
+            "跨院修讀之學士班學生：修習專業模組課程至少九學分，其它至多九學分得以通識跨院選修學分抵免",
+            "同院跨系(所)修讀之學士班學生：修習專業模組課程至少九學分，其它學分得由學程負責人規劃，學生得依其自行選讀",
+            "碩士班學生：含修習專業模組課程至少九學分，其它學分得由學程負責人規劃，學生得依其自行選讀",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  }
+]
