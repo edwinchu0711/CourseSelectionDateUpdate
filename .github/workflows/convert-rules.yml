@@ -14,12 +14,12 @@ on:
         default: ''
       base_url:
         description: 'LLM API base URL'
-        required: true
-        default: 'https://api.openai.com/v1'
+        required: false
+        default: ''
       model:
         description: 'LLM model name'
-        required: true
-        default: 'gpt-4o'
+        required: false
+        default: ''
 
 jobs:
   convert:
@@ -46,12 +46,21 @@ jobs:
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL || inputs.model }}
         run: |
-          python program/convert.py \
-            --base-url "$LLM_BASE_URL" \
-            --api-key "$LLM_API_KEY" \
-            --model "$LLM_MODEL" \
-            --all \
-            --output-dir program/rules
+          ARGS=("--all")
+          
+          if [ -n "$LLM_BASE_URL" ]; then
+            ARGS+=("--base-url" "$LLM_BASE_URL")
+          fi
+          
+          if [ -n "$LLM_MODEL" ]; then
+            ARGS+=("--model" "$LLM_MODEL")
+          fi
+          
+          if [ -n "$LLM_API_KEY" ]; then
+            ARGS+=("--api-key" "$LLM_API_KEY")
+          fi
+          
+          python program/convert.py "${ARGS[@]}"
 
       - name: Check for changes
         id: check_changes
