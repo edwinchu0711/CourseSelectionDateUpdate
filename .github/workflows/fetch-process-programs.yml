@@ -27,7 +27,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install google-genai beautifulsoup4 requests openai httpx
+          pip install google-genai beautifulsoup4 requests openai httpx python-dotenv
 
       - name: Scrape program list & Compare sizes
         env:
