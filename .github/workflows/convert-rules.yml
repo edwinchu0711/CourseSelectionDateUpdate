@@ -60,7 +60,7 @@ jobs:
             ARGS+=("--api-key" "$LLM_API_KEY")
           fi
           
-          python program/convert.py "${ARGS[@]}"
+          python -u program/convert.py "${ARGS[@]}"
 
       - name: Check for changes
         id: check_changes
