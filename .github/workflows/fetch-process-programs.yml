@@ -1,0 +1,138 @@
+name: Fetch & Process Programs
+
+on:
+  schedule:
+    - cron: '0 3 * * 1'   # 每週一 UTC 3am
+  workflow_dispatch:
+    inputs:
+      force_update:
+        description: '強制重新處理所有學程（忽略大小比對）'
+        type: boolean
+        default: false
+
+jobs:
+  fetch-process:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install google-genai beautifulsoup4 requests openai httpx
+
+      - name: Scrape program list & Compare sizes
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          # Step 1: 抓取學程列表
+          python -c "
+          import json, sys
+          sys.path.insert(0, 'program')
+          from 學程 import scrape_nsysu_programs
+
+          programs = scrape_nsysu_programs()
+          with open('program/scraped_programs.json', 'w', encoding='utf-8') as f:
+              json.dump(programs, f, ensure_ascii=False, indent=2)
+          print(f'抓取到 {len(programs)} 個學程')
+          "
+
+          # Step 2: 比對 PDF 大小
+          python -c "
+          import json, os, requests
+
+          with open('program/scraped_programs.json', encoding='utf-8') as f:
+              programs = json.load(f)
+
+          metadata_path = 'program/metadata.json'
+          if os.path.exists(metadata_path):
+              with open(metadata_path, encoding='utf-8') as f:
+                  metadata = json.load(f)
+          else:
+              metadata = {}
+
+          changed = []
+          for p in programs:
+              name = p['name']
+              url = p['link']
+              try:
+                  resp = requests.head(url, allow_redirects=True, timeout=10)
+                  current_size = int(resp.headers.get('content-length', 0))
+              except Exception as e:
+                  print(f'⚠️ 無法取得 {name} 的大小: {e}')
+                  current_size = 0
+
+              prev_size = metadata.get(name, {}).get('size', 0)
+              if current_size != prev_size and current_size > 0:
+                  changed.append({'name': name, 'url': url, 'size': current_size})
+                  print(f'變更: {name} ({prev_size} → {current_size})')
+
+          with open('program/changed_programs.json', 'w', encoding='utf-8') as f:
+              json.dump(changed, f, ensure_ascii=False, indent=2)
+          print(f'共 {len(changed)} 個學程有變更')
+          "
+
+          # Step 3: 如果 force_update，覆寫 changed_programs 為全部學程
+          if [ "${{ inputs.force_update }}" = "true" ]; then
+            echo "🔄 強制模式：將所有學程標記為需要處理"
+            python -c "
+            import json, requests
+            with open('program/scraped_programs.json', encoding='utf-8') as f:
+                programs = json.load(f)
+            all_programs = []
+            for p in programs:
+                url = p.get('link', '')
+                try:
+                    resp = requests.head(url, allow_redirects=True, timeout=10)
+                    size = int(resp.headers.get('content-length', 0))
+                except:
+                    size = 0
+                all_programs.append({'name': p['name'], 'url': url, 'size': size})
+            with open('program/changed_programs.json', 'w', encoding='utf-8') as f:
+                json.dump(all_programs, f, ensure_ascii=False, indent=2)
+            print(f'強制處理 {len(all_programs)} 個學程')
+            "
+          fi
+
+      - name: Process changed PDFs (PDF → TXT)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          FORCE_FLAG=""
+          if [ "${{ inputs.force_update }}" = "true" ]; then
+            FORCE_FLAG="--force"
+          fi
+
+          python program/process_programs.py --ci $FORCE_FLAG --changed-file program/changed_programs.json
+
+      - name: Convert TXT → JSON
+        env:
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}
+        run: |
+          python program/convert.py \
+            --base-url "$LLM_BASE_URL" \
+            --api-key "$LLM_API_KEY" \
+            --model "$LLM_MODEL" \
+            --all
+
+      - name: Build manifest
+        run: |
+          python program/build_manifest.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add program/data/ program/metadata.json program/rules/ program/programs.json program/changed_programs.json program/scraped_programs.json
+          git diff --staged --quiet || git commit -m "自動更新學程資料 $(date +%Y-%m-%d)"
+          git push

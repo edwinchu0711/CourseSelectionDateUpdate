@@ -1,0 +1,74 @@
+name: Convert Program Rules
+
+on:
+  push:
+    paths:
+      - 'program/data/*.txt'
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      files:
+        description: 'Specific TXT files to convert (comma-separated, leave empty for all)'
+        required: false
+        default: ''
+      base_url:
+        description: 'LLM API base URL'
+        required: true
+        default: 'https://api.openai.com/v1'
+      model:
+        description: 'LLM model name'
+        required: true
+        default: 'gpt-4o'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install openai httpx
+
+      - name: Convert TXT files to JSON
+        env:
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL || inputs.base_url }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ secrets.LLM_MODEL || inputs.model }}
+        run: |
+          python program/convert.py \
+            --base-url "$LLM_BASE_URL" \
+            --api-key "$LLM_API_KEY" \
+            --model "$LLM_MODEL" \
+            --all \
+            --output-dir program/rules
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --exit-code program/rules/ || echo "has_changes=true" >> $GITHUB_OUTPUT
+
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'Update program rules JSON from TXT sources'
+          title: 'Update program rules JSON'
+          body: |
+            Automated conversion of program TXT files to structured JSON.
+
+            This PR was created by the convert-rules GitHub Action.
+          branch: update-program-rules
+          base: main
+          delete-branch: true
