@@ -383,6 +383,7 @@ def process_file(
     programs: list[dict],
     retry_delay: float,
     counters: dict,
+    deadline: float,
 ) -> None:
     """
     單一執行緒的工作函式：
@@ -391,6 +392,12 @@ def process_file(
       3. 更新全域計數器
     """
     tprint(f"\n[{index}/{total}] 🗂  {file_path.name}")
+
+    if deadline > 0 and time.time() > deadline:
+        with _programs_lock:
+            counters["skipped"] += 1
+        tprint(f"  ⏳ [{index}/{total}] 已超過設定的執行時間上限，跳過處理")
+        return
 
     # ── 在呼叫 API 前，利用檔名先判斷是否已存在於 rules.json 中 ──
     filename = file_path.stem
@@ -466,6 +473,10 @@ def main():
         "--retry-delay", type=float, default=10.0,
         help="503/rate-limit 首次重試等待秒數（之後指數退避，預設：10）"
     )
+    parser.add_argument(
+        "--timeout-mins", type=float, default=330.0,
+        help="程式執行時間上限（分鐘），預設 330 分鐘 (5.5 小時) 以避免 GitHub Action 超時。設為 0 代表不限制。"
+    )
 
     args = parser.parse_args()
 
@@ -539,6 +550,8 @@ def main():
     counters = {"added": 0, "skipped": 0, "failed": 0}
 
     total = len(files_to_process)
+    
+    deadline = time.time() + args.timeout_mins * 60.0 if args.timeout_mins > 0 else 0.0
 
     # ── 多執行緒執行 ──────────────────────────────────────────────────────────
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
@@ -553,6 +566,7 @@ def main():
                 programs,
                 args.retry_delay,
                 counters,
+                deadline,
             ): file_path
             for idx, file_path in enumerate(files_to_process)
         }
