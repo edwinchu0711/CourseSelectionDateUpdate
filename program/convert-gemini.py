@@ -1,8 +1,3 @@
-"""
-TXT to JSON Converter for Program Certificate Rules
-Multi-threaded version — up to 4 concurrent API requests
-"""
-
 import json
 import re
 import argparse
@@ -28,10 +23,16 @@ def load_dotenv(env_path: Path = Path(".env")) -> None:
 
 load_dotenv()
 
+# ── 模型設定 ──────────────────────────────────────────────────────────────────
+DEFAULT_MODEL = "gemma-4-31b-it"  # 設定預設使用的 Gemini 模型
+THINK = "high"                      # 思考模式設定：None, "minimal", "low", "medium", "high"
+
 try:
-    from openai import OpenAI
+    from google import genai
+    from google.genai import types
 except ImportError:
-    OpenAI = None
+    genai = None
+    types = None
 
 # ── 路徑常數 ──────────────────────────────────────────────────────────────────
 DATA_DIR   = Path(__file__).parent / "data"
@@ -76,13 +77,10 @@ def tprint(*args, **kwargs):
         print(*args, **kwargs)
 
 # ── System Prompt ─────────────────────────────────────────────────────────────
-PROMPT_FILE = Path(__file__).parent / "prompt.txt"
-if PROMPT_FILE.exists():
-    with open(PROMPT_FILE, "r", encoding="utf-8") as f:
-        SYSTEM_PROMPT = f.read()
-else:
-    SYSTEM_PROMPT = ""
+SYSTEM_PROMPT = """
 
+
+"""
 
 # ── 從檔名萃取主要學程名稱提示 ───────────────────────────────────────────────
 def extract_program_hint(filename: str) -> str:
@@ -187,8 +185,9 @@ def merge_into_rules(programs: list[dict], new_data: dict) -> tuple[int, int]:
 # ── 單一檔案轉換（含 503 / rate-limit 重試邏輯）──────────────────────────────
 def convert_file(
     txt_path: str,
-    client: "OpenAI",
+    client: "genai.Client",
     model: str,
+    think: str | int | None = None,
     max_retries: int = 5,
     retry_delay: float = 10.0,
 ) -> dict | None:
@@ -229,16 +228,30 @@ def convert_file(
     while consecutive_errors < max_retries:
         try:
             _api_rate_limiter.wait()  # 等待直到符合速率限制
-            response = client.chat.completions.create(
+            config_params = {
+                "system_instruction": SYSTEM_PROMPT,
+                "temperature": 0.1,
+            }
+
+            if think is not None:
+                think_level_val = str(think).upper()
+                if think_level_val in ["HIGH", "MEDIUM", "LOW", "MINIMAL"]:
+                    config_params["thinking_config"] = types.ThinkingConfig(
+                        thinking_level=think_level_val,
+                        include_thoughts=True
+                    )
+                elif isinstance(think, int) or (isinstance(think, str) and think.isdigit()):
+                    config_params["thinking_config"] = types.ThinkingConfig(
+                        thinking_budget=int(think),
+                        include_thoughts=True
+                    )
+
+            response = client.models.generate_content(
                 model=model,
-                messages=[
-                    {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user",   "content": user_message},
-                ],
-                temperature=0.1,
-                max_tokens=16000,
+                contents=user_message,
+                config=types.GenerateContentConfig(**config_params),
             )
-            result_text = response.choices[0].message.content
+            result_text = response.text
 
             # 移除 markdown code block 包裝
             if result_text.strip().startswith("```"):
@@ -313,8 +326,9 @@ def process_file(
     file_path: Path,
     index: int,
     total: int,
-    client: "OpenAI",
+    client: "genai.Client",
     model: str,
+    think: str | int | None,
     programs: list[dict],
     retry_delay: float,
     counters: dict,
@@ -362,6 +376,7 @@ def process_file(
 
     data = convert_file(
         str(file_path), client, model,
+        think=think,
         max_retries=5, retry_delay=retry_delay,
     )
 
@@ -387,16 +402,16 @@ def main():
         description="將學程 TXT 檔案轉換為結構化 JSON 並匯入 rules.json（多執行緒版）"
     )
     parser.add_argument(
-        "--base-url", default="https://integrate.api.nvidia.com/v1",
-        help="API base URL（預設：https://integrate.api.nvidia.com/v1）"
+        "--model", default=DEFAULT_MODEL,
+        help=f"模型名稱（預設：{DEFAULT_MODEL}）"
     )
     parser.add_argument(
-        "--model", default="minimaxai/minimax-m2.7",
-        help="模型名稱（預設：minimaxai/minimax-m2.7）"
+        "--think", default=THINK,
+        help=f"思考模式等級（預設：{THINK}，可為 high, medium, low, minimal 或整數 token 預算）"
     )
     parser.add_argument(
         "--api-key", default=None,
-        help="API 金鑰（預設從 .env 的 NVIDIA_API_KEY 讀取）"
+        help="API 金鑰（預設從 .env 的 GEMINI_API_KEY 讀取）"
     )
     parser.add_argument("--files",       nargs="*", help="指定要轉換的 TXT 檔案")
     parser.add_argument("--all",         action="store_true", help="轉換 data/ 下所有 TXT")
@@ -416,19 +431,20 @@ def main():
     args = parser.parse_args()
 
     # 取得 API 金鑰
-    api_key = args.api_key or os.environ.get("NVIDIA_API_KEY")
+    api_key = args.api_key or os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        print("❌ 未提供 API 金鑰。請在 .env 設定 NVIDIA_API_KEY=<key> 或使用 --api-key。")
+        print("❌ 未提供 API 金鑰。請在 .env 設定 GEMINI_API_KEY=<key> 或使用 --api-key。")
         sys.exit(1)
 
-    if not OpenAI:
-        print("❌ 未安裝 openai 套件。請執行：pip install openai")
+    if not genai:
+        print("❌ 未安裝 google-genai 套件。請執行：pip install google-genai")
         sys.exit(1)
 
-    client = OpenAI(base_url=args.base_url, api_key=api_key)
+    client = genai.Client(api_key=api_key)
     model  = args.model
+    think  = args.think
     print(f"🤖 模型：{model}")
-    print(f"🌐 Base URL：{args.base_url}")
+    print(f"🧠 思考模式：{think}")
     print(f"⚡ 並行執行緒：{args.workers}")
 
     # ── 決定候選檔案清單 ──────────────────────────────────────────────────────
@@ -498,6 +514,7 @@ def main():
                 total,
                 client,
                 model,
+                think,
                 programs,
                 args.retry_delay,
                 counters,

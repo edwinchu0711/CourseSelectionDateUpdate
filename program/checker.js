@@ -205,7 +205,9 @@ function checkSubject(subject, courseNames, courseByNameDept, ownDepts, waivers)
  */
 function checkGroup(group, courseNames, courseByNameDept, ownDepts, waivers) {
   const rule = group.selection_rule;
-  const minCredits = group.credit_requirement.min;
+  // credit_requirement may be null in some converted data — default to {min: 0}
+  const creditReq = group.credit_requirement || {min: 0};
+  const minCredits = creditReq.min;
 
   const result = {
     id: group.id,
@@ -301,13 +303,18 @@ function checkEligibility(program, academicYear, semester, studentDept, coursesT
   }
 
   // Build "own departments" set for external credit calculation
+  // Respect exclude_double_major and exclude_minor settings from the program
+  const externalReq = version.requirements.external_credits;
+  const excludeDoubleMajor = externalReq.exclude_double_major !== false; // default true
+  const excludeMinor = externalReq.exclude_minor !== false; // default true
+
   const ownDepts = new Set([studentDept]);
-  if (doubleMajorDepts) {
+  if (doubleMajorDepts && excludeDoubleMajor) {
     for (const d of doubleMajorDepts) {
       if (d) ownDepts.add(d);
     }
   }
-  if (minorDepts) {
+  if (minorDepts && excludeMinor) {
     for (const d of minorDepts) {
       if (d) ownDepts.add(d);
     }
@@ -338,7 +345,7 @@ function checkEligibility(program, academicYear, semester, studentDept, coursesT
     total_credits_earned: 0,
     total_credits_required: version.requirements.total_min_credits,
     external_credits_earned: 0,
-    external_credits_required: version.requirements.external_credits.min,
+    external_credits_required: (version.requirements.external_credits || {}).min || 0,
     tag_credits: {},
     eligible: false,
     summary: '',
@@ -365,7 +372,8 @@ function checkEligibility(program, academicYear, semester, studentDept, coursesT
   // Check required tags within this version's groups
   const requiredTags = [];
   for (const group of version.course_groups) {
-    const req = group.credit_requirement?.required_tags;
+    const creditReq = group.credit_requirement;
+    const req = creditReq && creditReq.required_tags ? creditReq.required_tags : null;
     if (req) {
       requiredTags.push(...req);
     }
@@ -385,7 +393,6 @@ function checkEligibility(program, academicYear, semester, studentDept, coursesT
   result.tag_details = tagDetails;
 
   // Check external credits
-  const externalReq = version.requirements.external_credits;
   const externalMet = result.external_credits_earned >= result.external_credits_required;
 
   const totalMet = result.total_credits_earned >= result.total_credits_required;
