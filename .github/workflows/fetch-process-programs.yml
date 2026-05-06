@@ -1,105 +1,93 @@
 name: Fetch & Process Programs
 
 on:
-  # schedule:
-  #   - cron: '0 3 * * 1'   # 每週一 UTC 3am
+  schedule:
+    - cron: '0 3 * * 1'   # 每週一 UTC 3am
   workflow_dispatch:
     inputs:
       force_update:
         description: '強制重新處理所有學程（忽略大小比對）'
         type: boolean
         default: false
+      model:
+        description: '模型名稱 (留空使用預設)'
+        required: false
+        default: ''
 
 jobs:
-  fetch-process:
+  # ─────────────────────────────────────────────────────────
+  # Step 1: 抓取 PDF、比對大小、PDF → TXT、產生分片索引
+  # ─────────────────────────────────────────────────────────
+  prepare:
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: |
-          pip install google-genai beautifulsoup4 requests openai httpx python-dotenv
+        run: pip install google-genai beautifulsoup4 requests openai httpx python-dotenv
 
-      - name: Scrape program list & Compare sizes
+      - name: Scrape & Compare sizes
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
-          # Step 1: 抓取學程列表
           python -c "
           import json, sys
           sys.path.insert(0, 'program')
           from 學程 import scrape_nsysu_programs
-
           programs = scrape_nsysu_programs()
           with open('program/scraped_programs.json', 'w', encoding='utf-8') as f:
               json.dump(programs, f, ensure_ascii=False, indent=2)
           print(f'抓取到 {len(programs)} 個學程')
           "
 
-          # Step 2: 比對 PDF 大小
           python -c "
           import json, os, requests
-
           with open('program/scraped_programs.json', encoding='utf-8') as f:
               programs = json.load(f)
-
           metadata_path = 'program/metadata.json'
-          if os.path.exists(metadata_path):
-              with open(metadata_path, encoding='utf-8') as f:
-                  metadata = json.load(f)
-          else:
-              metadata = {}
-
+          metadata = json.load(open(metadata_path, encoding='utf-8')) if os.path.exists(metadata_path) else {}
           changed = []
           for p in programs:
-              name = p['name']
-              url = p['link']
+              name, url = p['name'], p['link']
               try:
                   resp = requests.head(url, allow_redirects=True, timeout=10)
                   current_size = int(resp.headers.get('content-length', 0))
               except Exception as e:
-                  print(f'⚠️ 無法取得 {name} 的大小: {e}')
+                  print(f'⚠️ 無法取得 {name}: {e}')
                   current_size = 0
-
               prev_size = metadata.get(name, {}).get('size', 0)
               if current_size != prev_size and current_size > 0:
                   changed.append({'name': name, 'url': url, 'size': current_size})
-                  print(f'變更: {name} ({prev_size} → {current_size})')
-
           with open('program/changed_programs.json', 'w', encoding='utf-8') as f:
               json.dump(changed, f, ensure_ascii=False, indent=2)
           print(f'共 {len(changed)} 個學程有變更')
           "
 
-          # Step 3: 如果 force_update，覆寫 changed_programs 為全部學程
           if [ "${{ inputs.force_update }}" = "true" ]; then
-            echo "🔄 強制模式：將所有學程標記為需要處理"
             python -c "
-            import json, requests
-            with open('program/scraped_programs.json', encoding='utf-8') as f:
-                programs = json.load(f)
-            all_programs = []
-            for p in programs:
-                url = p.get('link', '')
-                try:
-                    resp = requests.head(url, allow_redirects=True, timeout=10)
-                    size = int(resp.headers.get('content-length', 0))
-                except:
-                    size = 0
-                all_programs.append({'name': p['name'], 'url': url, 'size': size})
-            with open('program/changed_programs.json', 'w', encoding='utf-8') as f:
-                json.dump(all_programs, f, ensure_ascii=False, indent=2)
-            print(f'強制處理 {len(all_programs)} 個學程')
-            "
+          import json, requests
+          with open('program/scraped_programs.json', encoding='utf-8') as f:
+              programs = json.load(f)
+          all_programs = []
+          for p in programs:
+              url = p.get('link', '')
+              try:
+                  resp = requests.head(url, allow_redirects=True, timeout=10)
+                  size = int(resp.headers.get('content-length', 0))
+              except:
+                  size = 0
+              all_programs.append({'name': p['name'], 'url': url, 'size': size})
+          with open('program/changed_programs.json', 'w', encoding='utf-8') as f:
+              json.dump(all_programs, f, ensure_ascii=False, indent=2)
+          print(f'強制處理 {len(all_programs)} 個學程')
+          "
           fi
 
       - name: Process changed PDFs (PDF → TXT)
@@ -110,36 +98,184 @@ jobs:
           if [ "${{ inputs.force_update }}" = "true" ]; then
             FORCE_FLAG="--force"
           fi
-
           python program/process_programs.py --ci $FORCE_FLAG --changed-file program/changed_programs.json
 
-      - name: Convert TXT → JSON
+      - name: 產生分片索引（固定 2 片）
+        id: set-shards
+        run: |
+          python -c "
+          import json, os, glob
+
+          txt_files = sorted(glob.glob('program/data/*.txt'))
+          print(f'找到 {len(txt_files)} 個 txt 檔案')
+
+          shard_0 = [f for i, f in enumerate(txt_files) if i % 2 == 0]
+          shard_1 = [f for i, f in enumerate(txt_files) if i % 2 == 1]
+
+          os.makedirs('program/shards', exist_ok=True)
+          with open('program/shards/shard_0.json', 'w') as f:
+              json.dump(shard_0, f)
+          with open('program/shards/shard_1.json', 'w') as f:
+              json.dump(shard_1, f)
+
+          print(f'Shard 0: {len(shard_0)} 個檔案')
+          print(f'Shard 1: {len(shard_1)} 個檔案')
+          "
+
+      - name: Upload workspace artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: workspace
+          path: |
+            program/data/
+            program/shards/
+            program/changed_programs.json
+            program/scraped_programs.json
+
+  # ─────────────────────────────────────────────────────────
+  # Step 2: 平行分片轉換（共用同一個 API Key）
+  # ─────────────────────────────────────────────────────────
+  convert:
+    needs: prepare
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        shard_id: ["0", "1"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-genai beautifulsoup4 requests openai httpx python-dotenv
+
+      - name: Download workspace artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: workspace
+          path: program/
+
+      - name: Convert TXT → JSON (Shard ${{ matrix.shard_id }})
         env:
           LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
           LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
           LLM_MODEL: ${{ secrets.LLM_MODEL }}
         run: |
-          ARGS=("--all")
-          
+          FILES=$(python -c "
+          import json
+          with open('program/shards/shard_${{ matrix.shard_id }}.json') as f:
+              files = json.load(f)
+          print(' '.join(files))
+          ")
+
+          ARGS=(--files $FILES)
+
           if [ -n "$LLM_BASE_URL" ]; then
-            ARGS+=("--base-url" "$LLM_BASE_URL")
+            ARGS+=(--base-url "$LLM_BASE_URL")
           fi
-          
-          if [ -n "$LLM_MODEL" ]; then
-            ARGS+=("--model" "$LLM_MODEL")
+
+          if [ -n "${{ inputs.model }}" ]; then
+            ARGS+=(--model "${{ inputs.model }}")
+          elif [ -n "$LLM_MODEL" ]; then
+            ARGS+=(--model "$LLM_MODEL")
           fi
-          
-          if [ -n "$LLM_API_KEY" ]; then
-            ARGS+=("--api-key" "$LLM_API_KEY")
-          fi
-          
+
+          ARGS+=(--api-key "$LLM_API_KEY")
+
           python -u program/convert.py "${ARGS[@]}"
 
-      - name: Build manifest
-        run: |
-          python program/build_manifest.py
+      - name: Upload shard result
+        uses: actions/upload-artifact@v4
+        with:
+          name: shard-result-${{ matrix.shard_id }}
+          path: program/rules/
 
-      - name: Commit and push changes
+  # ─────────────────────────────────────────────────────────
+  # Step 3: 合併所有 JSON → commit
+  # ─────────────────────────────────────────────────────────
+  merge-and-commit:
+    needs: convert
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install google-genai beautifulsoup4 requests openai httpx python-dotenv
+
+      - name: Download workspace
+        uses: actions/download-artifact@v4
+        with:
+          name: workspace
+          path: program/
+
+      - name: Download shard 0 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-0
+          path: /tmp/shard_results/shard_0/
+
+      - name: Download shard 1 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-1
+          path: /tmp/shard_results/shard_1/
+
+      - name: Merge shard results
+        run: |
+          python -c "
+          import json, os
+
+          def load_json(path):
+              try:
+                  with open(path, encoding='utf-8') as f:
+                      data = json.load(f)
+                  return data if isinstance(data, list) else data.get('programs', [])
+              except:
+                  return []
+
+          shard_0 = load_json('/tmp/shard_results/shard_0/rules.json')
+          shard_1 = load_json('/tmp/shard_results/shard_1/rules.json')
+
+          merged = {}
+          for program in shard_0 + shard_1:
+              name = program.get('program_name', '')
+              if name not in merged:
+                  merged[name] = program
+              else:
+                  existing_versions = merged[name].setdefault('versions', [])
+                  for v in program.get('versions', []):
+                      ny, ns = v.get('academic_year'), v.get('semester')
+                      duplicate = any(
+                          ev.get('academic_year') == ny and ev.get('semester') == ns
+                          for ev in existing_versions
+                      )
+                      if not duplicate:
+                          existing_versions.append(v)
+                  existing_versions.sort(
+                      key=lambda v: (v.get('academic_year', 0), v.get('semester', 0))
+                  )
+
+          result = list(merged.values())
+          os.makedirs('program/rules', exist_ok=True)
+          with open('program/rules/rules.json', 'w', encoding='utf-8') as f:
+              json.dump(result, f, ensure_ascii=False, indent=2)
+          print(f'✅ 合併完成，共 {len(result)} 個學程')
+          "
+
+      - name: Build manifest
+        run: python program/build_manifest.py
+
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
