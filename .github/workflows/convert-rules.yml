@@ -66,14 +66,15 @@ jobs:
         id: check_changes
         run: |
           git diff --exit-code program/rules/ || echo "has_changes=true" >> $GITHUB_OUTPUT
+          echo "CURRENT_DATE=$(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_ENV
 
       - name: Create Pull Request
         if: steps.check_changes.outputs.has_changes == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: 'Update program rules JSON from TXT sources'
-          title: 'Update program rules JSON'
+          commit-message: "Update program rules JSON from TXT sources (${{ env.CURRENT_DATE }})"
+          title: "Update program rules JSON (${{ env.CURRENT_DATE }})"
           body: |
             Automated conversion of program TXT files to structured JSON.
 
