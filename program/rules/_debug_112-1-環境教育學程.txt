@@ -1,0 +1,37 @@
+ is a complex, messy text that appears to be a corrupted or garbled mix of Chinese characters, Japanese characters, symbols, and what looks like table formatting or markdown. The text seems to be about educational programs, departments, and courses, possibly from a university catalog or academic system.
+
+Let me try to extract meaningful information from this garbled text:
+
+Key elements I can identify:
+- References to "符合環保署計畫" (EPA program compliance)
+- Course codes like "424", "426", "428", "430", "600", "800"
+- Department names like "海科系" (Marine Science), "生科系" (Life Science)
+- Course names like "海洋工程概論", "海洋生物學", "博雅向度"
+- Credit hours (學分)
+- Some kind of academic program structure
+
+ . 
+
+The text is heavily corrupted with mixed encoding, symbols, and what appears to be table formatting. Let me try to reconstruct a cleaner version based on the patterns I see:
+
+**Reconstructed Information:**
+
+| Department/Course | Credits | Notes |
+|-----------------|---------|-------|
+| 海科系、生科系、跨院選修 | 3 | 符合環保署計畫 |
+| 海洋工程概論 | 2 | 海洋相關課程 |
+| 海洋生物學 | 3 | 海洋相關課程 |
+| 博雅向度 | 3 | 通識教育課程 |
+| 符合環保署計畫課程 | 3 | 學分 |
+
+**Program Requirements:**
+- Total credits: 至少 24 學分
+- Core required courses: 必修科目
+- Elective courses: 選修科目
+- Marine-related courses appear to be a focus
+
+The text mentions "符合環保署計畫課程" multiple times, suggesting this is an EPA (Environmental Protection Administration) certified or compliant program.
+
+ . 
+
+However, the text is too corrupted to extract reliable, complete information. The encoding issues and mixed characters make it impossible to provide a fully accurate structured output. If you have a cleaner version of this document or can provide the source in a better format, I can give you a more accurate extraction.

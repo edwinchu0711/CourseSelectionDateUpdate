@@ -1,0 +1,97 @@
+I need to extract structured data from this messy text about university programs and convert it to JSON.
+
+Let me analyze the text carefully. It appears to be about a university program in Chinese, with various fields like program name, credits, departments, etc.
+
+From the text, I can identify:
+- Program name: "企業管理學系日間部碩士班" (Department of Business Administration, Master's Program, Day Division)
+- Academic year: "108學年度第1學期" (108th academic year, 1st semester)
+- Credits: "30學分" (30 credits)
+- Department: "企業管理學系" (Department of Business Administration)
+- Some course requirements and notes
+
+Let me structure this as JSON:
+
+```json
+{
+  "program_name": "企業管理學系日間部碩士班",
+  "academic_year": "108",
+  "semester": "1",
+  "total_credits": 30,
+  "department": "企業管理學系",
+  "credit_requirements": {
+    "core_courses": null,
+    "elective_courses": null,
+    "minimum_credits": null
+  },
+  "course_groups": [
+    {
+      "group_name": "核心課程",
+      "required_credits": null,
+      "courses": []
+    },
+    {
+      "group_name": "選修課程",
+      "required_credits": null,
+      "courses": []
+    }
+  ],
+  "prerequisites": null,
+  "special_notes": [
+    "108學年度第1學期新增"
+  ],
+  "approval_status": "核准",
+  "program_type": "碩士班",
+  "division": "日間部"
+}
+```
+
+However, looking more carefully at the messy text, there seem to be multiple programs or variations mentioned. Let me try to extract more accurately:
+
+The text mentions:
+- "企業管理學系日間部碩士班" (Master's program)
+- "企業管理學系碩士在職專班" (Executive Master's program)
+- Credits mentioned: 30, 36, 21, 9, 3
+- Various course names and requirements
+
+Given the extreme corruption of the text, I'll provide the best structured interpretation:
+
+```json
+{
+  "programs": [
+    {
+      "program_name": "企業管理學系日間部碩士班",
+      "academic_year": "108",
+      "semester": "1",
+      "total_credits": 30,
+      "department": "企業管理學系",
+      "program_type": "碩士班",
+      "division": "日間部",
+      "approval_date": "108/12/10",
+      "notes": "108學年度第1學期新增"
+    },
+    {
+      "program_name": "企業管理學系碩士在職專班",
+      "academic_year": "108",
+      "semester": "2",
+      "total_credits": 36,
+      "department": "企業管理學系",
+      "program_type": "碩士在職專班",
+      "division": "在職專班",
+      "approval_date": "107/12/10",
+      "notes": "107學年度第2學期新增"
+    }
+  ],
+  "course_requirements": {
+    "core_courses": "必修",
+    "elective_courses": "選修",
+    "minimum_credits_for_graduation": null
+  },
+  "metadata": {
+    "source_file": "108-1-行管-企管系碩士班課程規劃表",
+    "last_updated": "108學年度",
+    "university": null
+  }
+}
+```
+
+Given the extreme corruption and mixed encoding in the original text, this is the best interpretation I can provide. The text appears to be a garbled extraction from a PDF or document about National Taipei University (臺北大學) Business Administration Master's program curriculum.

@@ -1,0 +1,52 @@
+I need to extract structured data from this messy text about a university program. Let me analyze the text carefully.
+
+Looking at the text, I can identify:
+- Program name: "公共事務與地方創生碩士學位學程" (Master's Program in Public Affairs and Local Regeneration)
+- Department: "社會科學院" (College of Social Sciences)
+- It's a master's program (碩士學位學程)
+- The program is under the College of Social Sciences
+- There are course requirements mentioned
+
+Let me parse the key information:
+
+From the text:
+- "公共事務與地方創生碩士學位學程" = Program name
+- "社會科學院" = Department/College
+- "碩士學位學程" = degree type (master's)
+- Credit requirements mentioned: "至少 30 學分" (at least 30 credits)
+- There's mention of "必修" (required courses), "選修" (electives)
+- "跨院" (cross-college) courses mentioned
+
+The text is very garbled with mixed encoding artifacts, but I can extract the core program information.
+
+Let me structure this as JSON:
+
+```json
+{
+  "program_name": "公共事務與地方創生碩士學位學程",
+  "program_name_english": "Master's Program in Public Affairs and Local Regeneration",
+  "degree_type": "碩士學位學程",
+  "department": "社會科學院",
+  "college": "社會科學院",
+  "credit_requirements": {
+    "total_minimum_credits": 30,
+    "required_courses": "必修課程",
+    "elective_courses": "選修課程",
+    "cross_college": "跨院選修"
+  },
+  "course_groups": [
+    {
+      "group_name": "必修",
+      "description": "核心課程"
+    },
+    {
+      "group_name": "選修",
+      "description": "選修課程"
+    }
+  ],
+  "administrative_notes": [
+    "課程規劃依據110學年度入學版本",
+    "新增課程依相關規定辦理"
+  ]
+}
+```

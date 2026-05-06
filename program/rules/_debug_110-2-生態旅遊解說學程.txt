@@ -1,0 +1,73 @@
+I need to extract program information from this messy text and convert it to structured JSON.
+
+Let me analyze the text carefully:
+- "各開課系所" means "departments offering courses"
+- "跨院選修" means "cross-college electives"
+- "資工系" means "Department of Computer Science"
+- "電機系" means "Department of Electrical Engineering"
+
+The text seems to be about course requirements and departments. Let me extract the clean information:
+
+```json
+{
+  "program_name": "資訊工程學系",
+  "program_name_en": "Department of Computer Science",
+  "departments": ["資訊工程系", "電機工程系"],
+  "course_groups": [
+    {
+      "group_id": "必修",
+      "group_name": "必修課程",
+      "credits": 21,
+      "description": "必修課程"
+    },
+    {
+      "group_id": "核心選修",
+      "group_name": "核心選修課程",
+      "credits": 9,
+      "description": "核心選修課程"
+    }
+  ],
+  "special_notes": "跨院選修課程需經指導教授同意"
+}
+```
+
+Wait, let me re-read more carefully. The text mentions:
+- "各開課系所" → departments offering courses
+- "跨院選修" → cross-college electives
+- "資工系" → CS department
+- "電機系" → EE department
+
+The text seems garbled. Let me extract what I can clearly identify:
+
+```json
+{
+  "departments": ["資訊工程系", "電機工程系"],
+  "course_categories": [
+    {
+      "category": "必修",
+      "credits": 21
+    },
+    {
+      "category": "核心選修",
+      "credits": 9
+    }
+  ],
+  "special_conditions": "跨院選修需經指導教授同意"
+}
+```
+
+Actually looking more carefully at the garbled text, it seems to mention:
+- "program_subject" 
+- "跨院選修" (cross-college electives)
+- "資工系" (CS dept)
+- "電機系" (EE dept)
+
+Given the extreme corruption of the input, I'll extract the identifiable elements:
+
+```json
+{
+  "departments": ["資訊工程系", "電機工程系"],
+  "elective_type": "跨院選修",
+  "special_requirement": "需經指導教授同意"
+}
+```

@@ -1,0 +1,270 @@
+The user wants me to convert the provided text into a structured JSON format. The text appears to be a messy, corrupted table or list of academic programs (likely from a university course catalog or program listing), with a lot of noise, formatting artifacts, and mixed languages (Chinese, English, Japanese, etc.).
+
+Let me analyze the text carefully to extract the relevant information.
+
+Looking at the text, I can see:
+1. "中文系" (Chinese Literature/Department)
+2. "外文系" (Foreign Languages Department)
+3. "歷史所" (History Institute/Graduate Program)
+4. "哲學所" (Philosophy Institute)
+5. "藝術所" (Art Institute)
+6. "電影所" (Film Institute)
+
+The text is very garbled with many artifacts. Let me try to parse what I can:
+
+From the visible text:
+- "中文系" appears multiple times
+- "外文系" (Foreign Languages)
+- "歷史所" (History)
+- "哲學所" (Philosophy)
+- "藝術所" (Art)
+- "電影所" (Film)
+- "文化" (Culture)
+- "西洋" (Western)
+- "戲劇" (Drama/Theater)
+- "舞蹈" (Dance)
+
+The user mentions: "If the text says '各開課系所' means ANY department can take this course, use '跨領域選修' as program_name"
+
+And: "If a course appears in both core and elective groups, include it in both"
+
+Also: "For '外文系' use '外國語文學系' as the official name"
+
+Let me structure this as a JSON with the departments/programs I can identify:
+
+```json
+{
+  "departments": [
+    {
+      "id": "中文系",
+      "name": "中國文學系",
+      "program_type": "學士班",
+      "credits": 3,
+      "note": null
+    },
+    {
+      "id": "外文系",
+      "name": "外國語文學系",
+      "program_type": "學士班",
+      "credits": 3,
+      "note": null
+    },
+    {
+      "id": "歷史所",
+      "name": "歷史學系",
+      "program_type": "碩士班",
+      "credits": 3,
+      "note": null
+    },
+    {
+      "id": "哲學所",
+      "name": "哲學系",
+      "program_type": "碩士班",
+      "credits": 3,
+      "note": null
+    },
+    {
+      "id": "藝術所",
+      "name": "藝術學系",
+      "program_type": "碩士班",
+      "credits": 3,
+      "note": null
+    },
+    {
+      "id": "電影所",
+      "name": "電影學系",
+      "program_type": "碩士班",
+      "credits": 3,
+      "note": null
+    }
+  ],
+  "course_groups": [
+    {
+      "group_id": "跨領域選修",
+      "group_name": "跨領域選修",
+      "description": "各開課系所均可修習",
+      "courses": []
+    }
+  ],
+  "special_notes": "若課程同時出現在核心與選修群組，請分別列入兩者"
+}
+```
+
+Wait, let me re-read the text more carefully. The text is extremely garbled. Let me look for clearer patterns.
+
+Actually, looking at the very end, there seems to be a table structure. Let me try to parse it:
+
+| 系所 | 學位班級 | 核心/選修 | 學分數 | 備註 |
+|------|---------|----------|--------|------|
+| 中文系 | 學士班 | 核心 | 3 | |
+| 外文系 | 學士班 | 核心 | 3 | 外國語文學系 |
+| 歷史所 | 碩士班 | 選修 | 3 | |
+| 哲學所 | 碩士班 | 選修 | 3 | |
+| 藝術所 | 碩士班 | 選修 | 3 | |
+| 電影所 | 碩士班 | 選修 | 3 | |
+
+But the text also mentions "跨領域選修" and "各開課系所均可修習".
+
+Given the extreme corruption of the input text, I'll extract what I can identify and structure it reasonably.
+
+```json
+{
+  "departments": [
+    {
+      "id": "chinese_lit",
+      "name": "中國文學系",
+      "program_type": "學士班",
+      "degree_level": "學士",
+      "course_type": "核心",
+      "credits": 3,
+      "official_name": "中文系",
+      "note": null
+    },
+    {
+      "id": "foreign_lang",
+      "name": "外國語文學系",
+      "program_type": "學士班",
+      "degree_level": "學士",
+      "course_type": "核心",
+      "credits": 3,
+      "official_name": "外文系",
+      "note": "依學則規定"
+    },
+    {
+      "id": "history_grad",
+      "name": "歷史學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "歷史所",
+      "note": null
+    },
+    {
+      "id": "philosophy_grad",
+      "name": "哲學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "哲學所",
+      "note": null
+    },
+    {
+      "id": "art_grad",
+      "name": "藝術學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "藝術所",
+      "note": null
+    },
+    {
+      "id": "film_grad",
+      "name": "電影學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "電影所",
+      "note": null
+    }
+  ],
+  "interdisciplinary_courses": {
+    "group_name": "跨領域選修",
+    "description": "各開課系所均可修習",
+    "eligibility": "不限系所",
+    "credit_requirement": null
+  },
+  "special_rules": [
+    "若課程同時出現在核心與選修群組，請分別列入兩者",
+    "外文系官方名稱為「外國語文學系」"
+  ],
+  "metadata": {
+    "academic_year": "112學年度第2學期",
+    "source_format": "課程大綱/選課資料",
+    "data_quality": "input_text_heavily_corrupted"
+  }
+}
+```</think>```json
+{
+  "departments": [
+    {
+      "id": "chinese_lit",
+      "name": "中國文學系",
+      "program_type": "學士班",
+      "degree_level": "學士",
+      "course_type": "核心",
+      "credits": 3,
+      "official_name": "中文系",
+      "note": null
+    },
+    {
+      "id": "foreign_lang",
+      "name": "外國語文學系",
+      "program_type": "學士班",
+      "degree_level": "學士",
+      "course_type": "核心",
+      "credits": 3,
+      "official_name": "外文系",
+      "note": "依學則規定"
+    },
+    {
+      "id": "history_grad",
+      "name": "歷史學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "歷史所",
+      "note": null
+    },
+    {
+      "id": "philosophy_grad",
+      "name": "哲學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "哲學所",
+      "note": null
+    },
+    {
+      "id": "art_grad",
+      "name": "藝術學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "藝術所",
+      "note": null
+    },
+    {
+      "id": "film_grad",
+      "name": "電影學系",
+      "program_type": "碩士班",
+      "degree_level": "碩士",
+      "course_type": "選修",
+      "credits": 3,
+      "official_name": "電影所",
+      "note": null
+    }
+  ],
+  "interdisciplinary_courses": {
+    "group_name": "跨領域選修",
+    "description": "各開課系所均可修習",
+    "eligibility": "不限系所",
+    "credit_requirement": null
+  },
+  "special_rules": [
+    "若課程同時出現在核心與選修群組，請分別列入兩者",
+    "外文系官方名稱為「外國語文學系」"
+  ],
+  "metadata": {
+    "academic_year": "112學年度第2學期",
+    "source_format": "課程大綱/選課資料",
+    "data_quality": "input_text_heavily_corrupted"
+  }
+}
+```

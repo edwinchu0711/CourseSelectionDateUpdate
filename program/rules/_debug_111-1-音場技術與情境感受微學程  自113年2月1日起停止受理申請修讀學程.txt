@@ -1,0 +1,226 @@
+I need to extract the program rules from this Chinese university micro-program certificate document and convert it to structured JSON.
+
+Let me analyze the document:
+
+1. **Program Name**: The filename hint says "音場技術與情境感受微學程" - but looking at the document body, this appears to be a general program with courses in various areas (VR, music, theater, etc.). The actual program name from the filename is "音場技術與情境感受微學程" but let me check if there's a clearer name in the body. The document doesn't state a different official name, so I'll use "音場技術與情境感受微學程".
+
+2. **Version Info**: "111 學年度第 1 學期版本" → academic_year=111, semester=1. Approval dates: "111.10.31 111 學年度第 1 學期學分學程會議通過" and "111.12.5 第 174 次教務會議通過"
+
+3. **Discontinued**: "自113年2月1日起停止受理申請修讀學程" → discontinued, date is 113年2月1日
+
+4. **Course Groups**:
+   - Core courses (核心課程): 3 courses, all required → "all"
+   - Elective courses (選修課程): pick from list, need total at least 9 credits including core
+
+5. **Requirements**:
+   - Total min credits: 9
+   - At least 3 credits must be from outside student's home department, double major, minor
+   - Core: 8 credits (but wait, 3+3+2=8, but total is at least 9, so electives need at least 1 credit)
+
+Wait, let me recalculate: Core is 3+3+2=8 credits. Total minimum is 9. So electives need at least 1 more credit. But electives are all 1-3 credits each.
+
+Actually, looking more carefully: The core has 8 credits. The total is "至少 9 學分". So students need at least 1 more credit from electives.
+
+For the selection_rule of electives: Since the total is "at least 9 credits" and core is fixed at 8, the electives need to fill the gap. But the rule says "至少 9 學分" for total. Looking at the structure, electives seem to be "pick enough to reach total 9" which would be min_credits type.
+
+Actually, re-reading: The core is fixed (all required). The electives are a pool to choose from. The total program requirement is "至少 9 學分". Since core is 8 credits, students need at least 1 more credit from electives. But there's no explicit "pick N" or "min credits" for electives alone - it's implied by the total.
+
+Let me use "min_credits" for electives with min=1 (since they need at least 1 more credit), or perhaps better to model this as the total requirement drives it. Actually, looking at the schema, the selection_rule is for the group. For electives, since there's no explicit "must take all" and students just need to pick some, I'll use "min_credits" with the minimum being 1 (to reach total 9).
+
+Wait, actually I need to be more careful. The note says "課程規劃至少 9 學分" - this is the total program. The core is 8 credits. So electives contribute to reaching 9+.
+
+For departments in alternatives:
+- "光電系" → ["光電系"]
+- "人文暨科技跨領域學士學位學程" → ["人文暨科技跨領域學士學位學程"]
+- "音樂系" → ["音樂系"]
+- "劇藝系" → ["劇藝系"]
+
+Let me structure this properly.
+
+```json
+{
+  "program_id": "111-1-音場技術與情境感受微學程",
+  "program_name": "音場技術與情境感受微學程",
+  "versions": [
+    {
+      "academic_year": 111,
+      "semester": 1,
+      "approval_info": "111.10.31 111學年度第1學期學分學程會議通過；111.12.5 第174次教務會議通過",
+      "is_discontinued": true,
+      "discontinued_date": "113年2月1日",
+      "course_groups": [
+        {
+          "id": "core",
+          "label": "核心課程",
+          "selection_rule": {"type": "all"},
+          "credit_requirement": {"min": 8},
+          "subjects": [
+            {
+              "program_subject": "創新資訊科技應用",
+              "alternatives": [
+                {"name": "創新資訊科技應用", "departments": ["光電系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "多維度媒體實務",
+              "alternatives": [
+                {"name": "多維度媒體實務", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "音樂科技概論",
+              "alternatives": [
+                {"name": "音樂科技概論", "departments": ["音樂系"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            }
+          ]
+        },
+        {
+          "id": "elective",
+          "label": "選修課程",
+          "selection_rule": {"type": "min_credits", "min": 1},
+          "credit_requirement": {"min": 1},
+          "subjects": [
+            {
+              "program_subject": "虛擬實境導論",
+              "alternatives": [
+                {"name": "虛擬實境導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "成像技術導論",
+              "alternatives": [
+                {"name": "成像技術導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "音場技術導論",
+              "alternatives": [
+                {"name": "音場技術導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "情境感受導論",
+              "alternatives": [
+                {"name": "情境感受導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "體感技術導論",
+              "alternatives": [
+                {"name": "體感技術導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "姿態辨識導論",
+              "alternatives": [
+                {"name": "姿態辨識導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "感測器與定位",
+              "alternatives": [
+                {"name": "感測器與定位", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "體感運動機構導論",
+              "alternatives": [
+                {"name": "體感運動機構導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "虛擬實境程式導論",
+              "alternatives": [
+                {"name": "虛擬實境程式導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "音樂與音效導論",
+              "alternatives": [
+                {"name": "音樂與音效導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "故事編程",
+              "alternatives": [
+                {"name": "故事編程", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "虛擬實境數位內容設計",
+              "alternatives": [
+                {"name": "虛擬實境數位內容設計", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "多軸動感平台體感控制",
+              "alternatives": [
+                {"name": "多軸動感平台體感控制", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "劇場藝術導論",
+              "alternatives": [
+                {"name": "劇場藝術導論", "departments": ["人文暨科技跨領域學士學位學程"], "credits": 1, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "電腦輔助繪圖",
+              "alternatives": [
+                {"name": "電腦輔助繪圖", "departments": ["劇藝系"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "沉浸式體驗概論",
+              "alternatives": [
+                {"name": "沉浸式體驗概論", "departments": ["光電系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "數位化編曲理論與實作（一）",
+              "alternatives": [
+                {"name": "數位化編曲理論與實作（一）", "departments": ["音樂系"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "數位化編曲理論與實作（二）",
+              "alternatives": [
+                {"name": "數位化編曲理論與實作（二）", "departments": ["音樂系"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            }
+          ]
+        }
+      ],
+      "requirements": {
+        "total_min_credits": 9,
+        "external_credits": {"min": 3, "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程"},
+        "waiver": {"allowed": false, "max_credits": null, "note": null},
+        "non_course_requirements": [],
+        "special_notes": ["修習學程適用之課程規劃表請依核准修習學年期版本為主"]
+      }
+    }
+  ]
+}
+```

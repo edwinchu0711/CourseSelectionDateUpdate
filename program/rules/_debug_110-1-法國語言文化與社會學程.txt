@@ -1,0 +1,561 @@
+I need to convert this Chinese university program certificate rules text into structured JSON.
+
+Let me analyze the text:
+
+1. **Program Name**: "法國語言文化與社會學程" (from the filename hint, confirmed in the text body)
+2. **Version**: 110學年度第1學期版本, approved 110.11.2 and 110.12.28
+3. **Core courses**: 法文一（一）3 credits, 法文一（二）3 credits — total 6 credits
+4. **Elective courses**: Many courses listed, need at least 15 credits total for the program
+5. **Key rules**:
+   - At least 15 credits total
+   - At least 6 credits must be from courses not belonging to student's home department, double major, or minor
+   - Credit transfer allowed with approval
+   - Various notes about course substitutions for students from different years
+
+Let me structure this properly:
+
+```json
+{
+  "program_id": "french_language_culture_and_society_program",
+  "program_name": "法國語言文化與社會學程",
+  "versions": [
+    {
+      "academic_year": 110,
+      "semester": 1,
+      "approval_info": "110.11.2 110學年度第1學期學分學程會議通過；110.12.28 第170次教務會議通過",
+      "course_groups": [
+        {
+          "id": "core_required",
+          "label": "核心課程",
+          "selection_rule": {"type": "all"},
+          "credit_requirement": {"min": 6},
+          "subjects": [
+            {
+              "program_subject": "法文一（一）",
+              "alternatives": [
+                {"name": "法文一（一）", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": "通過法文鑑定(DELF)A2級者可申請抵免6學分，抵免學分僅可計算於法文學程內，但不列入學生之畢業學分數。修習本校外語中心所開設之初級法語I及初級法語Ⅱ可申請抵免法文一(一)（不可抵免畢業學分數）。"
+            },
+            {
+              "program_subject": "法文一（二）",
+              "alternatives": [
+                {"name": "法文一（二）", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": "修習本校外語中心所開設之初級法語Ⅲ及初級法語Ⅳ可抵免法文一(二)（不可抵免畢業學分數）。"
+            }
+          ]
+        },
+        {
+          "id": "elective",
+          "label": "選修課程",
+          "selection_rule": {"type": "min_credits"},
+          "credit_requirement": {"min": 9},
+          "subjects": [
+            {
+              "program_subject": "法國語言與文化",
+              "alternatives": [
+                {"name": "法國語言與文化", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "視覺文化與哲學反思",
+              "alternatives": [
+                {"name": "視覺文化與哲學反思", "departments": ["通識中心"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "法國影像美學",
+              "alternatives": [
+                {"name": "法國影像美學", "departments": ["通識中心"], "credits": 2, "note": "以「影像美學抵免」"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "當代法國思潮與後現代",
+              "alternatives": [
+                {"name": "當代法國思潮與後現代", "departments": ["通識中心"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "倫理與實踐",
+              "alternatives": [
+                {"name": "倫理與實踐", "departments": ["通識中心"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "歐洲政經發展",
+              "alternatives": [
+                {"name": "歐洲政經發展", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "西洋文化典故",
+              "alternatives": [
+                {"name": "西洋文化典故", "departments": ["通識中心"], "credits": 3, "note": "103學年新開課程"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "當代劇場藝術的價值與思維",
+              "alternatives": [
+                {"name": "當代劇場藝術的價值與思維", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "文化差異與倫理規範",
+              "alternatives": [
+                {"name": "文化差異與倫理規範", "departments": ["通識中心"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "跨文化領導力發展與實務",
+              "alternatives": [
+                {"name": "跨文化領導力發展與實務", "departments": ["通識中心"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術與全球文化識讀",
+              "alternatives": [
+                {"name": "藝術與全球文化識讀", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "當代西洋外交史",
+              "alternatives": [
+                {"name": "當代西洋外交史", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "經典歐美短篇小說",
+              "alternatives": [
+                {"name": "經典歐美短篇小說", "departments": ["通識中心"], "credits": 3, "note": "105學年新開課程"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "性別與社會",
+              "alternatives": [
+                {"name": "性別與社會", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "女性主義思潮",
+              "alternatives": [
+                {"name": "女性主義思潮", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "哲學法文",
+              "alternatives": [
+                {"name": "哲學法文", "departments": ["哲學所"], "credits": 3, "note": "學期課（3學分）"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "列維納斯與現象學問題",
+              "alternatives": [
+                {"name": "列維納斯與現象學問題", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "結構與解構",
+              "alternatives": [
+                {"name": "結構與解構", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "倫理與他者",
+              "alternatives": [
+                {"name": "倫理與他者", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "尼采與時間問題",
+              "alternatives": [
+                {"name": "尼采與時間問題", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "政治、主體與普遍性",
+              "alternatives": [
+                {"name": "政治、主體與普遍性", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "尼采與當代歐陸思潮",
+              "alternatives": [
+                {"name": "尼采與當代歐陸思潮", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "巴塔耶哲學",
+              "alternatives": [
+                {"name": "巴塔耶哲學", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "愛與共同體",
+              "alternatives": [
+                {"name": "愛與共同體", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "權力關係之外－傅柯哲學與主體性的改革",
+              "alternatives": [
+                {"name": "權力關係之外－傅柯哲學與主體性的改革", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "德希達：世界主義與他者論述",
+              "alternatives": [
+                {"name": "德希達：世界主義與他者論述", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "意識形態與歷史",
+              "alternatives": [
+                {"name": "意識形態與歷史", "departments": ["哲學所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術管理概論",
+              "alternatives": [
+                {"name": "藝術管理概論", "departments": ["劇藝系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術行銷概論",
+              "alternatives": [
+                {"name": "藝術行銷概論", "departments": ["劇藝系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術與文化環境概論",
+              "alternatives": [
+                {"name": "藝術與文化環境概論", "departments": ["劇藝系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "電影藝術賞析",
+              "alternatives": [
+                {"name": "電影藝術賞析", "departments": ["劇藝系"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "文化評論",
+              "alternatives": [
+                {"name": "文化評論", "departments": ["劇藝所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "文化理念與政策",
+              "alternatives": [
+                {"name": "文化理念與政策", "departments": ["劇藝所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術文化環境",
+              "alternatives": [
+                {"name": "藝術文化環境", "departments": ["劇藝所"], "credits": 3, "note": "103學年新開課程"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "電影欣賞",
+              "alternatives": [
+                {"name": "電影欣賞", "departments": ["劇藝所"], "credits": 2, "note": "103學年新開課程"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "博物館管理",
+              "alternatives": [
+                {"name": "博物館管理", "departments": ["劇藝所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術管理",
+              "alternatives": [
+                {"name": "藝術管理", "departments": ["劇藝所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術行銷概論",
+              "alternatives": [
+                {"name": "藝術行銷概論", "departments": ["劇藝所"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術社會學",
+              "alternatives": [
+                {"name": "藝術社會學", "departments": ["劇藝所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術平台經營之理論與實務",
+              "alternatives": [
+                {"name": "藝術平台經營之理論與實務", "departments": ["劇藝所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "都會藝術現象學",
+              "alternatives": [
+                {"name": "都會藝術現象學", "departments": ["劇藝所"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "拉崗精神分析",
+              "alternatives": [
+                {"name": "拉崗精神分析", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "傅科與現代小說",
+              "alternatives": [
+                {"name": "傅科與現代小說", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "歐洲文學：1350-1800",
+              "alternatives": [
+                {"name": "歐洲文學：1350-1800", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "歐洲文學：1800以後",
+              "alternatives": [
+                {"name": "歐洲文學：1800以後", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "世界文學英文短篇小說",
+              "alternatives": [
+                {"name": "世界文學英文短篇小說", "departments": ["外文所"], "credits": 3, "note": "103學年新開課程"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "電影與文學賞析",
+              "alternatives": [
+                {"name": "電影與文學賞析", "departments": ["外文所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "啟蒙運動：思想與理想",
+              "alternatives": [
+                {"name": "啟蒙運動：思想與理想", "departments": ["外文系"], "credits": 3, "note": "103學年新開課程"}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "西洋文學概論（一）",
+              "alternatives": [
+                {"name": "西洋文學概論（一）", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "西洋文學概論（二）",
+              "alternatives": [
+                {"name": "西洋文學概論（二）", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "歐洲電影",
+              "alternatives": [
+                {"name": "歐洲電影", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "歐洲文藝復興之歷史與文化",
+              "alternatives": [
+                {"name": "歐洲文藝復興之歷史與文化", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "當代電影藝術",
+              "alternatives": [
+                {"name": "當代電影藝術", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "歌舞電影與戲劇",
+              "alternatives": [
+                {"name": "歌舞電影與戲劇", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "觀光英文",
+              "alternatives": [
+                {"name": "觀光英文", "departments": ["外文系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "性社會學",
+              "alternatives": [
+                {"name": "性社會學", "departments": ["社會系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術社會學",
+              "alternatives": [
+                {"name": "藝術社會學", "departments": ["社會系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "性別社會學(一)",
+              "alternatives": [
+                {"name": "性別社會學(一)", "departments": ["社會系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "性別社會學(二)",
+              "alternatives": [
+                {"name": "性別社會學(二)", "departments": ["社會所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "國際關係導論",
+              "alternatives": [
+                {"name": "國際關係導論", "departments": ["社科院"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "國際關係",
+              "alternatives": [
+                {"name": "國際關係", "departments": ["政經系"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "國際正義與人權",
+              "alternatives": [
+                {"name": "國際正義與人權", "departments": ["政治所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "多元文化主義",
+              "alternatives": [
+                {"name": "多元文化主義", "departments": ["政治所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "民主理論與社會正義",
+              "alternatives": [
+                {"name": "民主理論與社會正義", "departments": ["政治所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "女性主義名著選讀",
+              "alternatives": [
+                {"name": "女性主義名著選讀", "departments": ["政治所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "國際關係",
+              "alternatives": [
+                {"name": "國際關係", "departments": ["政治所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "女性主義與政治",
+              "alternatives": [
+                {"name": "女性主義與政治", "departments": ["政治所"], "credits": 3, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "通識專題講座：美學與文化識讀",
+              "alternatives": [
+                {"name": "通識專題講座：美學與文化識讀", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            },
+            {
+              "program_subject": "藝術與全球文化識讀",
+              "alternatives": [
+                {"name": "藝術與全球文化識讀", "departments": ["通識中心"], "credits": 2, "note": null}
+              ],
+              "prerequisite_note": null
+            }
+          ]
+        }
+      ],
+      "requirements": {
+        "total_min_credits": 15,
+        "external_credits": {"min": 6, "description": "選讀學程學生所修習之學程課程中，至少應有6學分不屬於學生本系所、雙主修及輔系之課程"},
+        "waiver": {"allowed": true, "max_credits": null, "note": "修讀本學程學生倘入學前曾修習本學程規劃之課程，得提經學程負責人認定後抵免之"},
+        "non_course_requirements": [],
+        "special_notes": [
+          "學程課程規劃至少15學分",
+          "課程若有異動，先提整合學程委員會討論通過，再提教務會議審議通過方可施行",
+          "110學年度以前申請休習本學程之學生若修習核心課程超過12學分，多餘的核心課程學分數可以納入選修學分計算",
+          "104學年度以前申請修習法文學程的學生，可將「政治、主體與普遍性」列入選修學分中",
+          "105學年度以前申請修習法文學程的學生，可將「西洋文學概論（一）」、「西洋文學概論（二）」、「歐洲電影」及「歐洲文藝復興之歷史與文化」列入選修學分中",
+          "106學年度以前申請修習法文學程的學生，可將「藝術管理概論」、「藝術行銷概論」、「藝術與文化環境概論」、「電影藝術賞析」、「性社會學」、「藝術社會學」、「性別社會學（一）」、「性別社會學（二）」、「國際關係導論」、「國際關係」、「當代電影藝術」、「歌舞電影與戲劇」、「經典歐美短篇小說」、「性別與社會」及「女性主義思潮」列入選修學分中",
+          "107學年度以前申請修習法文學程的學生，可將「通識專題講座：美學與文化識讀」與「藝術與全球文化識讀」列入選修學分中",
+          "109學年度以前申請修習法國語言、文化與社會學程的學生，可將「觀光英文」、「尼采與當代歐陸思潮」、「巴塔耶哲學」、「愛與共同體」、「權力關係之外－傅科哲學與主體性的改革」、「德希達：世界主義與他者論述」、及「意識形態與歷史」列入選修學分中",
+          "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+        ]
+      }
+    }
+  ]
+}
+```

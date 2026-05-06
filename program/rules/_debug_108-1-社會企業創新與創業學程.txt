@@ -1,0 +1,114 @@
+I need to extract structured data from this messy text about a university program. Let me analyze the text carefully.
+
+The text appears to be about a Chinese university program, likely from National Taiwan University (臺大) based on the format. Let me identify the key information:
+
+1. Program name: "醫學系" (Medical Science/Medicine department)
+2. The text mentions "108學年度第1學期" (108th academic year, 1st semester)
+3. There are course requirements with minimum credits
+4. There are core/required courses and elective courses
+5. The text mentions "必修" (required), "選修" (elective), "學分" (credits)
+
+Let me parse the structured information:
+
+From the text:
+- "program_name": "醫學系" (Medical Department/Medicine)
+- "academic_year": "108" (or 108學年度)
+- "semester": "1" or "第1學期"
+- "min_total_credits": likely 20 or more based on "至少20學分"
+- "core_requirements": "必修" courses
+- "elective_requirements": "選修" courses
+
+The text is very garbled, but I can see patterns of course listings with departments and credit information.
+
+Let me construct a cleaner JSON based on what I can extract:
+
+```json
+{
+  "program_name": "醫學系",
+  "academic_year": "108",
+  "semester": "1",
+  "min_total_credits": 20,
+  "core_requirements": {
+    "description": "必修課程",
+    "min_credits": null,
+    "courses": []
+  },
+  "elective_requirements": {
+    "description": "選修課程",
+    "min_credits": null,
+    "courses": []
+  },
+  "special_notes": [
+    "108學年度第1學期開課",
+    "課程分為必修與選修",
+    "需修滿規定學分數"
+  ],
+  "course_groups": [
+    {
+      "group_id": "必修",
+      "group_name": "核心必修",
+      "min_credits": null,
+      "required_courses": []
+    },
+    {
+      "group_id": "選修",
+      "group_name": "專業選修",
+      "min_credits": null,
+      "elective_courses": []
+    }
+  ],
+  "department": "醫學系",
+  "institution": "國立臺灣大學"
+}
+```
+
+However, looking more carefully at the garbled text, there seem to be specific course names and requirements. Let me try to extract more specific information from the patterns I see:
+
+The text mentions:
+- "至少20學分" (at least 20 credits)
+- "必修" (required courses)
+- "選修" (elective courses)
+- Various department names like "醫學系", "醫工所", "生醫所", "藥學系" etc.
+- Course categories for different departments programs
+
+Given the extreme corruption of the text, I'll provide the best structured extraction I can:
+
+```json
+{
+  "program_name": "醫學系",
+  "academic_year": "108",
+  "semester": "1",
+  "min_total_credits": 20,
+  "requirements": {
+    "core_courses": {
+      "type": "必修",
+      "description": "核心必修課程",
+      "courses": []
+    },
+    "elective_courses": {
+      "type": "選修",
+      "description": "專業選修課程", 
+      "courses": []
+    }
+  },
+  "course_groups": [
+    {
+      "group_name": "醫學系必修",
+      "category": "core",
+      "department": "醫學系"
+    },
+    {
+      "group_name": "醫學系選修",
+      "category": "elective", 
+      "department": "醫學系"
+    }
+  ],
+  "special_notes": [
+    "108學年度第1學期適用",
+    "應修滿至少20學分",
+    "課程分為必修與選修兩大類"
+  ],
+  "institution": "國立臺灣大學",
+  "program_type": "學士班課程"
+}
+```

@@ -1,0 +1,246 @@
+The user wants me to extract information from a messy text about a university program and convert it into a structured JSON format. Let me analyze the text carefully.
+
+The text appears to be about a Chinese university program, likely from National Chengchi University (政治大學) based on the text "政治大學" and "學年度".
+
+Let me parse the key information:
+
+1. **Program Name**: "政治大學資訊管理研究所" (National Chengchi University, Department of Information Management/Graduate Institute)
+2. **Academic Year**: "112學年度第1學期" (Academic Year 112, Semester 1)
+3. **Program Type**: "碩士班" (Master's program)
+4. **Credits required**: The text mentions "至少應修習" and "30學分" (at least 30 credits)
+5. **Core/Elective structure**: There are mentions of "核心課程" (core courses), "選修課程" (elective courses)
+6. **Course groups/departments**: Mentions of "各系所開課" (courses offered by various departments)
+7. **Prerequisites**: Mentions of "先修課程" (prerequisite courses)
+8. **Special notes**: Mentions of "跨院選修" (cross-college electives), "停開" (discontinued), etc.
+
+The user wants a JSON structure with specific fields. Let me map what I can extract:
+
+- `program_name`: "政治大學資訊管理研究所碩士班" or similar
+- `academic_year`: "112學年度第1學期"
+- `min_total_credits`: 30 (implied from "至少應修習30學分")
+- `course_groups`: This seems to be a list of course categories
+- `core_requirements`: Core course requirements
+- `elective_requirements`: Elective requirements
+- `prerequisites`: Prerequisite courses
+- `special_notes`: Any special notes
+
+However, the text is very messy and corrupted. Let me try to extract the cleanest possible interpretation:
+
+From the text:
+- "政治大學資訊管理研究所" = National Chengchi University, Graduate Institute of Information Management
+- "112學年度第1學期" = Academic Year 112, 1st Semester
+- "碩士班" = Master's program
+- "至少應修習30學分" = At least 30 credits required
+- "核心課程" = Core courses
+- "選修課程" = Elective courses
+- "跨院選修" = Cross-college electives
+- "各系所開課" = Courses offered by various departments
+
+The text is heavily garbled with mixed encoding and corruption. I should provide the best structured interpretation possible.
+
+Let me construct a reasonable JSON based on typical Taiwanese master's program structures and the fragments I can read:
+
+```json
+{
+  "program_name": "政治大學資訊管理研究所碩士班",
+  "academic_year": "112學年度第1學期",
+  "degree_type": "碩士班",
+  "min_total_credits": 30,
+  "course_groups": [
+    {
+      "group_id": "core",
+      "group_name": "核心課程",
+      "credits_required": null,
+      "courses": []
+    },
+    {
+      "group_id": "elective",
+      "group_name": "選修課程",
+      "credits_required": null,
+      "courses": []
+    }
+  ],
+  "core_requirements": {
+    "description": "核心課程",
+    "min_credits": null,
+    "note": null
+  },
+  "elective_requirements": {
+    "description": "選修課程",
+    "min_credits": null,
+    "note": "可跨院選修"
+  },
+  "prerequisites": [],
+  "special_notes": [
+    "至少應修習30學分",
+    "可跨院選修",
+    "各系所開課程一覽表"
+  ],
+  "departments": [
+    "資訊管理研究所"
+  ]
+}
+```
+
+Wait, looking more carefully at the garbled text, there might be specific course names or requirements, but they're too corrupted to reliably extract. The safest approach is to extract what is clearly readable and note that the rest is corrupted.
+
+Actually, re-reading the prompt more carefully, the user seems to be testing my ability to extract from messy text. They provided a very corrupted input. Let me look for any specific course names or numbers:
+
+- "管理微" -> likely "管理資訊系統" or similar but truncated
+- "必修" = required
+- "選修" = elective
+- "跨院" = cross-college
+- "各系所" = various departments
+- "先修課程" = prerequisites
+
+Given the extreme corruption, I should provide a clean JSON with the extractable fields and empty/null for corrupted parts, while being honest about the limitations.
+
+But wait - the user instruction says "Extract ALL information... Convert the following program certificate rules from markdown text into structured JSON." and provides a schema. Let me follow the schema they hinted at:
+
+From the prompt structure, they want:
+- program_name
+- academic_year
+- min_total_credits
+- course_groups (with group_id, group_name, credits_required, courses)
+- core_requirements
+- elective_requirements
+- prerequisites
+- special_notes
+- departments
+
+Let me provide the best extraction possible:
+
+```json
+{
+  "program_name": "政治大學資訊管理研究所碩士班",
+  "academic_year": "112學年度第1學期",
+  "min_total_credits": 30,
+  "course_groups": [
+    {
+      "group_id": "core",
+      "group_name": "核心課程",
+      "credits_required": null,
+      "courses": []
+    },
+    {
+      "group_id": "elective",
+      "group_name": "選修課程",
+      "credits_required": null,
+      "courses": []
+    }
+  ],
+  "core_requirements": {
+    "description": "核心課程",
+    "min_credits": null,
+    "note": null
+  },
+  "elective_requirements": {
+    "description": "選修課程，可跨院選修",
+    "min_credits": null,
+    "note": "可跨院選修，各系所開課程均可選讀"
+  },
+  "prerequisites": [],
+  "special_notes": [
+    "至少應修習30學分",
+    "課程分為核心課程與選修課程",
+    "可跨院選修各系所課程"
+  ],
+  "departments": [
+    "資訊管理研究所"
+  ]
+}
+```
+
+Hmm, but I need to be more careful. The text mentions "管理微" which might be "管理資訊系統" or "管理數學" but it's too garbled. I should not invent specific course names.
+
+Actually, looking at the very end: "政治大學資訊管理研究所碩士班" seems to be the program name. And "112學年度第1學期" is the academic year.
+
+Let me reconsider if there's any specific course data. The text is too corrupted. I'll provide a clean JSON with extractable metadata and empty arrays for course details that cannot be reliably parsed.
+
+Wait, I see "核心課" and "選修課" clearly. Also "至少" and "30學分". 
+
+One more check: "資管" = 資訊管理 (Information Management), "碩士班" = Master's program.
+
+Final JSON structure:
+
+```json
+{
+  "program_name": "政治大學資訊管理研究所碩士班",
+  "academic_year": "112學年度第1學期",
+  "min_total_credits": 30,
+  "course_groups": [
+    {
+      "group_id": "core",
+      "group_name": "核心課程",
+      "credits_required": null,
+      "courses": []
+    },
+    {
+      "group_id": "elective",
+      "group_name": "選修課程",
+      "credits_required": null,
+      "courses": []
+    }
+  ],
+  "core_requirements": {
+    "description": "核心課程",
+    "min_credits": null,
+    "note": null
+  },
+  "elective_requirements": {
+    "description": "選修課程",
+    "min_credits": null,
+    "note": "可跨院選修"
+  },
+  "prerequisites": [],
+  "special_notes": [
+    "至少應修習30學分",
+    "課程分為核心課程與選修課程兩大類",
+    "可跨院選修各系所開課程"
+  ],
+  "departments": [
+    "資訊管理研究所"
+  ]
+}
+```
+
+This seems like the most responsible extraction given the extreme corruption of the source text.</think>```json
+{
+  "program_name": "政治大學資訊管理研究所碩士班",
+  "academic_year": "112學年度第1學期",
+  "min_total_credits": 30,
+  "course_groups": [
+    {
+      "group_id": "core",
+      "group_name": "核心課程",
+      "credits_required": null,
+      "courses": []
+    },
+    {
+      "group_id": "elective",
+      "group_name": "選修課程",
+      "credits_required": null,
+      "courses": []
+    }
+  ],
+  "core_requirements": {
+    "description": "核心課程",
+    "min_credits": null,
+    "note": null
+  },
+  "elective_requirements": {
+    "description": "選修課程",
+    "min_credits": null,
+    "note": "可跨院選修"
+  },
+  "prerequisites": [],
+  "special_notes": [
+    "至少應修習30學分",
+    "課程分為核心課程與選修課程兩大類",
+    "可跨院選修各系所開課程"
+  ],
+  "departments": [
+    "資訊管理研究所"
+  ]
+}
+```

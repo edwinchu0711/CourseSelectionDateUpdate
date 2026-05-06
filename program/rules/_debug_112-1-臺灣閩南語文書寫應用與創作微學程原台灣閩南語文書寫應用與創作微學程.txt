@@ -1,0 +1,60 @@
+I need to extract all course names from this messy text and output them as a JSON array.
+
+Let me parse through this garbled text carefully to identify course names:
+
+From the text, I can identify these course names:
+1. "開課系所" (department offering)
+2. "跨院選修" (cross-college elective)
+3. "中國語文" (Chinese language)
+4. "生命科學" (life science)
+5. "流行文化" (popular culture)
+6. "創作" (creation/creative writing)
+7. "微積分" (calculus)
+8. "程式設計" (programming)
+9. "資料結構" (data structures)
+10. "線性代數" (linear algebra)
+11. "離散數學" (discrete mathematics)
+12. "機率論" (probability theory)
+13. "統計學" (statistics)
+14. "作業系統" (operating systems)
+15. "編譯器" (compilers)
+16. "資料庫" (databases)
+17. "網路通訊" (network communications)
+18. "人工智慧" (artificial intelligence)
+19. "機器學習" (machine learning)
+20. "深度學習" (deep learning)
+
+Wait, let me re-read more carefully. The text is very garbled. Let me look for clearer patterns:
+
+Looking at the garbled text more carefully:
+- "中國語文" appears
+- "生命科學" appears  
+- "流行文化" appears
+- "創作" appears
+- "微積分" appears
+- "程式設計" appears
+
+But actually, looking at this more systematically - this appears to be a corrupted document about course/program requirements. The actual course names seem to be embedded in garbled text.
+
+From what I can make out:
+- "中國語文" (Chinese language)
+- "生命科學" (life science)  
+- "流行文化" (popular culture)
+- "創作" (creation)
+- "微積分" (calculus)
+- "程式設計" (programming)
+
+However, the text is extremely corrupted. Let me try to be more precise and only extract clearly identifiable course names:
+
+```json
+{
+  "courses": [
+    "中國語文",
+    "生命科學",
+    "流行文化",
+    "創作",
+    "微積分",
+    "程式設計"
+  ]
+}
+```
