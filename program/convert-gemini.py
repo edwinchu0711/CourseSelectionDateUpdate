@@ -261,6 +261,38 @@ def convert_file(
 
             data = json.loads(result_text)
 
+            # ── 容錯與自動修復 ──────────────────────────────────────────────────
+            if isinstance(data, list) and len(data) > 0:
+                data = data[0]
+
+            if not isinstance(data, dict):
+                raise ValueError("解析出來的 JSON 不是一個字典物件")
+
+            if "program_name" not in data or not data["program_name"]:
+                data["program_name"] = hint
+
+            # 如果 LLM 把 program_id 寫成 id，則進行轉換
+            if "id" in data and "program_id" not in data:
+                data["program_id"] = data["id"]
+
+            if "program_id" not in data or not data["program_id"]:
+                year_sem_match = re.match(r"^(\d{3}-\d)-", filename)
+                prefix = year_sem_match.group(1) if year_sem_match else ""
+                if prefix:
+                    data["program_id"] = f"{prefix}-{data['program_name']}"
+                else:
+                    data["program_id"] = data["program_name"]
+
+            if "versions" in data and isinstance(data["versions"], list):
+                year_sem_match = re.match(r"^(\d{3})-(\d)-", filename)
+                for v in data["versions"]:
+                    if isinstance(v, dict):
+                        if year_sem_match:
+                            if "academic_year" not in v or v["academic_year"] is None:
+                                v["academic_year"] = int(year_sem_match.group(1))
+                            if "semester" not in v or v["semester"] is None:
+                                v["semester"] = int(year_sem_match.group(2))
+
             # 基本欄位驗證
             assert "program_id"   in data,             "缺少 program_id"
             assert "program_name" in data,             "缺少 program_name"
