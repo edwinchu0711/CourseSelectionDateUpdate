@@ -1,4 +1,4 @@
-name: Fetch & Process Programs
+name: Fetch & Process Programs (10 shards)
 
 on:
   # schedule:
@@ -100,7 +100,7 @@ jobs:
           fi
           python program/process_programs.py --ci $FORCE_FLAG --changed-file program/changed_programs.json
 
-      - name: 產生分片索引（固定 2 片）
+      - name: 產生分片索引（固定 10 片）
         id: set-shards
         run: |
           python -c "
@@ -109,17 +109,14 @@ jobs:
           txt_files = sorted(glob.glob('program/data/*.txt'))
           print(f'找到 {len(txt_files)} 個 txt 檔案')
 
-          shard_0 = [f for i, f in enumerate(txt_files) if i % 2 == 0]
-          shard_1 = [f for i, f in enumerate(txt_files) if i % 2 == 1]
-
+          NUM_SHARDS = 10
           os.makedirs('program/shards', exist_ok=True)
-          with open('program/shards/shard_0.json', 'w') as f:
-              json.dump(shard_0, f)
-          with open('program/shards/shard_1.json', 'w') as f:
-              json.dump(shard_1, f)
 
-          print(f'Shard 0: {len(shard_0)} 個檔案')
-          print(f'Shard 1: {len(shard_1)} 個檔案')
+          for shard_id in range(NUM_SHARDS):
+              shard = [f for i, f in enumerate(txt_files) if i % NUM_SHARDS == shard_id]
+              with open(f'program/shards/shard_{shard_id}.json', 'w') as f:
+                  json.dump(shard, f)
+              print(f'Shard {shard_id}: {len(shard)} 個檔案')
           "
 
       - name: Upload workspace artifact
@@ -133,14 +130,14 @@ jobs:
             program/scraped_programs.json
 
   # ─────────────────────────────────────────────────────────
-  # Step 2: 平行分片轉換（共用同一個 API Key）
+  # Step 2: 平行分片轉換（10 個 shard 並行）
   # ─────────────────────────────────────────────────────────
   convert:
     needs: prepare
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        shard_id: ["0", "1"]
+        shard_id: ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
 
     steps:
       - uses: actions/checkout@v4
@@ -230,6 +227,54 @@ jobs:
           name: shard-result-1
           path: /tmp/shard_results/shard_1/
 
+      - name: Download shard 2 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-2
+          path: /tmp/shard_results/shard_2/
+
+      - name: Download shard 3 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-3
+          path: /tmp/shard_results/shard_3/
+
+      - name: Download shard 4 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-4
+          path: /tmp/shard_results/shard_4/
+
+      - name: Download shard 5 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-5
+          path: /tmp/shard_results/shard_5/
+
+      - name: Download shard 6 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-6
+          path: /tmp/shard_results/shard_6/
+
+      - name: Download shard 7 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-7
+          path: /tmp/shard_results/shard_7/
+
+      - name: Download shard 8 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-8
+          path: /tmp/shard_results/shard_8/
+
+      - name: Download shard 9 result
+        uses: actions/download-artifact@v4
+        with:
+          name: shard-result-9
+          path: /tmp/shard_results/shard_9/
+
       - name: Merge shard results
         run: |
           python -c "
@@ -243,11 +288,16 @@ jobs:
               except:
                   return []
 
-          shard_0 = load_json('/tmp/shard_results/shard_0/rules.json')
-          shard_1 = load_json('/tmp/shard_results/shard_1/rules.json')
+          # 合併所有 10 個 shard 的結果
+          all_programs = []
+          for shard_id in range(10):
+              path = f'/tmp/shard_results/shard_{shard_id}/rules.json'
+              programs = load_json(path)
+              all_programs.extend(programs)
+              print(f'Shard {shard_id}: 載入 {len(programs)} 個學程')
 
           merged = {}
-          for program in shard_0 + shard_1:
+          for program in all_programs:
               name = program.get('program_name', '')
               if name not in merged:
                   merged[name] = program

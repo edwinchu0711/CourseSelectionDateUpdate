@@ -191,6 +191,7 @@ def convert_file(
     model: str,
     max_retries: int = 5,
     retry_delay: float = 10.0,
+    no_retry_deadline: float = 0.0,
 ) -> dict | None:
     """
     將單一 TXT 檔案透過 LLM API 轉換為 dict。
@@ -238,6 +239,7 @@ def convert_file(
                 ],
                 temperature=0.1,
                 max_tokens=16000,
+                timeout=1800.0,
             )
             result_text = response.choices[0].message.content
 
@@ -309,6 +311,10 @@ def convert_file(
             ])
 
             if is_retriable:
+                if no_retry_deadline > 0 and time.time() > no_retry_deadline:
+                    tprint(f"  ⏳ [{filename}] 執行時間已超過 310 分鐘，不接受重試，直接放棄")
+                    return None
+
                 consecutive_errors += 1
                 remaining = max_retries - consecutive_errors
 
@@ -322,7 +328,7 @@ def convert_file(
                 )
                 time.sleep(current_delay)
                 # 指數退避：每次重試等待時間翻倍，上限 120 秒
-                current_delay = min(current_delay * 2, 120.0)
+                current_delay = min(current_delay * 1.2, 120.0)
 
             else:
                 tprint(f"  ❌ [{filename}] 轉換失敗：{type(e).__name__}: {e}")
@@ -349,6 +355,7 @@ def process_file(
     retry_delay: float,
     counters: dict,
     deadline: float,
+    no_retry_deadline: float,
 ) -> None:
     """
     單一執行緒的工作函式：
@@ -393,6 +400,7 @@ def process_file(
     data = convert_file(
         str(file_path), client, model,
         max_retries=5, retry_delay=retry_delay,
+        no_retry_deadline=no_retry_deadline,
     )
 
     # 加鎖：合併資料 + 存檔 + 更新計數器
@@ -516,7 +524,9 @@ def main():
 
     total = len(files_to_process)
     
-    deadline = time.time() + args.timeout_mins * 60.0 if args.timeout_mins > 0 else 0.0
+    global_start_time = time.time()
+    deadline = global_start_time + args.timeout_mins * 60.0 if args.timeout_mins > 0 else 0.0
+    no_retry_deadline = global_start_time + 310.0 * 60.0
 
     # ── 多執行緒執行 ──────────────────────────────────────────────────────────
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
@@ -532,6 +542,7 @@ def main():
                 args.retry_delay,
                 counters,
                 deadline,
+                no_retry_deadline,
             ): file_path
             for idx, file_path in enumerate(files_to_process)
         }
