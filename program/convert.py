@@ -225,6 +225,7 @@ def convert_file(
 
     consecutive_errors = 0
     current_delay      = retry_delay   # 指數退避起始值
+    result_text        = None
 
     while consecutive_errors < max_retries:
         try:
@@ -323,19 +324,16 @@ def convert_file(
                 # 指數退避：每次重試等待時間翻倍，上限 120 秒
                 current_delay = min(current_delay * 2, 120.0)
 
-            elif isinstance(e, json.JSONDecodeError):
-                tprint(f"  ❌ [{filename}] JSON 解析失敗：{e}")
-                debug_path = RULES_FILE.parent / f"_debug_{filename}.txt"
-                try:
-                    with open(debug_path, "w", encoding="utf-8") as dbg:
-                        dbg.write(result_text)
-                    tprint(f"  📝 原始回應已儲存至：{debug_path}")
-                except Exception:
-                    pass
-                return None
-
             else:
                 tprint(f"  ❌ [{filename}] 轉換失敗：{type(e).__name__}: {e}")
+                if result_text is not None:
+                    debug_path = RULES_FILE.parent / f"_debug_{filename}.txt"
+                    try:
+                        with open(debug_path, "w", encoding="utf-8") as dbg:
+                            dbg.write(result_text)
+                        tprint(f"  📝 原始回應已儲存至：{debug_path}")
+                    except Exception:
+                        pass
                 return None
 
     return None

@@ -67,8 +67,8 @@ Each version block starts with: ## 【N 學年度第 S 學期版本】
 - Undivided core → id: "core"
 - selection_rule:
   - Must take ALL subjects → {"type": "all"}
-  - Must pick N subjects → {"type": "pick_n", "pick": N}
-  - Must reach credit minimum → {"type": "min_credits"}
+  - Must pick N SUBJECTS (科目數) → {"type": "pick_n", "pick": N}
+  - Must reach credit minimum only → {"type": "min_credits"}
 - credit_requirement: ALWAYS an object with "min". NEVER null or missing.
   If the text doesn't state a specific minimum, use {"min": 0}.
 - If the group requires a minimum of starred (＊) elective credits, add "required_tags":
