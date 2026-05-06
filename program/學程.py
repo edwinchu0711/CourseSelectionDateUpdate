@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import urllib.parse
-import re
 import sys
 
 # Ensure the console output handles UTF-8 correctly (fixes UnicodeEncodeError on Windows)
@@ -35,11 +34,11 @@ def scrape_nsysu_programs():
         return []
 
     for i, table in enumerate(tables):
+        # Skip the last table (Discontinued Programs)
+        if i == len(tables) - 1:
+            continue
+            
         rows = table.find_all('tr')
-        
-        # Check if this is the last table (Discontinued Programs)
-        is_discontinued_table = (i == len(tables) - 1)
-        
         for row in rows:
             cols = row.find_all(['td', 'th'])
             
@@ -47,45 +46,23 @@ def scrape_nsysu_programs():
             if row.get('bgcolor') == '#FFFF99' or row.find('th'):
                 continue
                 
-            if not is_discontinued_table:
-                # Handle the first 3 tables (Standard Programs)
-                if len(cols) >= 5:
-                    name = cols[0].get_text(strip=True)
-                    features = cols[1].get_text(strip=True)
-                    
-                    link_tag = cols[4].find('a')
-                    link = ""
-                    if link_tag and 'href' in link_tag.attrs:
-                        link = urllib.parse.urljoin(url, link_tag['href'])
-                    
-                    if name and link:
-                        programs.append({
-                            "name": name,
-                            "features": features,
-                            "link": link,
-                            "status": "active"
-                        })
-            
-            else:
-                if len(cols) >= 3:
-                    raw_names = cols[1].get_text(strip=True)
-                    
-                    link_tag = cols[2].find('a')
-                    link = ""
-                    if link_tag and 'href' in link_tag.attrs:
-                        link = urllib.parse.urljoin(url, link_tag['href'])
-                    
-                    name_list = re.split(r'(?<=\))、|(?<=）)、', raw_names)
-                    
-                    for name in name_list:
-                        clean_name = re.sub(r'\(.*?\)|（.*?）', '', name).strip()
-                        if clean_name and link:
-                            programs.append({
-                                "name": clean_name,
-                                "features": "",
-                                "link": link,
-                                "status": "discontinued"
-                            })
+            # Handle the first 3 tables (Standard Programs)
+            if len(cols) >= 5:
+                name = cols[0].get_text(strip=True)
+                features = cols[1].get_text(strip=True)
+                
+                link_tag = cols[4].find('a')
+                link = ""
+                if link_tag and 'href' in link_tag.attrs:
+                    link = urllib.parse.urljoin(url, link_tag['href'])
+                
+                if name and link:
+                    programs.append({
+                        "name": name,
+                        "features": features,
+                        "link": link,
+                        "status": "active"
+                    })
 
     return programs
 
