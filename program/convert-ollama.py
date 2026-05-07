@@ -429,6 +429,9 @@ def main():
         "--timeout-mins", type=float, default=310.0,
         help="程式執行時間上限（分鐘），預設 310 分鐘 (5 小時)。設為 0 代表不限制。"
     )
+    parser.add_argument(
+        "--ci", action="store_true", help="CI 模式，不詢問互動式設定"
+    )
 
     args = parser.parse_args()
 
@@ -436,10 +439,15 @@ def main():
     DEFAULT_BASE_URL = "https://ollama.com/v1"
     DEFAULT_MODEL    = "kimi-k2.6:cloud"
     # DEFAULT_MODEL    = "gemini-3-flash-preview"
-    base_url, model = prompt_connection_settings(
-        default_base_url = args.base_url  or DEFAULT_BASE_URL,
-        default_model    = args.model     or DEFAULT_MODEL,
-    )
+    
+    if args.ci or not sys.stdin.isatty():
+        base_url = args.base_url or DEFAULT_BASE_URL
+        model    = args.model or DEFAULT_MODEL
+    else:
+        base_url, model = prompt_connection_settings(
+            default_base_url = args.base_url  or DEFAULT_BASE_URL,
+            default_model    = args.model     or DEFAULT_MODEL,
+        )
 
     # ── 取得 API 金鑰（優先順序：--api-key > .env OLLAMA_KEY）──────────────
     api_key = args.api_key or os.environ.get("OLLAMA_KEY", "ollama")

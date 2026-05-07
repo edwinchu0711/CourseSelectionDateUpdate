@@ -126,7 +126,7 @@ jobs:
         env:
           OLLAMA_KEY: ${{ secrets.LLM_API_KEY }}
         run: |
-          ARGS=(--all)
+          ARGS=(--all --ci)
           
           if [ -n "${{ inputs.base_url }}" ]; then
             ARGS+=(--base-url "${{ inputs.base_url }}")
