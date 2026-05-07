@@ -36,35 +36,14 @@ RULES_FILE = Path(__file__).parent / "rules" / "rules.json"
 # ── 全域鎖（保護 programs 列表與檔案寫入）────────────────────────────────────
 _programs_lock = threading.Lock()
 
-# ── 模型備援狀態（含鎖）──────────────────────────────────────────────────────
-# 記錄目前使用的 model，以及是否已切換到備援
-_model_lock          = threading.Lock()
-_current_model: str  = ""          # 由 main() 初始化
-_model_fallback_done = False        # 是否已切換至備援 model
-_PRIMARY_MODEL       = ""           # 由 main() 初始化
-_FALLBACK_MODEL      = ""           # 由 main() 初始化
+# ── 目前使用的模型（含鎖）────────────────────────────────────────────────────
+_model_lock         = threading.Lock()
+_current_model: str = ""   # 由 main() 初始化
 
 def get_current_model() -> str:
     """執行緒安全地取得目前使用的 model 名稱"""
     with _model_lock:
         return _current_model
-
-def trigger_model_fallback(reason: str) -> bool:
-    """
-    嘗試將 model 切換至備援。
-    若已切換過則不重複切換，回傳 True 表示本次成功觸發切換。
-    """
-    global _current_model, _model_fallback_done
-    with _model_lock:
-        if _model_fallback_done:
-            return False   # 已切換過，不重複動作
-        _model_fallback_done = True
-        _current_model = _FALLBACK_MODEL
-        tprint(
-            f"\n  🔀 模型備援觸發！原因：{reason}\n"
-            f"     切換：{_PRIMARY_MODEL}  →  {_FALLBACK_MODEL}\n"
-        )
-        return True
 
 # ── 速率限制器（確保不超過 API 呼叫頻率限制）────────────────────────────────
 class RateLimiter:
@@ -210,7 +189,7 @@ def merge_into_rules(programs: list[dict], new_data: dict) -> tuple[int, int]:
 
     return added, skipped
 
-# ── 單一檔案轉換（含 503 / rate-limit 重試邏輯 + 模型備援）──────────────────
+# ── 單一檔案轉換（含 503 / rate-limit 重試邏輯）──────────────────────────────
 def convert_file(
     txt_path: str,
     client: "OpenAI",
@@ -221,7 +200,6 @@ def convert_file(
     """
     將單一 TXT 檔案透過 LLM API 轉換為 dict。
     - 遇到 503 / rate-limit 錯誤時使用指數退避自動重試
-    - 若偵測到 rate-limit 且尚未切換備援 model，立即觸發切換
     - 連續失敗 max_retries 次才放棄
     """
     path = Path(txt_path)
@@ -255,7 +233,7 @@ def convert_file(
     result_text        = None
 
     while consecutive_errors < max_retries:
-        # ── 每次呼叫前動態取得當前 model（可能已被其他執行緒切換）──────────
+        # ── 每次呼叫前動態取得當前 model ────────────────────────────────────
         model = get_current_model()
         tprint(f"  🤖 [{filename}] 使用模型：{model}")
 
@@ -335,26 +313,14 @@ def convert_file(
         except Exception as e:
             err_str = str(e).lower()
 
-            # ── 判斷是否為 rate-limit 類型錯誤 ──────────────────────────────
-            is_rate_limit = any(k in err_str for k in [
+            # ── 判斷是否為可重試類型錯誤 ────────────────────────────────────
+            is_retriable = any(k in err_str for k in [
                 "rate limit", "too many requests", "429",
-            ])
-            is_retriable = is_rate_limit or any(k in err_str for k in [
                 "503", "service unavailable", "overloaded",
                 "connection", "timeout", "timed out",
             ])
 
             if is_retriable:
-                # ── 若是 rate-limit，嘗試觸發模型備援切換 ──────────────────
-                if is_rate_limit:
-                    switched = trigger_model_fallback(
-                        f"{type(e).__name__}: {str(e)[:80]}"
-                    )
-                    if switched:
-                        # 切換後立即重試，不計入 consecutive_errors
-                        current_delay = retry_delay  # 重置退避計時
-                        continue
-
                 if no_retry_deadline > 0 and time.time() > no_retry_deadline:
                     tprint(f"  ⏳ [{filename}] 執行時間已超過 310 分鐘，不接受重試，直接放棄")
                     return None
@@ -471,7 +437,7 @@ def process_file(
 
 # ── 主程式 ────────────────────────────────────────────────────────────────────
 def main():
-    global _current_model, _PRIMARY_MODEL, _FALLBACK_MODEL
+    global _current_model
 
     parser = argparse.ArgumentParser(
         description="將學程 TXT 檔案轉換為結構化 JSON 並匯入 rules.json（多執行緒版）"
@@ -483,12 +449,7 @@ def main():
     parser.add_argument(
         "--model",
         default="moonshotai/kimi-k2.6",
-        help="主要模型名稱（預設：moonshotai/kimi-k2.6）"
-    )
-    parser.add_argument(
-        "--fallback-model",
-        default="minimaxai/minimax-m2.7",
-        help="備援模型名稱，當主要模型持續 rate-limit 時切換（預設：minimaxai/minimax-m2.7）"
+        help="模型名稱（預設：moonshotai/kimi-k2.6）"
     )
     parser.add_argument(
         "--api-key", default=None,
@@ -519,10 +480,8 @@ def main():
 
     args = parser.parse_args()
 
-    # ── 初始化模型備援狀態 ────────────────────────────────────────────────────
-    _PRIMARY_MODEL  = args.model
-    _FALLBACK_MODEL = args.fallback_model
-    _current_model  = _PRIMARY_MODEL   # 從主要模型開始
+    # ── 初始化模型 ────────────────────────────────────────────────────────────
+    _current_model = args.model
 
     # 取得 API 金鑰
     api_key = args.api_key or os.environ.get("NVIDIA_API_KEY")
@@ -535,8 +494,7 @@ def main():
         sys.exit(1)
 
     client = OpenAI(base_url=args.base_url, api_key=api_key)
-    print(f"🤖 主要模型：{_PRIMARY_MODEL}")
-    print(f"🔀 備援模型：{_FALLBACK_MODEL}")
+    print(f"🤖 使用模型：{_current_model}")
     print(f"🌐 Base URL：{args.base_url}")
     print(f"⚡ 並行執行緒：{args.workers}")
     print(f"⏱️  啟動錯開延遲：{args.stagger_min:.0f} ~ {args.stagger_max:.0f} 秒")
@@ -642,8 +600,6 @@ def main():
 
     # ── 最終摘要 ──────────────────────────────────────────────────────────────
     succeeded = total - counters["failed"]
-    final_model = get_current_model()
-    did_fallback = final_model != _PRIMARY_MODEL
 
     print(f"\n{'='*60}")
     print(f"轉換完成")
@@ -653,10 +609,7 @@ def main():
     print(f"  ⏭️  跳過重複：{counters['skipped']}")
     print(f"  📄 輸出：{RULES_FILE}")
     print(f"  📦 學程總數：{len(programs)}")
-    if did_fallback:
-        print(f"  🔀 模型備援：{_PRIMARY_MODEL} → {_FALLBACK_MODEL}（已切換）")
-    else:
-        print(f"  🤖 使用模型：{_PRIMARY_MODEL}（未觸發備援）")
+    print(f"  🤖 使用模型：{_current_model}")
 
 
 if __name__ == "__main__":
