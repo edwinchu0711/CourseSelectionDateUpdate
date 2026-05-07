@@ -1,8 +1,3 @@
-"""
-TXT to JSON Converter for Program Certificate Rules
-Multi-threaded version — up to 4 concurrent API requests
-"""
-
 import json
 import re
 import argparse
@@ -10,6 +5,7 @@ import os
 import sys
 import time
 import threading
+import random
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -40,6 +36,36 @@ RULES_FILE = Path(__file__).parent / "rules" / "rules.json"
 # ── 全域鎖（保護 programs 列表與檔案寫入）────────────────────────────────────
 _programs_lock = threading.Lock()
 
+# ── 模型備援狀態（含鎖）──────────────────────────────────────────────────────
+# 記錄目前使用的 model，以及是否已切換到備援
+_model_lock          = threading.Lock()
+_current_model: str  = ""          # 由 main() 初始化
+_model_fallback_done = False        # 是否已切換至備援 model
+_PRIMARY_MODEL       = ""           # 由 main() 初始化
+_FALLBACK_MODEL      = ""           # 由 main() 初始化
+
+def get_current_model() -> str:
+    """執行緒安全地取得目前使用的 model 名稱"""
+    with _model_lock:
+        return _current_model
+
+def trigger_model_fallback(reason: str) -> bool:
+    """
+    嘗試將 model 切換至備援。
+    若已切換過則不重複切換，回傳 True 表示本次成功觸發切換。
+    """
+    global _current_model, _model_fallback_done
+    with _model_lock:
+        if _model_fallback_done:
+            return False   # 已切換過，不重複動作
+        _model_fallback_done = True
+        _current_model = _FALLBACK_MODEL
+        tprint(
+            f"\n  🔀 模型備援觸發！原因：{reason}\n"
+            f"     切換：{_PRIMARY_MODEL}  →  {_FALLBACK_MODEL}\n"
+        )
+        return True
+
 # ── 速率限制器（確保不超過 API 呼叫頻率限制）────────────────────────────────
 class RateLimiter:
     def __init__(self, max_requests: int, period: float):
@@ -54,7 +80,7 @@ class RateLimiter:
                 now = time.time()
                 # 移除已經超過時間窗口的紀錄
                 self.timestamps = [t for t in self.timestamps if now - t < self.period]
-                
+
                 if len(self.timestamps) < self.max_requests:
                     self.timestamps.append(time.time())
                     break
@@ -184,19 +210,19 @@ def merge_into_rules(programs: list[dict], new_data: dict) -> tuple[int, int]:
 
     return added, skipped
 
-# ── 單一檔案轉換（含 503 / rate-limit 重試邏輯）──────────────────────────────
+# ── 單一檔案轉換（含 503 / rate-limit 重試邏輯 + 模型備援）──────────────────
 def convert_file(
     txt_path: str,
     client: "OpenAI",
-    model: str,
     max_retries: int = 5,
     retry_delay: float = 10.0,
     no_retry_deadline: float = 0.0,
 ) -> dict | None:
     """
     將單一 TXT 檔案透過 LLM API 轉換為 dict。
-    遇到 503 / rate-limit 錯誤時使用指數退避自動重試，
-    連續失敗 max_retries 次才放棄。
+    - 遇到 503 / rate-limit 錯誤時使用指數退避自動重試
+    - 若偵測到 rate-limit 且尚未切換備援 model，立即觸發切換
+    - 連續失敗 max_retries 次才放棄
     """
     path = Path(txt_path)
     if not path.exists():
@@ -229,6 +255,10 @@ def convert_file(
     result_text        = None
 
     while consecutive_errors < max_retries:
+        # ── 每次呼叫前動態取得當前 model（可能已被其他執行緒切換）──────────
+        model = get_current_model()
+        tprint(f"  🤖 [{filename}] 使用模型：{model}")
+
         try:
             _api_rate_limiter.wait()  # 等待直到符合速率限制
             response = client.chat.completions.create(
@@ -251,7 +281,7 @@ def convert_file(
 
             data = json.loads(result_text)
 
-            # ── 容錯與自動修復 ──────────────────────────────────────────────────
+            # ── 容錯與自動修復 ──────────────────────────────────────────────
             if isinstance(data, list) and len(data) > 0:
                 data = data[0]
 
@@ -304,13 +334,27 @@ def convert_file(
 
         except Exception as e:
             err_str = str(e).lower()
-            is_retriable = any(k in err_str for k in [
-                "503", "service unavailable", "overloaded",
+
+            # ── 判斷是否為 rate-limit 類型錯誤 ──────────────────────────────
+            is_rate_limit = any(k in err_str for k in [
                 "rate limit", "too many requests", "429",
+            ])
+            is_retriable = is_rate_limit or any(k in err_str for k in [
+                "503", "service unavailable", "overloaded",
                 "connection", "timeout", "timed out",
             ])
 
             if is_retriable:
+                # ── 若是 rate-limit，嘗試觸發模型備援切換 ──────────────────
+                if is_rate_limit:
+                    switched = trigger_model_fallback(
+                        f"{type(e).__name__}: {str(e)[:80]}"
+                    )
+                    if switched:
+                        # 切換後立即重試，不計入 consecutive_errors
+                        current_delay = retry_delay  # 重置退避計時
+                        continue
+
                 if no_retry_deadline > 0 and time.time() > no_retry_deadline:
                     tprint(f"  ⏳ [{filename}] 執行時間已超過 310 分鐘，不接受重試，直接放棄")
                     return None
@@ -350,19 +394,25 @@ def process_file(
     index: int,
     total: int,
     client: "OpenAI",
-    model: str,
     programs: list[dict],
     retry_delay: float,
     counters: dict,
     deadline: float,
     no_retry_deadline: float,
+    stagger_delay: float = 0.0,   # 首次啟動錯開延遲（秒）
 ) -> None:
     """
     單一執行緒的工作函式：
-      1. 呼叫 convert_file 取得結構化資料
-      2. 加鎖後合併至 programs 並立即存檔
-      3. 更新全域計數器
+      1. 首次啟動時等待 stagger_delay 秒（錯開各執行緒的首次 API 呼叫）
+      2. 呼叫 convert_file 取得結構化資料
+      3. 加鎖後合併至 programs 並立即存檔
+      4. 更新全域計數器
     """
+    # ── 首次啟動錯開延遲（僅在任務開始時等待一次）──────────────────────────
+    if stagger_delay > 0.0:
+        tprint(f"  ⏱️  [{index}/{total}] {file_path.name} 等待 {stagger_delay:.1f}s 後啟動...")
+        time.sleep(stagger_delay)
+
     tprint(f"\n[{index}/{total}] 🗂  {file_path.name}")
 
     if deadline > 0 and time.time() > deadline:
@@ -371,14 +421,14 @@ def process_file(
         tprint(f"  ⏳ [{index}/{total}] 已超過設定的執行時間上限，跳過處理")
         return
 
-    # ── 在呼叫 API 前，利用檔名先判斷是否已存在於 rules.json 中 ──
+    # ── 在呼叫 API 前，利用檔名先判斷是否已存在於 rules.json 中 ──────────
     filename = file_path.stem
     match = re.match(r"^(\d{3})-(\d)-", filename)
     if match:
         year = int(match.group(1))
-        sem = int(match.group(2))
+        sem  = int(match.group(2))
         hint = extract_program_hint(filename)
-        
+
         is_duplicate = False
         with _programs_lock:
             for p in programs:
@@ -398,7 +448,7 @@ def process_file(
             return
 
     data = convert_file(
-        str(file_path), client, model,
+        str(file_path), client,
         max_retries=5, retry_delay=retry_delay,
         no_retry_deadline=no_retry_deadline,
     )
@@ -421,6 +471,8 @@ def process_file(
 
 # ── 主程式 ────────────────────────────────────────────────────────────────────
 def main():
+    global _current_model, _PRIMARY_MODEL, _FALLBACK_MODEL
+
     parser = argparse.ArgumentParser(
         description="將學程 TXT 檔案轉換為結構化 JSON 並匯入 rules.json（多執行緒版）"
     )
@@ -429,8 +481,14 @@ def main():
         help="API base URL（預設：https://integrate.api.nvidia.com/v1）"
     )
     parser.add_argument(
-        "--model", default="minimaxai/minimax-m2.7",
-        help="模型名稱（預設：minimaxai/minimax-m2.7）"
+        "--model",
+        default="moonshotai/kimi-k2.6",
+        help="主要模型名稱（預設：moonshotai/kimi-k2.6）"
+    )
+    parser.add_argument(
+        "--fallback-model",
+        default="minimaxai/minimax-m2.7",
+        help="備援模型名稱，當主要模型持續 rate-limit 時切換（預設：minimaxai/minimax-m2.7）"
     )
     parser.add_argument(
         "--api-key", default=None,
@@ -447,11 +505,24 @@ def main():
         help="503/rate-limit 首次重試等待秒數（之後指數退避，預設：10）"
     )
     parser.add_argument(
-        "--timeout-mins", type=float, default=330.0,
-        help="程式執行時間上限（分鐘），預設 330 分鐘 (5.5 小時) 以避免 GitHub Action 超時。設為 0 代表不限制。"
+        "--timeout-mins", type=float, default=310.0,
+        help="程式執行時間上限（分鐘），預設 310 分鐘 (5 小時)。設為 0 代表不限制。"
+    )
+    parser.add_argument(
+        "--stagger-min", type=float, default=5.0,
+        help="首次啟動錯開延遲最小秒數（預設：5）"
+    )
+    parser.add_argument(
+        "--stagger-max", type=float, default=30.0,
+        help="首次啟動錯開延遲最大秒數（預設：30）"
     )
 
     args = parser.parse_args()
+
+    # ── 初始化模型備援狀態 ────────────────────────────────────────────────────
+    _PRIMARY_MODEL  = args.model
+    _FALLBACK_MODEL = args.fallback_model
+    _current_model  = _PRIMARY_MODEL   # 從主要模型開始
 
     # 取得 API 金鑰
     api_key = args.api_key or os.environ.get("NVIDIA_API_KEY")
@@ -464,10 +535,11 @@ def main():
         sys.exit(1)
 
     client = OpenAI(base_url=args.base_url, api_key=api_key)
-    model  = args.model
-    print(f"🤖 模型：{model}")
+    print(f"🤖 主要模型：{_PRIMARY_MODEL}")
+    print(f"🔀 備援模型：{_FALLBACK_MODEL}")
     print(f"🌐 Base URL：{args.base_url}")
     print(f"⚡ 並行執行緒：{args.workers}")
+    print(f"⏱️  啟動錯開延遲：{args.stagger_min:.0f} ~ {args.stagger_max:.0f} 秒")
 
     # ── 決定候選檔案清單 ──────────────────────────────────────────────────────
     if args.all:
@@ -523,10 +595,21 @@ def main():
     counters = {"added": 0, "skipped": 0, "failed": 0}
 
     total = len(files_to_process)
-    
+
     global_start_time = time.time()
-    deadline = global_start_time + args.timeout_mins * 60.0 if args.timeout_mins > 0 else 0.0
+    deadline          = global_start_time + args.timeout_mins * 60.0 if args.timeout_mins > 0 else 0.0
     no_retry_deadline = global_start_time + 310.0 * 60.0
+
+    # ── 預先為每個任務產生隨機錯開延遲 ──────────────────────────────────────
+    # index 0 的任務不延遲（讓第一個任務立即開始），其餘隨機錯開
+    stagger_delays = [0.0] + [
+        random.uniform(args.stagger_min, args.stagger_max)
+        for _ in range(total - 1)
+    ]
+    # 打亂順序，讓延遲分佈更均勻（避免全部集中在後段）
+    random.shuffle(stagger_delays)
+    # 第一個任務固定不延遲，確保至少有一個任務立即開始
+    stagger_delays[0] = 0.0
 
     # ── 多執行緒執行 ──────────────────────────────────────────────────────────
     with ThreadPoolExecutor(max_workers=args.workers) as executor:
@@ -534,15 +617,15 @@ def main():
             executor.submit(
                 process_file,
                 file_path,
-                idx + 1,        # 1-based index
+                idx + 1,          # 1-based index
                 total,
                 client,
-                model,
                 programs,
                 args.retry_delay,
                 counters,
                 deadline,
                 no_retry_deadline,
+                stagger_delays[idx],   # 首次啟動錯開延遲
             ): file_path
             for idx, file_path in enumerate(files_to_process)
         }
@@ -559,6 +642,9 @@ def main():
 
     # ── 最終摘要 ──────────────────────────────────────────────────────────────
     succeeded = total - counters["failed"]
+    final_model = get_current_model()
+    did_fallback = final_model != _PRIMARY_MODEL
+
     print(f"\n{'='*60}")
     print(f"轉換完成")
     print(f"  ✅ 成功：{succeeded} 個檔案")
@@ -567,6 +653,10 @@ def main():
     print(f"  ⏭️  跳過重複：{counters['skipped']}")
     print(f"  📄 輸出：{RULES_FILE}")
     print(f"  📦 學程總數：{len(programs)}")
+    if did_fallback:
+        print(f"  🔀 模型備援：{_PRIMARY_MODEL} → {_FALLBACK_MODEL}（已切換）")
+    else:
+        print(f"  🤖 使用模型：{_PRIMARY_MODEL}（未觸發備援）")
 
 
 if __name__ == "__main__":
