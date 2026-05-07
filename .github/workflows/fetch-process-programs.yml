@@ -9,6 +9,10 @@ on:
         description: '強制重新處理所有學程（忽略大小比對）'
         type: boolean
         default: false
+      skip_fetch:
+        description: '跳過「抓取 PDF、比對大小」步驟（直接使用現有 changed_programs.json）'
+        type: boolean
+        default: false
       model:
         description: '模型名稱 (留空使用預設)'
         required: false
@@ -33,7 +37,9 @@ jobs:
       - name: Install dependencies
         run: pip install google-genai beautifulsoup4 requests openai httpx python-dotenv
 
+      # ── 僅在「不跳過」時執行抓取與比對 ──────────────────
       - name: Scrape & Compare sizes
+        if: ${{ inputs.skip_fetch != true }}
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
@@ -89,6 +95,27 @@ jobs:
           print(f'強制處理 {len(all_programs)} 個學程')
           "
           fi
+
+      # ── 跳過時：印出目前 changed_programs.json 的內容供確認 ──
+      - name: Skip fetch - show existing changed_programs.json
+        if: ${{ inputs.skip_fetch == true }}
+        run: |
+          echo "⏭️ 已跳過抓取步驟，使用現有的 changed_programs.json"
+          python -c "
+          import json, os
+          path = 'program/changed_programs.json'
+          if os.path.exists(path):
+              with open(path, encoding='utf-8') as f:
+                  data = json.load(f)
+              print(f'📄 現有 changed_programs.json 包含 {len(data)} 個學程')
+              for p in data:
+                  print(f'  - {p.get(\"name\", \"?\")}')
+          else:
+              print('⚠️ 找不到 changed_programs.json，將建立空清單')
+              os.makedirs('program', exist_ok=True)
+              with open(path, 'w', encoding='utf-8') as f:
+                  json.dump([], f)
+          "
 
       - name: Process changed PDFs (PDF → TXT)
         env:
