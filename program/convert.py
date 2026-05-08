@@ -196,6 +196,7 @@ def convert_file(
     max_retries: int = 5,
     retry_delay: float = 10.0,
     no_retry_deadline: float = 0.0,
+    counters: dict = None,
 ) -> dict | None:
     """
     將單一 TXT 檔案透過 LLM API 轉換為 dict。
@@ -233,6 +234,12 @@ def convert_file(
     result_text        = None
 
     while consecutive_errors < max_retries:
+        if counters is not None:
+            with _programs_lock:
+                if counters.get("consecutive_errors", 0) >= 30:
+                    tprint(f"  ⚠️  [{filename}] 偵測到全域連續錯誤已達 30 次，放棄剩餘重試")
+                    return None
+
         # ── 每次呼叫前動態取得當前 model ────────────────────────────────────
         model = get_current_model()
         tprint(f"  🤖 [{filename}] 使用模型：{model}")
@@ -374,10 +381,22 @@ def process_file(
       3. 加鎖後合併至 programs 並立即存檔
       4. 更新全域計數器
     """
+    with _programs_lock:
+        if counters.get("consecutive_errors", 0) >= 30:
+            counters["skipped"] += 1
+            tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
+            return
+
     # ── 首次啟動錯開延遲（僅在任務開始時等待一次）──────────────────────────
     if stagger_delay > 0.0:
         tprint(f"  ⏱️  [{index}/{total}] {file_path.name} 等待 {stagger_delay:.1f}s 後啟動...")
         time.sleep(stagger_delay)
+
+    with _programs_lock:
+        if counters.get("consecutive_errors", 0) >= 30:
+            counters["skipped"] += 1
+            tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
+            return
 
     tprint(f"\n[{index}/{total}] 🗂  {file_path.name}")
 
@@ -397,6 +416,11 @@ def process_file(
 
         is_duplicate = False
         with _programs_lock:
+            if counters.get("consecutive_errors", 0) >= 30:
+                counters["skipped"] += 1
+                tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
+                return
+
             for p in programs:
                 p_name = p.get("program_name", "")
                 if hint == p_name:
@@ -413,18 +437,30 @@ def process_file(
             tprint(f"  ⏭️  [{index}/{total}] 已存在 {year}-{sem} {hint}，跳過 API 呼叫")
             return
 
+    with _programs_lock:
+        if counters.get("consecutive_errors", 0) >= 30:
+            counters["skipped"] += 1
+            tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
+            return
+
     data = convert_file(
         str(file_path), client,
         max_retries=5, retry_delay=retry_delay,
         no_retry_deadline=no_retry_deadline,
+        counters=counters,
     )
 
     # 加鎖：合併資料 + 存檔 + 更新計數器
     with _programs_lock:
         if data is None:
             counters["failed"] += 1
+            counters["consecutive_errors"] = counters.get("consecutive_errors", 0) + 1
+            if counters["consecutive_errors"] >= 30:
+                tprint(f"  🚨 連續錯誤已達 {counters['consecutive_errors']} 次！將終止後續任務。")
             return
 
+        # 成功轉換，重置連續錯誤計數器
+        counters["consecutive_errors"] = 0
         added, skipped = merge_into_rules(programs, data)
         counters["added"]   += added
         counters["skipped"] += skipped
@@ -550,7 +586,7 @@ def main():
     print(f"📖 已載入現有 rules.json（共 {len(programs)} 個學程）\n")
 
     # ── 共享計數器（由 _programs_lock 保護）──────────────────────────────────
-    counters = {"added": 0, "skipped": 0, "failed": 0}
+    counters = {"added": 0, "skipped": 0, "failed": 0, "consecutive_errors": 0}
 
     total = len(files_to_process)
 
@@ -597,6 +633,7 @@ def main():
                 tprint(f"  💥 未預期錯誤 [{file_path.name}]：{exc}")
                 with _programs_lock:
                     counters["failed"] += 1
+                    counters["consecutive_errors"] = counters.get("consecutive_errors", 0) + 1
 
     # ── 最終摘要 ──────────────────────────────────────────────────────────────
     succeeded = total - counters["failed"]
