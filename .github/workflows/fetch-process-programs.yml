@@ -20,7 +20,7 @@ on:
       num_shards:
         description: '平行處理的 Job 數量'
         type: number
-        default: 3
+        default: 1
 
 jobs:
   # ─────────────────────────────────────────────────────────
@@ -139,7 +139,7 @@ jobs:
         run: |
           NUM_SHARDS="${{ inputs.num_shards }}"
           if [ -z "$NUM_SHARDS" ]; then
-            NUM_SHARDS=3
+            NUM_SHARDS=1
           fi
           
           MATRIX_JSON=$(python -c "import json; print(json.dumps([str(i) for i in range(int($NUM_SHARDS))]))")
@@ -147,12 +147,15 @@ jobs:
           echo "num_shards=$NUM_SHARDS" >> $GITHUB_OUTPUT
 
           python -c "
-          import json, os, glob
+          import json, os, glob, random
 
           txt_files = sorted(glob.glob('program/data/*.txt'))
           print(f'找到 {len(txt_files)} 個 txt 檔案')
 
           NUM_SHARDS = int($NUM_SHARDS)
+          if NUM_SHARDS > 1:
+              random.shuffle(txt_files)
+
           os.makedirs('program/shards', exist_ok=True)
 
           for shard_id in range(NUM_SHARDS):
@@ -280,7 +283,7 @@ jobs:
               except:
                   return []
 
-          num_shards = int(os.environ.get('NUM_SHARDS', 3))
+          num_shards = int(os.environ.get('NUM_SHARDS') or 1)
           all_programs = []
           for shard_id in range(num_shards):
               path = f'/tmp/shard_results/shard-result-{shard_id}/rules.json'
