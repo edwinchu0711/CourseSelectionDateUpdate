@@ -37,6 +37,24 @@ def safe_print(*args, **kwargs):
     with PRINT_LOCK:
         print(*args, **kwargs)
 
+def get_clean_name(name):
+    """移除第一個「學程」後面如果跟著「原」、「 」、「(」、「（」之後的所有文字"""
+    clean_name = name
+    start_idx = 0
+    while True:
+        idx = clean_name.find("學程", start_idx)
+        if idx == -1:
+            break
+        if idx + 2 < len(clean_name):
+            if clean_name[idx + 2] in ("原", " ", "(", "（"):
+                clean_name = clean_name[:idx + 2]
+                break
+            else:
+                start_idx = idx + 2
+        else:
+            break
+    return clean_name
+
 def normalize_academic_year(input_str):
     year_match = re.search(r'(\d{2,3})', input_str)
     if not year_match:
@@ -379,7 +397,9 @@ def run_processing_loop(to_process, force_update=False, ci_mode=False):
                     with META_LOCK:
                         for g_res in results:
                             norm_sem = g_res['norm_sem']
-                            safe_name = "".join([c for c in name if c.isalnum() or c in (' ', '.', '_')]).strip()
+                            
+                            clean_name = get_clean_name(name)
+                            safe_name = "".join([c for c in clean_name if c.isalnum() or c in (' ', '.', '_')]).strip()
                             txt_filename = f"{norm_sem}-{safe_name}.txt"
                             
                             with open(os.path.join(DATA_DIR, txt_filename), 'w', encoding='utf-8') as f:
@@ -428,7 +448,7 @@ def main():
             changed_list = json.load(f)
         for entry in changed_list:
             to_process.append({
-                "name": entry["name"],
+                "name": get_clean_name(entry["name"]),
                 "url": entry.get("url") or entry.get("link", ""),
                 "size": entry.get("size", 0),
                 "needs_ai": True,
@@ -442,7 +462,8 @@ def main():
                 metadata = json.load(f)
 
         for prog in all_programs:
-            name = prog["name"]
+            raw_name = prog["name"]
+            name = get_clean_name(raw_name)
             url = prog["link"]
             size = get_pdf_size(url)
             stored_size = metadata.get(name, {}).get("size", 0)
