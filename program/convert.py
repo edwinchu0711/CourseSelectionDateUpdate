@@ -217,8 +217,6 @@ def convert_file(
 
     filename = path.stem
     hint     = extract_program_hint(filename)
-    tprint(f"  🔄 轉換中：{filename}")
-    tprint(f"  💡 學程名稱提示：{hint}")
 
     # ── 組合 user message ────────────────────────────────────────────────────
     user_message = (
@@ -237,12 +235,10 @@ def convert_file(
         if counters is not None:
             with _programs_lock:
                 if counters.get("consecutive_errors", 0) >= 30:
-                    tprint(f"  ⚠️  [{filename}] 偵測到全域連續錯誤已達 30 次，放棄剩餘重試")
                     return None
 
         # ── 每次呼叫前動態取得當前 model ────────────────────────────────────
         model = get_current_model()
-        tprint(f"  🤖 [{filename}] 使用模型：{model}")
 
         try:
             _api_rate_limiter.wait()  # 等待直到符合速率限制
@@ -384,26 +380,20 @@ def process_file(
     with _programs_lock:
         if counters.get("consecutive_errors", 0) >= 30:
             counters["skipped"] += 1
-            tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
             return
 
     # ── 首次啟動錯開延遲（僅在任務開始時等待一次）──────────────────────────
     if stagger_delay > 0.0:
-        tprint(f"  ⏱️  [{index}/{total}] {file_path.name} 等待 {stagger_delay:.1f}s 後啟動...")
         time.sleep(stagger_delay)
 
     with _programs_lock:
         if counters.get("consecutive_errors", 0) >= 30:
             counters["skipped"] += 1
-            tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
             return
-
-    tprint(f"\n[{index}/{total}] 🗂  {file_path.name}")
 
     if deadline > 0 and time.time() > deadline:
         with _programs_lock:
             counters["skipped"] += 1
-        tprint(f"  ⏳ [{index}/{total}] 已超過設定的執行時間上限，跳過處理")
         return
 
     # ── 在呼叫 API 前，利用檔名先判斷是否已存在於 rules.json 中 ──────────
@@ -418,7 +408,6 @@ def process_file(
         with _programs_lock:
             if counters.get("consecutive_errors", 0) >= 30:
                 counters["skipped"] += 1
-                tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
                 return
 
             for p in programs:
@@ -440,7 +429,6 @@ def process_file(
     with _programs_lock:
         if counters.get("consecutive_errors", 0) >= 30:
             counters["skipped"] += 1
-            tprint(f"  ⚠️  [{index}/{total}] 連續錯誤達 30 次，跳過處理")
             return
 
     data = convert_file(
