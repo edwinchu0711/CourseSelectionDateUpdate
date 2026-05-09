@@ -13127,6 +13127,307 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
+      },
+      {
+        "academic_year": 108,
+        "semester": 2,
+        "approval_info": "109.5.4 108學年度第2學期學分學程會議通過；109.5.28 第164次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 7
+            },
+            "subjects": [
+              {
+                "program_subject": "人體構造、代謝、與免疫",
+                "alternatives": [
+                  {
+                    "name": "人體構造、代謝、與免疫",
+                    "departments": [
+                      "醫學科技研究所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "身心健康醫學講座",
+                "alternatives": [
+                  {
+                    "name": "身心健康醫學講座",
+                    "departments": [
+                      "人文暨科技跨領域學士學位學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "營養與藥物安全講座",
+                "alternatives": [
+                  {
+                    "name": "營養與藥物安全講座",
+                    "departments": [
+                      "人文暨科技跨領域學士學位學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 8
+            },
+            "subjects": [
+              {
+                "program_subject": "毒物及急診醫學",
+                "alternatives": [
+                  {
+                    "name": "毒物及急診醫學",
+                    "departments": [
+                      "醫學科技研究所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "食安、微生物、與消化道疾病",
+                "alternatives": [
+                  {
+                    "name": "食安、微生物、與消化道疾病",
+                    "departments": [
+                      "化學系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "PM2.5 生醫科學",
+                "alternatives": [
+                  {
+                    "name": "PM2.5 生醫科學",
+                    "departments": [
+                      "化學系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生藥學",
+                "alternatives": [
+                  {
+                    "name": "生藥學",
+                    "departments": [
+                      "海洋生物科技暨資源系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "天然物化學概論",
+                "alternatives": [
+                  {
+                    "name": "天然物化學概論",
+                    "departments": [
+                      "海洋生物科技暨資源系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋中藥概論",
+                "alternatives": [
+                  {
+                    "name": "海洋中藥概論",
+                    "departments": [
+                      "海洋生物科技暨資源系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "微生物學",
+                "alternatives": [
+                  {
+                    "name": "微生物學",
+                    "departments": [
+                      "海洋生物科技暨資源系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "發育與新陳代謝性疾病",
+                "alternatives": [
+                  {
+                    "name": "發育與新陳代謝性疾病",
+                    "departments": [
+                      "生物科學系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生化、物理、與影像醫學檢驗",
+                "alternatives": [
+                  {
+                    "name": "生化、物理、與影像醫學檢驗",
+                    "departments": [
+                      "化學系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
       }
     ]
   },
@@ -15338,6 +15639,602 @@
           "non_course_requirements": [],
           "special_notes": [
             "整合學程課程規劃至少15學分",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      },
+      {
+        "academic_year": 110,
+        "semester": 2,
+        "approval_info": "111.5.10 110學年度第2學期學分學程會議通過；111.5.20 第172次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "pick_n",
+              "pick": 2
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "組織行為",
+                "alternatives": [
+                  {
+                    "name": "組織行為",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "勞工法與勞工問題",
+                "alternatives": [
+                  {
+                    "name": "勞工法與勞工問題",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人力資源管理",
+                "alternatives": [
+                  {
+                    "name": "人力資源管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "創意思考",
+                "alternatives": [
+                  {
+                    "name": "創意思考",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "策略管理",
+                "alternatives": [
+                  {
+                    "name": "策略管理",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "組織學習",
+                "alternatives": [
+                  {
+                    "name": "組織學習",
+                    "departments": [
+                      "企管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "組織理論與管理",
+                "alternatives": [
+                  {
+                    "name": "組織理論與管理",
+                    "departments": [
+                      "企管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "快樂管理學",
+                "alternatives": [
+                  {
+                    "name": "快樂管理學",
+                    "departments": [
+                      "企管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "策略性任用管理",
+                "alternatives": [
+                  {
+                    "name": "策略性任用管理",
+                    "departments": [
+                      "人管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "心理學",
+                "alternatives": [
+                  {
+                    "name": "心理學",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "工作心理學",
+                "alternatives": [
+                  {
+                    "name": "工作心理學",
+                    "departments": [
+                      "企管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與領導",
+                "alternatives": [
+                  {
+                    "name": "倫理與領導",
+                    "departments": [
+                      "企管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人力資源專題研討(一)",
+                "alternatives": [
+                  {
+                    "name": "人力資源專題研討(一)",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人力資源專題研討(二)",
+                "alternatives": [
+                  {
+                    "name": "人力資源專題研討(二)",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "質性研究方法",
+                "alternatives": [
+                  {
+                    "name": "質性研究方法",
+                    "departments": [
+                      "企管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與社會責任",
+                "alternatives": [
+                  {
+                    "name": "倫理與社會責任",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人力發展管理",
+                "alternatives": [
+                  {
+                    "name": "人力發展管理",
+                    "departments": [
+                      "人管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "績效管理與人才發展",
+                "alternatives": [
+                  {
+                    "name": "績效管理與人才發展",
+                    "departments": [
+                      "人管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "職場行為學",
+                "alternatives": [
+                  {
+                    "name": "職場行為學",
+                    "departments": [
+                      "人管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "管理學",
+                "alternatives": [
+                  {
+                    "name": "管理學",
+                    "departments": [
+                      "企管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "心裡學應用與實踐",
+                "alternatives": [
+                  {
+                    "name": "心裡學應用與實踐",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "正向心理學",
+                "alternatives": [
+                  {
+                    "name": "正向心理學",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "管理學概論",
+                "alternatives": [
+                  {
+                    "name": "管理學概論",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "職涯準備",
+                "alternatives": [
+                  {
+                    "name": "職涯準備",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與社會責任的理論與實務",
+                "alternatives": [
+                  {
+                    "name": "倫理與社會責任的理論與實務",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 2,
+                    "note": "1102新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "職涯探索與實習",
+                "alternatives": [
+                  {
+                    "name": "職涯探索與實習",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": "1102新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
             "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
@@ -22409,6 +23306,346 @@
             "※如預修習相關課程來抵免選修課程，修課前請先諮詢學程負責人，以利後續抵免事宜。"
           ]
         }
+      },
+      {
+        "academic_year": 113,
+        "semester": 1,
+        "approval_info": "113.11.12 113學年度第1學期學分學程會議通過\n113.12.12 第182次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 5
+            },
+            "subjects": [
+              {
+                "program_subject": "普通心理學",
+                "alternatives": [
+                  {
+                    "name": "普通心理學",
+                    "departments": [
+                      "高雄醫學大學心理學系"
+                    ],
+                    "credits": 3,
+                    "note": "修習一學期即可",
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "音樂治療",
+                "alternatives": [
+                  {
+                    "name": "音樂治療",
+                    "departments": [
+                      "音樂學系"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性格心理學、發展心理學、認知心理學",
+                "alternatives": [
+                  {
+                    "name": "性格心理學",
+                    "departments": [
+                      "高雄醫學大學心理學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "發展心理學",
+                    "departments": [
+                      "高雄醫學大學心理學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "認知心理學",
+                    "departments": [
+                      "高雄醫學大學心理學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": "任選一門課",
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits",
+              "min": 10
+            },
+            "credit_requirement": {
+              "min": 10
+            },
+            "subjects": [
+              {
+                "program_subject": "音樂心理學",
+                "alternatives": [
+                  {
+                    "name": "音樂心理學",
+                    "departments": [
+                      "音樂學系"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "戲劇治療與PBT設計",
+                "alternatives": [
+                  {
+                    "name": "戲劇治療與PBT設計",
+                    "departments": [
+                      "劇場藝術學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "肢體開發(一)",
+                "alternatives": [
+                  {
+                    "name": "肢體開發(一)",
+                    "departments": [
+                      "劇場藝術學系"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "肢體開發(二)",
+                    "departments": [
+                      "劇場藝術學系"
+                    ],
+                    "credits": 2,
+                    "note": "修習肢體開發(二)，亦可認列",
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "音樂與律動於樂齡之運用",
+                "alternatives": [
+                  {
+                    "name": "音樂與律動於樂齡之運用",
+                    "departments": [
+                      "音樂學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "音樂於高齡照護之設計與運用",
+                "alternatives": [
+                  {
+                    "name": "音樂於高齡照護之設計與運用",
+                    "departments": [
+                      "音樂學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "表達性藝術治療個案討論",
+                "alternatives": [
+                  {
+                    "name": "表達性藝術治療個案討論",
+                    "departments": [
+                      "音樂學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "與老共舞",
+                "alternatives": [
+                  {
+                    "name": "與老共舞",
+                    "departments": [
+                      "後醫學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "危老年代",
+                "alternatives": [
+                  {
+                    "name": "危老年代",
+                    "departments": [
+                      "後醫學系"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "神經心理學",
+                "alternatives": [
+                  {
+                    "name": "神經心理學",
+                    "departments": [
+                      "後醫學系"
+                    ],
+                    "credits": 3,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "non_course_requirements": [
+            {
+              "type": "note",
+              "description": "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+            },
+            {
+              "type": "note",
+              "description": "如預修習相關課程來抵免選修課程，修課前請先諮詢學程負責人，以利後續抵免事宜"
+            }
+          ],
+          "special_notes": [
+            "課程規劃至少15學分",
+            "學生所修習之學程課程中，至少應有6學分不屬於學生本系所、雙主修及輔系之課程"
+          ]
+        },
+        "waiver": {
+          "allowed": true,
+          "max_credits": null,
+          "note": "如預修習相關課程來抵免選修課程，修課前請先諮詢學程負責人，以利後續抵免事宜",
+          "waiver_alternatives": []
+        }
       }
     ]
   },
@@ -27355,6 +28592,297 @@
             "※【整合學程】課程規劃至少 15 學分。",
             "※修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
+        }
+      },
+      {
+        "academic_year": 112,
+        "semester": 2,
+        "approval_info": "113.4.22 112學年度第2學期學分學程會議通過\n113.5.30 第180次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 7
+            },
+            "subjects": [
+              {
+                "program_subject": "海洋休閒活動概論",
+                "alternatives": [
+                  {
+                    "name": "海洋休閒活動概論",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "海洋與海岸管理",
+                "alternatives": [
+                  {
+                    "name": "海洋與海岸管理",
+                    "departments": [
+                      "海洋科學系"
+                    ],
+                    "credits": 3,
+                    "note": "誤植學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "精實創業",
+                "alternatives": [
+                  {
+                    "name": "精實創業",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "初級游泳",
+                "alternatives": [
+                  {
+                    "name": "初級游泳",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "初級帆船",
+                "alternatives": [
+                  {
+                    "name": "初級帆船",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "初級潛水",
+                "alternatives": [
+                  {
+                    "name": "初級潛水",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "初級水域休閒活動",
+                "alternatives": [
+                  {
+                    "name": "初級水域休閒活動",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits",
+              "min_credits": 8
+            },
+            "credit_requirement": {
+              "min": 8
+            },
+            "subjects": [
+              {
+                "program_subject": "水上救生",
+                "alternatives": [
+                  {
+                    "name": "水上救生",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "進階潛水",
+                "alternatives": [
+                  {
+                    "name": "進階潛水",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "進階帆船",
+                "alternatives": [
+                  {
+                    "name": "進階帆船",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "初級競技游泳",
+                "alternatives": [
+                  {
+                    "name": "初級競技游泳",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "海洋基礎科學",
+                "alternatives": [
+                  {
+                    "name": "海洋基礎科學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "休閒活動實習",
+                "alternatives": [
+                  {
+                    "name": "休閒活動實習",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "初級衝浪",
+                "alternatives": [
+                  {
+                    "name": "初級衝浪",
+                    "departments": [
+                      "運動與健康教育中心"
+                    ],
+                    "credits": 1,
+                    "note": "由核心課程調移"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "海洋文化",
+                "alternatives": [
+                  {
+                    "name": "海洋文化",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "商業策略與管理",
+                "alternatives": [
+                  {
+                    "name": "商業策略與管理",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": "新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        },
+        "waiver": {
+          "allowed": false,
+          "max_credits": null,
+          "note": null,
+          "waiver_alternatives": []
         }
       }
     ]
@@ -48200,6 +49728,1015 @@
           },
           "non_course_requirements": [],
           "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "artificial-intelligence-and-mathematics-program",
+    "program_name": "人工智慧與數學學程",
+    "is_discontinued": false,
+    "discontinued_date": null,
+    "former_name": null,
+    "versions": [
+      {
+        "academic_year": 112,
+        "semester": 1,
+        "approval_info": "112.11.7 112學年度第1學期學分學程會議通過；112.12.12 第178次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "線性代數(一)",
+                "alternatives": [
+                  {
+                    "name": "線性代數(一)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "微積分(一)",
+                "alternatives": [
+                  {
+                    "name": "微積分(一)",
+                    "departments": [],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "機率論(一)",
+                "alternatives": [
+                  {
+                    "name": "機率論(一)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "統計學(一)",
+                "alternatives": [
+                  {
+                    "name": "統計學(一)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "計算機程式",
+                "alternatives": [
+                  {
+                    "name": "計算機程式",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "人工智慧原理",
+                "alternatives": [
+                  {
+                    "name": "人工智慧原理",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Python與機器學習之理論實現",
+                "alternatives": [
+                  {
+                    "name": "Python與機器學習之理論實現",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "線性代數(二)",
+                "alternatives": [
+                  {
+                    "name": "線性代數(二)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "微積分(二)",
+                "alternatives": [
+                  {
+                    "name": "微積分(二)",
+                    "departments": [],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "離散數學(一)",
+                "alternatives": [
+                  {
+                    "name": "離散數學(一)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "離散數學(二)",
+                "alternatives": [
+                  {
+                    "name": "離散數學(二)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "機率論(二)",
+                "alternatives": [
+                  {
+                    "name": "機率論(二)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "統計學(二)",
+                "alternatives": [
+                  {
+                    "name": "統計學(二)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "演算法",
+                "alternatives": [
+                  {
+                    "name": "演算法",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "資料結構",
+                "alternatives": [
+                  {
+                    "name": "資料結構",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "統計學習與資料探勘",
+                "alternatives": [
+                  {
+                    "name": "統計學習與資料探勘",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "流形學習基礎",
+                "alternatives": [
+                  {
+                    "name": "流形學習基礎",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "數值分析(一)",
+                "alternatives": [
+                  {
+                    "name": "數值分析(一)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "數值分析(二)",
+                "alternatives": [
+                  {
+                    "name": "數值分析(二)",
+                    "departments": [
+                      "應數系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "嵌入式軟體設計",
+                "alternatives": [
+                  {
+                    "name": "嵌入式軟體設計",
+                    "departments": [
+                      "電機系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人工智慧語言-Prolog",
+                "alternatives": [
+                  {
+                    "name": "人工智慧語言-Prolog",
+                    "departments": [
+                      "電機系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "類神經網路導論",
+                "alternatives": [
+                  {
+                    "name": "類神經網路導論",
+                    "departments": [
+                      "電機系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "語音訊號處理",
+                "alternatives": [
+                  {
+                    "name": "語音訊號處理",
+                    "departments": [
+                      "電機系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "機器學習導論",
+                "alternatives": [
+                  {
+                    "name": "機器學習導論",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "網際網路資料庫",
+                "alternatives": [
+                  {
+                    "name": "網際網路資料庫",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "無線網際網路",
+                "alternatives": [
+                  {
+                    "name": "無線網際網路",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "影像處理",
+                "alternatives": [
+                  {
+                    "name": "影像處理",
+                    "departments": [
+                      "資工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": true,
+            "max_credits": null,
+            "note": "校內同課名課程均可扺免；其它課程應於修課前諮詢學程負責人，確認是否可以扺免",
+            "waiver_alternatives": [
+              {
+                "condition": "校內同課名課程",
+                "credits_granted": 0,
+                "note": "均可扺免"
+              },
+              {
+                "condition": "其它課程",
+                "credits_granted": 0,
+                "note": "應於修課前諮詢學程負責人，確認是否可以扺免"
+              }
+            ]
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "本學程規定之結業學分總數至少15學分，其中含必修課程9學分",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "program_id": "exploring-marine-national-park-micro-program",
+    "program_name": "探索海洋國家公園微學程",
+    "is_discontinued": false,
+    "discontinued_date": null,
+    "former_name": null,
+    "versions": [
+      {
+        "academic_year": 114,
+        "semester": 1,
+        "approval_info": "114.11.4 114學年度第1學期學分學程會議通過；114.12.9 第186次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 4
+            },
+            "subjects": [
+              {
+                "program_subject": "國家公園概論",
+                "alternatives": [
+                  {
+                    "name": "國家公園概論",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎海洋科學",
+                "alternatives": [
+                  {
+                    "name": "基礎海洋科學",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎海洋學",
+                "alternatives": [
+                  {
+                    "name": "基礎海洋學",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "探索海洋國家公園",
+                "alternatives": [
+                  {
+                    "name": "探索海洋國家公園",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生態與海洋科技教育探索",
+                "alternatives": [
+                  {
+                    "name": "海洋生態與海洋科技教育探索",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "生物多樣性的世界",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性的世界",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性與保育",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性與保育",
+                    "departments": [
+                      "生物科學系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生物多樣性導論",
+                "alternatives": [
+                  {
+                    "name": "海洋生物多樣性導論",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境變遷與生態保育",
+                "alternatives": [
+                  {
+                    "name": "環境變遷與生態保育",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋與海岸管理",
+                "alternatives": [
+                  {
+                    "name": "海洋與海岸管理",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海權與海洋事務",
+                "alternatives": [
+                  {
+                    "name": "海權與海洋事務",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋應用科學",
+                "alternatives": [
+                  {
+                    "name": "海洋應用科學",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋環境影響評估",
+                "alternatives": [
+                  {
+                    "name": "海洋環境影響評估",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎海洋生態學",
+                "alternatives": [
+                  {
+                    "name": "基礎海洋生態學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "校外實習",
+                "alternatives": [
+                  {
+                    "name": "校外實習",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "核心課程需含國家公園概論或探索海洋國家公園至少一門",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
