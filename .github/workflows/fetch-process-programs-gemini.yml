@@ -54,7 +54,9 @@ jobs:
           "
 
           python -c "
-          import json, os, requests
+          import json, os, requests, sys
+          sys.path.insert(0, 'program')
+          from process_programs import get_clean_name
           with open('program/scraped_programs.json', encoding='utf-8') as f:
               programs = json.load(f)
           metadata_path = 'program/metadata.json'
@@ -62,13 +64,14 @@ jobs:
           changed = []
           for p in programs:
               name, url = p['name'], p['link']
+              clean_name = get_clean_name(name)
               try:
                   resp = requests.head(url, allow_redirects=True, timeout=10)
                   current_size = int(resp.headers.get('content-length', 0))
               except Exception as e:
                   print(f'⚠️ 無法取得 {name}: {e}')
                   current_size = 0
-              prev_size = metadata.get(name, {}).get('size', 0)
+              prev_size = metadata.get(clean_name, {}).get('size', 0)
               if current_size != prev_size and current_size > 0:
                   changed.append({'name': name, 'url': url, 'size': current_size})
           with open('program/changed_programs.json', 'w', encoding='utf-8') as f:
