@@ -1,0 +1,235 @@
+{
+  "program_id": "110-1-shi-jian-huan-jing-jiao-yu-wei-xue-cheng",
+  "program_name": "實踐環境教育微學程",
+  "is_discontinued": false,
+  "discontinued_date": null,
+  "former_name": null,
+  "versions": [
+    {
+      "academic_year": 110,
+      "semester": 1,
+      "approval_info": "110.11.2 110學年度第1學期學分學程會議通過\n110.12.28 第170次教務會議通過",
+      "course_group": [
+        {
+          "id": "core",
+          "label": "核心課程",
+          "selection_rule": {"type": "all"},
+          "credit_requirement": {"min": 5},
+          "subjects": [
+            {
+              "program_subject": "環境教育",
+              "alternatives": [
+                {
+                  "name": "環境教育",
+                  "departments": ["海科院"],
+                  "credits": 2,
+                  "note": "環保署環境教育人員認證核心科目100100"
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "環境教育教材教法",
+              "alternatives": [
+                {
+                  "name": "環境教育教材教法",
+                  "departments": ["海科院"],
+                  "credits": 2,
+                  "note": "環保署環境教育人員認證核心科目106700"
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "服務學習：環境教育服務與推廣",
+              "alternatives": [
+                {
+                  "name": "服務學習：環境教育服務與推廣",
+                  "departments": ["服務學習"],
+                  "credits": 1,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "服務學習：都市農園",
+              "alternatives": [
+                {
+                  "name": "服務學習：都市農園",
+                  "departments": ["服務學習"],
+                  "credits": 1,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "服務學習：永續發展與服務體驗",
+              "alternatives": [
+                {
+                  "name": "服務學習：永續發展與服務體驗",
+                  "departments": ["服務學習"],
+                  "credits": 1,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "服務學習：人人都是科學家",
+              "alternatives": [
+                {
+                  "name": "服務學習：人人都是科學家",
+                  "departments": ["服務學習"],
+                  "credits": 1,
+                  "note": "110新增"
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "環境教育實踐推廣",
+              "alternatives": [
+                {
+                  "name": "環境教育實踐推廣",
+                  "departments": ["海科院"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "環境教育實踐推廣專題",
+              "alternatives": [
+                {
+                  "name": "環境教育實踐推廣專題",
+                  "departments": ["海科院"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            }
+          ]
+        },
+        {
+          "id": "elective",
+          "label": "選修課程",
+          "selection_rule": {"type": "min_credits"},
+          "credit_requirement": {"min": 4},
+          "subjects": [
+            {
+              "program_subject": "環境變遷與生態保育",
+              "alternatives": [
+                {
+                  "name": "環境變遷與生態保育",
+                  "departments": ["博雅向度六"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "氣候變遷與調適",
+              "alternatives": [
+                {
+                  "name": "氣候變遷與調適",
+                  "departments": ["博雅向度六"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "海洋生態與海洋科技教育探索",
+              "alternatives": [
+                {
+                  "name": "海洋生態與海洋科技教育探索",
+                  "departments": ["博雅向度六"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "生物多樣性的世界",
+              "alternatives": [
+                {
+                  "name": "生物多樣性的世界",
+                  "departments": ["博雅向度五"],
+                  "credits": 2,
+                  "note": "符合環保署採計課程421200"
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "用影像說故事：探索科技、社會與環境",
+              "alternatives": [
+                {
+                  "name": "用影像說故事：探索科技、社會與環境",
+                  "departments": ["博雅向度四"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "微學分課程",
+              "alternatives": [
+                {
+                  "name": "微學分課程",
+                  "departments": [],
+                  "credits": "至多2學分",
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            }
+          ]
+        }
+      ],
+      "requirements": {
+        "total_min_credits": 9,
+        "external_credits": {"min": 3, "description": "學生所修習之學程課程中，至少應有3學分不屬於學生本系所、雙主修及輔系之課程", "exclude_double_major": true, "exclude_minor": true},
+        "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []},
+        "non_course_requirements": [],
+        "special_notes": ["修習學程適用之課程規劃表請依核准修習學年期版本為主"]
+      }
+    }
+  ]
+}

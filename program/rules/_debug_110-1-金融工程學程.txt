@@ -1,0 +1,1047 @@
+{
+  "program_id": "financial-engineering-program",
+  "program_name": "金融工程學程",
+  "is_discontinued": false,
+  "discontinued_date": null,
+  "former_name": null,
+  "versions": [
+    {
+      "academic_year": 110,
+      "semester": 1,
+      "approval_info": "110.11.2 110 學年度第 1 學期學分學程會議通過\n110.12.28 第 170 次教務會議通過",
+      "course_group": [
+        {
+          "id": "core_required",
+          "label": "核心課程",
+          "selection_rule": {
+            "type": "all"
+          },
+          "credit_requirement": {
+            "min": 15
+          },
+          "subjects": [
+            {
+              "program_subject": "線性代數",
+              "alternatives": [
+                {
+                  "name": "線性代數",
+                  "departments": ["應數系", "電機系", "資工系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "機率論（一）",
+              "alternatives": [
+                {
+                  "name": "機率論（一）",
+                  "departments": ["應數系", "電機系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "電機系的「機率與統計」可抵免",
+                "waiver_alternatives": [
+                  {
+                    "condition": "電機系的「機率與統計」",
+                    "credits_granted": 3,
+                    "note": null
+                  }
+                ]
+              }
+            },
+            {
+              "program_subject": "統計學（一）",
+              "alternatives": [
+                {
+                  "name": "統計學（一）",
+                  "departments": ["應數系", "海工系", "海科系", "社", "管院"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "海工系的「機率與統計」及海科系的「應用統計學（一）」可抵免",
+                "waiver_alternatives": [
+                  {
+                    "condition": "海工系的「機率與統計」",
+                    "credits_granted": 3,
+                    "note": null
+                  },
+                  {
+                    "condition": "海科系的「應用統計學（一）」",
+                    "credits_granted": 3,
+                    "note": null
+                  }
+                ]
+              }
+            },
+            {
+              "program_subject": "經濟學與財務管理",
+              "alternatives": [
+                {
+                  "name": "經濟學與財務管理",
+                  "departments": ["財管系", "企管系", "資管系", "政經系"],
+                  "credits": 6,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "學生得以「經濟學/經濟學（一）」、「經濟學（二）」、「個體經濟學」、「總體經濟學」、「財務管理/財務管理（一）/財務管理理論」、「財務管理（二）」等課程累計超過 6 學分辦理抵免",
+                "waiver_alternatives": [
+                  {
+                    "condition": "「經濟學/經濟學（一）」",
+                    "credits_granted": 6,
+                    "note": null
+                  },
+                  {
+                    "condition": "「經濟學（二）」",
+                    "credits_granted": 6,
+                    "note": null
+                  },
+                  {
+                    "condition": "「個體經濟學」",
+                    "credits_granted": 6,
+                    "note": null
+                  },
+                  {
+                    "condition": "「總體經濟學」",
+                    "credits_granted": 6,
+                    "note": null
+                  },
+                  {
+                    "condition": "「財務管理/財務管理（一）/財務管理理論」",
+                    "credits_granted": 6,
+                    "note": null
+                  },
+                  {
+                    "condition": "「財務管理（二）」",
+                    "credits_granted": 6,
+                    "note": null
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "id": "elective",
+          "label": "選修課程",
+          "selection_rule": {
+            "type": "min_credits"
+          },
+          "credit_requirement": {
+            "min": 12
+          },
+          "subjects": [
+            {
+              "program_subject": "計算機程式",
+              "alternatives": [
+                {
+                  "name": "計算機程式",
+                  "departments": ["應數系", "電機系", "資管系", "資工系", "機電系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "微分方程",
+              "alternatives": [
+                {
+                  "name": "微分方程",
+                  "departments": ["應數系", "化學系", "物理系", "電機系", "機電系", "材光系", "光電系", "海工系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "化學系的「化學數學」、物理系的「應用數學」、海、工學院的「工程數學」皆可抵免",
+                "waiver_alternatives": [
+                  {
+                    "condition": "化學系的「化學數學」",
+                    "credits_granted": 3,
+                    "note": null
+                  },
+                  {
+                    "condition": "物理系的「應用數學」",
+                    "credits_granted": 3,
+                    "note": null
+                  },
+                  {
+                    "condition": "海、工學院的「工程數學」",
+                    "credits_granted": 3,
+                    "note": null
+                  }
+                ]
+              }
+            },
+            {
+              "program_subject": "數值分析",
+              "alternatives": [
+                {
+                  "name": "數值分析",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "機率論（二）",
+              "alternatives": [
+                {
+                  "name": "機率論（二）",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "統計學（二）",
+              "alternatives": [
+                {
+                  "name": "統計學（二）",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "數學統計軟體應用",
+              "alternatives": [
+                {
+                  "name": "數學統計軟體應用",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "應用統計方法",
+              "alternatives": [
+                {
+                  "name": "應用統計方法",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "統計推論",
+              "alternatives": [
+                {
+                  "name": "統計推論",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "統計資料分析",
+              "alternatives": [
+                {
+                  "name": "統計資料分析",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "應用機率模型",
+              "alternatives": [
+                {
+                  "name": "應用機率模型",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "經濟學",
+              "alternatives": [
+                {
+                  "name": "經濟學",
+                  "departments": ["財管系", "企管系", "政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "若已抵免為核心課程，則不再重複抵免為此選修課",
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "個體經濟學",
+              "alternatives": [
+                {
+                  "name": "個體經濟學",
+                  "departments": ["財管系", "企管系", "政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "若已抵免為核心課程，則不再重複抵免為此選修課",
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "總體經濟學",
+              "alternatives": [
+                {
+                  "name": "總體經濟學",
+                  "departments": ["財管系", "企管系", "政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "若已抵免為核心課程，則不再重複抵免為此選修課",
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務管理",
+              "alternatives": [
+                {
+                  "name": "財務管理",
+                  "departments": ["財管系", "企管系", "政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": true,
+                "max_credits": null,
+                "note": "若已抵免為核心課程，則不再重複抵免為此選修課",
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "資訊經濟學",
+              "alternatives": [
+                {
+                  "name": "資訊經濟學",
+                  "departments": ["資管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "成本會計學",
+              "alternatives": [
+                {
+                  "name": "成本會計學",
+                  "departments": ["財管系", "企管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "計量經濟學",
+              "alternatives": [
+                {
+                  "name": "計量經濟學",
+                  "departments": ["政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務經濟學應用實務",
+              "alternatives": [
+                {
+                  "name": "財務經濟學應用實務",
+                  "departments": ["政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "個人理財規劃",
+              "alternatives": [
+                {
+                  "name": "個人理財規劃",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "會計學",
+              "alternatives": [
+                {
+                  "name": "會計學",
+                  "departments": ["財管系", "企管系", "資管系", "政經系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "金融市場",
+              "alternatives": [
+                {
+                  "name": "金融市場",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "投資學",
+              "alternatives": [
+                {
+                  "name": "投資學",
+                  "departments": ["財管系", "企管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "期貨與選擇權概論",
+              "alternatives": [
+                {
+                  "name": "期貨與選擇權概論",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "風險管理與保險",
+              "alternatives": [
+                {
+                  "name": "風險管理與保險",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務風險管理",
+              "alternatives": [
+                {
+                  "name": "財務風險管理",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務工程概論",
+              "alternatives": [
+                {
+                  "name": "財務工程概論",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "數理統計",
+              "alternatives": [
+                {
+                  "name": "數理統計",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "迴歸分析",
+              "alternatives": [
+                {
+                  "name": "迴歸分析",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "隨機過程",
+              "alternatives": [
+                {
+                  "name": "隨機過程",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務時間序列分析",
+              "alternatives": [
+                {
+                  "name": "財務時間序列分析",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "多變量分析",
+              "alternatives": [
+                {
+                  "name": "多變量分析",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "統計模擬",
+              "alternatives": [
+                {
+                  "name": "統計模擬",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "金融數學",
+              "alternatives": [
+                {
+                  "name": "金融數學",
+                  "departments": ["應數系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "選擇權市場理論與策略",
+              "alternatives": [
+                {
+                  "name": "選擇權市場理論與策略",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "現代投資組合理論與策略",
+              "alternatives": [
+                {
+                  "name": "現代投資組合理論與策略",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "投資理論與策略",
+              "alternatives": [
+                {
+                  "name": "投資理論與策略",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "企業風險管理與實務",
+              "alternatives": [
+                {
+                  "name": "企業風險管理與實務",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "金融投資與程式交易",
+              "alternatives": [
+                {
+                  "name": "金融投資與程式交易",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "金融市場理論與實務",
+              "alternatives": [
+                {
+                  "name": "金融市場理論與實務",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "統計軟體財務計量應用",
+              "alternatives": [
+                {
+                  "name": "統計軟體財務計量應用",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務工程與金融創新",
+              "alternatives": [
+                {
+                  "name": "財務工程與金融創新",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "財務管理與研究",
+              "alternatives": [
+                {
+                  "name": "財務管理與研究",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "證券市場微結構實務",
+              "alternatives": [
+                {
+                  "name": "證券市場微結構實務",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            },
+            {
+              "program_subject": "保險理論與實務",
+              "alternatives": [
+                {
+                  "name": "保險理論與實務",
+                  "departments": ["財管系"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": ["starred"],
+              "waiver": {
+                "allowed": false,
+                "max_credits": null,
+                "note": null,
+                "waiver_alternatives": []
+              }
+            }
+          ]
+        }
+      ],
+      "requirements": {
+        "total_min_credits": 27,
+        "external_credits": {
+          "min": 9,
+          "description": "選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
+          "exclude_double_major": true,
+          "exclude_minor": true
+        },
+        "waiver": {
+          "allowed": true,
+          "max_credits": null,
+          "note": "學生以社、管理學院統計學（6 學分）抵免本學程之必修統計學，於本學程中一律以 3 學分計算",
+          "waiver_alternatives": [
+            {
+              "condition": "社、管理學院統計學（6 學分）",
+              "credits_granted": 3,
+              "note": "抵免本學程之必修統計學"
+            }
+          ]
+        },
+        "non_course_requirements": [
+          "修畢微積分（6 學分）且成績及格為先修課程"
+        ],
+        "special_notes": [
+          "課程若有異動，先提學程委員會討論通過，再提教務會議審議通過方可施行。",
+          "以上課程相關規定之修改自 110 學年度第 1 學期起核准修習。學生適用，原已核准修習學生，亦得追溯適用之。",
+          "※記號為研究所課程。",
+          "修習學程適用之課程規劃表請依核准修習學年期版本為主。",
+          "紅字課程乃預定新增課程，藍字課程乃異動課程。"
+        ]
+      }
+    }
+  ]
+}

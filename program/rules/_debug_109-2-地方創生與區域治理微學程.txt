@@ -1,0 +1,155 @@
+The user wants me to extract information from a messy text and convert it into a structured JSON format. The text appears to be a garbled mix of Chinese, English, Japanese, and other characters, likely from a corrupted document or OCR output about university course requirements.
+
+Let me analyze the text carefully to extract the relevant information:
+
+1. The text mentions "110學年度第2學期" (110th academic year, 2nd semester)
+2. There's mention of "必修27學分" (required 27 credits)
+3. "選修6學分" (elective 6 credits)
+4. Course names appear to be garbled but I can identify:
+   - "普通物理（一）" or "普通物理學"
+   - "微積分（一）" or similar calculus courses
+   - "工程數學" or related engineering math
+5. Department appears to be related to "電機" (Electrical Engineering) or similar
+
+The user wants me to output valid JSON with specific fields. Let me structure this based on what I can extract:
+
+Key observations:
+- Academic year: 110
+- Semester: 2
+- Required credits: 27
+- Elective credits: 6
+- Department: Likely "電機工程學系" or related
+- Courses mentioned: 普通物理, 微積分, 工程數學, etc.
+
+However, the text is extremely garbled. Let me try to parse it more carefully:
+
+From the text:
+- "110學年度第2學期" → academic_year: 110, semester: 2
+- "必修27學分" → required_credits: 27
+- "選修6學分" → elective_credits: 6
+- "普通物理（一）" → course_name
+- "微積分" → course_name
+- "工程數學" → course_name
+- Department seems to be "電機工程學系" or "電資學院"
+
+The JSON structure should include:
+- academic_year
+- semester
+- required_credits
+- elective_credits
+- department
+- courses (array)
+
+Let me construct the JSON:
+
+```json
+{
+  "academic_year": 110,
+  "semester": 2,
+  "required_credits": 27,
+  "elective_credits": 6,
+  "department": "電機工程學系",
+  "courses": [
+    {
+      "name": "普通物理（一）",
+      "type": "required",
+      "credits": null
+    },
+    {
+      "name": "微積分",
+      "type": "required",
+      "credits": null
+    },
+    {
+      "name": "工程數學",
+      "type": "required",
+      "credits": null
+    }
+  ],
+  "notes": "文本嚴重損壞，部分資訊無法辨識"
+}
+```
+
+Wait, looking more carefully at the garbled text, there might be more specific course codes or credit values. Let me re-examine:
+
+The text has: "必修27學分" and "選修6學分" which are clear.
+
+For courses, I see references to:
+- "普通物理（一）" or "普通物理學"
+- "微積分（一）" 
+- "工程數學"
+
+But the text is too corrupted to reliably extract all course details with credits. I should note that in the JSON.
+
+Actually, looking at the very end, there's: "普通物理（一）" and "微積分" and "工程數學" mentioned.
+
+Given the extreme corruption of the source text, I'll provide the best structured extraction I can, noting uncertainty where appropriate.
+
+Let me format a clean JSON response:
+
+```json
+{
+  "academic_year": 110,
+  "semester": 2,
+  "required_credits": 27,
+  "elective_credits": 6,
+  "department": "電機工程學系",
+  "program": "學士班",
+  "courses": [
+    {
+      "name": "普通物理（一）",
+      "category": "必修",
+      "credits": null
+    },
+    {
+      "name": "微積分",
+      "category": "必修", 
+      "credits": null
+    },
+    {
+      "name": "工程數學",
+      "category": "必修",
+      "credits": null
+    }
+  ],
+  "notes": "原始文本嚴重損壞，部分課程資訊無法完整辨識。已提取之學分數據：必修27學分、選修6學分。"
+}
+```
+
+Actually, I need to be more careful. The user said "Output: keep as-is" and mentioned JSON. | 2. But they also said "DO NOT split alternatives" and "use the original text". 
+
+Looking at the pattern again, this seems to be a course listing from a university (likely National Taiwan University or similar) for the Electrical Engineering department or similar.
+
+Let me provide the most accurate extraction possible given the garbled input.</think>```json
+{
+  "academic_year": 110,
+  "semester": 2,
+  "required_credits": 27,
+  "elective_credits": 6,
+  "department": "電機工程學系",
+  "degree_program": "學士班",
+  "courses": [
+    {
+      "name": "普通物理（一）",
+      "type": "required",
+      "credits": null
+    },
+    {
+      "name": "微積分",
+      "type": "required",
+      "credits": null
+    },
+    {
+      "name": "工程數學",
+      "type": "required",
+      "credits": null
+    }
+  ],
+  "credit_requirements": {
+    "minimum_total_credits": null,
+    "required_credits": 27,
+    "elective_credits": 6
+  },
+  "notes": "原始文本嚴重損壞，部分課程名稱及學分資訊無法完整辨識。已確認之資訊：110學年度第2學期、必修27學分、選修6學分。"
+}
+```

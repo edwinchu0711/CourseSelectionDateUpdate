@@ -1,0 +1,249 @@
+{
+  "program_id": "impression-of-sea-flavor-micro-program",
+  "program_name": "印象海味微學程",
+  "is_discontinued": false,
+  "discontinued_date": null,
+  "former_name": null,
+  "versions": [
+    {
+      "academic_year": 110,
+      "semester": 1,
+      "approval_info": "110.11.2 110學年度第1學期學分學程會議通過；110.12.28 第170次教務會議通過",
+      "course_group": [
+        {
+          "id": "core",
+          "label": "核心課程",
+          "selection_rule": {"type": "min_credits"},
+          "credit_requirement": {"min": 6},
+          "subjects": [
+            {
+              "program_subject": "水產概論",
+              "alternatives": [
+                {
+                  "name": "水產概論",
+                  "departments": ["海科系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "營養與藥物安全講座",
+              "alternatives": [
+                {
+                  "name": "營養與藥物安全講座",
+                  "departments": ["人科學程"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "食品與營養",
+              "alternatives": [
+                {
+                  "name": "食品與營養",
+                  "departments": ["人科學程"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "食品安全分析概論",
+              "alternatives": [
+                {
+                  "name": "食品安全分析概論",
+                  "departments": ["化學系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "飲食與文學",
+              "alternatives": [
+                {
+                  "name": "飲食與文學",
+                  "departments": ["博雅向度一"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "應用海洋資源學",
+              "alternatives": [
+                {
+                  "name": "應用海洋資源學",
+                  "departments": ["海資系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "海洋生物概論",
+              "alternatives": [
+                {
+                  "name": "海洋生物概論",
+                  "departments": ["海科系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "海洋脊椎動物學",
+              "alternatives": [
+                {
+                  "name": "海洋脊椎動物學",
+                  "departments": ["海科系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "海洋無脊椎動物學",
+              "alternatives": [
+                {
+                  "name": "海洋無脊椎動物學",
+                  "departments": ["海科系", "海資系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "魚類學",
+              "alternatives": [
+                {
+                  "name": "魚類學",
+                  "departments": ["海科系", "海資系"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "生物多樣性的世界",
+              "alternatives": [
+                {
+                  "name": "生物多樣性的世界",
+                  "departments": ["博雅向度五"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            }
+          ]
+        },
+        {
+          "id": "elective",
+          "label": "選修課程",
+          "selection_rule": {"type": "min_credits"},
+          "credit_requirement": {"min": 0},
+          "subjects": [
+            {
+              "program_subject": "海洋文化",
+              "alternatives": [
+                {
+                  "name": "海洋文化",
+                  "departments": ["博雅向度三"],
+                  "credits": 3,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "環境變遷與生態保育",
+              "alternatives": [
+                {
+                  "name": "環境變遷與生態保育",
+                  "departments": ["博雅向度六"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "海洋永續：海洋文學與海洋科學的生態對話",
+              "alternatives": [
+                {
+                  "name": "海洋永續：海洋文學與海洋科學的生態對話",
+                  "departments": ["博雅向度六"],
+                  "credits": 2,
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            },
+            {
+              "program_subject": "海洋相關微學分課程",
+              "alternatives": [
+                {
+                  "name": "海洋相關微學分課程",
+                  "departments": [],
+                  "credits": "至多2學分",
+                  "note": null
+                }
+              ],
+              "prerequisite_note": null,
+              "tags": [],
+              "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []}
+            }
+          ]
+        }
+      ],
+      "requirements": {
+        "total_min_credits": 9,
+        "external_credits": {"min": 3, "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程", "exclude_double_major": true, "exclude_minor": true},
+        "waiver": {"allowed": false, "max_credits": null, "note": null, "waiver_alternatives": []},
+        "non_course_requirements": [],
+        "special_notes": ["修習學程適用之課程規劃表請依核准修習學年期版本為主"]
+      }
+    }
+  ]
+}
