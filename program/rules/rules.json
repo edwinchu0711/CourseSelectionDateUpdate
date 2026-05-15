@@ -135300,7 +135300,7 @@
       {
         "academic_year": 108,
         "semester": 1,
-        "approval_info": "108.11.12 108學年度第1學期學分學程會議通過\n108.12.10 第162次教務會議通過",
+        "approval_info": "108.11.12 108 學年度第 1 學期學分學程會議通過；108.12.10 第 162 次教務會議通過",
         "course_groups": [
           {
             "id": "core",
@@ -135311,6 +135311,12 @@
             },
             "credit_requirement": {
               "min": 9
+            },
+            "external_credits": {
+              "min": 3,
+              "description": "選讀學程學生所修習之核心課程中至少應有 3 學分不屬於學生本系所、雙主修及輔系之課程",
+              "exclude_double_major": true,
+              "exclude_minor": true
             },
             "subjects": [
               {
@@ -135388,7 +135394,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "網際網路資料庫",
@@ -135397,7 +135403,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "資料庫系統",
@@ -135406,7 +135412,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135428,7 +135434,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "系統分析與設計",
@@ -135437,7 +135443,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135460,6 +135466,7 @@
             "credit_requirement": {
               "min": 6
             },
+            "external_credits": null,
             "subjects": [
               {
                 "program_subject": "選擇權市場理論與策略 / 期貨與選擇權概論",
@@ -135470,7 +135477,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "期貨與選擇權概論",
@@ -135478,7 +135485,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135499,7 +135506,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "投資學",
@@ -135507,7 +135514,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135550,7 +135557,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "計量經濟學（一）",
@@ -135559,7 +135566,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135581,7 +135588,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "計量經濟學（二）",
@@ -135590,7 +135597,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135632,7 +135639,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "金融市場",
@@ -135640,7 +135647,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135661,7 +135668,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "個人理財規劃",
@@ -135669,7 +135676,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135900,7 +135907,7 @@
                       "企管系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；自 108 學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程"
                   }
                 ],
                 "prerequisite_note": null,
@@ -135985,7 +135992,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "高等物件導向程式設計",
@@ -135994,7 +136001,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136034,8 +136041,7 @@
                     "name": "資料結構",
                     "departments": [
                       "資工系",
-                      "資管系",
-                      "電機系",
+                      "資管電機系",
                       "應數系"
                     ],
                     "credits": 3,
@@ -136082,7 +136088,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "雲端運算理論與應用",
@@ -136091,7 +136097,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136197,7 +136203,7 @@
                       "電機系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "人工智慧（一）",
@@ -136206,7 +136212,7 @@
                       "電機系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136240,7 +136246,7 @@
                 }
               },
               {
-                "program_subject": "應用統計方法、高等統計學",
+                "program_subject": "應用統計方法 / 高等統計學",
                 "alternatives": [
                   {
                     "name": "應用統計方法",
@@ -136277,7 +136283,7 @@
           "total_min_credits": 15,
           "external_credits": {
             "min": 6,
-            "description": "學程課程中至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "description": "選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
             "exclude_double_major": true,
             "exclude_minor": true
           },
@@ -136289,9 +136295,9 @@
           },
           "non_course_requirements": [],
           "special_notes": [
-            "核心課程中至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
-            "自108學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程",
-            "欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3學分）計算",
+            "【整合學程】學程課程規劃至少 15 學分",
+            "自 108 學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程",
+            "欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
@@ -136299,7 +136305,7 @@
       {
         "academic_year": 109,
         "semester": 1,
-        "approval_info": "109.11.2 109學年度第1學期學分學程會議通過\n109.12.28 第166次教務會議通過",
+        "approval_info": "109.11.2 109 學年度第 1 學期學分學程會議通過；109.12.28 第 166 次教務會議通過",
         "course_groups": [
           {
             "id": "core",
@@ -136310,6 +136316,12 @@
             },
             "credit_requirement": {
               "min": 9
+            },
+            "external_credits": {
+              "min": 3,
+              "description": "選讀學程學生所修習之核心課程中至少應有 3 學分不屬於學生本系所、雙主修及輔系之課程",
+              "exclude_double_major": true,
+              "exclude_minor": true
             },
             "subjects": [
               {
@@ -136387,7 +136399,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "網際網路資料庫",
@@ -136396,7 +136408,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "資料庫系統",
@@ -136405,7 +136417,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136427,7 +136439,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "系統分析與設計",
@@ -136436,7 +136448,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136459,6 +136471,7 @@
             "credit_requirement": {
               "min": 6
             },
+            "external_credits": null,
             "subjects": [
               {
                 "program_subject": "選擇權市場理論與策略 / 期貨與選擇權概論",
@@ -136469,7 +136482,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "期貨與選擇權概論",
@@ -136477,7 +136490,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136498,7 +136511,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "投資學",
@@ -136506,7 +136519,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136549,7 +136562,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "計量經濟學（一）",
@@ -136558,7 +136571,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136580,7 +136593,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "計量經濟學（二）",
@@ -136589,7 +136602,7 @@
                       "經濟系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136631,7 +136644,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "金融市場",
@@ -136639,7 +136652,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136660,7 +136673,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "個人理財規劃",
@@ -136668,7 +136681,7 @@
                       "財管系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -136920,7 +136933,7 @@
                       "企管系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；自 108 學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程"
                   }
                 ],
                 "prerequisite_note": null,
@@ -137005,7 +137018,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "高等物件導向程式設計",
@@ -137014,7 +137027,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "大學部、研究所"
+                    "note": "大學部、研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -137102,7 +137115,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "雲端運算理論與應用",
@@ -137111,7 +137124,7 @@
                       "資工系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -137217,7 +137230,7 @@
                       "電機系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   },
                   {
                     "name": "人工智慧（一）",
@@ -137226,7 +137239,7 @@
                       "電機系"
                     ],
                     "credits": 3,
-                    "note": "研究所"
+                    "note": "研究所；欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算"
                   }
                 ],
                 "prerequisite_note": null,
@@ -137297,20 +137310,21 @@
           "total_min_credits": 15,
           "external_credits": {
             "min": 6,
-            "description": "學程課程中至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "description": "選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
             "exclude_double_major": true,
             "exclude_minor": true
           },
           "waiver": {
             "allowed": false,
             "max_credits": null,
-            "note": null
+            "note": null,
+            "waiver_alternatives": []
           },
           "non_course_requirements": [],
           "special_notes": [
-            "核心課程中至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
-            "自108學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程",
-            "欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3學分）計算",
+            "學程課程規劃至少 15 學分",
+            "自 108 學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程",
+            "欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
@@ -137328,6 +137342,12 @@
             },
             "credit_requirement": {
               "min": 9
+            },
+            "external_credits": {
+              "min": 3,
+              "description": "選讀學程學生所修習之核心課程中至少應有 3 學分不屬於學生本系所、雙主修及輔系之課程",
+              "exclude_double_major": true,
+              "exclude_minor": true
             },
             "subjects": [
               {
@@ -137514,8 +137534,9 @@
               "type": "min_credits"
             },
             "credit_requirement": {
-              "min": 0
+              "min": 6
             },
+            "external_credits": null,
             "subjects": [
               {
                 "program_subject": "選擇權市場理論與策略",
@@ -138444,7 +138465,7 @@
           "total_min_credits": 15,
           "external_credits": {
             "min": 6,
-            "description": "選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程；其中核心課程至少應有 3 學分不屬於學生本系所、雙主修及輔系之課程。",
+            "description": "選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
             "exclude_double_major": true,
             "exclude_minor": true
           },
@@ -138457,8 +138478,6 @@
           "non_course_requirements": [],
           "special_notes": [
             "學程課程規劃至少 15 學分。",
-            "選讀學程學生所修習之核心課程中至少應有 3 學分不屬於學生本系所、雙主修及輔系之課程。",
-            "自 108 學年度第一學期起，不認列財管所學生選修企管所之「證券市場分析」課程。",
             "欄位中若有*加註，該欄課程修習兩門（含）以上時，學分數僅以一門課程（3 學分）計算。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
@@ -199808,7 +199827,7 @@
     ]
   },
   {
-    "program_id": "fintech-and-innovation-micro-program",
+    "program_id": "financial-technology-and-innovation-micro-program",
     "program_name": "金融科技與創新微學程",
     "is_discontinued": false,
     "discontinued_date": null,
@@ -199817,7 +199836,7 @@
       {
         "academic_year": 109,
         "semester": 2,
-        "approval_info": "110.5.4 109學年度第2學期學分學程會議通過 110.6.2第168次教務會議通過",
+        "approval_info": "110.5.4 109學年度第2學期學分學程會議通過；110.6.2第168次教務會議通過",
         "course_groups": [
           {
             "id": "core",
@@ -199828,6 +199847,7 @@
             "credit_requirement": {
               "min": 2
             },
+            "external_credits": null,
             "subjects": [
               {
                 "program_subject": "當前財金問題分析",
@@ -199861,6 +199881,7 @@
             "credit_requirement": {
               "min": 9
             },
+            "external_credits": null,
             "subjects": [
               {
                 "program_subject": "財金程式設計",
@@ -199975,288 +199996,6 @@
                     "departments": [
                       "財管系",
                       "資管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "智慧機器人設計與應用",
-                "alternatives": [
-                  {
-                    "name": "智慧機器人設計與應用",
-                    "departments": [
-                      "資管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "電子商務",
-                "alternatives": [
-                  {
-                    "name": "電子商務",
-                    "departments": [
-                      "資管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "衍生性商品實證專題",
-                "alternatives": [
-                  {
-                    "name": "衍生性商品實證專題",
-                    "departments": [
-                      "財管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "大數據收集與分析",
-                "alternatives": [
-                  {
-                    "name": "大數據收集與分析",
-                    "departments": [
-                      "人科學程"
-                    ],
-                    "credits": 3,
-                    "note": "大學部"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              }
-            ]
-          }
-        ],
-        "requirements": {
-          "total_min_credits": 11,
-          "external_credits": {
-            "min": 3,
-            "description": "學生所修習之學程課程中，至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
-            "exclude_double_major": true,
-            "exclude_minor": true
-          },
-          "waiver": {
-            "allowed": false,
-            "max_credits": null,
-            "note": null,
-            "waiver_alternatives": []
-          },
-          "non_course_requirements": [],
-          "special_notes": [
-            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
-          ]
-        }
-      },
-      {
-        "academic_year": 112,
-        "semester": 2,
-        "approval_info": "113.4.22 112學年度第2學期學分學程會議通過；113.5.30第180次教務會議通過",
-        "course_groups": [
-          {
-            "id": "core",
-            "label": "核心課程",
-            "selection_rule": {
-              "type": "min_credits"
-            },
-            "credit_requirement": {
-              "min": 2
-            },
-            "subjects": [
-              {
-                "program_subject": "當前財金問題分析",
-                "alternatives": [
-                  {
-                    "name": "當前財金問題分析",
-                    "departments": [
-                      "財管系"
-                    ],
-                    "credits": 2,
-                    "note": "大學部/研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "巨量資料分析導論",
-                "alternatives": [
-                  {
-                    "name": "巨量資料分析導論",
-                    "departments": [
-                      "財管系",
-                      "資管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              }
-            ]
-          },
-          {
-            "id": "elective",
-            "label": "選修課程",
-            "selection_rule": {
-              "type": "min_credits"
-            },
-            "credit_requirement": {
-              "min": 0
-            },
-            "subjects": [
-              {
-                "program_subject": "財金程式設計",
-                "alternatives": [
-                  {
-                    "name": "財金程式設計",
-                    "departments": [
-                      "財管系"
-                    ],
-                    "credits": 3,
-                    "note": "大學部"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "金融科技服務開發",
-                "alternatives": [
-                  {
-                    "name": "金融科技服務開發",
-                    "departments": [
-                      "財管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "保險理論與實務",
-                "alternatives": [
-                  {
-                    "name": "保險理論與實務",
-                    "departments": [
-                      "財管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "證券市場微結構實務",
-                "alternatives": [
-                  {
-                    "name": "證券市場微結構實務",
-                    "departments": [
-                      "財管系"
-                    ],
-                    "credits": 3,
-                    "note": "研究所"
-                  }
-                ],
-                "prerequisite_note": null,
-                "tags": [],
-                "waiver": {
-                  "allowed": false,
-                  "max_credits": null,
-                  "note": null,
-                  "waiver_alternatives": []
-                }
-              },
-              {
-                "program_subject": "財務工程與金融創新",
-                "alternatives": [
-                  {
-                    "name": "財務工程與金融創新",
-                    "departments": [
-                      "財管系"
                     ],
                     "credits": 3,
                     "note": "研究所"
@@ -200363,6 +200102,291 @@
           "external_credits": {
             "min": 3,
             "description": "學生所修習之學程課程中，至少應有3學分不屬於學生本系所、雙主修及輔系之課程。",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【微學程】課程規劃至少11學分。",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 112,
+        "semester": 2,
+        "approval_info": "113.4.22 112學年度第2學期學分學程會議通過；113.5.30第180次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 2
+            },
+            "external_credits": null,
+            "subjects": [
+              {
+                "program_subject": "當前財金問題分析",
+                "alternatives": [
+                  {
+                    "name": "當前財金問題分析",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 2,
+                    "note": "大學部/研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "巨量資料分析導論",
+                "alternatives": [
+                  {
+                    "name": "巨量資料分析導論",
+                    "departments": [
+                      "財管系",
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "external_credits": null,
+            "subjects": [
+              {
+                "program_subject": "財金程式設計",
+                "alternatives": [
+                  {
+                    "name": "財金程式設計",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "金融科技服務開發",
+                "alternatives": [
+                  {
+                    "name": "金融科技服務開發",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "保險理論與實務",
+                "alternatives": [
+                  {
+                    "name": "保險理論與實務",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "證券市場微結構實務",
+                "alternatives": [
+                  {
+                    "name": "證券市場微結構實務",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "財務工程與金融創新",
+                "alternatives": [
+                  {
+                    "name": "財務工程與金融創新",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "智慧機器人設計與應用",
+                "alternatives": [
+                  {
+                    "name": "智慧機器人設計與應用",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "電子商務",
+                "alternatives": [
+                  {
+                    "name": "電子商務",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "衍生性商品實證專題",
+                "alternatives": [
+                  {
+                    "name": "衍生性商品實證專題",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": "研究所"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "大數據收集與分析",
+                "alternatives": [
+                  {
+                    "name": "大數據收集與分析",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": "大學部"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 11,
+          "external_credits": {
+            "min": 3,
+            "description": "學生所修習之學程課程中，至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
             "exclude_double_major": true,
             "exclude_minor": true
           },
