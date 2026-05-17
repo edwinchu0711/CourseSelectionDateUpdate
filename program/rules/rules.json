@@ -225799,6 +225799,1102 @@
         }
       },
       {
+        "academic_year": 110,
+        "semester": 1,
+        "approval_info": "110.11.2 第170次教務會議通過\n110.12.28 第170次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心必修科目",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育教材教法",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1030600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境倫理與永續發展",
+                "alternatives": [
+                  {
+                    "name": "環境倫理與永續發展",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1030700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育實務",
+                "alternatives": [
+                  {
+                    "name": "環境教育實務",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1030800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材教法（一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1030900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材教法（二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材教法（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材教法（四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材教法（五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材教法（六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "core_elective",
+            "label": "核心選修科目",
+            "selection_rule": {
+              "type": "pick_n",
+              "pick": 6
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育與社會",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1031900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（七）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（七）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（八）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（八）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（九）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（九）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1032900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十七）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十七）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十八）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十八）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十九）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十九）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十）",
+                "alternatives": [
+                  {
+                    "name": "環境教育��社會（二十）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1033900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十七）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十七）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十八）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十八）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十九）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十九）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（三十）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（三十）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修科目",
+            "selection_rule": {
+              "type": "min_credits",
+              "min": 9
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育與社會",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1034900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（七）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（七）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（八）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（八）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（九）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（九）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1035900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十七）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十七）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十八）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十八）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（十九）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（十九）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十二）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十四）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十四）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十五）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十五）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1036900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十六）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十六）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1037000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十七）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十七）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1037100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十八）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十八）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1037200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（二十九）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（二十九）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1037300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會（三十）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會（三十）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程1037400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 27,
+          "external_credits": {
+            "min": 6,
+            "description": "依開課系所、跨院選修(含)主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": true,
+            "max_credits": null,
+            "note": "以前修習課程及學分之抵免，由本學程負責人認定"
+          },
+          "non_course_requirements": [],
+          "special_notes": []
+        }
+      },
+      {
         "academic_year": 111,
         "semester": 1,
         "approval_info": "111.10.31 111 學年度第 1 學期學分學程會議通過\n111.12.5 第 174 次教務會議通過",
