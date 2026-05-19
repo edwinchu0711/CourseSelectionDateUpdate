@@ -224126,6 +224126,368 @@
     "former_name": null,
     "versions": [
       {
+        "academic_year": 108,
+        "semester": 1,
+        "approval_info": "108.12.10 第162次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育教材教法",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": [
+                  "starred"
+                ]
+              },
+              {
+                "program_subject": "環境教育實務（一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育實務（一）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "環境教育實務（二）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "credits": 1,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育服務學習（一）",
+                "alternatives": [
+                  {
+                    "name": "環境教育服務學習（一）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "環境教育服務學習（二）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "credits": 1,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育服務學習（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育服務學習（三）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "環境教育服務學習（四）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "credits": 1,
+                "departments": [],
+                "note": null,
+                "tags": []
+              }
+            ],
+            "credit_requirement": {
+              "min": 4
+            },
+            "required_tags": []
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits",
+              "min_credits": 18
+            },
+            "subjects": [
+              {
+                "program_subject": "生態學",
+                "alternatives": [],
+                "credits": 3,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "社會學",
+                "alternatives": [],
+                "credits": 3,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境社會學",
+                "alternatives": [],
+                "credits": 3,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育專題討論",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育教材設計",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育實習",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育專題研究",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育政策與法規",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育評鑑",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育國際趨勢",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "氣候變遷教育",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "海洋教育",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "永續發展教育",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境倫理",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境美學",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境文學",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境藝術",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境音樂",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境戲劇",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境舞蹈",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境攝影",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境電影",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境紀錄片",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境新聞",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境傳播",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境溝通",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境行銷",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境公關",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境廣告",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境品牌",
+                "alternatives": [],
+                "credits": 2,
+                "departments": [],
+                "note": null,
+                "tags": []
+              }
+            ],
+            "credit_requirement": {
+              "min": 18
+            },
+            "required_tags": []
+          }
+        ],
+        "total_min_credits": 27,
+        "external_credits": {
+          "min": 6,
+          "description": "得申請環保署環境教育人員認定核心科目採計課程及學分數之抵免，由本學程認定",
+          "exclude_double_major": true,
+          "exclude_minor": true
+        },
+        "non_course_requirements": [],
+        "waiver": {
+          "allowed": true,
+          "max_credits": null,
+          "note": "得申請環保署環境教育人員認定核心科目採計課程及學分數之抵免，由本學程認定",
+          "waiver_alternatives": []
+        },
+        "special_notes": []
+      },
+      {
         "academic_year": 109,
         "semester": 1,
         "approval_info": "109.11.2 109 學年度第 1 學期學分學程會議通過；109.12.28 第 166 次教務會議通過",
@@ -234910,8 +235272,210 @@
             "完成本學程擇一領域選修 18 學分之學生可申請環保署環境教育教學人員認證。"
           ]
         }
+      },
+      {
+        "academic_year": 113,
+        "semester": 2,
+        "approval_info": "113年4月15日第184次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心必修科目",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育教材教法",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（一）",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  },
+                  {
+                    "name": "環境教育教材教法（二）",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育實習",
+                "alternatives": [
+                  {
+                    "name": "環境教育實習（一）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "環境教育實習（二）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育實務",
+                "alternatives": [
+                  {
+                    "name": "環境教育實務（一）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "環境教育實務（二）",
+                    "departments": [],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "core_elective",
+            "label": "核心選修",
+            "selection_rule": {
+              "type": "min_credits",
+              "min": 6
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育與社會",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與自然保育",
+                "alternatives": [
+                  {
+                    "name": "環境教育與自然保育",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與永續發展",
+                "alternatives": [
+                  {
+                    "name": "環境教育與永續發展",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits",
+              "min": 3
+            },
+            "credit_requirement": {
+              "min": 3
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育與社會",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與自然保育",
+                "alternatives": [
+                  {
+                    "name": "環境教育與自然保育",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與永續發展",
+                "alternatives": [
+                  {
+                    "name": "環境教育與永續發展",
+                    "departments": [],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 18,
+          "external_credits": {
+            "min": 0,
+            "description": "依開課系所規定",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "學程學分數：至少18學分。",
+            "選讀學程學生所修習之學程課程中，至少應有6學分不屬於學生本系、主修及輔系之課程。",
+            "完成本學程全部領域選修課程之學生可申請環保署環境教育人員認證。",
+            "完成本學程全部領域選修課程之學生可申請環保署環境教育人員認證。"
+          ]
+        }
       }
-    ]
+    ],
+    "waiver": {
+      "allowed": false,
+      "max_credits": null,
+      "note": null,
+      "waiver_alternatives": []
+    }
   },
   {
     "program_id": "contemporary-curation-and-arts-administration",
