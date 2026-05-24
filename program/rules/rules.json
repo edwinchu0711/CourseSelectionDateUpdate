@@ -230255,6 +230255,392 @@
       },
       {
         "academic_year": 112,
+        "semester": 1,
+        "approval_info": "112.11.7 112學年度第1學期課程會議通過\n112.12.12 第178次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core_required",
+            "label": "核心必修科目",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育教材教法",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育教材教法（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育實務與推廣",
+                "alternatives": [
+                  {
+                    "name": "環境教育實務與推廣（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育實務與推廣（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育課程設計與評量",
+                "alternatives": [
+                  {
+                    "name": "環境教育課程設計與評量（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育課程設計與評量（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "core_elective",
+            "label": "核心選修科目",
+            "selection_rule": {
+              "type": "pick_n",
+              "pick": 6
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育與永續發展",
+                "alternatives": [
+                  {
+                    "name": "環境教育與永續發展（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育與永續發展（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會參與",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會參與（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育與社會參與（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與藝術人文",
+                "alternatives": [
+                  {
+                    "name": "環境教育與藝術人文（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育與藝術人文（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與科學探究",
+                "alternatives": [
+                  {
+                    "name": "環境教育與科學探究（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育與科學探究（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與鄉土文化",
+                "alternatives": [
+                  {
+                    "name": "環境教育與鄉土文化（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育與鄉土文化（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與戶外學習",
+                "alternatives": [
+                  {
+                    "name": "環境教育與戶外學習（一）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  },
+                  {
+                    "name": "環境教育與戶外學習（二）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修科目",
+            "selection_rule": {
+              "type": "min_credits",
+              "min_credits": 9
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育與永續發展（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與永續發展（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與社會參與（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與社會參與（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與藝術人文（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與藝術人文（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與科學探究（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與科學探究（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與鄉土文化（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與鄉土文化（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              },
+              {
+                "program_subject": "環境教育與�戶外學習（三）",
+                "alternatives": [
+                  {
+                    "name": "環境教育與戶外學習（三）",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null,
+                    "tags": []
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": []
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 27,
+          "external_credits": {
+            "min": 6,
+            "description": "至少6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "non_course_requirements": [
+            {
+              "type": "credit_transfer_limit",
+              "description": "完成本學程全部領域選修18學分之學生可申請環保署環境教育人員認定核心必修科目抵免，最多可抵免6學分",
+              "max_credits": 6,
+              "note": null
+            }
+          ],
+          "special_notes": [
+            "修習本學程之核心必修、核心選修及選修課程中，至少應有6學分不屬於學生本系所、雙主修及輔系之課程"
+          ]
+        }
+      },
+      {
+        "academic_year": 112,
         "semester": 2,
         "approval_info": "113.4.22 112 學年度第 2 學期學分學程會議通過；113.5.30 第 180 次教務會議通過",
         "course_groups": [
