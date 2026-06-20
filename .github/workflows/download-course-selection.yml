@@ -1,0 +1,45 @@
+name: Download and Convert Course Selection
+
+on:
+  schedule:
+    # 每天 UTC 時間 00:00 執行 (約台灣時間早上 08:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允許手動觸發
+
+jobs:
+  download-and-convert:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # 允許寫入與推送到儲存庫
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pdfplumber
+
+      - name: Run download and convert script
+        run: |
+          python course-selection/download_convert.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action Bot'
+          git config --global user.email 'action@github.com'
+          git add course-selection/
+          if [[ -n $(git status --porcelain course-selection/) ]]; then
+            echo "Detect changes in course-selection"
+            git commit -m "Auto-update course-selection.md $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "No changes detected"
+          fi
