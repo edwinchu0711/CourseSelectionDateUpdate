@@ -1,4 +1,5 @@
 import os
+import re
 import urllib.request
 import urllib.parse
 from html.parser import HTMLParser
@@ -9,7 +10,6 @@ import pdfplumber
 # ─────────────────────────────────────────
 BASE_URL = "https://selcrs.nsysu.edu.tw/"
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))  # 輸出目錄，設定為腳本所在的資料夾 (course-selection)
-
 
 
 # ─────────────────────────────────────────
@@ -54,6 +54,7 @@ HEADERS = {
     )
 }
 
+
 def fetch_html(url: str) -> str | None:
     """抓取網頁 HTML 內容"""
     print(f"[Info] 正在抓取網頁: {url}")
@@ -71,18 +72,56 @@ def resolve_url(base: str, href: str) -> str:
     return urllib.parse.urljoin(base, href)
 
 
-def select_largest_filename(urls: list[str]) -> str | None:
-    """選擇檔名字典序最大的 URL（模仿原 Dart 邏輯）"""
-    if not urls:
+def extract_semester_key(text: str) -> int:
+    """
+    從連結文字中提取學年期數字作為排序鍵
+    例如：'114學年度第2學期' → 1142
+         '115學年度第1學期' → 1151
+    若無法解析，回傳 0
+    """
+    # 嘗試從文字中提取 "XXX學年度第X學期"
+    match = re.search(r'(\d{3})\s*學年度\s*第\s*([12])\s*學期', text)
+    if match:
+        year = int(match.group(1))      # 例如 114、115
+        semester = int(match.group(2))  # 1 或 2
+        return year * 10 + semester     # 例如 1142、1151
+    return 0  # 無法解析時回傳 0
+
+
+def select_best_pdf(candidates: list[tuple[str, str]]) -> str | None:
+    """
+    從候選 PDF 中選出最佳的一個
+    candidates: List of (url, display_text)
+
+    優先策略：從顯示文字提取學年期數字比較（例如 1151 > 1142）
+    備用策略：字典序最大的檔名（原本邏輯）
+    """
+    if not candidates:
         return None
 
-    def get_filename(url):
+    # 嘗試用學年期數字排序
+    semester_scored = [
+        (extract_semester_key(text), url, text)
+        for url, text in candidates
+    ]
+
+    # 檢查是否有任何候選成功解析出學年期（key > 0）
+    max_key = max(k for k, _, _ in semester_scored)
+    if max_key > 0:
+        # 有解析成功 → 取學年期代碼最大的
+        best = max(semester_scored, key=lambda x: x[0])
+        print(f"[Info] 依學年期選擇 PDF（學年期代碼: {best[0]}）: {best[2][:30]}...")
+        return best[1]  # 回傳 url
+
+    # 備用：字典序最大的檔名（原本邏輯）
+    print("[Info] 無法解析學年期，改用檔名字典序選擇 PDF")
+
+    def get_filename(url: str) -> str:
         path = urllib.parse.urlparse(url).path
         name = os.path.basename(path)
         return name.split('?')[0] if '?' in name else name
 
-    best = max(urls, key=get_filename)
-    return best
+    return max(candidates, key=lambda x: get_filename(x[0]))[0]
 
 
 def find_pdf_link(html: str, current_url: str) -> str | None:
@@ -91,7 +130,8 @@ def find_pdf_link(html: str, current_url: str) -> str | None:
     parser.feed(html)
 
     keywords = ['選課須知', '選課須知及注意事項', '選課手冊']
-    candidate_urls = []
+    # 儲存 (url, display_text) 的 tuple，display_text 用於學年期解析
+    candidate_pairs: list[tuple[str, str]] = []
 
     # 第一輪：文字/title 含關鍵字 且 href 直接是 PDF
     for href, text, title in parser.links:
@@ -100,12 +140,13 @@ def find_pdf_link(html: str, current_url: str) -> str | None:
         is_pdf = href_lower.endswith('.pdf') or '.pdf?' in href_lower
         has_keyword = any(kw in full_text or kw in href for kw in keywords)
         if is_pdf and has_keyword:
-            candidate_urls.append(resolve_url(current_url, href))
-            if len(candidate_urls) >= 3:
+            resolved = resolve_url(current_url, href)
+            candidate_pairs.append((resolved, full_text))  # 同時儲存顯示文字
+            if len(candidate_pairs) >= 5:  # 放寬至 5 個，讓學年期比較更準確
                 break
 
-    if candidate_urls:
-        return select_largest_filename(candidate_urls)
+    if candidate_pairs:
+        return select_best_pdf(candidate_pairs)
 
     # 第二輪：文字含關鍵字，解析後的完整 URL 是 PDF
     for href, text, title in parser.links:
@@ -113,11 +154,11 @@ def find_pdf_link(html: str, current_url: str) -> str | None:
         if any(kw in full_text for kw in keywords):
             resolved = resolve_url(current_url, href)
             if resolved.lower().endswith('.pdf') or '.pdf?' in resolved.lower():
-                candidate_urls.append(resolved)
-                if len(candidate_urls) >= 3:
+                candidate_pairs.append((resolved, full_text))
+                if len(candidate_pairs) >= 5:
                     break
 
-    return select_largest_filename(candidate_urls) if candidate_urls else None
+    return select_best_pdf(candidate_pairs) if candidate_pairs else None
 
 
 def find_sub_link(html: str, current_url: str) -> str | None:
@@ -222,11 +263,10 @@ def main():
 
     # Step 5：PDF 轉 Markdown
     md_path = os.path.join(OUTPUT_DIR, "course-selection.md")
-
     pdf_to_markdown(pdf_path, md_path)
 
     print(f"\n🎉 全部完成！")
-    print(f"   PDF  → {pdf_path}")
+    print(f"   PDF      → {pdf_path}")
     print(f"   Markdown → {md_path}")
 
 
