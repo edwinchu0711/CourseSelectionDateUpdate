@@ -36405,6 +36405,624 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114 學年度第 2 學期學分學程會議通過\n115.5.21 第 188 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "pick_n",
+              "pick": 1
+            },
+            "credit_requirement": {
+              "min": 2
+            },
+            "subjects": [
+              {
+                "program_subject": "女性主義思潮",
+                "alternatives": [
+                  {
+                    "name": "女性主義思潮",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": "三選一，其餘計入總學分數"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別與社會",
+                "alternatives": [
+                  {
+                    "name": "性別與社會",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": "三選一，其餘計入總學分數"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別社會學",
+                "alternatives": [
+                  {
+                    "name": "性別社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "三選一，其餘計入總學分數"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 15
+            },
+            "subjects": [
+              {
+                "program_subject": "來／去台灣：性別與遷移",
+                "alternatives": [
+                  {
+                    "name": "來／去台灣：性別與遷移",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：促進性別友善校園行動志工",
+                "alternatives": [
+                  {
+                    "name": "服務學習：促進性別友善校園行動志工",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性與性別的跨文化觀點",
+                "alternatives": [
+                  {
+                    "name": "性與性別的跨文化觀點",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別與管理",
+                "alternatives": [
+                  {
+                    "name": "性別與管理",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "跨國遷移",
+                "alternatives": [
+                  {
+                    "name": "跨國遷移",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": "依開課學系規定",
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "情感教育",
+                "alternatives": [
+                  {
+                    "name": "情感教育",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別教育",
+                "alternatives": [
+                  {
+                    "name": "性別教育",
+                    "departments": [
+                      "中學學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別教育研究",
+                "alternatives": [
+                  {
+                    "name": "性別教育研究",
+                    "departments": [
+                      "教育所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "維多利亞時代女性詩人",
+                "alternatives": [
+                  {
+                    "name": "維多利亞時代女性詩人",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "精神分析批評",
+                "alternatives": [
+                  {
+                    "name": "精神分析批評",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代加拿大英文文學",
+                "alternatives": [
+                  {
+                    "name": "當代加拿大英文文學",
+                    "departments": [
+                      "外文碩"
+                    ],
+                    "credits": 3,
+                    "note": "認列：加拿大英文文學"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別文化民俗誌",
+                "alternatives": [
+                  {
+                    "name": "性別文化民俗誌",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "華文文學與性別文化（一）",
+                "alternatives": [
+                  {
+                    "name": "華文文學與性別文化（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "華文文學與性別文化（二）",
+                "alternatives": [
+                  {
+                    "name": "華文文學與性別文化（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "陽剛特質研究",
+                "alternatives": [
+                  {
+                    "name": "陽剛特質研究",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "身體與工作",
+                "alternatives": [
+                  {
+                    "name": "身體與工作",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性社會學",
+                "alternatives": [
+                  {
+                    "name": "性社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別與遷徙",
+                "alternatives": [
+                  {
+                    "name": "性別與遷徙",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性／別與空間",
+                "alternatives": [
+                  {
+                    "name": "性／別與空間",
+                    "departments": [
+                      "社會碩"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別與社會正義",
+                "alternatives": [
+                  {
+                    "name": "性別與社會正義",
+                    "departments": [
+                      "政治碩"
+                    ],
+                    "credits": 3,
+                    "note": "認列：性別研究與社會正義"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "女性主義名著選讀",
+                "alternatives": [
+                  {
+                    "name": "女性主義名著選讀",
+                    "departments": [
+                      "政治碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "廣告與文化",
+                "alternatives": [
+                  {
+                    "name": "廣告與文化",
+                    "departments": [
+                      "行銷傳播碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別、組織與管理",
+                "alternatives": [
+                  {
+                    "name": "性別、組織與管理",
+                    "departments": [
+                      "公事所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別化創新",
+                "alternatives": [
+                  {
+                    "name": "性別化創新",
+                    "departments": [
+                      "公事所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【整合學程】課程規劃至少 15 學分",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
       }
     ]
   },
@@ -204980,6 +205598,723 @@
             "當學期課程開設為英語授課者，方得認列本學程學分。相同課名以中文授課者，不採計學程學分。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "英文學術寫作",
+                "alternatives": [
+                  {
+                    "name": "英文學術寫作",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "演說與辯論（高級）",
+                "alternatives": [
+                  {
+                    "name": "演說與辯論（高級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技英文",
+                "alternatives": [
+                  {
+                    "name": "科技英文",
+                    "departments": [
+                      "英語文(選)"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生。"
+                  },
+                  {
+                    "name": "科技英文（高級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技英文閱讀",
+                "alternatives": [
+                  {
+                    "name": "科技英文閱讀",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。"
+                  },
+                  {
+                    "name": "科技英文閱讀（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際會展英語（中高級）",
+                "alternatives": [
+                  {
+                    "name": "國際會展英語（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會文化分析",
+                "alternatives": [
+                  {
+                    "name": "社會文化分析",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "從英語課程學習多元文化",
+                "alternatives": [
+                  {
+                    "name": "從英語課程學習多元文化",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。"
+                  },
+                  {
+                    "name": "從英語課程學習多元文化（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "透過實用性英語增進溝通能力",
+                "alternatives": [
+                  {
+                    "name": "透過實用性英語增進溝通能力",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。"
+                  },
+                  {
+                    "name": "透過實用性英語增進溝通能力（中級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "通過體驗式學習自信地說英語",
+                "alternatives": [
+                  {
+                    "name": "通過體驗式學習自信地說英語",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。"
+                  },
+                  {
+                    "name": "通過體驗式學習自信地說英語(中級)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。"
+                  },
+                  {
+                    "name": "通過體驗式學習自信地說英語(中高級)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "觀光英語",
+                "alternatives": [
+                  {
+                    "name": "觀光英語",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "成功的英文寫作",
+                "alternatives": [
+                  {
+                    "name": "成功的英文寫作",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。"
+                  },
+                  {
+                    "name": "成功的英文寫作（中級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "成功的英文寫作（中高級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "英文商業書信",
+                "alternatives": [
+                  {
+                    "name": "英文商業書信",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門。"
+                  },
+                  {
+                    "name": "英文商業書信（中級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "英文商業書信（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "臨床醫護英語（中高級）",
+                "alternatives": [
+                  {
+                    "name": "臨床醫護英語（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "餐飲業實用英語（中級）",
+                "alternatives": [
+                  {
+                    "name": "餐飲業實用英語（中級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "職場英文（中級）",
+                "alternatives": [
+                  {
+                    "name": "職場英文（中級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會科學英文（高級）",
+                "alternatives": [
+                  {
+                    "name": "社會科學英文（高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "英語簡報與口語表達（中高級）",
+                "alternatives": [
+                  {
+                    "name": "英語簡報與口語表達（中高級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "實用英語發音與表達（中級）",
+                "alternatives": [
+                  {
+                    "name": "實用英語發音與表達（中級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "影視英文 (高級)",
+                "alternatives": [
+                  {
+                    "name": "影視英文 (高級)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "賞析音樂學英語（中級）",
+                "alternatives": [
+                  {
+                    "name": "賞析音樂學英語（中級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "運輸交通工具英文(中高級)",
+                "alternatives": [
+                  {
+                    "name": "運輸交通工具英文(中高級)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "英文閱讀與寫作（中高級）",
+                "alternatives": [
+                  {
+                    "name": "英文閱讀與寫作（中高級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "透過電影學英文（中高級）",
+                "alternatives": [
+                  {
+                    "name": "透過電影學英文（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "極限閱讀：挑戰想像力與創造力(中高級)",
+                "alternatives": [
+                  {
+                    "name": "極限閱讀：挑戰想像力與創造力(中高級)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化藝術賞析與英語溝通(高級)",
+                "alternatives": [
+                  {
+                    "name": "文化藝術賞析與英語溝通(高級)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "增進跨文化溝通技能(中高級)",
+                "alternatives": [
+                  {
+                    "name": "增進跨文化溝通技能(中高級)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "透過國際禮儀增進專業技能（中高級）",
+                "alternatives": [
+                  {
+                    "name": "透過國際禮儀增進專業技能（中高級）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台灣政經發展",
+                "alternatives": [
+                  {
+                    "name": "台灣政經發展",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "適用所有核准修習本學程學生。"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "當學期課程開設為英語授課者，方得認列本學程學分。相同課名以中文授課者，不採計學程學分。"
+          ]
+        }
       }
     ]
   },
@@ -221248,6 +222583,1239 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "中國文學史",
+                "alternatives": [
+                  {
+                    "name": "中國文學史（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": "中文系基礎必修課程文學/思想/語言文字三領域擇一修習至少6學分"
+                  },
+                  {
+                    "name": "中國文學史（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": "中文系基礎必修課程文學/思想/語言文字三領域擇一修習至少6學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中國思想史",
+                "alternatives": [
+                  {
+                    "name": "中國思想史（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "中國思想史（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "語言學概論",
+                "alternatives": [
+                  {
+                    "name": "語言學概論",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文字學",
+                "alternatives": [
+                  {
+                    "name": "文字學",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "聲韻學",
+                "alternatives": [
+                  {
+                    "name": "聲韻學",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "訓詁學",
+                "alternatives": [
+                  {
+                    "name": "訓詁學",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中文思辨與表達",
+                "alternatives": [
+                  {
+                    "name": "中文思辨與表達（一）",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": "基礎語文課程至少3學分"
+                  },
+                  {
+                    "name": "中文思辨與表達（二）",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": "基礎語文課程至少3學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文學閱讀與生命書寫",
+                "alternatives": [
+                  {
+                    "name": "文學閱讀與生命書寫（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "文學閱讀與生命書寫（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "青聽文學",
+                "alternatives": [
+                  {
+                    "name": "青聽文學",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "非虛構文學選讀",
+                "alternatives": [
+                  {
+                    "name": "非虛構文學選讀",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "詩選及習作",
+                "alternatives": [
+                  {
+                    "name": "詩選及習作（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": "古典文化與創意課程至少3學分"
+                  },
+                  {
+                    "name": "詩選及習作（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": "古典文化與創意課程至少3學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歷代文選及習作",
+                "alternatives": [
+                  {
+                    "name": "歷代文選及習作（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "歷代文選及習作（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "詞曲選及習作",
+                "alternatives": [
+                  {
+                    "name": "詞曲選及習作（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "詞曲選及習作（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "論語",
+                "alternatives": [
+                  {
+                    "name": "論語",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "杜甫詩",
+                "alternatives": [
+                  {
+                    "name": "杜甫詩",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "李白詩",
+                "alternatives": [
+                  {
+                    "name": "李白詩",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐蘇文",
+                "alternatives": [
+                  {
+                    "name": "歐蘇文",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "紅樓夢",
+                "alternatives": [
+                  {
+                    "name": "紅樓夢",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古典小說選",
+                "alternatives": [
+                  {
+                    "name": "古典小說選（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "古典小說選（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古典戲劇選",
+                "alternatives": [
+                  {
+                    "name": "古典戲劇選（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "古典戲劇選（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "臺灣古典文學概論",
+                "alternatives": [
+                  {
+                    "name": "臺灣古典文學概論",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "陶淵明詩文選讀",
+                "alternatives": [
+                  {
+                    "name": "陶淵明詩文選讀",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "李商隱詩",
+                "alternatives": [
+                  {
+                    "name": "李商隱詩",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代戲曲",
+                "alternatives": [
+                  {
+                    "name": "當代戲曲（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "當代戲曲（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代詩選與寫作",
+                "alternatives": [
+                  {
+                    "name": "現代詩選與寫作",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": "現代文學與寫作課程至少3學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代散文選與寫作",
+                "alternatives": [
+                  {
+                    "name": "現代散文選與寫作",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代小說選與寫作",
+                "alternatives": [
+                  {
+                    "name": "現代小說選與寫作（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "現代小說選與寫作（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "晚清到當代華文科幻小說",
+                "alternatives": [
+                  {
+                    "name": "晚清到當代華文科幻小說",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中外文學經典選讀",
+                "alternatives": [
+                  {
+                    "name": "中外文學經典選讀（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "中外文學經典選讀（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "華文文學與性別文化",
+                "alternatives": [
+                  {
+                    "name": "華文文學與性別文化（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": "跨域實作應用課程至少6學分"
+                  },
+                  {
+                    "name": "華文文學與性別文化（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 6,
+                    "note": "跨域實作應用課程至少6學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代文學與影像轉譯",
+                "alternatives": [
+                  {
+                    "name": "現代文學與影像轉譯",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "閱讀與寫作",
+                "alternatives": [
+                  {
+                    "name": "閱讀與寫作",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "劇本創作",
+                "alternatives": [
+                  {
+                    "name": "劇本創作（一）",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  },
+                  {
+                    "name": "劇本創作（二）",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 6,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方敘事與數位遊戲設計",
+                "alternatives": [
+                  {
+                    "name": "地方敘事與數位遊戲設計",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方文化典藏與報導應用",
+                "alternatives": [
+                  {
+                    "name": "地方文化典藏與報導應用",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中文之路專題製作",
+                "alternatives": [
+                  {
+                    "name": "中文之路專題製作",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "臺灣語言踏查之旅",
+                "alternatives": [
+                  {
+                    "name": "臺灣語言踏查之旅",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "紀錄片與台灣社會",
+                "alternatives": [
+                  {
+                    "name": "紀錄片與台灣社會",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "紀錄片企劃與製作",
+                "alternatives": [
+                  {
+                    "name": "紀錄片企劃與製作",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方文化採集與應用",
+                "alternatives": [
+                  {
+                    "name": "地方文化採集與應用",
+                    "departments": [
+                      "博雅向度三"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創造力與社會創新",
+                "alternatives": [
+                  {
+                    "name": "創造力與社會創新",
+                    "departments": [
+                      "博雅向度三"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "故事創意與數位繪本",
+                "alternatives": [
+                  {
+                    "name": "故事創意與數位繪本",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "用影像說故事：探索科技、環境與社會",
+                "alternatives": [
+                  {
+                    "name": "用影像說故事：探索科技、環境與社會",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "探尋建築工藝中的高雄故事",
+                "alternatives": [
+                  {
+                    "name": "探尋建築工藝中的高雄故事",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "音樂故事劇場",
+                "alternatives": [
+                  {
+                    "name": "音樂故事劇場",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代台灣的人文視野與創意下的社會實踐",
+                "alternatives": [
+                  {
+                    "name": "當代台灣的人文視野與創意下的社會實踐",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化設計與展演",
+                "alternatives": [
+                  {
+                    "name": "文化設計與展演",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意設計方法",
+                "alternatives": [
+                  {
+                    "name": "創意設計方法",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "設計溝通與表達",
+                "alternatives": [
+                  {
+                    "name": "設計溝通與表達",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社區文創設計",
+                "alternatives": [
+                  {
+                    "name": "社區文創設計",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "音樂劇表演與製作",
+                "alternatives": [
+                  {
+                    "name": "音樂劇表演與製作",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 21,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
       }
     ]
   },
@@ -236275,6 +238843,370 @@
           "special_notes": [
             "【整合學程】課程規劃至少 15 學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "藝術策展實務",
+                "alternatives": [
+                  {
+                    "name": "藝術策展實務",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "策略寫作",
+                "alternatives": [
+                  {
+                    "name": "策略寫作",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術傳播與媒體應用",
+                "alternatives": [
+                  {
+                    "name": "藝術傳播與媒體應用",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共藝術",
+                "alternatives": [
+                  {
+                    "name": "公共藝術",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "美感趨勢分析",
+                "alternatives": [
+                  {
+                    "name": "美感趨勢分析",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "博物館管理",
+                "alternatives": [
+                  {
+                    "name": "博物館管理",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "展演藝術募款",
+                "alternatives": [
+                  {
+                    "name": "展演藝術募款",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代藝術史",
+                "alternatives": [
+                  {
+                    "name": "當代藝術史",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化政策",
+                "alternatives": [
+                  {
+                    "name": "文化政策",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": "英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "視覺藝術經紀",
+                "alternatives": [
+                  {
+                    "name": "視覺藝術經紀",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "電子商務",
+                "alternatives": [
+                  {
+                    "name": "電子商務",
+                    "departments": [
+                      "資管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "博物館社會學",
+                "alternatives": [
+                  {
+                    "name": "博物館社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化人類學",
+                "alternatives": [
+                  {
+                    "name": "文化人類學",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意街區發展與設計思考",
+                "alternatives": [
+                  {
+                    "name": "創意街區發展與設計思考",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意街區發展實務與藝術管理",
+                "alternatives": [
+                  {
+                    "name": "創意街區發展實務與藝術管理",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
@@ -251823,6 +254755,1367 @@
             "113 學年度（含）以前加入學程之學生可將「觀光英語」、「進階英文閱讀：英美詩歌賞析（高級）」、「歐美小說賞析」、「歐洲藝術與世界文化交流」、「美國文學：1865 以前」、「英國文學：1660 以前」、及「英國文學：1660-1800」計入選修學分。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 3
+            },
+            "subjects": [
+              {
+                "program_subject": "法文（一）",
+                "alternatives": [
+                  {
+                    "name": "法文（一）",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": true,
+                  "max_credits": 6,
+                  "note": "通過法文鑑定（DELF）A2及者可申請抵免6學分，抵免學分僅可計算於法文學程內但不列入學生之畢業學分數。修習本校外語中心所開設之初級法語I及初級法語II可申請抵免法文（一）；初級法語III及初級法語IV可申請抵免法文（二）。（不可抵免畢業學分數）",
+                  "waiver_alternatives": [
+                    {
+                      "condition": "通過法文鑑定（DELF）A2",
+                      "credits_granted": 6,
+                      "note": "抵免學分僅可計算於法文學程內但不列入學生之畢業學分數"
+                    },
+                    {
+                      "condition": "修習本校外語中心所開設之初級法語I及初級法語II",
+                      "credits_granted": 3,
+                      "note": "不可抵免畢業學分數"
+                    }
+                  ]
+                }
+              },
+              {
+                "program_subject": "法文（二）",
+                "alternatives": [
+                  {
+                    "name": "法文（二）",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": true,
+                  "max_credits": null,
+                  "note": "初級法語III及初級法語IV可申請抵免法文（二）",
+                  "waiver_alternatives": [
+                    {
+                      "condition": "修習本校外語中心所開設之初級法語III及初級法語IV",
+                      "credits_granted": 3,
+                      "note": "不可抵免畢業學分數"
+                    }
+                  ]
+                }
+              },
+              {
+                "program_subject": "法國語言與文化",
+                "alternatives": [
+                  {
+                    "name": "法國語言與文化",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐美小說賞析",
+                "alternatives": [
+                  {
+                    "name": "歐美小說賞析",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "視覺文化與哲學反思",
+                "alternatives": [
+                  {
+                    "name": "視覺文化與哲學反思",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐洲政經發展",
+                "alternatives": [
+                  {
+                    "name": "歐洲政經發展",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代劇場藝術的價值與思維",
+                "alternatives": [
+                  {
+                    "name": "當代劇場藝術的價值與思維",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化差異與倫理規範",
+                "alternatives": [
+                  {
+                    "name": "文化差異與倫理規範",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代西洋外交史",
+                "alternatives": [
+                  {
+                    "name": "當代西洋外交史",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別與社會",
+                "alternatives": [
+                  {
+                    "name": "性別與社會",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "女性主義思潮",
+                "alternatives": [
+                  {
+                    "name": "女性主義思潮",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋文化典故",
+                "alternatives": [
+                  {
+                    "name": "西洋文化典故",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "哲學法文",
+                "alternatives": [
+                  {
+                    "name": "哲學法文",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "列維納斯與現象學問題",
+                "alternatives": [
+                  {
+                    "name": "列維納斯與現象學問題",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "結構與解構",
+                "alternatives": [
+                  {
+                    "name": "結構與解構",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與他者",
+                "alternatives": [
+                  {
+                    "name": "倫理與他者",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "尼采與時間問題",
+                "alternatives": [
+                  {
+                    "name": "尼采與時間問題",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "政治、主體與普遍性",
+                "alternatives": [
+                  {
+                    "name": "政治、主體與普遍性",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "尼采與當代歐陸思潮",
+                "alternatives": [
+                  {
+                    "name": "尼采與當代歐陸思潮",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "巴塔耶哲學",
+                "alternatives": [
+                  {
+                    "name": "巴塔耶哲學",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "意識形態與歷史",
+                "alternatives": [
+                  {
+                    "name": "意識形態與歷史",
+                    "departments": [
+                      "哲學所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術管理概論",
+                "alternatives": [
+                  {
+                    "name": "藝術管理概論",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術行銷概論",
+                "alternatives": [
+                  {
+                    "name": "藝術行銷概論",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術與文化環境概論",
+                "alternatives": [
+                  {
+                    "name": "藝術與文化環境概論",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術與文化環境",
+                "alternatives": [
+                  {
+                    "name": "藝術與文化環境",
+                    "departments": [
+                      "藝管創業所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "博物館管理",
+                "alternatives": [
+                  {
+                    "name": "博物館管理",
+                    "departments": [
+                      "藝管創業所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術管理",
+                "alternatives": [
+                  {
+                    "name": "藝術管理",
+                    "departments": [
+                      "藝管創業所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術社會學",
+                "alternatives": [
+                  {
+                    "name": "藝術社會學",
+                    "departments": [
+                      "藝管創業所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "拉崗精神分析",
+                "alternatives": [
+                  {
+                    "name": "拉崗精神分析",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐洲文學：1350-1800",
+                "alternatives": [
+                  {
+                    "name": "歐洲文學：1350-1800",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐洲文學：1800以後",
+                "alternatives": [
+                  {
+                    "name": "歐洲文學：1800以後",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "電影與文學賞析",
+                "alternatives": [
+                  {
+                    "name": "電影與文學賞析",
+                    "departments": [
+                      "外文所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋文學概論（一）",
+                "alternatives": [
+                  {
+                    "name": "西洋文學概論（一）",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋文學概論（二）",
+                "alternatives": [
+                  {
+                    "name": "西洋文學概論（二）",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代電影藝術",
+                "alternatives": [
+                  {
+                    "name": "當代電影藝術",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "世界文學英文短篇小說",
+                "alternatives": [
+                  {
+                    "name": "世界文學英文短篇小說",
+                    "departments": [
+                      "外文所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歌舞電影與戲劇",
+                "alternatives": [
+                  {
+                    "name": "歌舞電影與戲劇",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "莎士比亞戲劇選讀",
+                "alternatives": [
+                  {
+                    "name": "莎士比亞戲劇選讀",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "圖像敘事",
+                "alternatives": [
+                  {
+                    "name": "圖像敘事",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "美國文學：1865以前",
+                "alternatives": [
+                  {
+                    "name": "美國文學：1865以前",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "英國文學：1660以前",
+                "alternatives": [
+                  {
+                    "name": "英國文學：1660以前",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "英國文學：1660-1800",
+                "alternatives": [
+                  {
+                    "name": "英國文學：1660-1800",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性社會學",
+                "alternatives": [
+                  {
+                    "name": "性社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術社會學",
+                "alternatives": [
+                  {
+                    "name": "藝術社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別社會學",
+                "alternatives": [
+                  {
+                    "name": "性別社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際關係導論",
+                "alternatives": [
+                  {
+                    "name": "國際關係導論",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際關係",
+                "alternatives": [
+                  {
+                    "name": "國際關係",
+                    "departments": [
+                      "政經系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際正義與人權",
+                "alternatives": [
+                  {
+                    "name": "國際正義與人權",
+                    "departments": [
+                      "政治所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "多元文化主義",
+                "alternatives": [
+                  {
+                    "name": "多元文化主義",
+                    "departments": [
+                      "政治所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "民主理論與社會正義",
+                "alternatives": [
+                  {
+                    "name": "民主理論與社會正義",
+                    "departments": [
+                      "政治所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際關係",
+                "alternatives": [
+                  {
+                    "name": "國際關係",
+                    "departments": [
+                      "政治所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "通識專題講座：美學與文化識讀",
+                "alternatives": [
+                  {
+                    "name": "通識專題講座：美學與文化識讀",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "跨文化溝通研究",
+                "alternatives": [
+                  {
+                    "name": "跨文化溝通研究",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "inti進階英文閱讀：英美詩歌賞析（高級）",
+                "alternatives": [
+                  {
+                    "name": "進階英文閱讀：英美詩歌賞析（高級）",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋文學導讀",
+                "alternatives": [
+                  {
+                    "name": "西洋文學導讀",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐洲藝術與世界文化交流",
+                "alternatives": [
+                  {
+                    "name": "歐洲藝術與世界文化交流",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "哲學問題導論",
+                "alternatives": [
+                  {
+                    "name": "哲學問題導論",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋藝術史",
+                "alternatives": [
+                  {
+                    "name": "西洋藝術史",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別與全球治理",
+                "alternatives": [
+                  {
+                    "name": "性別與全球治理",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Moral Foundations of Politics（政治道德基礎）",
+                "alternatives": [
+                  {
+                    "name": "Moral Foundations of Politics（政治道德基礎）",
+                    "departments": [
+                      "數位自學課程"
+                    ],
+                    "credits": 3,
+                    "note": "數位自學課程平台"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "William Shakespeare's Twelfth Night: Comedy, Conflict, and Community（莎士比亞《十二夜》）",
+                "alternatives": [
+                  {
+                    "name": "William Shakespeare's Twelfth Night: Comedy, Conflict, and Community（莎士比亞《十二夜》）",
+                    "departments": [
+                      "數位自學課程"
+                    ],
+                    "credits": 1,
+                    "note": "數位自學課程平台"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": true,
+            "max_credits": null,
+            "note": "修讀本學程學生倘入學前曾修習本學程規劃之課程，得提經學程負責人認定後抵免之",
+            "waiver_alternatives": [
+              {
+                "condition": "入學前曾修習本學程規劃之課程，經學程負責人認定",
+                "credits_granted": 0,
+                "note": null
+              }
+            ]
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "110學年度以前申請休習本學程之學生若修習核心課程超過12學分，多餘的核心課程學分數可以納入選修學分計算",
+            "107學年度以前申請修習法文學程的學生，可將「通識專題講座：美學與文化識讀」與「藝術與全球文化識讀」列入選修學分中",
+            "109學年度以前申請修習法國語言、文化與社會學程的學生，可將「觀光英文」、「尼采與當代歐陸思潮」、「巴塔耶哲學」、「愛與共同體」、「權力關係之外－傅科哲學與主體性的改革」、「德希達：世界主義與他者論述」、及「意識形態與歷史」列入選修學分中",
+            "111學年度以前申請修習法國語言、文化與社會學程的學生，可將法文一（一）及法文一（二）列入核心學分；「跨文化溝通研究」、「哲學問題導論」、「西洋藝術史」、及「性別與全球治理」、「莎士比亞戲劇選讀」、「性別與文化」、「性別與權力:跨文化視野」、「圖像敘事」、「小說與藝術」、及「飲食文學」列入選修學分中",
+            "112學年度以前申請修習法國語言、文化與社會學程的學生，可將「西洋文化典故」、「法國語言與文化」及「歐美經典短篇小說」列入核心課程學分中",
+            "113-1學期（含）以前申請修習法國語言、文化與社會學程的學生，可將「西洋文化典故」列入核心課程學分中",
+            "114學年度(含)以前加入學程之學生可將「歐美小說賞析」列入核心課程學分",
+            "114學年度(含)以前加入學程之學生可將「進階英文閱讀：英美詩歌賞析（高級）」、「歐洲藝術與世界文化交流」、「美國文學：1865以前」、「英國文學：1660以前」、及「英國文學：1660-1800」計入選修學分"
+          ]
+        }
       }
     ]
   },
@@ -264819,6 +269112,559 @@
           "special_notes": [
             "【微學程】課程規劃至少9學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 3
+            },
+            "subjects": [
+              {
+                "program_subject": "跨文化人文思潮與美學導論",
+                "alternatives": [
+                  {
+                    "name": "跨文化人文思潮與美學導論",
+                    "departments": [
+                      "文學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "視覺文化與理論",
+                "alternatives": [
+                  {
+                    "name": "視覺文化與理論",
+                    "departments": [
+                      "外文系碩士班"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "電影哲學",
+                "alternatives": [
+                  {
+                    "name": "電影哲學",
+                    "departments": [
+                      "哲學所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "音樂美學",
+                "alternatives": [
+                  {
+                    "name": "音樂美學",
+                    "departments": [
+                      "音樂系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋藝術史",
+                "alternatives": [
+                  {
+                    "name": "西洋藝術史",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術概論",
+                "alternatives": [
+                  {
+                    "name": "藝術概論",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藝術與哲學",
+                "alternatives": [
+                  {
+                    "name": "藝術與哲學",
+                    "departments": [
+                      "哲學所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化哲學",
+                "alternatives": [
+                  {
+                    "name": "文化哲學",
+                    "departments": [
+                      "哲學所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "跨文化人文思潮與美學-課程與教學實作專題",
+                "alternatives": [
+                  {
+                    "name": "跨文化人文思潮與美學-課程與教學實作專題",
+                    "departments": [
+                      "文學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "多媒體英文與溝通",
+                "alternatives": [
+                  {
+                    "name": "多媒體英文與溝通",
+                    "departments": [
+                      "外文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古典戲劇選(一)",
+                "alternatives": [
+                  {
+                    "name": "古典戲劇選(一)",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古典戲劇選(二)",
+                "alternatives": [
+                  {
+                    "name": "古典戲劇選(二)",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代戲曲（一）",
+                "alternatives": [
+                  {
+                    "name": "當代戲曲（一）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "當代戲曲（二）",
+                "alternatives": [
+                  {
+                    "name": "當代戲曲（二）",
+                    "departments": [
+                      "中文系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中國書法美學",
+                "alternatives": [
+                  {
+                    "name": "中國書法美學",
+                    "departments": [
+                      "中文系碩士班"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋戲劇史(一)",
+                "alternatives": [
+                  {
+                    "name": "西洋戲劇史(一)",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西洋戲劇史(二)",
+                "alternatives": [
+                  {
+                    "name": "西洋戲劇史(二)",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中國戲劇史(一)",
+                "alternatives": [
+                  {
+                    "name": "中國戲劇史(一)",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "中國戲劇史(二)",
+                "alternatives": [
+                  {
+                    "name": "中國戲劇史(二)",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "設計風格",
+                "alternatives": [
+                  {
+                    "name": "設計風格",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "西方名劇選讀",
+                "alternatives": [
+                  {
+                    "name": "西方名劇選讀",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "東方名劇選讀",
+                "alternatives": [
+                  {
+                    "name": "東方名劇選讀",
+                    "departments": [
+                      "劇藝系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文化差異與倫理規範",
+                "alternatives": [
+                  {
+                    "name": "文化差異與倫理規範",
+                    "departments": [
+                      "博雅向度二"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "歐洲藝術與世界文化交流",
+                "alternatives": [
+                  {
+                    "name": "歐洲藝術與世界文化交流",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
@@ -293441,6 +298287,544 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 4
+            },
+            "subjects": [
+              {
+                "program_subject": "科學的本質",
+                "alternatives": [
+                  {
+                    "name": "科學的本質",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學思考與實作",
+                "alternatives": [
+                  {
+                    "name": "科學思考與實作",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學探究的應用",
+                "alternatives": [
+                  {
+                    "name": "科學探究的應用",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球環境變遷概論",
+                "alternatives": [
+                  {
+                    "name": "全球環境變遷概論",
+                    "departments": [
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人類與環境之交互關係",
+                "alternatives": [
+                  {
+                    "name": "人類與環境之交互關係",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與永續農業發展",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與永續農業發展",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "另類永續思考與實踐",
+                "alternatives": [
+                  {
+                    "name": "另類永續思考與實踐",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技與飲食社會",
+                "alternatives": [
+                  {
+                    "name": "科技與飲食社會",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "從國際新聞學人文地理",
+                "alternatives": [
+                  {
+                    "name": "從國際新聞學人文地理",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技社會之飲食旅遊",
+                "alternatives": [
+                  {
+                    "name": "科技社會之飲食旅遊",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "探尋建築工藝中的高雄故事",
+                "alternatives": [
+                  {
+                    "name": "探尋建築工藝中的高雄故事",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "用影像說故事：探索科技、環境與社會",
+                "alternatives": [
+                  {
+                    "name": "用影像說故事：探索科技、環境與社會",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技英文閱讀（中高級）",
+                "alternatives": [
+                  {
+                    "name": "科技英文閱讀（中高級）",
+                    "departments": [
+                      "跨院EAP"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "活用英語溝通：資訊圖表與詮釋表達（中高級）",
+                "alternatives": [
+                  {
+                    "name": "活用英語溝通：資訊圖表與詮釋表達（中高級）",
+                    "departments": [
+                      "跨院EAP"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球科技時代的必備英文（中高級）",
+                "alternatives": [
+                  {
+                    "name": "全球科技時代的必備英文（中高級）",
+                    "departments": [
+                      "跨院ESP"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "PM2.5 氣膠生醫科學",
+                "alternatives": [
+                  {
+                    "name": "PM2.5 氣膠生醫科學",
+                    "departments": [
+                      "化學系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生物概論",
+                "alternatives": [
+                  {
+                    "name": "海洋生物概論",
+                    "departments": [
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "提供商養生物學",
+                "alternatives": [
+                  {
+                    "name": "鯨豚保育生物學",
+                    "departments": [
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色創新設計",
+                "alternatives": [
+                  {
+                    "name": "綠色創新設計",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境健康大數據資料分析暨視覺化實務",
+                "alternatives": [
+                  {
+                    "name": "環境健康大數據資料分析暨視覺化實務",
+                    "departments": [
+                      "醫學院",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人人都是科學家",
+                "alternatives": [
+                  {
+                    "name": "人人都是科學家",
+                    "departments": [
+                      "服務學習中心"
+                    ],
+                    "credits": 1,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境生物技術",
+                "alternatives": [
+                  {
+                    "name": "環境生物技術",
+                    "departments": [
+                      "環工碩"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展與綠色管理",
+                "alternatives": [
+                  {
+                    "name": "永續發展與綠色管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": "全英授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "得採計全英授課、主題與科技或環境相關之微學分課程，至多1學分；若要採計微學分應檢附相關課程明細供學程負責人參考（學生可以在本校的「微學分課程平台」或「成績查詢」網站查閱、印出微學分的課程明細紀錄）",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
       }
     ]
   },
@@ -295998,6 +301382,287 @@
           "special_notes": [
             "【微學程】課程規劃至少 9 學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114 學年度第 2 學期學分學程會議通過\n115.5.21 第 188 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 4
+            },
+            "subjects": [
+              {
+                "program_subject": "生態基因體學",
+                "alternatives": [
+                  {
+                    "name": "生態基因體學",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋總體基因體學",
+                "alternatives": [
+                  {
+                    "name": "海洋總體基因體學",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋動物演化學",
+                "alternatives": [
+                  {
+                    "name": "海洋動物演化學",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "遺傳學",
+                "alternatives": [
+                  {
+                    "name": "遺傳學",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境變遷與生態保育",
+                "alternatives": [
+                  {
+                    "name": "環境變遷與生態保育",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "演化醫學",
+                "alternatives": [
+                  {
+                    "name": "演化醫學",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性與保育",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性與保育",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋基礎科學",
+                "alternatives": [
+                  {
+                    "name": "海洋基礎科學",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋應用科學",
+                "alternatives": [
+                  {
+                    "name": "海洋應用科學",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "分子生態學",
+                "alternatives": [
+                  {
+                    "name": "分子生態學",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性的世界",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性的世界",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有 3 學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
@@ -311076,6 +316741,224 @@
           "special_notes": [
             "【微學程】課程規劃至少 9 學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過\n115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "材料科學導論",
+                "alternatives": [
+                  {
+                    "name": "材料科學導論",
+                    "departments": [
+                      "材光系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "材料熱力學",
+                "alternatives": [
+                  {
+                    "name": "材料熱力學",
+                    "departments": [
+                      "材光系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "X光與電子繞射",
+                "alternatives": [
+                  {
+                    "name": "X光與電子繞射",
+                    "departments": [
+                      "材光系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "奈米材料之特性與應用",
+                "alternatives": [
+                  {
+                    "name": "奈米材料之特性與應用",
+                    "departments": [
+                      "材光系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "奈米科技概論",
+                "alternatives": [
+                  {
+                    "name": "奈米科技概論",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "半導體表面分析技術",
+                "alternatives": [
+                  {
+                    "name": "半導體表面分析技術",
+                    "departments": [
+                      "光電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "微奈米材料",
+                "alternatives": [
+                  {
+                    "name": "微奈米材料",
+                    "departments": [
+                      "機電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "材料選擇與設計",
+                "alternatives": [
+                  {
+                    "name": "材料選擇與設計",
+                    "departments": [
+                      "機電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
