@@ -19736,6 +19736,961 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "社區營造與地區重建",
+                "alternatives": [
+                  {
+                    "name": "社區營造與地區重建",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務研討",
+                "alternatives": [
+                  {
+                    "name": "公共事務研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題研討",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務專題研究(一)",
+                "alternatives": [
+                  {
+                    "name": "公共事務專題研究(一)",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題(一)",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題(一)",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地區經營管理",
+                "alternatives": [
+                  {
+                    "name": "地區經營管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "城鄉發展與環境變遷",
+                "alternatives": [
+                  {
+                    "name": "城鄉發展與環境變遷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務專題研究[主題：國際地方創生實務見學]",
+                "alternatives": [
+                  {
+                    "name": "公共事務專題研究[主題：國際地方創生實務見學]",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題研討[主題：地方創生與區域治理]",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題研討[主題：地方創生與區域治理]",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "國際非營利及社區組織交流",
+                "alternatives": [
+                  {
+                    "name": "國際非�利及社區組織交流",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "媒體與公共事務",
+                "alternatives": [
+                  {
+                    "name": "媒體與公共事務",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "非營利組織管理研討",
+                "alternatives": [
+                  {
+                    "name": "非營利組織管理研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "區域發展與政策",
+                "alternatives": [
+                  {
+                    "name": "區域發展與政策",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續都市環境行為及心理學",
+                "alternatives": [
+                  {
+                    "name": "永續都市環境行為及心理學",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題(一)[主題：企業永續趨勢與作法]",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題(一)[主題：企業永續趨勢與作法]",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文本與空間敘事",
+                "alternatives": [
+                  {
+                    "name": "文本與空間敘事",
+                    "departments": [
+                      "劇藝碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "節慶活動策劃與經營",
+                "alternatives": [
+                  {
+                    "name": "節慶活動策劃與經營",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "行銷傳播策略",
+                "alternatives": [
+                  {
+                    "name": "行銷傳播策略",
+                    "departments": [
+                      "行傳碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會企業商業模式發展與實作",
+                "alternatives": [
+                  {
+                    "name": "社會企業商業模式發展與實作",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "日本文化概論",
+                "alternatives": [
+                  {
+                    "name": "日本文化概論",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創業講堂",
+                "alternatives": [
+                  {
+                    "name": "創業講堂",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方創生議題探討",
+                "alternatives": [
+                  {
+                    "name": "地方創生議題探討",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "都市農業與永續發展",
+                "alternatives": [
+                  {
+                    "name": "都市農業與永續發展",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與永續農業發展",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與永續農業發展",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球與在地永續發展議題探討",
+                "alternatives": [
+                  {
+                    "name": "全球與在地永續發展議題探討",
+                    "departments": [
+                      "社會創新所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "糧食、農業與社會",
+                "alternatives": [
+                  {
+                    "name": "糧食、農業與社會",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創業與鄉村發展",
+                "alternatives": [
+                  {
+                    "name": "創業與鄉村發展",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創業與區域發展",
+                "alternatives": [
+                  {
+                    "name": "創業與區域發展",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方創生研究與實踐",
+                "alternatives": [
+                  {
+                    "name": "地方創生研究與實踐",
+                    "departments": [
+                      "社會創新所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方創生研究與實踐（二）",
+                "alternatives": [
+                  {
+                    "name": "地方創生研究與實踐（二）",
+                    "departments": [
+                      "社會創新所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台灣社會與文化",
+                "alternatives": [
+                  {
+                    "name": "台灣社會與文化",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "紀錄片企劃與製作",
+                "alternatives": [
+                  {
+                    "name": "紀錄片企劃與製作",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "都市營造與空間規劃",
+                "alternatives": [
+                  {
+                    "name": "都市營造與空間規劃",
+                    "departments": [
+                      "博雅向度三"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "在地食物的永續發展與全球脈絡",
+                "alternatives": [
+                  {
+                    "name": "在地食物的永續發展與全球脈絡",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學、媒體與文化",
+                "alternatives": [
+                  {
+                    "name": "科學、媒體與文化",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "探尋建築工藝中的高雄故事",
+                "alternatives": [
+                  {
+                    "name": "探尋建築工藝中的高雄故事",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "用影像說故事：探索科技、環境與社會",
+                "alternatives": [
+                  {
+                    "name": "用影像說故事：探索科技、環境與社會",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代日本社會與宗教",
+                "alternatives": [
+                  {
+                    "name": "現代日本社會與宗教",
+                    "departments": [
+                      "博雅向度二"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台日文化比較研究（一）",
+                "alternatives": [
+                  {
+                    "name": "台日文化比較研究（一）",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台日文化比較研究（2）",
+                "alternatives": [
+                  {
+                    "name": "台日文化比較研究（2）",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方、草根創新與永續轉型",
+                "alternatives": [
+                  {
+                    "name": "地方、草根創新與永續轉型",
+                    "departments": [
+                      "社創所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意街區發展與設計思考",
+                "alternatives": [
+                  {
+                    "name": "創意街區發展與設計思考",
+                    "departments": [
+                      "跨院選修",
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意街區發展實務與藝術管理",
+                "alternatives": [
+                  {
+                    "name": "創意街區發展實務與藝術管理",
+                    "departments": [
+                      "跨院選修",
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 12,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
       }
     ]
   },
@@ -25754,6 +26709,1003 @@
           "special_notes": [
             "【整合學程】課程規劃至少 15 學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 6
+            },
+            "subjects": [
+              {
+                "program_subject": "永續發展與綠色管理",
+                "alternatives": [
+                  {
+                    "name": "永續發展與綠色管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際企業永續發展",
+                "alternatives": [
+                  {
+                    "name": "國際企業永續發展",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會行銷",
+                "alternatives": [
+                  {
+                    "name": "社會行銷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社區營造與地區重建",
+                "alternatives": [
+                  {
+                    "name": "社區營造與地區重建",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務與企業社會責任",
+                "alternatives": [
+                  {
+                    "name": "公共事務與企業社會責任",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續報告書寫作",
+                "alternatives": [
+                  {
+                    "name": "永續報告書寫作",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": "原：企業社會責任報告寫作"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "媒體與公共事務",
+                "alternatives": [
+                  {
+                    "name": "媒體與公共事務",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地區經營管理",
+                "alternatives": [
+                  {
+                    "name": "地區經營管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續管理概論",
+                "alternatives": [
+                  {
+                    "name": "永續管理概論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "公共事務與管理",
+                "alternatives": [
+                  {
+                    "name": "公共事務與管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "非營利組織管理研討",
+                "alternatives": [
+                  {
+                    "name": "非營利組織管理研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際非營利及社區組織交流",
+                "alternatives": [
+                  {
+                    "name": "國際非營利及社區組織交流",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別、組織與管理",
+                "alternatives": [
+                  {
+                    "name": "性別、組織與管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "城鄉發展與環境變遷",
+                "alternatives": [
+                  {
+                    "name": "城鄉發展與環境變遷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業與政府",
+                "alternatives": [
+                  {
+                    "name": "企業與政府",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題(一)",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題(一)",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業社會責任專題",
+                "alternatives": [
+                  {
+                    "name": "企業社會責任專題",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候行動書報討論",
+                "alternatives": [
+                  {
+                    "name": "氣候行動書報討論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "溫室氣體盤查報告實作",
+                "alternatives": [
+                  {
+                    "name": "溫室氣體盤查報告實作",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": "原：生命週期分析與寫作報告"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球公共事務",
+                "alternatives": [
+                  {
+                    "name": "全球公共事務",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與社會創新",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與社會創新",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創新與創業管理",
+                "alternatives": [
+                  {
+                    "name": "創新與創業管理",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "節慶活動策劃與經營",
+                "alternatives": [
+                  {
+                    "name": "節慶活動策劃與經營",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境倫理與環境政策",
+                "alternatives": [
+                  {
+                    "name": "環境倫理與環境政策",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境科學",
+                "alternatives": [
+                  {
+                    "name": "環境科學",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境變遷與生態保育",
+                "alternatives": [
+                  {
+                    "name": "環境變遷與生態保育",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎環境科學",
+                "alternatives": [
+                  {
+                    "name": "基礎環境科學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球環境變遷",
+                "alternatives": [
+                  {
+                    "name": "全球環境變遷",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業交流與社會責任實踐",
+                "alternatives": [
+                  {
+                    "name": "企業交流與社會責任實踐",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色採購",
+                "alternatives": [
+                  {
+                    "name": "綠色採購",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續金融",
+                "alternatives": [
+                  {
+                    "name": "永續金融",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "ESG 趨勢：在地與全球",
+                "alternatives": [
+                  {
+                    "name": "ESG 趨勢：在地與全球",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "解析 ESG 及其相關應用",
+                "alternatives": [
+                  {
+                    "name": "解析 ESG 及其相關應用",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與社會責任的理論與實務",
+                "alternatives": [
+                  {
+                    "name": "倫理與社會責任的理論與實務",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與社會責任",
+                "alternatives": [
+                  {
+                    "name": "倫理與社會責任",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業倫理與社會責任實踐",
+                "alternatives": [
+                  {
+                    "name": "企業倫理與社會責任實踐",
+                    "departments": [
+                      "國際經營學程",
+                      "人管英語碩程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "用影像說故事：探索科技、環境與社會",
+                "alternatives": [
+                  {
+                    "name": "用影像說故事：探索科技、環境與社會",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業社會責任",
+                "alternatives": [
+                  {
+                    "name": "企業社會責任",
+                    "departments": [
+                      "人管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展",
+                "alternatives": [
+                  {
+                    "name": "永續發展",
+                    "departments": [
+                      "海事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際企業永續發展",
+                "alternatives": [
+                  {
+                    "name": "國際企業永續發展",
+                    "departments": [
+                      "國際經營學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續工程與管理",
+                "alternatives": [
+                  {
+                    "name": "永續工程與管理",
+                    "departments": [
+                      "人科學程",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "污染防治與環境管理",
+                "alternatives": [
+                  {
+                    "name": "污染防治與環境管理",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展與社會企業",
+                "alternatives": [
+                  {
+                    "name": "永續發展與社會企業",
+                    "departments": [
+                      "企管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色管理與創新",
+                "alternatives": [
+                  {
+                    "name": "綠色管理與創新",
+                    "departments": [
+                      "企管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境科學概論",
+                "alternatives": [
+                  {
+                    "name": "環境科學概論",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
@@ -80143,6 +82095,848 @@
           "special_notes": [
             "【微學程】課程規劃至少 9 學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 4
+            },
+            "subjects": [
+              {
+                "program_subject": "永續管理概論",
+                "alternatives": [
+                  {
+                    "name": "永續管理概論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展與綠色管理",
+                "alternatives": [
+                  {
+                    "name": "永續發展與綠色管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務與企業社會責任",
+                "alternatives": [
+                  {
+                    "name": "公共事務與企業社會責任",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務與管理",
+                "alternatives": [
+                  {
+                    "name": "公共事務與管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續報告書寫作",
+                "alternatives": [
+                  {
+                    "name": "永續報告書寫作（原：企業社會責任報告寫作）",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會行銷",
+                "alternatives": [
+                  {
+                    "name": "社會行銷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社區營造與地區重建",
+                "alternatives": [
+                  {
+                    "name": "社區營造與地區重建",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "媒體與公共事務",
+                "alternatives": [
+                  {
+                    "name": "媒體與公共事務",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地區經營管理",
+                "alternatives": [
+                  {
+                    "name": "地區經營管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "污染防治與環境管理",
+                "alternatives": [
+                  {
+                    "name": "污染防治與環境管理",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "企業社會責任專題",
+                "alternatives": [
+                  {
+                    "name": "企業社會責任專題",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "溫室氣體盤查報告實作",
+                "alternatives": [
+                  {
+                    "name": "溫室氣體盤查報告實作（原：生命週期分析與寫作報告）",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業與政府",
+                "alternatives": [
+                  {
+                    "name": "企業與政府",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際企業永續發展",
+                "alternatives": [
+                  {
+                    "name": "國際企業永續發展",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題(一)",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題(一)",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球公共事務",
+                "alternatives": [
+                  {
+                    "name": "全球公共事務",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候行動書報討論",
+                "alternatives": [
+                  {
+                    "name": "氣候行動書報討論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "非營利組織管理研討",
+                "alternatives": [
+                  {
+                    "name": "非營利組織管理研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際非營利及社區組織交流",
+                "alternatives": [
+                  {
+                    "name": "國際非營利及社區組織交流",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "性別、組織與管理",
+                "alternatives": [
+                  {
+                    "name": "性別、組織與管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "城鄉發展與環境變遷",
+                "alternatives": [
+                  {
+                    "name": "城鄉發展與環境變遷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "woru": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創新與創業管理",
+                "alternatives": [
+                  {
+                    "name": "創新與創業管理",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業交流與社會責任實踐",
+                "alternatives": [
+                  {
+                    "name": "企業交流與社會責任實踐",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "節慶活動策劃與經營",
+                "alternatives": [
+                  {
+                    "name": "節慶活動策劃與經營",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境倫理與環境政策",
+                "alternatives": [
+                  {
+                    "name": "環境倫理與環境政策",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與社會創新",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與社會創新",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "ESG 趨勢：在地與全球",
+                "alternatives": [
+                  {
+                    "name": "ESG 趨勢：在地與全球",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "解析 ESG 及其相關應用",
+                "alternatives": [
+                  {
+                    "name": "解析 ESG 及其相關應用",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與社會責任的理論與實務",
+                "alternatives": [
+                  {
+                    "name": "倫理與社會責任的理論與實務",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "倫理與社會責任",
+                "alternatives": [
+                  {
+                    "name": "倫理與社會責任",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業倫理與社會責任實踐",
+                "alternatives": [
+                  {
+                    "name": "企業倫理與社會責任實踐",
+                    "departments": [
+                      "國際經營學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "企業倫理與社會責任實踐",
+                    "departments": [
+                      "人管英語碩程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "用影像說故事：探索科技、環境與社會",
+                "alternatives": [
+                  {
+                    "name": "用影像說故事：探索科技、環境與社會",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業社會責任",
+                "alternatives": [
+                  {
+                    "name": "企業社會責任",
+                    "departments": [
+                      "人管碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展",
+                "alternatives": [
+                  {
+                    "name": "永續發展",
+                    "departments": [
+                      "海事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際企業永續發展",
+                "alternatives": [
+                  {
+                    "name": "國際企業永續發展",
+                    "departments": [
+                      "國際經營學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續工程與管理",
+                "alternatives": [
+                  {
+                    "name": "永續工程與管理",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "永續工程與管理",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與調適",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與調適",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
@@ -215533,6 +218327,693 @@
             "當學期課程開設為英語授課者，方得認列本學程學分。相同課名以中文授課者，不採計學程學分。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "社會文化分析",
+                "alternatives": [
+                  {
+                    "name": "社會文化分析 SOCIO-CULTURAL ANALYSIS",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "後疫情時代的國際政治",
+                "alternatives": [
+                  {
+                    "name": "後疫情時代的國際政治 INTERNATIONAL POLITICS IN POST-COVID19 ERA",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "在地食物的永續發展與全球脈絡",
+                "alternatives": [
+                  {
+                    "name": "在地食物的永續發展與全球脈絡 SUSTAINABLE LOCAL FOOD IN GLOBAL CONTEXT",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "人類與環境之交互關係",
+                "alternatives": [
+                  {
+                    "name": "人類與環境之交互關係 HUMAN-ENVIRONMENT INTERACTIONS",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學的本質",
+                "alternatives": [
+                  {
+                    "name": "科學的本質 NATURE OF SCIENCE",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學思考與實作",
+                "alternatives": [
+                  {
+                    "name": "科學思考與實作 SCIENTIFIC THINKING AND PRACTICE",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台灣政經發展",
+                "alternatives": [
+                  {
+                    "name": "台灣政經發展 TAIWAN'S POLITICAL ECONOMY DEVELOPMENT",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "演說與辯論（高級）",
+                "alternatives": [
+                  {
+                    "name": "演說與辯論（高級） PUBLIC SPEECH AND DEBATE（ADVANCED LEVEL）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技英文（高級）",
+                "alternatives": [
+                  {
+                    "name": "科技英文（高級） ENGLISH FOR SCIENCE AND TECHNOLOGY( ADVANCED LEVEL)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技英文閱讀（中高級）",
+                "alternatives": [
+                  {
+                    "name": "科技英文閱讀（中高級） ENGLISH READING FOR SCIENCE AND TECHNOLOGY （ HIGH INTERMEDIATE LEVEL）",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "通過體驗式學習自信地說英語",
+                "alternatives": [
+                  {
+                    "name": "通過體驗式學習自信地說英語 SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  },
+                  {
+                    "name": "通過體驗式學習自信地說英語（中級） SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  },
+                  {
+                    "name": "通過體驗式學習自信地說英語（中高級）",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "透過實用性英語增進溝通能力",
+                "alternatives": [
+                  {
+                    "name": "透過實用性英語增進溝通能力 COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  },
+                  {
+                    "name": "透過實用性英語增進溝通能力（中級） IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "從英語課程學習多元文化",
+                "alternatives": [
+                  {
+                    "name": "從英語課程學習多元文化 DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  },
+                  {
+                    "name": "從英語課程學習多元文化（中高級） DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "成功的英文寫作",
+                "alternatives": [
+                  {
+                    "name": "成功的英文寫作 WRITING FOR SUCCESS IN ENGLISH",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  },
+                  {
+                    "name": "成功的英文寫作（中級） WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  },
+                  {
+                    "name": "成功的英文寫作（中高級） WRITING FOR SUCCESS IN ENGLISH (HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "為相同課程，不得重複修習，僅能認列其中一門"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色創新設計",
+                "alternatives": [
+                  {
+                    "name": "綠色創新設計 ECO-INNOVATIVE DESIGN",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": "僅限以英語授課者"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際事務與公民參與",
+                "alternatives": [
+                  {
+                    "name": "國際事務與公民參與 INTERNATIONAL AFFAIRS AND CIVIL ENGAGING",
+                    "departments": [
+                      "博雅教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "增進跨文化溝通技能(中高級)",
+                "alternatives": [
+                  {
+                    "name": "增進跨文化溝通技能(中高級) ENHANCING CROSS-CULTURAL COMMUNICATION SKILLS (HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技英文聽講練習（中高級）",
+                "alternatives": [
+                  {
+                    "name": "科技英文聽講練習（中高級） ENGLISH LISTENING AND SPEAKING FOR SCIENCE AND TECHNOLOGY (HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "觀光英語",
+                "alternatives": [
+                  {
+                    "name": "觀光英語 TOURISM ENGLISH",
+                    "departments": [
+                      "基礎教育中心"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "英文溝通技巧與批判性思維 （中高級）",
+                "alternatives": [
+                  {
+                    "name": "英文溝通技巧與批判性思維 （中高級） ENGLISH COMMUNICATION SKILLS AND CRITICAL THINKING (HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 EAP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "透過國際禮儀增進專業技能 （中高級）",
+                "alternatives": [
+                  {
+                    "name": "透過國際禮儀增進專業技能 （中高級） ENHANCING PROFESSIONAL SKILLS THROUGH GLOBAL ETIQUETTE (HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際會展英語（中高級）",
+                "alternatives": [
+                  {
+                    "name": "國際會展英語（中高級） INTERNATIONAL ENGLISH FOR MICE:MEETING, INCENTIVES, CONVENTIONS, EXHIBITIONS(HIGH-INTERMEDIATE LEVEL)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海外工作與學習之英語與文化（高級）",
+                "alternatives": [
+                  {
+                    "name": "海外工作與學習之英語與文化（高級） ENGLISHES AND CULTURES FOR OVERSEAS STUDIES AND WORK(ADVANCED LEVEL)",
+                    "departments": [
+                      "跨院 ESP"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：英語繪本導讀",
+                "alternatives": [
+                  {
+                    "name": "服務學習：英語繪本導讀 SERVICE LEARNING: ENGLISH LEARNING THROUGH PICTURE BOOKS",
+                    "departments": [
+                      "服務學習教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：打造英語友善社區",
+                "alternatives": [
+                  {
+                    "name": "服務學習：打造英語友善社區 SERVICE LEARNING: TO ESTABLISH AN ENGLISH-FRIENDLY COMMUNITY",
+                    "departments": [
+                      "服務學習教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：西灣國際沙龍校園英語志工",
+                "alternatives": [
+                  {
+                    "name": "服務學習：西灣國際沙龍校園英語志工 SERVICE LEARNING: ENGLISH VOLUNTEERING AT SI WAN INTERNATIONAL SALON",
+                    "departments": [
+                      "服務學習教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：人人都是科學家！",
+                "alternatives": [
+                  {
+                    "name": "服務學習：人人都是科學家！ SERVICE LEARNING:ANYONE CAN BE A SCIENTIST!",
+                    "departments": [
+                      "服務學習教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：英文識字教學與繪本閱讀",
+                "alternatives": [
+                  {
+                    "name": "服務學習：英文識字教學與繪本閱讀 SERVICE LEARNING: ENGLISH LITERACY INSTRUCTION AND PICTURE BOOK READING",
+                    "departments": [
+                      "服務學習教育中心"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 16,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [
+            "必修一門全英語服務學習課程"
+          ],
+          "special_notes": [
+            "當學期課程開設為英語授課者，方得認列本學程學分。相同課名以中文授課者，不採計學程學分。"
+          ]
+        }
       }
     ]
   },
@@ -256781,6 +260262,296 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 3
+            },
+            "subjects": [
+              {
+                "program_subject": "機械設計原理（一）",
+                "alternatives": [
+                  {
+                    "name": "機械設計原理（一）",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生命週期評估",
+                "alternatives": [
+                  {
+                    "name": "生命週期評估",
+                    "departments": [
+                      "機電碩"
+                    ],
+                    "credits": 3,
+                    "note": "新增課程"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色創新設計",
+                "alternatives": [
+                  {
+                    "name": "綠色創新設計",
+                    "departments": [
+                      "機電系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "由選修調整為必修；新增跨院課號"
+                  },
+                  {
+                    "name": "綠色創新設計",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": "新增課程"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "都市環境概論",
+                "alternatives": [
+                  {
+                    "name": "都市環境概論",
+                    "departments": [
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "智慧製造與監測技術",
+                "alternatives": [
+                  {
+                    "name": "智慧製造與監測技術",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "圖學",
+                "alternatives": [
+                  {
+                    "name": "圖學",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展實務",
+                "alternatives": [
+                  {
+                    "name": "永續發展實務",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "商業智慧",
+                "alternatives": [
+                  {
+                    "name": "商業智慧",
+                    "departments": [
+                      "資管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續都市環境行為及心理學",
+                "alternatives": [
+                  {
+                    "name": "永續都市環境行為及心理學",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "精密機械製造",
+                "alternatives": [
+                  {
+                    "name": "精密機械製造",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": "新增課程"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "運輸規劃與管理",
+                "alternatives": [
+                  {
+                    "name": "運輸規劃與管理",
+                    "departments": [
+                      "人科學程",
+                      "政經系"
+                    ],
+                    "credits": 3,
+                    "note": "新增課程"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 9,
+          "external_credits": {
+            "min": 3,
+            "description": "至少應有3學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
       }
     ]
   },
@@ -287316,6 +291087,1319 @@
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
           ]
         }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114學年度第2學期學分學程會議通過\n115.5.21 第188次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "全球環境變遷概論",
+                "alternatives": [
+                  {
+                    "name": "全球環境變遷概論",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社區營造與地區重建",
+                "alternatives": [
+                  {
+                    "name": "社區營造與地區重建",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展與綠色管理",
+                "alternatives": [
+                  {
+                    "name": "永續發展與綠色管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續管理概論",
+                "alternatives": [
+                  {
+                    "name": "永續管理概論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地區經營管理",
+                "alternatives": [
+                  {
+                    "name": "地區經營管理",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "城鄉發展與環境變遷",
+                "alternatives": [
+                  {
+                    "name": "城鄉發展與環境變遷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務專題研究 [主題：國際地方創生實務見學]",
+                "alternatives": [
+                  {
+                    "name": "公共事務專題研究 [主題：國際地方創生實務見學]",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題研討 [主題：地方創生與區域治理]",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題研討 [主題：地方創生與區域治理]",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務研討",
+                "alternatives": [
+                  {
+                    "name": "公共事務研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題研討",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "公共事務專題研究(一)",
+                "alternatives": [
+                  {
+                    "name": "公共事務專題研究(一)",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題(一)",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題(一)",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續報告書寫作",
+                "alternatives": [
+                  {
+                    "name": "永續報告書寫作",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "溫室氣體盤查報告實作",
+                "alternatives": [
+                  {
+                    "name": "溫室氣體盤查報告實作",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 0
+            },
+            "subjects": [
+              {
+                "program_subject": "污染防治與環境管理",
+                "alternatives": [
+                  {
+                    "name": "污染防治與環境管理",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續都市環境行為及心理學",
+                "alternatives": [
+                  {
+                    "name": "永續都市環境行為及心理學",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境變遷與生態保育",
+                "alternatives": [
+                  {
+                    "name": "環境變遷與生態保育",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "區域發展與政策",
+                "alternatives": [
+                  {
+                    "name": "區域發展與政策",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "國際非營利及社區組織交流",
+                "alternatives": [
+                  {
+                    "name": "國際非營利及社區組織交流",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "新興公共議題(一) [主題：企業永續趨勢與作法]",
+                "alternatives": [
+                  {
+                    "name": "新興公共議題(一) [主題：企業永續趨勢與作法]",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "媒體與公共事務",
+                "alternatives": [
+                  {
+                    "name": "媒體與公共事務",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "非營利組織管理研討",
+                "alternatives": [
+                  {
+                    "name": "非營利組織管理研討",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會企業商業模式發展與實作",
+                "alternatives": [
+                  {
+                    "name": "社會企業商業模式發展與實作",
+                    "departments": [
+                      "財管系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "日本文化概論",
+                "alternatives": [
+                  {
+                    "name": "日本文化概論",
+                    "departments": [
+                      "博雅向度三"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創業講堂",
+                "alternatives": [
+                  {
+                    "name": "創業講堂",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境科學",
+                "alternatives": [
+                  {
+                    "name": "環境科學",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方創生議題探討",
+                "alternatives": [
+                  {
+                    "name": "地方創生議題探討",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "都市農業與永續發展",
+                "alternatives": [
+                  {
+                    "name": "都市農業與永續發展",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與永續農業發展",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與永續農業發展",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意城市與社區議題探究",
+                "alternatives": [
+                  {
+                    "name": "創意城市與社區議題探究",
+                    "departments": [
+                      "西灣學院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球與在地永續發展議題探討",
+                "alternatives": [
+                  {
+                    "name": "全球與在地永續發展議題探討",
+                    "departments": [
+                      "社會創新所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "糧食、農業與社會",
+                "alternatives": [
+                  {
+                    "name": "糧食、農業與社會",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創業與鄉村發展",
+                "alternatives": [
+                  {
+                    "name": "創業與鄉村發展",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創業與區域發展",
+                "alternatives": [
+                  {
+                    "name": "創業與區域發展",
+                    "departments": [
+                      "社科院"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "文本與空間敘事",
+                "alternatives": [
+                  {
+                    "name": "文本與空間敘事",
+                    "departments": [
+                      "劇藝碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "節慶活動策劃與經營",
+                "alternatives": [
+                  {
+                    "name": "節慶活動策劃與經營",
+                    "departments": [
+                      "藝管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "行銷傳播策略",
+                "alternatives": [
+                  {
+                    "name": "行銷傳播策略",
+                    "departments": [
+                      "行銷碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎環境科學",
+                "alternatives": [
+                  {
+                    "name": "基礎環境科學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "企業社會責任專題",
+                "alternatives": [
+                  {
+                    "name": "企業社會責任專題",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候行動書報討論",
+                "alternatives": [
+                  {
+                    "name": "氣候行動書報討論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方創生研究與實踐",
+                "alternatives": [
+                  {
+                    "name": "地方創生研究與實踐",
+                    "departments": [
+                      "社會創新所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方創生研究與實踐（二）",
+                "alternatives": [
+                  {
+                    "name": "地方創生研究與實踐（二）",
+                    "departments": [
+                      "社會創新所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台灣社會與文化",
+                "alternatives": [
+                  {
+                    "name": "台灣社會與文化",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "紀錄片企劃與製作",
+                "alternatives": [
+                  {
+                    "name": "紀錄片企劃與製作",
+                    "departments": [
+                      "博雅向度一"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "都市營造與空間規劃",
+                "alternatives": [
+                  {
+                    "name": "都市營造與空間規劃",
+                    "departments": [
+                      "博雅向度三"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "在地食物的永續發展與全球脈絡",
+                "alternatives": [
+                  {
+                    "name": "在地食物的永續發展與全球脈絡",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學、媒體與文化",
+                "alternatives": [
+                  {
+                    "name": "科學、媒體與文化",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "探尋建築工藝中的高雄故事",
+                "alternatives": [
+                  {
+                    "name": "探尋建築工藝中的高雄故事",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "用影像說故事：探索科技、環境與社會",
+                "alternatives": [
+                  {
+                    "name": "用影像說故事：探索科技、環境與社會",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色採購",
+                "alternatives": [
+                  {
+                    "name": "綠色採購",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續金融",
+                "alternatives": [
+                  {
+                    "name": "永續金融",
+                    "departments": [
+                      "管理學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代日本社會與宗教",
+                "alternatives": [
+                  {
+                    "name": "現代日本社會與宗教",
+                    "departments": [
+                      "博雅向度二"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台日文化比較研究（一）",
+                "alternatives": [
+                  {
+                    "name": "台日文化比較研究（一）",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "台日文化比較研究（2）",
+                "alternatives": [
+                  {
+                    "name": "台日文化比較研究（2）",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展與社會企業",
+                "alternatives": [
+                  {
+                    "name": "永續發展與社會企業",
+                    "departments": [
+                      "企管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "綠色管理與創新",
+                "alternatives": [
+                  {
+                    "name": "綠色管理與創新",
+                    "departments": [
+                      "企管所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver alternateives": []
+                }
+              },
+              {
+                "program_subject": "環境科學概論",
+                "alternatives": [
+                  {
+                    "name": "環境科學概論",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地方、草根創新與永續轉型",
+                "alternatives": [
+                  {
+                    "name": "地方、草根創新與永續轉型",
+                    "departments": [
+                      "社創所"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意街區發展與設計思考",
+                "alternatives": [
+                  {
+                    "name": "創意街區發展與設計思考",
+                    "departments": [
+                      "跨院選修",
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "創意街區發展實務與藝術管理",
+                "alternatives": [
+                  {
+                    "name": "創意街區發展實務與藝術管理",
+                    "departments": [
+                      "跨院選修",
+                      "人科學程"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "【整合學程】課程規劃至少15學分。",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
       }
     ]
   },
@@ -312956,6 +318040,501 @@
           "special_notes": [
             "【整合學程】課程規劃至少 15 學分。",
             "修習學程適用之課程規劃表請依核准修習學年期版本為主。"
+          ]
+        }
+      },
+      {
+        "academic_year": 114,
+        "semester": 2,
+        "approval_info": "115.4.14 114 學年度第 2  semester 學分學程會議通過\n115.5.21 第 188 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 3
+            },
+            "subjects": [
+              {
+                "program_subject": "Global Politics 全球政治",
+                "alternatives": [
+                  {
+                    "name": "Global Politics 全球政治",
+                    "departments": [
+                      "社會學系",
+                      "西灣學院跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Comparative Politics 比較政治",
+                "alternatives": [
+                  {
+                    "name": "Comparative Politics 比較政治",
+                    "departments": [
+                      "社科院選修",
+                      "西灣學院跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Globalization in a Time of Transition 變動時代中的全球化",
+                "alternatives": [
+                  {
+                    "name": "Globalization in a Time of Transition 變動時代中的全球化",
+                    "departments": [
+                      "政治經濟學系"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 12
+            },
+            "subjects": [
+              {
+                "program_subject": "International Affairs and Civil Engaging 國際事務與公民參與",
+                "alternatives": [
+                  {
+                    "name": "International Affairs and Civil Engaging 國際事務與公民參與",
+                    "departments": [
+                      "西灣學院跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Geopolitics 地緣政治理論",
+                "alternatives": [
+                  {
+                    "name": "Geopolitics 地緣政治理論",
+                    "departments": [
+                      "政治學研究所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "International Organizations 國際組織",
+                "alternatives": [
+                  {
+                    "name": "International Organizations 國際組織",
+                    "departments": [
+                      "政治學研究所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Global Financial Politics and Policy 全球金融政治與政策",
+                "alternatives": [
+                  {
+                    "name": "Global Financial Politics and Policy 全球金融政治與政策",
+                    "departments": [
+                      "政治學研究所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Globalization and Economic Development 全球化與經濟發展",
+                "alternatives": [
+                  {
+                    "name": "Globalization and Economic Development 全球化與經濟發展",
+                    "departments": [
+                      "中國與亞太區域研究所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "International Political Economy 國際政治經濟學",
+                "alternatives": [
+                  {
+                    "name": "International Political Economy 國際政治經濟學",
+                    "departments": [
+                      "政治經濟學系"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Study on Economics News and Reports 英文經濟書報導讀",
+                "alternatives": [
+                  {
+                    "name": "Study on Economics News and Reports 英文經濟書報導讀",
+                    "departments": [
+                      "政治經濟學系"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Fintech and Banking Services 銀行與金融科技",
+                "alternatives": [
+                  {
+                    "name": "Fintech and Banking Services 銀行與金融科技",
+                    "departments": [
+                      "社科院選修",
+                      "西灣學院跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Sociology of Gender 性別社會學",
+                "alternatives": [
+                  {
+                    "name": "Sociology of Gender 性別社會學",
+                    "departments": [
+                      "社會學系"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Technology and Society 科技與社會",
+                "alternatives": [
+                  {
+                    "name": "Technology and Society 科技與社會",
+                    "departments": [
+                      "社會學系"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Language and Culture 語言與文化",
+                "alternatives": [
+                  {
+                    "name": "Language and Culture 語言與文化",
+                    "departments": [
+                      "社會學系"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Media and Society 媒體與社會",
+                "alternatives": [
+                  {
+                    "name": "Media and Society 媒體與社會",
+                    "departments": [
+                      "社會學系"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Environmental Sociology 環境社會學",
+                "alternatives": [
+                  {
+                    "name": "Environmental Sociology 環境社會學",
+                    "departments": [
+                      "社會學系"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Leadership in Global Education 全球教育領導",
+                "alternatives": [
+                  {
+                    "name": "Leadership in Global Education 全球教育領導",
+                    "departments": [
+                      "教育與人類發展研究全英語碩士學位學程"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_cable": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Studies in Comparative Education 比較教育研究",
+                "alternatives": [
+                  {
+                    "name": "Studies in Comparative Education 比較教育研究",
+                    "departments": [
+                      "教育研究所碩士班",
+                      "教育與人類發展研究全英語碩士學位學程"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Studies in Global Education 全球教育研究",
+                "alternatives": [
+                  {
+                    "name": "Studies in Global Education 全球教育研究",
+                    "departments": [
+                      "教育研究所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": "※中文授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Research on Multicultural Education 多元文化教育研究",
+                "alternatives": [
+                  {
+                    "name": "Research on Multicultural Education 多元文化教育研究",
+                    "departments": [
+                      "教育研究所碩士班"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "Studies in Practice of Just Transition Curriculum 公正轉型課程實踐研究",
+                "alternatives": [
+                  {
+                    "name": "Studies in Practice of Just Transition Curriculum 公正轉型課程實踐研究",
+                    "departments": [
+                      "教育研究所碩士班",
+                      "教育與人類發展研究全英語碩士學位學程"
+                    ],
+                    "credits": 3,
+                    "note": "※英語授課"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 15,
+          "external_credits": {
+            "min": 6,
+            "description": "學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
           ]
         }
       }
