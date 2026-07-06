@@ -230175,6 +230175,3809 @@
     "former_name": null,
     "versions": [
       {
+        "academic_year": 111,
+        "semester": 1,
+        "approval_info": "111.10.31 111學年度第1學期學分學程會議通過；111.12.5 第174次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育",
+                "alternatives": [
+                  {
+                    "name": "環境教育",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "環保署環境教育人員認證核心科目100100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境教育教材教法",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "環保署環境教育人員認證核心科目106700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境倫理",
+                "alternatives": [
+                  {
+                    "name": "環境倫理",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "環保署環境教育人員認證核心科目102600"
+                  },
+                  {
+                    "name": "環境倫理與環境政策",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "行政院環境保護署環境保護人員訓練所於中華民國109年3月10日發函公告，同意本校「環境倫理與環境政策」課程採計為環境教育人員認證核心科目「環境倫理」學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 18
+            },
+            "subjects": [
+              {
+                "program_subject": "服務學習(三): 園藝療癒與都市農園",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三): 園藝療癒與都市農園",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習：新住民學童培力服務",
+                "alternatives": [
+                  {
+                    "name": "服務學習：新住民學童培力服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):弱勢兒少課輔與陪伴服務",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):弱勢兒少課輔與陪伴服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習:人人都是科學家",
+                "alternatives": [
+                  {
+                    "name": "服務學習:人人都是科學家",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):海洋資源實務應用",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):海洋資源實務應用",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):環境教育服務與推廣",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):環境教育服務與推廣",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):臺灣獼猴生態宣導",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):臺灣獼猴生態宣導",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):史蹟導覽",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):史蹟導覽",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):國際志工服務課程",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):國際志工服務課程",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):尋找小櫻",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):尋找小櫻",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):博物館動物科普推廣服務",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):博物館動物科普推廣服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):都市農園",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):都市農園",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):美術館與服務學習",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):美術館與服務學習",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):解密生活物理",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):解密生活物理",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):新住民學童課輔服務",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):新住民學童課輔服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):弱勢兒少視訊教學服務",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):弱勢兒少視訊教學服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習(三):永續發展與服務體驗",
+                "alternatives": [
+                  {
+                    "name": "服務學習(三):永續發展與服務體驗",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境教育實踐推廣",
+                "alternatives": [
+                  {
+                    "name": "環境教育實踐推廣",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境社會學",
+                "alternatives": [
+                  {
+                    "name": "環境社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程 103300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會學研究方法",
+                "alternatives": [
+                  {
+                    "name": "社會學研究方法",
+                    "departments": [
+                      "社會碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "計畫學導論",
+                "alternatives": [
+                  {
+                    "name": "計畫學導論",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋事務總論",
+                "alternatives": [
+                  {
+                    "name": "海洋事務總論",
+                    "departments": [
+                      "海事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展教育研究",
+                "alternatives": [
+                  {
+                    "name": "永續發展教育研究",
+                    "departments": [
+                      "教育碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學教育研究",
+                "alternatives": [
+                  {
+                    "name": "科學教育研究",
+                    "departments": [
+                      "教育博"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學探究的應用",
+                "alternatives": [
+                  {
+                    "name": "科學探究的應用",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境心理學",
+                "alternatives": [
+                  {
+                    "name": "環境心理學",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程 103500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境科學",
+                "alternatives": [
+                  {
+                    "name": "環境科學",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程 112200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海權與海洋事務",
+                "alternatives": [
+                  {
+                    "name": "海權與海洋事務",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "課程發展與設計",
+                "alternatives": [
+                  {
+                    "name": "課程發展與設計",
+                    "departments": [
+                      "中學學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境教育教學法",
+                "alternatives": [
+                  {
+                    "name": "環境教育教學法",
+                    "departments": [
+                      "校際選課"
+                    ],
+                    "credits": 1,
+                    "note": "符合環保署採計課程 105500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "教育概論",
+                "alternatives": [
+                  {
+                    "name": "教育概論",
+                    "departments": [
+                      "校際選課"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "衛生教育與健康促進",
+                "alternatives": [
+                  {
+                    "name": "衛生教育與健康促進",
+                    "departments": [
+                      "校際選課"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "博物館典藏探究",
+                "alternatives": [
+                  {
+                    "name": "博物館典藏探究",
+                    "departments": [
+                      "應用性課程"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能工程概論",
+                "alternatives": [
+                  {
+                    "name": "太陽能工程概論",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "城鄉發展與環境變遷",
+                "alternatives": [
+                  {
+                    "name": "城鄉發展與環境變遷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能電池導論",
+                "alternatives": [
+                  {
+                    "name": "太陽能電池導論",
+                    "departments": [
+                      "光電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "光電替代能源概論",
+                "alternatives": [
+                  {
+                    "name": "光電替代能源概論",
+                    "departments": [
+                      "光電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "有機太陽能電池",
+                "alternatives": [
+                  {
+                    "name": "有機太陽能電池",
+                    "departments": [
+                      "光電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能科技",
+                "alternatives": [
+                  {
+                    "name": "太陽能科技",
+                    "departments": [
+                      "材光碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古海洋學概論",
+                "alternatives": [
+                  {
+                    "name": "古海洋學概論",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程 201700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋微體古生物學",
+                "alternatives": [
+                  {
+                    "name": "海洋微體古生物學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋微體古生物學實習",
+                "alternatives": [
+                  {
+                    "name": "海洋微體古生物學實習",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球環境變遷概論",
+                "alternatives": [
+                  {
+                    "name": "全球環境變遷概論",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程 202800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代海洋學",
+                "alternatives": [
+                  {
+                    "name": "現代海洋學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣象學",
+                "alternatives": [
+                  {
+                    "name": "氣象學",
+                    "departments": [
+                      "環工碩"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程 313050"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 27,
+          "external_credits": {
+            "min": 6,
+            "description": "至少應有6學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "學程課程規劃27學分",
+            "不同開課系所，但課程名稱相符合之課程皆予以採計",
+            "修習本學程之核心課程I，為申請環保署環境教育人員之核心必修科目",
+            "完成本學程全部領域選修18學分之學生可申請環保署環境教育行政人員認證",
+            "完成本學程擇一領域選修18學分之學生可申請環保署環境教育教學人員認證",
+            "修習學程適用之課程規劃表請依核准修習學年期版本為主"
+          ]
+        }
+      },
+      {
+        "academic_year": 112,
+        "semester": 2,
+        "approval_info": "113.4.22 112 學年度第 2 學期學分學程會議通過\n113.5.30 第 180 次教務會議通過",
+        "course_groups": [
+          {
+            "id": "core",
+            "label": "核心課程",
+            "selection_rule": {
+              "type": "all"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "環境教育",
+                "alternatives": [
+                  {
+                    "name": "環境教育",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "環保署環境教育人員認證核心科目100100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境教育教材教法",
+                "alternatives": [
+                  {
+                    "name": "環境教育教材教法",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": "環保署環境教育人員認證核心科目106700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境倫理與環境政策",
+                "alternatives": [
+                  {
+                    "name": "環境倫理與環境政策",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "行政院環境保護署環境保護人員訓練所於中華民國109年3月10日發函公告，同意本校「環境倫理與環境政策」課程採計為環境教育人員認證核心科目「環境倫理」學分"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "服務學習",
+                "alternatives": [
+                  {
+                    "name": "服務學習:服務學習與社會關懷",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:服務學習與提升就業力",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:文化設計與社區實作",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:園藝療癒與都市農園",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習：新住民學童培力服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:弱勢兒少課輔與陪伴服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:人人都是科學家",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": "符合環保署採計課程106500、106550"
+                  },
+                  {
+                    "name": "服務學習:環境教育服務與推廣",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習(三):臺灣獼猴生態宣導",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:國際志工服務課程",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習(三):都市農園",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習(三):美術館與服務學習",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習(三):解密生活物理",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習(三):弱勢兒少視訊教學服務",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  },
+                  {
+                    "name": "服務學習:永續發展與服務體驗",
+                    "departments": [
+                      "服務學習"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境教育實踐推廣",
+                "alternatives": [
+                  {
+                    "name": "環境教育實踐推廣",
+                    "departments": [
+                      "海科院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          },
+          {
+            "id": "elective",
+            "label": "選修課程",
+            "selection_rule": {
+              "type": "min_credits"
+            },
+            "credit_requirement": {
+              "min": 9
+            },
+            "subjects": [
+              {
+                "program_subject": "教育社會學",
+                "alternatives": [
+                  {
+                    "name": "教育社會學",
+                    "departments": [
+                      "中學學程"
+                    ],
+                    "credits": 2,
+                    "note": "112-2新增"
+                  },
+                  {
+                    "name": "教育社會學研究",
+                    "departments": [
+                      "教育博"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "非制式科學教育研究",
+                "alternatives": [
+                  {
+                    "name": "非制式科學教育研究",
+                    "departments": [
+                      "教育碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學教育研究",
+                "alternatives": [
+                  {
+                    "name": "科學教育研究",
+                    "departments": [
+                      "教育碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  },
+                  {
+                    "name": "科學教育研究",
+                    "departments": [
+                      "教育博"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境社會學",
+                "alternatives": [
+                  {
+                    "name": "環境社會學",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程103300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "社會學研究方法",
+                "alternatives": [
+                  {
+                    "name": "社會學研究方法",
+                    "departments": [
+                      "社會碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "計畫學導論",
+                "alternatives": [
+                  {
+                    "name": "計畫學導論",
+                    "departments": [
+                      "海工系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋事務總論",
+                "alternatives": [
+                  {
+                    "name": "海洋事務總論",
+                    "departments": [
+                      "海事碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "永續發展教育研究",
+                "alternatives": [
+                  {
+                    "name": "永續發展教育研究",
+                    "departments": [
+                      "教育碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科學探究的應用",
+                "alternatives": [
+                  {
+                    "name": "科學探究的應用",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境心理學",
+                "alternatives": [
+                  {
+                    "name": "環境心理學",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程103500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境科學",
+                "alternatives": [
+                  {
+                    "name": "環境科學",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程112200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "課程發展與設計",
+                "alternatives": [
+                  {
+                    "name": "課程發展與設計",
+                    "departments": [
+                      "中學學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "教育概論",
+                "alternatives": [
+                  {
+                    "name": "教育概論",
+                    "departments": [
+                      "校際選課",
+                      "中學學程"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與永續農業發展",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與永續農業發展",
+                    "departments": [
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "112-2新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候行動書報討論",
+                "alternatives": [
+                  {
+                    "name": "氣候行動書報討論",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 1,
+                    "note": "112-2新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能工程概論",
+                "alternatives": [
+                  {
+                    "name": "太陽能工程概論",
+                    "departments": [
+                      "機電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "城鄉發展與環境變遷",
+                "alternatives": [
+                  {
+                    "name": "城鄉發展與環境變遷",
+                    "departments": [
+                      "公事碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能電池導論",
+                "alternatives": [
+                  {
+                    "name": "太陽能電池導論",
+                    "departments": [
+                      "光電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "光電替代能源概論",
+                "alternatives": [
+                  {
+                    "name": "光電替代能源概論",
+                    "departments": [
+                      "光電系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "有機太陽能電池",
+                "alternatives": [
+                  {
+                    "name": "有機太陽能電池",
+                    "departments": [
+                      "光電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能科技",
+                "alternatives": [
+                  {
+                    "name": "太陽能科技",
+                    "departments": [
+                      "材光碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古海洋學概論",
+                "alternatives": [
+                  {
+                    "name": "古海洋學概論",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程201700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋微體古生物學",
+                "alternatives": [
+                  {
+                    "name": "海洋微體古生物學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋微體古生物學實習",
+                "alternatives": [
+                  {
+                    "name": "海洋微體古生物學實習",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "全球環境變遷概論",
+                "alternatives": [
+                  {
+                    "name": "全球環境變遷概論",
+                    "departments": [
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程202800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現代海洋學",
+                "alternatives": [
+                  {
+                    "name": "現代海洋學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程617300、201710、201720"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣象學",
+                "alternatives": [
+                  {
+                    "name": "氣象學",
+                    "departments": [
+                      "環工碩"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程313050"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋系統科學（一）",
+                "alternatives": [
+                  {
+                    "name": "海洋系統科學（一）",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程203100、617300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋系統科學（二）",
+                "alternatives": [
+                  {
+                    "name": "海洋系統科學（二）",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程203100、617300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "古氣候學概論",
+                "alternatives": [
+                  {
+                    "name": "古氣候學概論",
+                    "departments": [
+                      "海科系",
+                      "海科碩"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程201000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "高等古海洋學",
+                "alternatives": [
+                  {
+                    "name": "高等古海洋學",
+                    "departments": [
+                      "海科碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "科技前沿",
+                "alternatives": [
+                  {
+                    "name": "科技前沿",
+                    "departments": [
+                      "工學院",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "現今科技與社會",
+                "alternatives": [
+                  {
+                    "name": "現今科技與社會",
+                    "departments": [
+                      "博雅向度四"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程213200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "環境變遷與生態保育",
+                "alternatives": [
+                  {
+                    "name": "環境變遷與生態保育",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "氣候變遷與調適",
+                "alternatives": [
+                  {
+                    "name": "氣候變遷與調適",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程207600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "光電生活與能源永續",
+                "alternatives": [
+                  {
+                    "name": "光電生活與能源永續",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "太陽能工程",
+                "alternatives": [
+                  {
+                    "name": "太陽能工程",
+                    "departments": [
+                      "機電碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "土壤力學",
+                "alternatives": [
+                  {
+                    "name": "土壤力學",
+                    "departments": [
+                      "海工系",
+                      "校際"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程307500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地理資訊系統概論",
+                "alternatives": [
+                  {
+                    "name": "地理資訊系統概論",
+                    "departments": [
+                      "校際(學士班)"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程314400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋大地工程(二)",
+                "alternatives": [
+                  {
+                    "name": "海洋大地工程(二)",
+                    "departments": [
+                      "海工碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "土壤力學實驗",
+                "alternatives": [
+                  {
+                    "name": "土壤力學實驗",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "水文學",
+                "alternatives": [
+                  {
+                    "name": "水文學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程313060"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地下水文學",
+                "alternatives": [
+                  {
+                    "name": "地下水文學",
+                    "departments": [
+                      "環工博"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程313090"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "水資源工程",
+                "alternatives": [
+                  {
+                    "name": "水資源工程",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程613000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海岸工程學",
+                "alternatives": [
+                  {
+                    "name": "海岸工程學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海岸開發及保育工程",
+                "alternatives": [
+                  {
+                    "name": "海岸開發及保育工程",
+                    "departments": [
+                      "海工系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋波浪學",
+                "alternatives": [
+                  {
+                    "name": "海洋波浪學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎工程學",
+                "alternatives": [
+                  {
+                    "name": "基礎工程學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "港灣工程(含設計實例)",
+                "alternatives": [
+                  {
+                    "name": "港灣工程(含設計實例)",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "給水及排水工程",
+                "alternatives": [
+                  {
+                    "name": "給水及排水工程",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程526300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "營建管理",
+                "alternatives": [
+                  {
+                    "name": "營建管理",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "波浪力學",
+                "alternatives": [
+                  {
+                    "name": "波浪力學",
+                    "departments": [
+                      "海工碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋大地工程實驗",
+                "alternatives": [
+                  {
+                    "name": "海洋大地工程實驗",
+                    "departments": [
+                      "海工碩"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生態工程與實務",
+                "alternatives": [
+                  {
+                    "name": "生態工程與實務",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生態系統及棲地復育生態工程學",
+                "alternatives": [
+                  {
+                    "name": "生態系統及棲地復育生態工程學",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "應用工程水力學",
+                "alternatives": [
+                  {
+                    "name": "應用工程水力學",
+                    "departments": [
+                      "海工碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "波浪與潮汐",
+                "alternatives": [
+                  {
+                    "name": "波浪與潮汐",
+                    "departments": [
+                      "海科系",
+                      "海科碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "火災安全導論",
+                "alternatives": [
+                  {
+                    "name": "火災安全導論",
+                    "departments": [
+                      "機電系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程206100、300100、301600、535300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "保育、地景與社區",
+                "alternatives": [
+                  {
+                    "name": "保育、地景與社區",
+                    "departments": [
+                      "社會系"
+                    ],
+                    "credits": 3,
+                    "note": "112-2新增"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "動植物交互作用生態學",
+                "alternatives": [
+                  {
+                    "name": "動植物交互作用生態學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "普通生物學實驗",
+                "alternatives": [
+                  {
+                    "name": "普通生物學實驗",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生物多樣性導論",
+                "alternatives": [
+                  {
+                    "name": "海洋生物多樣性導論",
+                    "departments": [
+                      "海資系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋無脊椎動物學(一)",
+                "alternatives": [
+                  {
+                    "name": "海洋無脊椎動物學(一)",
+                    "departments": [
+                      "海科系",
+                      "海資系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程424200、424000、424210"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋無脊椎動物學(二)",
+                "alternatives": [
+                  {
+                    "name": "海洋無脊椎動物學(二)",
+                    "departments": [
+                      "海資系",
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程424200、424000、424210"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "水產資源",
+                "alternatives": [
+                  {
+                    "name": "水產資源",
+                    "departments": [
+                      "海生保育碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性導論",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性導論",
+                    "departments": [
+                      "校際(學士班)"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程420810"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "遺傳學",
+                "alternatives": [
+                  {
+                    "name": "遺傳學",
+                    "departments": [
+                      "海資系",
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程422500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "森林生態學",
+                "alternatives": [
+                  {
+                    "name": "森林生態學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程408800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "植物生理學",
+                "alternatives": [
+                  {
+                    "name": "植物生理學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程427800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "應用生物統計學",
+                "alternatives": [
+                  {
+                    "name": "應用生物統計學",
+                    "departments": [
+                      "生科碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "水生植物學",
+                "alternatives": [
+                  {
+                    "name": "水生植物學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "本地植物學",
+                "alternatives": [
+                  {
+                    "name": "本地植物學",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程428700"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性與保育",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性與保育",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程421300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生態學",
+                "alternatives": [
+                  {
+                    "name": "生態學",
+                    "departments": [
+                      "生科系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程415400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物統計學",
+                "alternatives": [
+                  {
+                    "name": "生物統計學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程414800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物統計學實驗",
+                "alternatives": [
+                  {
+                    "name": "生物統計學實驗",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 1,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "昆蟲學",
+                "alternatives": [
+                  {
+                    "name": "昆蟲學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程427200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "脊椎動物學",
+                "alternatives": [
+                  {
+                    "name": "脊椎動物學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程424100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "脊椎動物學實驗",
+                "alternatives": [
+                  {
+                    "name": "脊椎動物學實驗",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 1,
+                    "note": "符合環保署採計課程424110"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "植物分類學",
+                "alternatives": [
+                  {
+                    "name": "植物分類學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程428000"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "植物地理學",
+                "alternatives": [
+                  {
+                    "name": "植物地理學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程428200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "植物形態學",
+                "alternatives": [
+                  {
+                    "name": "植物形態學",
+                    "departments": [
+                      "校際(學士班)"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程428300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "植物繁殖學",
+                "alternatives": [
+                  {
+                    "name": "植物繁殖學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程428600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "行為生態學",
+                "alternatives": [
+                  {
+                    "name": "行為生態學",
+                    "departments": [
+                      "生科碩"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程417500"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "高等生物多樣性與保育",
+                "alternatives": [
+                  {
+                    "name": "高等生物多樣性與保育",
+                    "departments": [
+                      "生科碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "演化生物學",
+                "alternatives": [
+                  {
+                    "name": "演化生物學",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程422800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性行動技能建立",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性行動技能建立",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程421600"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生物概論",
+                "alternatives": [
+                  {
+                    "name": "海洋生物概論",
+                    "departments": [
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程410400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋脊椎動物學",
+                "alternatives": [
+                  {
+                    "name": "海洋脊椎動物學",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程426200、424100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋微生物學",
+                "alternatives": [
+                  {
+                    "name": "海洋微生物學",
+                    "departments": [
+                      "海資系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎海洋生態學",
+                "alternatives": [
+                  {
+                    "name": "基礎海洋生態學",
+                    "departments": [
+                      "海科系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程410200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "普通生物學(一)",
+                "alternatives": [
+                  {
+                    "name": "普通生物學(一)",
+                    "departments": [
+                      "海資系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程414300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "普通生物學實驗(一)",
+                "alternatives": [
+                  {
+                    "name": "普通生物學實驗(一)",
+                    "departments": [
+                      "海資系",
+                      "跨院選修"
+                    ],
+                    "credits": 1,
+                    "note": "符合環保署採計課程414310"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "應用統計學（一）",
+                "alternatives": [
+                  {
+                    "name": "應用統計學（一）",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程414800"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "應用統計學實習",
+                "alternatives": [
+                  {
+                    "name": "應用統計學實習",
+                    "departments": [
+                      "海科系"
+                    ],
+                    "credits": 1,
+                    "note": "符合環保署採計課程414820"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生態學",
+                "alternatives": [
+                  {
+                    "name": "海洋生態學",
+                    "departments": [
+                      "海科碩"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程410200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "統計方法及資料處理",
+                "alternatives": [
+                  {
+                    "name": "統計方法及資料處理",
+                    "departments": [
+                      "海科碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "演化選讀",
+                "alternatives": [
+                  {
+                    "name": "演化選讀",
+                    "departments": [
+                      "海科碩"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "魚類學",
+                "alternatives": [
+                  {
+                    "name": "魚類學",
+                    "departments": [
+                      "海資系",
+                      "海科碩",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程426200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "藻類學",
+                "alternatives": [
+                  {
+                    "name": "藻類學",
+                    "departments": [
+                      "海資系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程431400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生命科學",
+                "alternatives": [
+                  {
+                    "name": "生命科學",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程414100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物多樣性的世界",
+                "alternatives": [
+                  {
+                    "name": "生物多樣性的世界",
+                    "departments": [
+                      "博雅向度五"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程421200"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "地球科學",
+                "alternatives": [
+                  {
+                    "name": "地球科學",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程432300"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海洋生態與海洋科技教育探索",
+                "alternatives": [
+                  {
+                    "name": "海洋生態與海洋科技教育探索",
+                    "departments": [
+                      "博雅向度六"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程412000、411100"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "基礎生物學",
+                "alternatives": [
+                  {
+                    "name": "基礎生物學",
+                    "departments": [
+                      "理學院",
+                      "跨院選修",
+                      "醫學院"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "海上實習",
+                "alternatives": [
+                  {
+                    "name": "海上實習",
+                    "departments": [
+                      "海科系",
+                      "海工系",
+                      "海資系",
+                      "海保碩",
+                      "海科碩"
+                    ],
+                    "credits": 1,
+                    "note": "符合環保署採計課程523710、514400、419910"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "廢棄物及土壤分析",
+                "alternatives": [
+                  {
+                    "name": "廢棄物及土壤分析",
+                    "departments": [
+                      "環工碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "廢棄物自然處理系統",
+                "alternatives": [
+                  {
+                    "name": "廢棄物自然處理系統",
+                    "departments": [
+                      "環工碩"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程532400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "自來水工程導論",
+                "alternatives": [
+                  {
+                    "name": "自來水工程導論",
+                    "departments": [
+                      "工學院",
+                      "跨院選修"
+                    ],
+                    "credits": 2,
+                    "note": "符合環保署採計課程527900"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物技術概論",
+                "alternatives": [
+                  {
+                    "name": "生物技術概論",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "生物技術實驗",
+                "alternatives": [
+                  {
+                    "name": "生物技術實驗",
+                    "departments": [
+                      "生科系"
+                    ],
+                    "credits": 2,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "微生物學",
+                "alternatives": [
+                  {
+                    "name": "微生物學",
+                    "departments": [
+                      "生科系",
+                      "海資系",
+                      "跨院選修"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "工程聲學",
+                "alternatives": [
+                  {
+                    "name": "工程聲學",
+                    "departments": [
+                      "海下科技碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "應用水中聲學",
+                "alternatives": [
+                  {
+                    "name": "應用水中聲學",
+                    "departments": [
+                      "海下科技碩"
+                    ],
+                    "credits": 3,
+                    "note": null
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              },
+              {
+                "program_subject": "空氣污染概論",
+                "alternatives": [
+                  {
+                    "name": "空氣污染概論",
+                    "departments": [
+                      "海工系"
+                    ],
+                    "credits": 3,
+                    "note": "符合環保署採計課程518400"
+                  }
+                ],
+                "prerequisite_note": null,
+                "tags": [],
+                "waiver": {
+                  "allowed": false,
+                  "max_credits": null,
+                  "note": null,
+                  "waiver_alternatives": []
+                }
+              }
+            ]
+          }
+        ],
+        "requirements": {
+          "total_min_credits": 18,
+          "external_credits": {
+            "min": 6,
+            "description": "選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程",
+            "exclude_double_major": true,
+            "exclude_minor": true
+          },
+          "waiver": {
+            "allowed": false,
+            "max_credits": null,
+            "note": null,
+            "waiver_alternatives": []
+          },
+          "non_course_requirements": [],
+          "special_notes": [
+            "不同開課系所，但課程名稱相符合之課程皆予以採計",
+            "修習本學程之核心課程 I，為申請環保署環境教育人員之核心必修科目",
+            "完成本學程全部領域選修 18 學分之學生可申請環保署環境教育行政人員認證",
+            "完成本學程擇一領域選修 18 學分之學生可申請環保署環境教育教學人員認證"
+          ]
+        }
+      },
+      {
         "academic_year": 114,
         "semester": 2,
         "approval_info": "115.4.14 114學年度第2學期學分學程會議通過；115.5.21 第188次教務會議通過",
