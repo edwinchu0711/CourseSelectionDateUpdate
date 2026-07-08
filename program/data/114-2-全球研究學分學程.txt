@@ -3,19 +3,17 @@
 115.5.21 第 188 次教務會議通過
 
 ### 核心課程
-
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
-| :--- | :--- | :---: | :--- |
-| 社會學系(SOC257)、西灣學院跨院選修(GEAI1665) | Global Politics 全球政治 (授課教師:方志恒) | 3 | ※英語授課 |
-| 社科院選修(CSS154)、西灣學院跨院選修(GEAI1666) | Comparative Politics 比較政治 (授課教師:方志恒) | 3 | ※英語授課 |
+| :--- | :--- | :--- | :--- |
+| 社會學系(SOC257)/西灣學院跨院選修(GEAI1665) | Global Politics 全球政治 (授課教師:方志恒) | 3 | ※英語授課 |
+| 社科院選修(CSS154)/西灣學院跨院選修(GEAI1666) | Comparative Politics 比較政治 (授課教師:方志恒) | 3 | ※英語授課 |
 | 政治經濟學系(PE132) | Globalization in a Time of Transition 變動時代中的全球化 (授課教師:辛翠玲) | 3 | ※英語授課 |
 
 > 核心課程學分數：3 學分
 
 ### 選修課程
-
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
-| :--- | :--- | :---: | :--- |
+| :--- | :--- | :--- | :--- |
 | 西灣學院跨院選修(GEAE2336) | International Affairs and Civil Engaging 國際事務與公民參與 (授課教師:黃韋豪) | 3 | ※英語授課 |
 | 政治學研究所碩士班(IPS534) | Geopolitics 地緣政治理論 (授課教師:陳宗巖) | 3 | ※中文授課 |
 | 政治學研究所碩士班(IPS637) | International Organizations 國際組織 (授課教師:陳宗巖) | 3 | ※中文授課 |
@@ -23,17 +21,17 @@
 | 中國與亞太區域研究所碩士班(CAPS586) | Globalization and Economic Development 全球化與經濟發展 (授課教師:蔡書瑋) | 3 | ※中文授課 |
 | 政治經濟學系(PE302) | International Political Economy 國際政治經濟學 (授課教師:辛翠玲) | 3 | ※中文授課 |
 | 政治經濟學系(PE234) | Study on Economics News and Reports 英文經濟書報導讀 (授課教師:顏孟芬) | 3 | ※英語授課 |
-| 社科院選修(CSS155)、西灣學院跨院選修(GEAI1670) | Fintech and Banking Services 銀行與金融科技 (授課教師:陳珮芬) | 3 | ※英語授課 |
+| 社科院選修(CSS155)/西灣學院跨院選修(GEAI1670) | Fintech and Banking Services 銀行與金融科技 (授課教師:陳珮芬) | 3 | ※英語授課 |
 | 社會學系(SOC228) | Sociology of Gender 性別社會學 (授課教師:陳美華) | 3 | ※中文授課 |
 | 社會學系(SOC122) | Technology and Society 科技與社會 (授課教師:李宛儒) | 3 | ※中文授課 |
 | 社會學系(SOC132) | Language and Culture 語言與文化 (授課教師:趙恩潔) | 3 | ※中文授課 |
 | 社會學系(SOC212) | Media and Society 媒體與社會 (授課教師:戴昀) | 3 | ※英語授課 |
 | 社會學系(SOC213) | Environmental Sociology 環境社會學 (授課教師:邱花妹) | 3 | ※中文授課 |
 | 教育與人類發展研究全英語碩士學位學程(IGPE553) | Leadership in Global Education 全球教育領導 (授課教師:艾玲) | 3 | ※英語授課 |
-| 教育研究所碩士班(IOE512)、教育與人類發展研究全英語碩士學位學程(IGPE505) | Studies in Comparative Education 比較教育研究 (授課教師:紀博善) | 3 | ※英語授課 |
+| 教育研究所碩士班(IOE512)/教育與人類發展研究全英語碩士學位學程(IGPE505) | Studies in Comparative Education 比較教育研究 (授課教師:紀博善) | 3 | ※英語授課 |
 | 教育研究所碩士班(IOE558) | Studies in Global Education 全球教育研究 (授課教師:周珮儀) | 3 | ※中文授課 |
 | 教育研究所碩士班(IOE575) | Research on Multicultural Education 多元文化教育研究 (授課教師:謝百淇) | 3 | ※英語授課 |
-| 教育研究所碩士班(IOE644)、教育與人類發展研究全英語碩士學位學程(IGPE554) | Studies in Practice of Just Transition Curriculum 公正轉型課程實踐研究 (授課教師:莊雪華, 紀博善) | 3 | ※英語授課 |
+| 教育研究所碩士班(IOE644)/教育與人類發展研究全英語碩士學位學程(IGPE554) | Studies in Practice of Just Transition Curriculum 公正轉型課程實踐研究 (授課教師:莊雪華, 紀博善) | 3 | ※英語授課 |
 
 > 總學分數：至少 15 學分
 

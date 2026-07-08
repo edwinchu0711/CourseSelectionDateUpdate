@@ -4,28 +4,28 @@
 
 ### 核心課程
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
-| :--- | :--- | :---: | :--- |
+| :--- | :--- | :--- | :--- |
 | 基礎教育中心 | 英文學術寫作 ENGLISH ACADEMIC WRITING | 3 | — |
 | 跨院 EAP | 演說與辯論（高級） PUBLIC SPEECH AND DEBATE （ ADVANCED LEVEL） | 3 | — |
 | 英語文(選) | 科技英文 ENGLISH FOR SCIENCE AND TECHNOLOGY | 3 | 適用所有核准修習本學程學生。 |
 | 跨院 EAP | 科技英文（高級） ENGLISH FOR SCIENCE AND TECHNOLOGY( ADVANCED LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 基礎教育中心 | 科技英文閱讀 ENGLISH READING FOR SCIENCE AND TECHNOLOGY | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 跨院 ESP | 科技英文閱讀（中高級） ENGLISH READING FOR SCIENCE AND TECHNOLOGY（ HIGH-INTERMEDIATE LEVEL） | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
+| 跨院 ESP | 科技英文閱讀（中高級） ENGLISH READING FOR SCIENCE AND TECHNOLOGY （ HIGH-INTERMEDIATE LEVEL） | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
 | 跨院 ESP | 國際會展英語（中高級） INTERNATIONAL ENGLISH FOR MICE:MEETING, INCENTIVES, CONVENTIONS, EXHIBITIONS(HIGH-INTERMEDIATE LEVEL | 3 | 適用所有核准修習本學程學生。 |
 | 博雅教育中心 | 社會文化分析 SOCIO-CULTURAL ANALYSIS | 3 | 適用所有核准修習本學程學生。 |
-
-> 核心課程〈專業模組課程〉學分數：6 學分
-
-### 選修課程
-| 開課單位 | 課程名稱 | 學分數 | 備註 |
-| :--- | :--- | :---: | :--- |
 | 基礎教育中心 | 從英語課程學習多元文化 DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 跨院 ESP | 從英語課程學習多元文化（中高級） DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 基礎教育中心 | 透過實用性英語增進溝通能力 IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 跨院 EAP | 透過實用性英語增進溝通能力（中級） IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 基礎教育中心 | 通過體驗式學習自信地說英語 SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中級） SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中高級） | 3 | — |
+| 跨院 EAP | 通過體驗式學習自信地說英語(中級) SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
+| 跨院 EAP | 通過體驗式學習自信地說英語(中高級) | 3 | — |
+
+> 核心課程〈專業模組課程〉學分數：6 學分
+
+### 選修課程
+| 開課單位 | 課程名稱 | 學分數 | 備註 |
+| :--- | :--- | :--- | :--- |
 | 基礎教育中心 | 觀光英語 TOURISM ENGLISH | 3 | — |
 | 基礎教育中心 | 成功的英文寫作 WRITING FOR SUCCESS IN ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 跨院 EAP | 成功的英文寫作（中級） WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
