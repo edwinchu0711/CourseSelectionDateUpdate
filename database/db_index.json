@@ -1,24 +1,24 @@
 [
   {
-    "db_filename": "database_2026-06-27_1504.db",
+    "db_filename": "database_2026-07-08_1544.db",
     "model": "gemini-embedding-001",
-    "created_date": "2026-06-27",
-    "created_time": "15:14",
-    "last_updated": "2026-06-27 15:14:32",
+    "created_date": "2026-07-08",
+    "created_time": "16:02",
+    "last_updated": "2026-07-08 16:02:44",
     "embedding_model": "models/gemini-embedding-001",
     "source_count": 67,
-    "record_count": 984,
+    "record_count": 1634,
     "vector_dimensions": 512
   },
   {
-    "db_filename": "database_2026-06-27_1504.db",
+    "db_filename": "database_2026-07-08_1544.db",
     "model": "gemini-embedding-2",
-    "created_date": "2026-06-27",
-    "created_time": "15:27",
-    "last_updated": "2026-06-27 15:27:26",
+    "created_date": "2026-07-08",
+    "created_time": "16:24",
+    "last_updated": "2026-07-08 16:24:46",
     "embedding_model": "models/gemini-embedding-2",
     "source_count": 67,
-    "record_count": 984,
+    "record_count": 1634,
     "vector_dimensions": 512
   }
 ]
