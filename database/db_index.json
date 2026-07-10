@@ -20,5 +20,27 @@
     "source_count": 67,
     "record_count": 1636,
     "vector_dimensions": 512
+  },
+  {
+    "db_filename": "database_2026-07-10_1203.db",
+    "model": "gemini-embedding-001",
+    "created_date": "2026-07-10",
+    "created_time": "12:05",
+    "last_updated": "2026-07-10 12:05:55",
+    "embedding_model": "models/gemini-embedding-001",
+    "source_count": 67,
+    "record_count": 1641,
+    "vector_dimensions": 512
+  },
+  {
+    "db_filename": "database_2026-07-10_1203.db",
+    "model": "gemini-embedding-2",
+    "created_date": "2026-07-10",
+    "created_time": "12:09",
+    "last_updated": "2026-07-10 12:09:13",
+    "embedding_model": "models/gemini-embedding-2",
+    "source_count": 67,
+    "record_count": 1641,
+    "vector_dimensions": 512
   }
 ]
