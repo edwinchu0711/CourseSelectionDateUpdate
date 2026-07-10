@@ -26,8 +26,8 @@
 | 基礎教育中心 | 透過實用性英語增進溝通能力 IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 跨院 EAP | 透過實用性英語增進溝通能力（中級） IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 基礎教育中心 | 通過體驗式學習自信地說英語 SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中級） SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中高級） | 3 | — |
+| 跨院 EAP | 通過體驗式學習自信地說英語(中級) SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
+| 跨院 EAP | 通過體驗式學習自信地說英語(中高級) | 3 | — |
 | 基礎教育中心 | 觀光英語 TOURISM ENGLISH | 3 | — |
 | 基礎教育中心 | 成功的英文寫作 WRITING FOR SUCCESS IN ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 跨院 EAP | 成功的英文寫作（中級） WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
@@ -41,7 +41,7 @@
 | 跨院 ESP | 社會科學英文（高級） ENGLISH FOR SOCIAL SCIENCES (ADVANCED LEVEL) | 3 | — |
 | 跨院 EAP | 英語簡報與口語表達（中高級） ENGLISH PRESENTATION AND ORAL EXPRESSION(HIGH-INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 EAP | 實用英語發音與表達（中級） PRACTICAL ENGLISH PRONUNCIATION & EXPRESSION(INTERMEDIATE LEVEL) | 3 | — |
-| 跨院 ESP | 影視英文（高級） REFINING ENGLISH THROUGH FILM AND TELEVISION APPRECIATION (ADVANCED LEVEL) | 3 | — |
+| 跨院 ESP | 影視英文 (高級) REFINING ENGLISH THROUGH FILM AND TELEVISION APPRECIATION (ADVANCED LEVEL) | 3 | — |
 | 跨院 ESP | 賞析音樂學英語（中級） LEARNING ENGLISH THROUGH MUSIC APPRECIATION （INTERMEDIATE LEVEL ） | 3 | — |
 | 跨院 ESP | 運輸交通工具英文(中高級) ENGLISH FOR TRANSPORT (HIGH-INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 EAP | 英文閱讀與寫作（中高級） ENGLISH READING AND WRITING (HIGH-INTERMEDIATE LEVEL) | 3 | — |
