@@ -17,22 +17,22 @@
 | 跨院 EAP | 科技英文（高級） ENGLISH FOR SCIENCE AND TECHNOLOGY( ADVANCED LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 跨院 ESP | 科技英文閱讀（中高級） ENGLISH READING FOR SCIENCE AND TECHNOLOGY （ HIGH INTERMEDIATE LEVEL） | 3 | 適用所有核准修習本學程學生。 |
 
-> 核心課程學分數：9 學分
+> 核心課程〈專業模組課程〉學分數：9 學分
 
 ### 選修課程
 
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
 | :--- | :--- | :--- | :--- |
 | 基礎教育中心 | 通過體驗式學習自信地說英語 SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中級） SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
+| 跨院 EAP | 通過體驗式學習自信地說英語（中級） SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 EAP | 通過體驗式學習自信地說英語（中高級） | 3 | — |
 | 基礎教育中心 | 透過實用性英語增進溝通能力 COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 EAP | 透過實用性英語增進溝通能力（中級） IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
+| 跨院 EAP | 透過實用性英語增進溝通能力（中級） IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
 | 基礎教育中心 | 從英語課程學習多元文化 DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 ESP | 從英語課程學習多元文化（中高級） DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
+| 跨院 ESP | 從英語課程學習多元文化（中高級） DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) | 3 | — |
 | 基礎教育中心 | 成功的英文寫作 WRITING FOR SUCCESS IN ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 基礎教育中心 | 成功的英文寫作（中級） WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 基礎教育中心 | 成功的英文寫作（中高級） WRITING FOR SUCCESS IN ENGLISH (HIGH-INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
+| 基礎教育中心 | 成功的英文寫作（中級） WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
+| 基礎教育中心 | 成功的英文寫作（中高級） WRITING FOR SUCCESS IN ENGLISH (HIGH-INTERMEDIATE LEVEL) | 3 | — |
 | 基礎教育中心 | 綠色創新設計 ECO-INNOVATIVE DESIGN | 3 | 僅限以英語授課者。 |
 | 博雅教育中心 | 國際事務與公民參與 INTERNATIONAL AFFAIRS AND CIVIL ENGAGING | 3 | — |
 | 跨院 EAP | 增進跨文化溝通技能(中高級) ENHANCING CROSS-CULTURAL COMMUNICATION SKILLS (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生。 |
@@ -41,7 +41,7 @@
 | 跨院 EAP | 英文溝通技巧與批判性思維 （中高級） ENGLISH COMMUNICATION SKILLS AND CRITICAL THINKING (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 跨院 ESP | 透過國際禮儀增進專業技能 （中高級） ENHANCING PROFESSIONAL SKILLS THROUGH GLOBAL ETIQUETTE (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 跨院 ESP | 國際會展英語（中高級） INTERNATIONAL ENGLISH FOR MICE:MEETING, INCENTIVES, CONVENTIONS, EXHIBITIONS(HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生。 |
-| 跨院 ESP | 海外工作與學習之英語與文化（高級） ENLISHES AND CULTURES FOR OVERSEAS STUDIES AND WORK(ADVANCED LEVEL) | 3 | 適用所有核准修習本學程學生。 |
+| 跨院 ESP | 海外工作與學習之英語與文化（高級） ENGLISHES AND CULTURES FOR OVERSEAS STUDIES AND WORK(ADVANCED LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 服務學習教育中心 | 服務學習：英語繪本導讀 SERVICE LEARNING: ENGLISH LEARNING THROUGH PICTURE BOOKS | 1 | — |
 | 服務學習教育中心 | 服務學習：打造英語友善社區 SERVICE LEARNING: TO ESTABLISH AN ENGLISH-FRIENDLY COMMUNITY | 1 | — |
 | 服務學習教育中心 | 服務學習：西灣國際沙龍校園英語志工 SERVICE LEARNING: ENGLISH VOLUNTEERING AT SI WAN INTERNATIONAL SALON | 1 | — |
