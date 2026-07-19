@@ -1,0 +1,45 @@
+name: Update Kaohsiung Bus Schedule
+
+on:
+  schedule:
+    # 每天 00:00 UTC (約台灣時間早上 08:00) 執行
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允許手動觸發
+
+jobs:
+  update-bus-schedule:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # 允許寫入與推送到儲存庫
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run bus scraper script
+        run: |
+          python bus/fetch_bus.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add bus/
+          if [[ -n $(git status --porcelain bus/) ]]; then
+            echo "Detect changes in bus directory"
+            git commit -m "Auto-update bus schedule data $(date +'%Y-%m-%d %H:%M:%S')"
+            git push
+          else
+            echo "No changes detected"
+          fi
