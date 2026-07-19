@@ -16,12 +16,24 @@ TARGETS = ["中山大學", "哨船街", "濱海二路", "五福瀨南街口", "�
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 JSON_FILE = os.path.join(SCRIPT_DIR, "bus.json")
 
-# 建立 Session
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
+# 建立 Session 並設定 Retry
 session = requests.Session()
-session.verify = False  # 關閉 SSL 驗證（測試用）
+session.verify = False  # 關閉 SSL 驗證
+
+retries = Retry(total=3, backoff_factor=1, status_forcelist=[500, 502, 503, 504])
+session.mount('https://', HTTPAdapter(max_retries=retries))
+session.mount('http://', HTTPAdapter(max_retries=retries))
+
 session.headers.update({
-    "User-Agent": "Mozilla/5.0",
-    "Content-Type": "application/json"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
+    "Content-Type": "application/json",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Origin": "https://ibus.tbkc.gov.tw",
+    "Referer": "https://ibus.tbkc.gov.tw/ibus/"
 })
 
 # -------------------------
@@ -70,7 +82,11 @@ route_ids = [
     if edge.get("node") and "id" in edge["node"]
 ]
 
-print(f"共 {len(route_ids)} 條路線，開始搜尋站名...\n")
+total_routes = len(route_ids)
+print("==================================================", flush=True)
+print(f"成功取得路線清單！共 {total_routes} 條路線，開始逐一比對站牌...", flush=True)
+print(f"目標搜尋關鍵字：{', '.join(TARGETS)}", flush=True)
+print("==================================================\n", flush=True)
 
 # -------------------------
 # Step 2：逐條查詢站牌
@@ -93,7 +109,7 @@ query($xno: Int!) {
 
 matched = []
 
-for xno in route_ids:
+for idx, xno in enumerate(route_ids, 1):
     try:
         r = session.post(
             URL,
@@ -109,6 +125,8 @@ for xno in route_ids:
         route_data = r.json().get("data", {}).get("route")
 
         if route_data is None:
+            if idx % 20 == 0 or idx == total_routes:
+                print(f"[{idx}/{total_routes}] ⏳ 已掃描 {idx} 條路線... (目前累計命中 {len(matched)} 條)", flush=True)
             continue
 
         stop_names = [
@@ -123,10 +141,12 @@ for xno in route_ids:
         if hit_targets:
             # 儲存 路線ID、路線名稱、以及被命中的關鍵字
             matched.append((xno, route_data["name"], hit_targets))
-            print(f"[命中] xno={xno} {route_data['name']} (符合: {', '.join(hit_targets)})")
+            print(f"[{idx}/{total_routes}] 🎯 [命中] xno={xno:<4} {route_data['name']:<12} (符合: {', '.join(hit_targets)})", flush=True)
+        elif idx % 20 == 0 or idx == total_routes:
+            print(f"[{idx}/{total_routes}] ⏳ 已掃描 {idx} 條路線... (目前累計命中 {len(matched)} 條)", flush=True)
 
     except Exception as e:
-        print(f"路線 {xno} 查詢失敗：{e}")
+        print(f"[{idx}/{total_routes}] ❌ 路線 {xno} 查詢失敗：{e}", flush=True)
 
 # -------------------------
 # Step 3：輸出與儲存結果

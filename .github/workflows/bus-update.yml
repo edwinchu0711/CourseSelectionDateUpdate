@@ -22,6 +22,9 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Setup Cloudflare WARP (Bypass Geo-blocking)
+        uses: tuananh/setup-warp-action@v2
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
@@ -29,7 +32,7 @@ jobs:
 
       - name: Run bus scraper script
         run: |
-          python bus/fetch_bus.py
+          python -u bus/fetch_bus.py
 
       - name: Commit and push if changed
         run: |
