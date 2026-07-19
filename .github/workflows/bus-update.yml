@@ -30,9 +30,10 @@ jobs:
           sudo systemctl start warp-svc || sudo service warp-svc start || true
           sleep 2
           warp-cli --accept-tos registration new || warp-cli --accept-tos register || true
+          warp-cli --accept-tos mode warp || warp-cli --accept-tos set-mode warp || true
           warp-cli --accept-tos connect || warp-cli connect || true
           sleep 3
-          curl -s https://cloudflare.com/cdn-cgi/trace | grep ip || true
+          curl -s https://cloudflare.com/cdn-cgi/trace | grep -E "ip|warp" || true
 
       - name: Install dependencies
         run: |

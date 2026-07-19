@@ -37,6 +37,33 @@ session.headers.update({
 })
 
 # -------------------------
+# Helper: POST GraphQL with Proxy Fallback
+# -------------------------
+def post_graphql(query, variables, timeout=30):
+    payload = {"query": query, "variables": variables}
+    
+    # 嘗試 1：直連 / TUN 模式網卡連線
+    try:
+        r = session.post(URL, json=payload, timeout=timeout)
+        r.raise_for_status()
+        return r.json()
+    except Exception as e1:
+        # 嘗試 2：備用代理 - WARP 本地 SOCKS5 / HTTP Proxy
+        proxies_to_try = [
+            {"http": "socks5h://127.0.0.1:4000", "https": "socks5h://127.0.0.1:4000"},
+            {"http": "http://127.0.0.1:4000", "https": "http://127.0.0.1:4000"},
+            {"http": "http://127.0.0.1:4001", "https": "http://127.0.0.1:4001"},
+        ]
+        for px in proxies_to_try:
+            try:
+                r = requests.post(URL, json=payload, headers=session.headers, verify=False, timeout=timeout, proxies=px)
+                r.raise_for_status()
+                return r.json()
+            except Exception:
+                continue
+        raise e1
+
+# -------------------------
 # Step 1：取得所有路線
 # -------------------------
 routes_query = """
@@ -55,17 +82,7 @@ query($lang: String!) {
 """
 
 try:
-    r = session.post(
-        URL,
-        json={
-            "query": routes_query,
-            "variables": {"lang": "zh"}
-        },
-        timeout=15
-    )
-
-    r.raise_for_status()
-    data = r.json()
+    data = post_graphql(routes_query, {"lang": "zh"}, timeout=30)
     routes_edges = data.get("data", {}).get("routes", {}).get("edges", [])
 
     if not routes_edges:
@@ -111,18 +128,8 @@ matched = []
 
 for idx, xno in enumerate(route_ids, 1):
     try:
-        r = session.post(
-            URL,
-            json={
-                "query": station_query,
-                "variables": {
-                    "xno": xno
-                }
-            },
-            timeout=15
-        )
-
-        route_data = r.json().get("data", {}).get("route")
+        data = post_graphql(station_query, {"xno": xno}, timeout=30)
+        route_data = data.get("data", {}).get("route")
 
         if route_data is None:
             if idx % 20 == 0 or idx == total_routes:

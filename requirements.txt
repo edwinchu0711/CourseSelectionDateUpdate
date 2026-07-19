@@ -2,3 +2,4 @@ selenium
 requests
 google-genai
 urllib3
+PySocks
