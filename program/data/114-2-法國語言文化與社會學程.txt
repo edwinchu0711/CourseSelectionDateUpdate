@@ -71,7 +71,7 @@
 | 跨院選修(文) | 哲學問題導論 | 3 | — |
 | 跨院選修(文) | 西洋藝術史 | 2 | — |
 | 跨院選修(社) | 性別與全球治理 | 3 | — |
-| 數位自學課程 | Moral Foundations of Politics（政治道德基礎） | 3 | 數位自學課程平台 |
+| 數位自學課程 | Moral Foundations of Politics （政治道德基礎） | 3 | 數位自學課程平台 |
 | 數位自學課程 | William Shakespeare's Twelfth Night: Comedy, Conflict, and Community（莎士比亞《十二夜》） | 1 | 數位自學課程平台 |
 
 > 總學分數：至少 15 學分
