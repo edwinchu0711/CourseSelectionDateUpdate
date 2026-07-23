@@ -57,36 +57,42 @@ def main():
 - 回傳格式必須為 JSON 對象，Key 為時程項目名稱，Value 為包含「開始時間」、「結束時間」的對象。
 - 日期格式保留原文件中的樣式（包含年份、月份、日期、時間，請勿包含星期），例如："115/6/24 13:00" 或 "115/8/20 09:00"(也要注意有沒有跨年，年份可能會有不同)。
 - 結束時間欄位如果沒有明確的結束時間，結束時間欄位請留空。
-- "課程查詢" 欄位名稱前面請保留學年度，例如 "115-1 課程查詢"。
+- "課程查詢" 欄位名稱前面請保留學年度，例如 "114-2 課程查詢"。
 - 額外加上一個 "更新時間" 欄位，填入最新的系統處理時間。
+- 語言限定繁體中文
 
 回傳範例格式：
 {
-  "115-1 課程查詢": {
-    "開始時間": "115/6/24 13:00",
+  "114-2 課程查詢": {
+    "開始時間": "114/2/21 13:00",
     "結束時間": "",
   },
   "初選一": {
-    "開始時間": "115/8/20 09:00",
-    "結束時間": "115/8/21 17:00",
+    "開始時間": "114/3/20 09:00",
+    "結束時間": "114/3/21 17:00",
   }
 }
 """
 
     try:
-        response = client.models.generate_content(
-            model="gemini-flash-latest",
-            contents=[
-                types.Content(
-                    role="user",
-                    parts=[
-                        types.Part.from_text(text=f"Markdown 內容:\n{md_content}"),
-                        types.Part.from_text(text=prompt),
-                    ],
-                ),
+       response = client.models.generate_content(
+    model="gemini-flash-lite-latest",
+    contents=[
+        types.Content(
+            role="user",
+            parts=[
+                types.Part.from_text(text=f"Markdown 內容:\n{md_content}"),
+                types.Part.from_text(text=prompt),
             ],
-            config=types.GenerateContentConfig(response_mime_type="application/json")
+        ),
+    ],
+    config=types.GenerateContentConfig(
+        response_mime_type="application/json",
+        thinking_config=types.ThinkingConfig(
+            thinking_level="high"
         )
+    )
+)
         
         raw_text = response.text.strip()
         data_dict = json.loads(raw_text)
