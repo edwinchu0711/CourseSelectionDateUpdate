@@ -5,6 +5,91 @@ from google import genai
 from google.genai import types
 
 
+def validate_schedule_json(json_path):
+    """
+    檢查 selection_schedule.json 的格式是否正確。
+
+    檢查規則：
+    1. 檔案必須存在
+    2. 必須是合法 JSON
+    3. 最外層必須是 dict
+    4. 除了「更新時間」以外，每個項目都必須是 dict
+    5. 每個項目都必須包含「開始時間」與「結束時間」
+    6. 若某一項的「開始時間」和「結束時間」同時為空，則視為錯誤
+    """
+
+    # 檢查 JSON 檔案是否存在
+    if not os.path.exists(json_path):
+        print(f"❌ JSON 檢查失敗: 找不到檔案 {json_path}")
+        return False
+
+    try:
+        # 嘗試讀取 JSON 檔案
+        with open(json_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+    except json.JSONDecodeError as e:
+        # 如果 JSON 格式錯誤，會進到這裡
+        print(f"❌ JSON 檢查失敗: JSON 格式不正確")
+        print(f"錯誤位置: line {e.lineno}, column {e.colno}")
+        print(f"錯誤訊息: {e.msg}")
+        return False
+
+    except Exception as e:
+        # 其他讀檔錯誤
+        print(f"❌ JSON 檢查失敗: 無法讀取 JSON 檔案")
+        print(f"錯誤訊息: {e}")
+        return False
+
+    # 檢查最外層是不是 JSON object，也就是 Python 的 dict
+    if not isinstance(data, dict):
+        print("❌ JSON 檢查失敗: 最外層格式必須是 JSON object")
+        return False
+
+    # 逐一檢查每個 key-value
+    for item_name, item_value in data.items():
+
+        # 「更新時間」不是時程項目，可以跳過
+        if item_name == "更新時間":
+            continue
+
+        # 每個時程項目的 value 必須是 dict
+        if not isinstance(item_value, dict):
+            print(f"❌ JSON 檢查失敗:「{item_name}」的內容必須是物件格式")
+            return False
+
+        # 檢查是否有「開始時間」欄位
+        if "開始時間" not in item_value:
+            print(f"❌ JSON 檢查失敗:「{item_name}」缺少「開始時間」欄位")
+            return False
+
+        # 檢查是否有「結束時間」欄位
+        if "結束時間" not in item_value:
+            print(f"❌ JSON 檢查失敗:「{item_name}」缺少「結束時間」欄位")
+            return False
+
+        # 取出開始時間，並確保不是 None
+        start_time = item_value.get("開始時間") or ""
+
+        # 取出結束時間，並確保不是 None
+        end_time = item_value.get("結束時間") or ""
+
+        # 去除前後空白
+        start_time = str(start_time).strip()
+        end_time = str(end_time).strip()
+
+        # 如果開始時間和結束時間都是空的，就不允許 push
+        if start_time == "" and end_time == "":
+            print(
+                f"❌ JSON 檢查失敗:「{item_name}」的"
+                f"「開始時間」與「結束時間」不能同時為空"
+            )
+            return False
+
+    print("✅ JSON 檢查通過，可以進行 push")
+    return True
+
+
 def main():
     print("🚀 開始執行選課時程 LLM 分析...")
 
@@ -13,10 +98,9 @@ def main():
         print("❌ 錯誤: 找不到環境變數 GEMINI_API_KEY")
         exit(1)
 
-    md_path = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        "course-selection.md"
-    )
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+
+    md_path = os.path.join(base_dir, "course-selection.md")
 
     if not os.path.exists(md_path):
         print(f"❌ 錯誤: 找不到 Markdown 檔案 {md_path}")
@@ -113,15 +197,21 @@ def main():
                 timezone(timedelta(hours=8))
             ).strftime("%Y-%m-%d %H:%M:%S")
 
-        output_path = os.path.join(
-            os.path.dirname(os.path.abspath(__file__)),
-            "selection_schedule.json"
-        )
+        output_path = os.path.join(base_dir, "selection_schedule.json")
 
         with open(output_path, "w", encoding="utf-8") as f:
             json.dump(data_dict, f, ensure_ascii=False, indent=2)
 
         print(f"✅ 選課時程已成功提取並儲存至 {output_path}")
+
+        # 寫入後立刻檢查 JSON
+        if not validate_schedule_json(output_path):
+            print("🛑 因 JSON 檢查未通過，停止流程，不進行 push。")
+            exit(1)
+
+        # 如果你的 push 是在 GitHub Action 後面的 step 做，
+        # 那這支程式 exit(0) 才會讓後續 step 繼續執行。
+        print("✅ JSON 檢查完成，後續可以進行 push。")
 
     except Exception as e:
         print(f"❌ AI 分析或寫入失敗: {e}")
