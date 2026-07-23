@@ -75,7 +75,7 @@ def main():
 
     try:
         response = client.models.generate_content(
-            model="gemini-flash-lite-latest",
+            model="gemini-flash-latest",
             contents=[
                 types.Content(
                     role="user",
