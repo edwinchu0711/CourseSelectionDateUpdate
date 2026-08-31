@@ -11,18 +11,18 @@
 | 英語文(選) | 科技英文<br>ENGLISH FOR SCIENCE AND TECHNOLOGY | 3 | 適用所有核准修習本學程學生。 |
 | 跨院 EAP | 科技英文（高級）<br>ENGLISH FOR SCIENCE AND TECHNOLOGY( ADVANCED LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 基礎教育中心 | 科技英文閱讀<br>ENGLISH READING FOR SCIENCE AND TECHNOLOGY | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 跨院 ESP | 科技英文閱讀（中高級）<br>ENGLISH READING FOR SCIENCE AND TECHNOLOGY （ HIGH-INTERMEDIATE LEVEL） | 3 | — |
+| 跨院 ESP | 科技英文閱讀（中高級）<br>ENGLISH READING FOR SCIENCE AND TECHNOLOGY（ HIGH-INTERMEDIATE LEVEL） | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
 | 跨院 ESP | 國際會展英語（中高級）<br>INTERNATIONAL ENGLISH FOR MICE:MEETING, INCENTIVES, CONVENTIONS, EXHIBITIONS(HIGH-INTERMEDIATE LEVEL | 3 | 適用所有核准修習本學程學生。 |
 | 博雅教育中心 | 社會文化分析<br>SOCIO-CULTURAL ANALYSIS | 3 | 適用所有核准修習本學程學生。 |
 | 基礎教育中心 | 從英語課程學習多元文化<br>DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 ESP | 從英語課程學習多元文化（中高級）<br>DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) | 3 | — |
+| 跨院 ESP | 從英語課程學習多元文化（中高級）<br>DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 基礎教育中心 | 透過實用性英語增進溝通能力<br>IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 EAP | 透過實用性英語增進溝通能力（中級）<br>IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
+| 跨院 EAP | 透過實用性英語增進溝通能力（中級）<br>IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 基礎教育中心 | 通過體驗式學習自信地說英語<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語(中級)<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | — |
+| 跨院 EAP | 通過體驗式學習自信地說英語(中級)<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
 | 跨院 EAP | 通過體驗式學習自信地說英語(中高級) | 3 | — |
 
-> 核心課程學分數：—
+> 總學分數：至少 15 學分
 
 ### 選修課程
 
@@ -43,17 +43,7 @@
 | 跨院 EAP | 實用英語發音與表達（中級）<br>PRACTICAL ENGLISH PRONUNCIATION & EXPRESSION(INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 ESP | 影視英文(高級)<br>REFINING ENGLISH THROUGH FILM AND TELEVISION APPRECIATION (ADVANCED LEVEL) | 3 | — |
 | 跨院 ESP | 賞析音樂學英語（中級）<br>LEARNING ENGLISH THROUGH MUSIC APPRECIATION （INTERMEDIATE LEVEL） | 3 | — |
-| 跨院 ESP | 運輸交通工具英文(中高級)<br>ENGLISH FOR TRANSPORT (HIGH-INTERMEDIATE LEVEL) | 3 | — |
-| 跨院 EAP | 英文閱讀與寫作（中高級）<br>ENGLISH READING AND WRITING (HIGH-INTERMEDIATE LEVEL) | 3 | — |
-| 跨院 ESP | 透過電影學英文（中高級）<br>LEARNING ENGLISH THROUGH MOVIES (HIGH-INTERMEDIATE LEVEL) | 3 | — |
-| 跨院 EAP | 極限閱讀：挑戰想像力與創造力(中高級)<br>EXTREME READING: CHALLENGES OF IMAGINATION AND CREATIVITY（HIGH-INTERMEDIATE LEVEL） | 3 | — |
-| 跨院 ESP | 文化藝術賞析與英語溝通(高級)<br>CRITICAL THINKING AND ENGLISH COMMUNICATIONS ON ARTS AND CULTURE (ADVANCED LEVEL) | 3 | — |
-| 跨院 EAP | 增進跨文化溝通技能(中高級)<br>ENHANCING CROSS-CULTURAL COMMUNICATION SKILLS (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生 |
-| 跨院 ESP | 透過國際禮儀增進專業技能（中高級）<br>ENHANCING PROFESSIONAL SKILLS THROUGH GLOBAL ETIQUETTE (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生 |
-| 博雅教育中心 | 台灣政經發展<br>POLITICAL AND ECONOMIC DEVELOPMENT IN TAIWAN | 3 | 適用所有核准修習本學程學生。 |
-
 > 核心課程〈專業模組課程〉學分數：6 學分
-> 總學分數：至少 15 學分
 
 **備註：**
 1. 選讀學程學生所修習之學程課程中，至少應有 6 學分不屬於學生本系所、雙主修及輔系之課程。
