@@ -3,6 +3,7 @@
 115.5.21 第 188 次教務會議通過
 
 ### 核心課程
+
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
 | --- | --- | --- | --- |
 | 博雅教育中心 | 社會文化分析<br>SOCIO-CULTURAL ANALYSIS | 3 | — |
@@ -16,10 +17,13 @@
 | 跨院 EAP | 科技英文（高級）<br>ENGLISH FOR SCIENCE AND TECHNOLOGY( ADVANCED LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 跨院 ESP | 科技英文閱讀（中高級）<br>ENGLISH READING FOR SCIENCE AND TECHNOLOGY （ HIGH-INTERMEDIATE LEVEL） | 3 | 適用所有核准修習本學程學生。 |
 
+> 核心課程學分數：28 學分
+
 ### 選修課程
+
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
 | --- | --- | --- | --- |
-| 基礎教育中心 | 通過體驗式學習自信地說英語<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
+| 基礎教育中心 | 通過體驗式學習自信地說英語<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。<br>適用所有核准修習本學程學生。 |
 | 跨院 EAP | 通過體驗式學習自信地說英語（中級）<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 EAP | 通過體驗式學習自信地說英語（中高級） | 3 | — |
 | 基礎教育中心 | 透過實用性英語增進溝通能力<br>COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
