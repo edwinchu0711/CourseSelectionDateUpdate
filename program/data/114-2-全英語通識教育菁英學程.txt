@@ -22,15 +22,15 @@
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
 | :--- | :--- | :---: | :--- |
 | 基礎教育中心 | 通過體驗式學習自信地說英語<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING | 3 | 為相同課程，不得重複修習，僅能認列其中一門。<br>適用所有核准修習本學程學生。 |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中級）<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | — |
-| 跨院 EAP | 通過體驗式學習自信地說英語（中高級） | 3 | — |
+| 跨院 EAP | 通過體驗式學習自信地說英語（中級）<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。<br>適用所有核准修習本學程學生。 |
+| 跨院 EAP | 通過體驗式學習自信地說英語（中高級）<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生。 |
 | 基礎教育中心 | 透過實用性英語增進溝通能力<br>COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 EAP | 透過實用性英語增進溝通能力（中級）<br>IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
+| 跨院 EAP | 透過實用性英語增進溝通能力（中級）<br>IMPROVING COMMUNICATION SKILLS THROUGH FUNCTIONAL ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 基礎教育中心 | 從英語課程學習多元文化<br>DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 ESP | 從英語課程學習多元文化（中高級）<br>DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) 3 | 3 | — |
-| 基礎教育中心 | 成功的英文寫作<br>WRITING FOR SUCCESS IN ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
-| 基礎教育中心 | 成功的英文寫作（中級）<br>WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
-| 基礎教育中心 | 成功的英文寫作（中高級）<br>WRITING FOR SUCCESS IN ENGLISH (HIGH-INTERMEDIATE LEVEL) | 3 | — |
+| 跨院 ESP | 從英語課程學習多元文化（中高級）<br>DEVELOPING MULTICULTURAL AWARENESS IN ENGLISH CLASSROOM(HIGH-INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
+| 基礎教育中心 | 成功的英文寫作<br>WRITING FOR SUCCESS IN ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。<br>適用所有核准修習本學程學生。 |
+| 基礎教育中心 | 成功的英文寫作（中級）<br>WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。<br>適用所有核准修習本學程學生。 |
+| 基礎教育中心 | 成功的英文寫作（中高級）<br>WRITING FOR SUCCESS IN ENGLISH (HIGH-INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。<br>適用所有核准修習本學程學生。 |
 | 基礎教育中心 | 綠色創新設計<br>ECO-INNOVATIVE DESIGN | 3 | 僅限以英語授課者。 |
 | 博雅教育中心 | 國際事務與公民參與<br>INTERNATIONAL AFFAIRS AND CIVIL ENGAGING | 3 | — |
 | 跨院 EAP | 增進跨文化溝通技能(中高級)<br>ENHANCING CROSS-CULTURAL COMMUNICATION SKILLS (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生。 |
