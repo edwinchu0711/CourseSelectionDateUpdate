@@ -3,9 +3,8 @@
 115.5.21 第 188 次教務會議通過
 
 ### 核心課程
-
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
-| :--- | :--- | :---: | :--- |
+| --- | --- | --- | --- |
 | 基礎教育中心 | 英文學術寫作<br>ENGLISH ACADEMIC WRITING | 3 | — |
 | 跨院 EAP | 演說與辯論（高級）<br>PUBLIC SPEECH AND DEBATE （ ADVANCED LEVEL） | 3 | — |
 | 英語文(選) | 科技英文<br>ENGLISH FOR SCIENCE AND TECHNOLOGY | 3 | 適用所有核准修習本學程學生。 |
@@ -22,12 +21,11 @@
 | 跨院 EAP | 通過體驗式學習自信地說英語(中級)<br>SPEAKING ENGLISH WITH CONFIDENCE THROUGH EXPERIENTIAL LEARNING(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。適用所有核准修習本學程學生。 |
 | 跨院 EAP | 通過體驗式學習自信地說英語(中高級) | 3 | 適用所有核准修習本學程學生。 |
 
-> 核心課程學分數：XX 學分
+> 核心課程學分數：6 學分
 
 ### 選修課程
-
 | 開課單位 | 課程名稱 | 學分數 | 備註 |
-| :--- | :--- | :---: | :--- |
+| --- | --- | --- | --- |
 | 基礎教育中心 | 觀光英語<br>TOURISM ENGLISH | 3 | — |
 | 基礎教育中心 | 成功的英文寫作<br>WRITING FOR SUCCESS IN ENGLISH | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
 | 跨院 EAP | 成功的英文寫作（中級）<br>WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
@@ -51,8 +49,6 @@
 | 跨院 EAP | 增進跨文化溝通技能(中高級)<br>ENHANCING CROSS-CULTURAL COMMUNICATION SKILLS (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生 |
 | 跨院 ESP | 透過國際禮儀增進專業技能（中高級）<br>ENHANCING PROFESSIONAL SKILLS THROUGH GLOBAL ETIQUETTE (HIGH-INTERMEDIATE LEVEL) | 3 | 適用所有核准修習本學程學生 |
 | 博雅教育中心 | 台灣政經發展<br>POLITICAL AND ECONOMIC DEVELOPMENT IN TAIWAN | 3 | 適用所有核准修習本學程學生。 |
-
-> 核心課程〈專業模組課程〉學分數：6 學分
 
 > 總學分數：至少 15 學分
 
