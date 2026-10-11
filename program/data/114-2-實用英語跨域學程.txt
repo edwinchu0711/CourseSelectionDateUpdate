@@ -33,7 +33,7 @@
 | 跨院 EAP | 成功的英文寫作（中級）<br>WRITING FOR SUCCESS IN ENGLISH(INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 EAP | 成功的英文寫作（中高級）<br>WRITING FOR SUCCESS IN ENGLISH (HIGH-INTERMEDIATE LEVEL) | 3 | — |
 | 基礎教育中心 | 英文商業書信<br>ENGLISH BUSINESS CORRESPONDENCE | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
-| 跨院 ESP | 英文商業書信（中級）<br>ENGLISH BUSINESS CORRESPONDENCE(INTERMEDIATE LEVEL) | 3 | 為相同課程，不得重複修習，僅能認列其中一門。 |
+| 跨院 ESP | 英文商業書信（中級）<br>ENGLISH BUSINESS CORRESPONDENCE(INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 ESP | 英文商業書信（中高級） | 3 | — |
 | 跨院 ESP | 臨床醫護英語（中高級）<br>NURSING ENGLISH FOR CLINICAL PURPOSES (HIGH-INTERMEDIATE LEVEL) | 3 | — |
 | 跨院 ESP | 餐飲業實用英語（中級）<br>ENGLISH FOR RESTAURANT BUSINESS (INTERMEDIATE LEVEL) | 3 | — |
